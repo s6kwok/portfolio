@@ -217,6 +217,14 @@ ul li a:active{
     padding-top: 9px;
 }
 
+.photogrid {
+    padding-bottom: 75px;
+}
+
+#row1 {
+    padding-top: 20px;
+}
+
 #links {
     float: right; 
     padding-inline-start: 0px;
@@ -259,17 +267,22 @@ div {
   margin: 0;
   position: absolute;
   top: 45%;
-  left: 49%;
-  -ms-transform: translate(-49%, -49%);
-  transform: translate(-49%, -49%);
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-#shortcentercontainer {
+.shortcentercontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 300px;
-    padding-bottom: 40px;
+    /* height: 300px; */
+    /* padding-bottom: 40px; */
+    /* padding-top: 25px; */
+}
+
+#h1shortlineheight {
+    line-height: 50px;
 }
 
 .leftcontainer {
@@ -280,15 +293,15 @@ div {
     /* padding-bottom: 40px;
     padding-top: 10px;
     margin: 0px; */
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     /* padding-top: 40px; */
     margin-top: 27px;
 }
 
-#bottom {
+/* #bottom {
     padding-top: 20px;
     padding-bottom: 110px;
-}
+} */
 
 /* #jumbo {
     margin: 0 auto;
@@ -422,10 +435,11 @@ button.round2 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 40px;
 }
 
 #photo {
-    padding-top: 0px;
+    padding-top: 12px;
     padding-bottom: 0px;
     /* padding-top: 24px;
     padding-bottom: 20px; */
@@ -439,19 +453,13 @@ button.round2 {
     padding-left: 10%;
 }
 
-#project1 {
+.project {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#project2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#project1button{
+.projecttextbutton{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -470,7 +478,7 @@ button.round2 {
     margin-right: 0px;
 }
 
-#project1text{
+.projecttext{
     flex: none;
     order: 0;
     flex-grow: 0;
