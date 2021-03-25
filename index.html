@@ -1,36 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stacy Kwok</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
-    <!-- <link rel="shortcut icon" type="image/png" href="/apple-touch-icon.png" /> -->
-
+    <title>Stacy Kwok's Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="main.css" rel="stylesheet">
-
-
 </head>
+
 <body>
-<div id="whitespace">
-    <nav>
-        <h3 id="logo"><a href="#"><span style="color: #7CAFC9">stacy</span> kwok</a></h3>
-    </nav>
-</div>
-<br><br><br><br><br>
-<div class="container" id="container2">
-    <h1 id="main">site will be back shortly, </h1>
-    <h1 id="main"> great things are under way</h1>
-    <br>
-    <p>i'm currently working hard at revamping my site, please come back soon!</p>
-</div>
-<br><br><br><br><br><br>
+    <div>
+        <nav>
+            <h3 id="logo"><a href="index.html"><span style="color: #7CAFC9">stacy</span> kwok</a></h3>
+            <ul id="links">
+                <li><a href="index.html">portfolio</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="#">resume</a></li>
+            </ul>
+        </nav>
+    </div>
+    <style>
+        
+    </style>
+    <div class="centercontainer" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="false" data-aos-anchor-placement="top-center">
+        <div class="verticallycenter">
+            <h1 id="title">hi there, i'm stacy</h1>
+            <p>a product/UX designer passionate about understanding people + the <br> world to create intuitive and meaningful experiences for all</p>
+            <p>currently looking for a spring 2021 internship!</p>
+            <p id="mainbutton">
+                <a href="#scroll-target" style="color:white" class="button">view work</a>
+            </p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+            
+                // Store hash
+                var hash = this.hash;
+            
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 1000, function(){
+            
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+            });
+        </script>
+        <!-- <a href="#scroll-target" style="color:white" class="button">view work</a> -->
+        <!-- <button id="button1"><a href="#scroll-target" style="color:white">view work</a></button> --> 
+    </div>
+    <div id="scroll-target">
+        <h1 data-aos="fade-in" data-aos-delay="25" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="false" data-aos-anchor-placement="top-center">
+            my recent projects
+        </h1>
+        <div id="project1" data-aos="fade-up" data-aos-delay="80" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="false" data-aos-anchor-placement="top-center">
+            <div id="project1button">
+                <div id="project1text">
+                    <h2>time budgeter decision support tool</h2>
+                    <p>determines the time that should be spent on a term project based on determining factors inputted by the user</p>
+                </div>
+                <a href="project.html" style="color:white" class="button">check it out</a>
+            </div>
+            <a id="#"><img src="assets/DSS.png" height="236" width="410"></a>
+        </div>
+        <div id="project2" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="false" data-aos-anchor-placement="top-center">
+            <a id="#"><img src="assets/notecatcher.png" height="232" width="412"></a>
+            <div id="project2button">
+                <div id="project2text">
+                    <h2>note catcher game</h2>
+                    <p>musical falling objects game where players are challenged to catch all the falling notes into the basket to play the correct note for the melody of the song (built using JavaScript, HTML, CSS)</p>
+                </div>
+                <a style="color:white" class="button">work in progress</a>
+            </div>
+        </div>
+        <br><br>
+        <div id="project1" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="false" data-aos-anchor-placement="top-center">
+            <div id="project1button">
+                <div id="project1text">
+                    <h2>personal portfolio site</h2>
+                    <p>e-portfolio platform giving viewers a chance to get to know me a bit more by displaying personal projects, briefly diving into skills, and giving an insight into some of my interests (built using HTML, CSS and Bootstrap)</p>
+                </div>
+                <a href="#" style="color:white" class="button">case study coming soon</a>
+            </div>
+            <a id="#"><img src="assets/portfolio.png" height="519" width="290"></a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 <hr>
 <footer>
-    <h2>in the meantime... let's connect :)</h2>
+    <h2>let's connect</h2>
     <ul>
       <li><a href="mailto:@stacykwok01@gmail.com">email</a></li>
       <li><a href="https://ca.linkedin.com/in/stacy-kwok-48a3a919b">linkedin</a></li>
