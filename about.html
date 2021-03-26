@@ -7,41 +7,40 @@
     <title>Stacy Kwok's Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div id="whitespace">
-        <nav>
-            <h3 id="logo"><a href="index.html"><span style="color: #7CAFC9">stacy</span> kwok</a></h3>
-            <ul id="links">
-                <li><a href="index.html">portfolio</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="#">resume</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="shortcentercontainer">
-        <!-- <div class="verticallycenter"> -->
-            <h1 id="h1shortlineheight">meet stacy</h1>
-            <p id="photo">
-                <img src="assets/IMG_5347 2.png" height="207" width="312">
-            </p>
-            <div class="buttons">
-                <li><a href="mailto:@stacykwok01@gmail.com" style="color:white" class="roundbutton"><i class="fa fa-envelope"></i></a></li>
-                <li><a href="https://ca.linkedin.com/in/stacy-kwok-48a3a919b" style="color:white" class="roundbutton"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-                <li><a href="#" style="color:white" class="roundbutton"><i class="fa fa-twitter fa-lg"></i></a></li>
-                <li><a href="#" style="color:white" class="roundbutton"><i class="fa fa-facebook fa-lg"></i></a></li>
-            </div>
-        <!-- </div> -->
+    <nav>
+        <h3 id="logo"><a href="index.html"><span style="color: #7CAFC9">stacy</span> kwok</a></h3>
+        <ul id="links">
+            <li><a href="index.html">portfolio</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="#">resume</a></li>
+        </ul>
+    </nav>
+    <div class="shortcentercontainer" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+        <h1 id="h1shortlineheight">meet stacy</h1>
+        <p id="photo">
+            <img src="assets/IMG_5347 2.png" height="207" width="312">
+        </p>
+        <div class="buttons">
+            <li><a href="mailto:@stacykwok01@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="https://ca.linkedin.com/in/stacy-kwok-48a3a919b"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+        </div>
     </div>
     <div class="leftcontainer">
-        <h2>taking on the world, one <u>human</u>-focused experience at a time</h2>
-        <p>hey i’m stacy, great to meet you! :)</p>
-        <p>i’m currently a second year management engineering student at the University of Waterloo. i’m a curious creative who is fueled by my desire to make an impact with what I do. i believe in designing with kindness and compassion, and creating meaningful human focused experiences through deeply empathizing with and understanding others.</p>
+        <h2 id="noscrollfade">taking on the world, one <u>human</u>-focused experience at a time</h2>
+        <div data-aos="fade-up" data-aos-delay="1300" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor="noscrollfade">
+            <p>hey i’m stacy, great to meet you! :)</p>
+            <p>i’m currently a second year management engineering student at the University of Waterloo. i’m a curious creative who is fueled by my desire to make an impact with what I do. i believe in designing with kindness and compassion, and creating meaningful human focused experiences through deeply empathizing with and understanding others.</p>
+        </div>
     </div>
-    <div class="leftcontainer">
+    <div class="leftcontainer" data-aos="fade-up" data-aos-delay="0" data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <h2>at times you might catch me</h2>
         <p>exploring random digital art (learning to edit photos/calligraphy/card making) on procreate <br>
         chasing sunsets on my trusty bike <br>
@@ -50,28 +49,32 @@
         designing for social good <br>
         learning new piano covers</p>
     </div>
-    <div class="shortcentercontainer">
-        <ul class="photogrid" id="row1">
-            <li><img src="assets/IMG_2741.jpg" height="210" width="280"></li>
-            <li><img src="assets/IMG_1877.JPG" height="210" width="280"></li>
-            <li><img src="assets/Fluid Gradient Cover Art 3 V4 (1).png" height="212" width="302"></li>
+    <div class="leftcontainer" id="bottomrow" data-aos="fade-up" data-aos-delay="0" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+        <ul class="photogrid" id="toprow">
+            <li class="photogridimg"><img src="assets/IMG_2741.jpg" height="210" width="280"></li>
+            <li class="photogridimg"><img src="assets/IMG_1877.JPG" height="210" width="280"></li>
+            <li class="photogridimg"><img src="assets/Fluid Gradient Cover Art 3 V4 (1).png" height="212" width="302"></li>
         </ul>
         <ul class="photogrid">
-            <li><img src="assets/IMG_2741.jpg" height="210" width="280"></li>
-            <li><img src="assets/IMG_1877.JPG" height="210" width="280"></li>
-            <li><img src="assets/Fluid Gradient Cover Art 3 V4 (1).png" height="212" width="302"></li>
+            <li class="photogridimg"><img src="assets/IMG_2741.jpg" height="210" width="280"></li>
+            <li class="photogridimg"><img src="assets/IMG_1877.JPG" height="210" width="280"></li>
+            <li class="photogridimg"><img src="assets/Fluid Gradient Cover Art 3 V4 (1).png" height="212" width="302"></li>
         </ul>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <hr>
+    <footer>
+        <h2>let's connect</h2>
+        <ul>
+        <li><a href="mailto:@stacykwok01@gmail.com">email</a></li>
+        <li><a href="https://ca.linkedin.com/in/stacy-kwok-48a3a919b">linkedin</a></li>
+        <li><a href="#">twitter</a></li>
+        <li><a href="#">facebook</a></li>
+        </ul>
+    </footer>
 </body>
 
-<hr>
-<footer>
-    <h2>let's connect</h2>
-    <ul>
-      <li><a href="mailto:@stacykwok01@gmail.com">email</a></li>
-      <li><a href="https://ca.linkedin.com/in/stacy-kwok-48a3a919b">linkedin</a></li>
-      <li><a href="#">twitter</a></li>
-      <li><a href="#">facebook</a></li>
-    </ul>
-</footer>
 </html>

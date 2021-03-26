@@ -113,11 +113,6 @@ h1 {
     font-size: 52px;
 }
 
-#whitespace {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-
 #main2 {
     font-size: 52px;
     text-align: left;
@@ -140,6 +135,14 @@ h2 {
     letter-spacing: 0.01em;
 }
 
+#noscrollfade {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+}
+
 #h22 {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -150,8 +153,7 @@ h3 {
     font-weight: 600;
     font-size: 22px;
     line-height: 32px;
-    /* letter-spacing: 0.025em; */
-    letter-spacing: 0.05em;
+    letter-spacing: 0.025em;
 }
 
 ul {
@@ -195,6 +197,9 @@ nav {
     padding-right: 54px; */
     padding-left: 17%;
     padding-right: 17%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 0px;
 }
 
 ul li a{
@@ -213,16 +218,34 @@ ul li a:active{
 
 #logo {
     float: left;
-    margin:0px;
+    margin: 0px;
     padding-top: 9px;
 }
 
 .photogrid {
     padding-bottom: 75px;
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 8%;
 }
 
-#row1 {
-    padding-top: 20px;
+.photogridimg {
+    padding: 0px 0px;
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+}
+
+#toprow {
+    padding-top: 10px;
+}
+
+#bottomrow {
+    padding-bottom: 20px;
 }
 
 #links {
@@ -247,6 +270,8 @@ div {
 }
 
 .centercontainer {
+    padding-left: 17%;
+    padding-right: 17%;
     text-align: center;
     /* margin: 30px; */
     height: 85vh;
@@ -273,6 +298,8 @@ div {
 }
 
 .shortcentercontainer {
+    padding-left: 17%;
+    padding-right: 17%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -296,6 +323,7 @@ div {
     padding-bottom: 40px;
     /* padding-top: 40px; */
     margin-top: 27px;
+    margin-bottom: 0px;
 }
 
 /* #bottom {
@@ -314,7 +342,7 @@ div {
     line-height: 28px;
     background: #7CAFC4;
     color: white;
-    margin-top: 10px;
+    margin-top: 0px;
     padding: 15px 37px;
     border-radius: 34.5px;
     border: transparent;
@@ -334,7 +362,7 @@ div {
     top: 65%; */
 }
 
-.roundbutton {
+/* .roundbutton {
     font-family: Noto Sans;
     font-size: 16px;
     line-height: 28px;
@@ -345,6 +373,20 @@ div {
     border-radius: 34.5px;
     border: transparent;
     outline: none;
+} */
+
+ a .fa {  
+  font-size:1.5em;
+  border-radius: 50%;
+  border: solid white;
+  color: white;
+  background: #7CAFC4;
+  line-height: 2em;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  display: inline-block;
+  transition:0.5s;
 }
 
 #button2 {
@@ -410,8 +452,6 @@ button.round2 {
     margin: 0px;
 }
 
-
-
 #subheader {
     text-align: center;
 }
@@ -424,18 +464,26 @@ button.round2 {
     padding-right: 235px; */
     padding-left: 17%;
     padding-right: 17%;
-    padding-bottom: 100px;
-    padding-top: 40px;
+    /* padding-bottom: 1%; */
+    padding-top: 50px;
     margin: 0px;
 }
 
 .buttons {
-    margin-top: 8px;
+    margin-top: 0px;
     margin-bottom: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 40px;
+    padding-top: 8px;
+    padding-bottom: 36px;
+}
+
+.buttons > li {
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 #photo {
@@ -453,44 +501,60 @@ button.round2 {
     padding-left: 10%;
 }
 
+#projectsheader {
+    padding-bottom: 9%;
+}
+
 .project {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0px;
+    padding-bottom: 16%;
 }
 
-.projecttextbutton{
+.projecttextbuttonleft {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 0px;
+    margin-bottom: 0px;
     padding: 0px;
     padding-right: 80px;
 }
 
-#project2button{
+.projecttextleft {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 0px;
+}
+
+.projecttextleft > h2 {
+    margin-top: 0px;
+}
+
+.projecttextbuttonright {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 0px;
     padding: 0px;
-    padding-left: 80px;
+    margin-bottom: 0px;
+    padding-left: 90px;
     margin-right: 0px;
 }
 
-.projecttext{
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin-top: 0px;
-}
-
-#project2text{
+.projecttextright {
     flex: none;
     order: 0;
     flex-grow: 0;
     margin-top: 0px;
     margin-right: 0px;
+}
+
+.projecttextright > h2 {
+    margin-top: 0px;
 }
 
 footer {
@@ -499,6 +563,8 @@ footer {
     position: relative;
     justify-content: center;
     text-align: center;
+    padding-left: 17%;
+    padding-right: 17%;
 }
 
 footer ul li {
