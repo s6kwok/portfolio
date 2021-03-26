@@ -208,6 +208,10 @@ div {
   transform: translate(-50%, -50%);
 }
 
+#verticallycenterhigher {
+    top: 40%;
+}
+
 .shortcentercontainer {
     padding-left: 17%;
     padding-right: 17%;
@@ -269,6 +273,7 @@ a .fa {
   text-align: center;
   display: inline-block;
   transition:0.5s;
+  vertical-align: top;
 }
 
 #ghostbutton {
