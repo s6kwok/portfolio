@@ -1,17 +1,9 @@
-/* html {
-    scroll-behavior: smooth;
-} */
-
 body {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 8px;
     margin-bottom: 8px;
-    /* margin-left: 235px;
-    margin-right: 235px;
-    display: block; */
 }
-
 
 .fade-in {
     animation: fadeIn ease 3s;
@@ -20,6 +12,7 @@ body {
     -o-animation: fadeIn ease 3s;
     -ms-animation: fadeIn ease 3s;
 }
+
 @keyframes fadeIn {
 0% {opacity:0;}
 100% {opacity:1;}
@@ -45,60 +38,6 @@ body {
 100% {opacity:1;}
 }
 
-.inline-photo {
-    border: 1em solid #fff;
-    border-bottom: 4em solid #fff;
-    border-radius: .25em;
-    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
-    margin: 2em auto;
-    opacity: 0;
-    transform: translateY(4em) rotateZ(-5deg);
-    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
-                opacity .3s .25s ease-out;
-    max-width: 600px;
-    width: 90%;
-    will-change: transform, opacity;
-}
-
-.inline-photo.is-visible {
-    opacity: 1;
-    transform: rotateZ(-2deg);
-}
-
-header {
-    opacity: 0;
-    transition: opacity .5s .25s ease-out;
-}
-
-header.is-visible {
-    opacity: 1;
-}
-
-.main-photo {
-    transform: scale(.8);
-}
-
-.heading {
-    transform: translate(-50%, calc(-50% + 1em));
-}
-
-.is-visible .main-photo {
-    transform: none;
-}
-
-.is-visible .heading {
-    transform: translate(-50%, -50%);
-}
-
-.main-photo,
-.heading {
-    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
-    filter 10s 2s ease-out;
-    will-change: transform;
-}
-  
-
-
 h1 {
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
@@ -109,20 +48,11 @@ h1 {
     margin: 10px;
 }
 
-#title {
+#intro {
     font-size: 52px;
 }
 
-#main2 {
-    font-size: 52px;
-    text-align: left;
-    margin-left: 0px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-
-#p2 {
+#subtitle {
     margin: 0px;
     padding: 0px;
 }
@@ -141,11 +71,6 @@ h2 {
     -moz-animation: fadeIn ease 2s;
     -o-animation: fadeIn ease 2s;
     -ms-animation: fadeIn ease 2s;
-}
-
-#h22 {
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 h3 {
@@ -193,8 +118,6 @@ nav {
     /* display: inline-block; */
     height: 60px;
     align-items: center;
-    /* padding-left: 70px;
-    padding-right: 54px; */
     padding-left: 17%;
     padding-right: 17%;
     margin-top: 24px;
@@ -202,17 +125,16 @@ nav {
     margin-left: 0px;
 }
 
-ul li a{
+ul li a {
     text-decoration:none;
     color: black;
 }
-ul li a:hover{
+
+ul li a:hover {
     /* text-decoration: underline #7CAFC4 4px; */
-    /* color: #7CAFC4; */
     border-bottom: 4px #7CAFC4 solid;
 }
-ul li a:active{
-    /* color: #7CAFC4; */
+ul li a:active {
     border-bottom: 4px #7CAFC4 solid;
 }
 
@@ -258,11 +180,6 @@ ul li a:active{
     margin-left: 10px;
 }
 
-/* div.navbar {
-    position: relative;
-    float: right;
-} */
-
 div {
     margin-top: 24px;
     margin-bottom: 24px;
@@ -273,14 +190,8 @@ div {
     padding-left: 17%;
     padding-right: 17%;
     text-align: center;
-    /* margin: 30px; */
     height: 85vh;
-    /* height: 525px; */
-    /* padding: 10px 30px;
-    padding-bottom: 100px; */
     /* display: block; */
-
-    /* height: 200px; */
     position: relative;
     /* border: 3px solid green; */
     display: flex;
@@ -303,12 +214,9 @@ div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 300px; */
-    /* padding-bottom: 40px; */
-    /* padding-top: 25px; */
 }
 
-#h1shortlineheight {
+#meetstacyheader {
     line-height: 50px;
 }
 
@@ -317,24 +225,10 @@ div {
     /* background-size: cover; */
     padding-left: 17%;
     padding-right: 17%;
-    /* padding-bottom: 40px;
-    padding-top: 10px;
-    margin: 0px; */
     padding-bottom: 40px;
-    /* padding-top: 40px; */
     margin-top: 27px;
     margin-bottom: 0px;
 }
-
-/* #bottom {
-    padding-top: 20px;
-    padding-bottom: 110px;
-} */
-
-/* #jumbo {
-    margin: 0 auto;
-    display: block;
-} */
 
 .button {
     font-family: Noto Sans;
@@ -356,26 +250,9 @@ div {
 
 #mainbutton {
     padding-top: 50px;
-    /* position: absolute;
-    width: 163px;
-    left: 43.5%;
-    top: 65%; */
 }
 
-/* .roundbutton {
-    font-family: Noto Sans;
-    font-size: 16px;
-    line-height: 28px;
-    background: #7CAFC4;
-    color: white;
-    margin-top: 10px;
-    padding: 12px 16px;
-    border-radius: 34.5px;
-    border: transparent;
-    outline: none;
-} */
-
- a .fa {  
+a .fa {  
   font-size:1.5em;
   border-radius: 50%;
   border: solid white;
@@ -389,41 +266,23 @@ div {
   transition:0.5s;
 }
 
-#button2 {
+#ghostbutton {
     background: transparent;
     border: 5px solid #7CAFC4;
     padding: 10px 37px;
 }
 
-/* #button1 {
-    margin-top: 32px;
-    margin-top: 40px;
-    margin-left: 186px;
-    margin: 40px auto;
-    display: block;
-} */
-
-button.round {
-    padding: 17px 20px;
-    border-radius: 100%;
-}
-
-button.round2 {
-    padding: 17px 23px;
-    border-radius: 100%;
-}
-
+/* CHANGE THIS ONE */
 #container2 {
     padding-bottom: 60px;
     padding-top: 0px;
     margin: 0px;
 }
 
+/* CHANGE THIS ONE */
 #container3 {
     text-align: left;
     background-size: cover;
-    /* padding-left: 235px;
-    padding-right: 235px; */
     padding-left: 17%;
     padding-right: 17%;
     padding-bottom: 60px;
@@ -431,27 +290,7 @@ button.round2 {
     margin: 0px;
 }
 
-#container4 {
-    text-align: left;
-    background-size: cover;
-    /* padding-left: 235px;
-    padding-right: 235px; */
-    padding-left: 17%;
-    padding-right: 17%;
-    padding-bottom: 60px;
-    padding-top: 22px;
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#container5 {
-    padding-bottom: 80px;
-    padding-top: 0px;
-    margin: 0px;
-}
-
+/* CHANGE THIS ONE */
 #subheader {
     text-align: center;
 }
@@ -460,16 +299,13 @@ button.round2 {
     background-color: #393c4e;
     background-size: cover;
     color: #F4F4F5;
-    /* padding-left: 235px;
-    padding-right: 235px; */
     padding-left: 17%;
     padding-right: 17%;
-    /* padding-bottom: 1%; */
     padding-top: 50px;
     margin: 0px;
 }
 
-.buttons {
+.socials {
     margin-top: 0px;
     margin-bottom: 0px;
     display: flex;
@@ -479,7 +315,7 @@ button.round2 {
     padding-bottom: 36px;
 }
 
-.buttons > li {
+.socials > li {
     padding-right: 8px;
     padding-left: 8px;
     padding-top: 0px;
@@ -489,16 +325,10 @@ button.round2 {
 #photo {
     padding-top: 12px;
     padding-bottom: 0px;
-    /* padding-top: 24px;
-    padding-bottom: 20px; */
 }
 
-#buttons2 {
+#ghostbutton2 {
     padding-left: 8%;
-}
-
-#buttons3 {
-    padding-left: 10%;
 }
 
 #projectsheader {
@@ -570,4 +400,3 @@ footer {
 footer ul li {
     margin-left: 10px;
 }
-
