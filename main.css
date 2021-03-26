@@ -313,7 +313,7 @@ a .fa {
 .socials {
     margin-top: 0px;
     margin-bottom: 0px;
-    display: flex;
+    display: inline;
     flex-direction: row;
     align-items: center;
     padding-top: 8px;
