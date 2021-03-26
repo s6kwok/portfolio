@@ -125,3 +125,12 @@ div.navbar {
     padding-top: 0px;
     margin: 0px;
 }
+
+<h1>site will be back shortly, great things are under way</h1>
+<p>i'm currently working hard at revamping my site, please come back soon!</p>
+<h2>in the meantime... let's connect :)</h2>
+
+<div class="container" id="container2">
+    <h1>site will be back shortly, great things are under way</h1>
+    <p>i'm currently working hard at revamping my site, please come back soon!</p>
+</div>
