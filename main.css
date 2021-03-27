@@ -275,7 +275,7 @@ div {
     background: #7CAFC4;
     color: white;
     margin-top: 0%;
-    padding: 15px 37px;
+    padding: 2% 5%;
     border-radius: 34.5px;
     border: transparent;
     outline: none;
@@ -308,7 +308,7 @@ a .fa {
 #ghostbutton {
     background: transparent;
     border: 5px solid #7CAFC4;
-    padding: 10px 37px;
+    padding: 1.5% 5%;
 }
 
 #subheader {
@@ -351,10 +351,6 @@ a .fa {
 #projectphoto {
     padding-top: 2%;
     padding-bottom: 0%;
-}
-
-#ghostbutton2 {
-    padding-left: 8%;
 }
 
 #projectsheader {
@@ -455,6 +451,26 @@ footer ul li {
     margin-left: 10px;
 }
 
+#projectbutton {
+    height: 100%;
+    width: 100%;
+}
+
+#projectbutton > .button {
+    padding: 4% 8%;
+}
+
+#projectbutton > #ghostbutton {
+    padding: 3.25% 7%;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE WEB DESIGN
+392 just socials and navbar li left and right padding
+532 just navbar up and down padding
+680 for adjusting all containers padding
+885 just side by side view
+900 fixed width */
+
 @media (max-width: 392px) {
     a .fa {
         font-size:1em;
@@ -469,6 +485,11 @@ footer ul li {
     #links > li {
         padding-left: 0%;
         padding-right: 0%;
+    }
+}
+
+@media (max-width: 532px) {
+    #links > li { 
         padding-top: 0%;
         padding-bottom: 8%;
     }
@@ -577,5 +598,3 @@ footer ul li {
         width: 595px;
     }
 }
-
-/* Testing the new github token 3 */
