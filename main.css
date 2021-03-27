@@ -87,13 +87,19 @@ ul {
     font-size: 16px;
     line-height: 27px;
     letter-spacing: 0.02em;
-    list-style-type: none;
-    overflow: hidden;
+    /* list-style-type: none; */
+    /* overflow: hidden; */
     margin: 0%;
     padding: 0%;
 }
 
-li {
+/* li {
+    display: inline;
+    margin-left: 30px;
+    padding: 14px 16px;
+} */
+
+nav > ul > li, footer > ul > li {
     display: inline;
     padding: 14px 16px;
 }
@@ -154,6 +160,7 @@ ul li a:active {
     margin: 0;
     padding: 0;
     padding-bottom: 8%;
+    list-style: none;
 }
 
 .photogridimg {
@@ -165,7 +172,7 @@ ul li a:active {
 }
 
 #toprow {
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 #bottomrow {
@@ -184,13 +191,26 @@ ul li a:active {
     margin: 0%;
 }
 
+.primarybulletpoint {
+    margin-left: 30px;
+    padding-bottom: 2%;
+}
+
+.secondarybulletpoint {
+    margin-left: 30px;
+    padding-bottom: 2%;
+}
+
 .prototypeprocessbuttons > .leftcontainer {
     padding-left: 0%;
     padding-right: 0%;
 }
 
-.prototypeprocessbuttons > .leftcontainer > li {
+.prototypeprocessbuttons > .leftcontainer > ul > li {
+    display: inline;
+    padding: 14px 16px;
     padding-left: 0%;
+    margin-left: 0%;
     padding-right: 2%;
 }
 
@@ -226,7 +246,7 @@ div {
 .verticallycenter {
   margin: 0;
   position: absolute;
-  width: 70%;
+  /* width: 70%; */
   top: 45%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
@@ -275,7 +295,8 @@ div {
     background: #7CAFC4;
     color: white;
     margin-top: 0%;
-    padding: 2% 5%;
+    padding: 15px 37px;
+    /* padding: 2% 5%; */
     border-radius: 34.5px;
     border: transparent;
     outline: none;
@@ -287,7 +308,8 @@ div {
 }
 
 #mainbutton {
-    padding-top: 50px;
+    padding-top: 8%;
+    /* padding-top: 50px; */
 }
 
 a .fa {  
@@ -305,10 +327,15 @@ a .fa {
   vertical-align: top;
 }
 
+#disabledbutton {
+    background: grey;
+}
+
 #ghostbutton {
     background: transparent;
     border: 5px solid #7CAFC4;
-    padding: 1.5% 5%;
+    padding: 12px 37px;
+    /* padding: 1.5% 5%; */
 }
 
 #subheader {
@@ -336,7 +363,8 @@ a .fa {
     padding-bottom: 5%;
 }
 
-.socials > li {
+.socials > ul > li {
+    display: inline;
     padding-right: 8px;
     padding-left: 8px;
     padding-top: 0%;
@@ -456,13 +484,13 @@ footer ul li {
     width: 100%;
 }
 
-#projectbutton > .button {
+/* #projectbutton > .button {
     padding: 4% 8%;
-}
+} */
 
-#projectbutton > #ghostbutton {
+/* #projectbutton > #ghostbutton {
     padding: 3.25% 7%;
-}
+} */
 
 /* MEDIA QUERIES FOR RESPONSIVE WEB DESIGN
 392 just socials and navbar li left and right padding
@@ -485,6 +513,17 @@ footer ul li {
     #links > li {
         padding-left: 0%;
         padding-right: 0%;
+    }
+    .button {
+        padding: 14px 26px;
+        font-size: 14px;
+    }
+    #ghostbutton {
+        padding: 11px 22px;
+    }
+    #scroll-target {
+        padding-top: 8%;
+        padding-bottom: 8%;
     }
 }
 
@@ -587,7 +626,7 @@ footer ul li {
 
 @media (min-width: 900px) {
     .verticallycenter {
-        max-width: 680px;
+        max-width: 650px;
     }
     nav, .shortcentercontainer, .leftcontainer, .project, .centercontainer {
         max-width: 960px;
