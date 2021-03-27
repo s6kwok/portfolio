@@ -29,12 +29,17 @@
             <li><a href="index.html">portfolio</a></li>
             <li><a href="about.html">about</a></li>
             <li><a href="#">resume</a></li>
+            <!-- <li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" id="hamburger"></i>
+                </a>
+            </li> -->
         </ul>
     </nav>
     <div class="centercontainer" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <div class="verticallycenter">
             <h1 id="intro">hi there, i'm stacy</h1>
-            <p>a product/UX designer who is passionate about understanding people + <br> the world to create intuitive and meaningful experiences for all</p>
+            <p>a product/UX designer who is passionate about understanding people + the world to create intuitive and meaningful experiences for all</p>
             <p>currently looking for a spring 2021 internship!</p>
             <div id="mainbutton">
                 <a href="#scroll-target" style="color:white" class="button">view work</a>
@@ -80,7 +85,8 @@
                 </div>
                 <a href="project.html" style="color:white" class="button">check it out</a>
             </div>
-            <img src="assets/Noteworthy.png" height="243" width="400">
+            <img src="assets/Noteworthy.png" style="max-width:44%;height:auto;">
+            <!-- <img src="assets/Noteworthy.png" height="243" width="400"> -->
         </div>
         <div class="project" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
             <img src="assets/Notecatcher 1.png" height="243" width="400">
@@ -103,6 +109,16 @@
             <img src="assets/DSS 1.png" height="243" width="400">
         </div>
     </div>
+    <!-- <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

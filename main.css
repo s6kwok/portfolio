@@ -319,7 +319,8 @@ a .fa {
     color: #F4F4F5;
     padding-left: 17%;
     padding-right: 17%;
-    padding-top: 50px;
+    /* padding-top: 50px; */
+    padding-top: 4%;
     margin: 0%;
 }
 
@@ -428,8 +429,11 @@ div > .leftcontainer > h2 {
 }
 
 footer {
-    margin-top: 50px;
-    height: 160px;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    /* margin-top: 50px;
+    margin-bottom: 56px; */
+    /* height: 160px; */
     position: relative;
     justify-content: center;
     text-align: center;
@@ -439,4 +443,73 @@ footer {
 
 footer ul li {
     margin-left: 10px;
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    nav {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    .centercontainer {
+        padding-left: 12%;
+        padding-right: 12%;
+        width: 76%;
+    }
+    .centercontainer > .verticallycenter {
+        width: 76%;
+    }
+    #intro {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    #projectsheader {
+        padding-top: 4%;
+        padding-bottom: 7%;
+    }
+    .shortcentercontainer {
+        padding-left: 12%;
+        padding-right: 12%;
+        width: 76%;
+    }
+    .photogrid {
+        display: block;
+    }
+    #toprow {
+        padding-top: 8%;
+    }
+    .prototypeprocessbuttons > .leftcontainer > li {
+        display: block;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    .leftcontainer {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    #scroll-target {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    footer {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    footer > h2 {
+        margin-top: 8%;
+        margin-bottom: 3%;
+    }
+    footer > ul > li {
+        display: block;
+        padding: 2%;
+    }
 }
