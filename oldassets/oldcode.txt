@@ -134,3 +134,26 @@ div.navbar {
     <h1>site will be back shortly, great things are under way</h1>
     <p>i'm currently working hard at revamping my site, please come back soon!</p>
 </div>
+
+<!-- <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> -->
+<!-- <link rel="icon" type="image/x-icon" href="favicon.ico"/> -->
+<!-- <link rel="apple-touch-icon" type="image/png" href="/sk.png"/> -->
+
+#container2 {
+    padding-bottom: 60px;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+<p><button><a href="#" style="color:white">see final prototype</a></button></p>
+<p id="ghostbutton2"><button id="ghostbutton"><a href="#" style="color:white">see process</a></button></p>
+
+#container3 {
+    text-align: left;
+    background-size: cover;
+    padding-left: 17%;
+    padding-right: 17%;
+    padding-bottom: 60px;
+    padding-top: 39px;
+    margin: 0px;
+}

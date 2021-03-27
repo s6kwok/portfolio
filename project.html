@@ -7,8 +7,8 @@
     <title>Stacy Kwok's Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="main.css" rel="stylesheet">
-    <!-- <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> -->
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=Lbx6zORrWL">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=Lbx6zORrWL">
@@ -21,7 +21,6 @@
 </head>
 
 <body>
-<div id="whitespace">
     <nav>
         <a href="index.html" id="logo"><img src="assets/stacy kwok.svg" height="24"></a>
         <ul id="links">
@@ -30,82 +29,75 @@
             <li><a href="#">resume</a></li>
         </ul>
     </nav>
-</div>
-<div class="container" id="container2">
-    <p id="subtitle"><span style="color: #7CAFC9">company</span></p>
-    <h1 id="main">project name</h1>
-    <p id="subtitle">one line summary about product/project</p>
-    <br><br><br>
-    <a id="#"><img src="assets/DSS.png" height="236" width="410"></a>
-</div>
-<div id="scroll-target">
-    <div id="project1text">
-        <h2>project details</h2>
-        <p>role | product designer <br> team | 1 person <br> timespan | jan-dec 2020</p>
+    <div class="shortcentercontainer">
+        <p class="subtitle"><span style="color: #7CAFC9">company</span></p>
+        <h1 id="headernomargin">project name</h1>
+        <p>one line summary about product/project</p>
+        <p id="projectphoto">
+            <img src="assets/Noteworthy.png" height="243" width="400">
+        </p>
     </div>
-    <br>
-    <div id="project1text">
-        <h2>overview</h2>
-        <p>what it is <br> why did you work on this project</p>
+    <div id="scroll-target">
+        <div class="leftcontainer" id="toprow">
+            <h2>project details</h2>
+            <p>role | product designer <br> team | 1 person <br> timespan | jan-dec 2020</p>
+        </div>
+        <div class="leftcontainer">
+            <h2>overview</h2>
+            <p>what it is <br> why did you work on this project</p>
+        </div>
+        <div class="leftcontainer">
+            <h2>problem</h2>
+            <p>what is done currently that needs to be improved</p>
+        </div>
+        <div class="leftcontainer">
+            <h2>solution</h2>
+            <p>more about product, how it solves problem</p>
+        </div>
+        <div class="prototypeprocessbuttons">
+            <div class="leftcontainer">
+                <li><a href="#finaldesign" style="color:white" class="button">see final prototype</a></li>
+                <li><a href="#container" style="color:white" class="button" id="ghostbutton">see process</a></li>
+            </div>
+        </div>
     </div>
-    <br>
-    <div id="project1text">
-        <h2>problem</h2>
-        <p>what is done currently that needs to be improved</p>
+    <div id="container">
+        <p id="subheader"><span style="color: #7CAFC9;">the process</span></p>
+        <div class="leftcontainer">
+            <h2>user research</h2>
+            <p>explain questions asked, survey, what you did <br> insights gained from research</p>
+        </div>
+        <div class="leftcontainer">
+            <h2>information architecture</h2>
+            <p>explain IA, what type of structure (app? website?)</p>
+        </div>
+        <div class="leftcontainer">
+            <h2>low-fidelity wireframes</h2>
+            <p>insert text</p>
+        </div>
+        <div class="leftcontainer">
+            <h2>useability testing</h2>
+            <p>insert text</p>
+        </div>
+        <div class="leftcontainer" id="finaldesign">
+            <h2>final design</h2>
+            <p>insert text</p>
+        </div>
+        <div class="leftcontainer">
+            <h2>next steps</h2>
+            <p>insert text</p>
+        </div>
     </div>
-    <br>
-    <div id="project1text">
-        <h2>solution</h2>
-        <p>more about product, how it solves problem</p>
-    </div>
-    <br>
-    <div id="buttons">
-        <p><button><a href="#" style="color:white">see final prototype</a></button></p>
-        <p id="ghostbutton2"><button id="ghostbutton"><a href="#" style="color:white">see process</a></button></p>
-    </div>
-</div>
-<div class="container" id="container3">
-    <p id="subheader"><span style="color: #7CAFC9;">the process</span></p>
-    <div id="project1text">
-        <h2>user research</h2>
-        <p>explain questions asked, survey, what you did <br> insights gained from research</p>
-    </div>
-    <br>
-    <div id="project1text">
-        <h2>information architecture</h2>
-        <p>explain IA, what type of structure (app? website?)</p>
-    </div>
-    <br>
-    <div id="project1text">
-        <h2>low-fidelity wireframes</h2>
-        <p>insert text</p>
-    </div>
-    <br>
-    <div id="project1text">
-        <h2>useability testing</h2>
-        <p>insert text</p>
-    </div>
-    <br>
-    <div id="project1text">
-        <h2>final design</h2>
-        <p>insert text</p>
-    </div>
-    <br>
-    <div id="project1text">
-        <h2>next steps</h2>
-        <p>insert text</p>
-    </div>
-</div>
-<hr>
-<footer>
-    <h2>let's connect</h2>
-    <ul>
-        <li><a href="mailto:@stacykwok01@gmail.com">email</a></li>
-        <li><a href="https://ca.linkedin.com/in/stacy-kwok-48a3a919b">linkedin</a></li>
-        <li><a href="#">twitter</a></li>
-        <li><a href="#">facebook</a></li>
-    </ul>
-</footer>
+    <hr>
+    <footer>
+        <h2>let's connect</h2>
+        <ul>
+            <li><a href="mailto:@stacykwok01@gmail.com">email</a></li>
+            <li><a href="https://ca.linkedin.com/in/stacy-kwok-48a3a919b">linkedin</a></li>
+            <li><a href="#">twitter</a></li>
+            <li><a href="#">facebook</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
