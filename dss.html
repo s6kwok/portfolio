@@ -29,7 +29,7 @@
             <li><a href="#">resume</a></li>
         </ul>
     </nav>
-    <div class="shortcentercontainer">
+    <div class="shortcentercontainer" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <p class="subtitle"><span style="color: #7CAFC9">term project</span></p>
         <h1 id="headernomargin">decision support tool</h1>
         <p id="bottomrow">helping users determine how to allocate their time for term projects</p>
@@ -46,24 +46,26 @@
         <!-- </p> -->
     </div>
     <div id="scroll-target">
-        <div class="leftcontainer" id="toprow">
-            <h2>project details</h2>
-            <p>role | developer <br> team | 4 people <br> timespan | sept-nov 2019 <br> technologies | Excel VBA</p>
-        </div>
-        <div class="leftcontainer">
-            <h2>task</h2>
-            <p>to create a decision support tool in Excel to help you plan and execute term projects (such as this term project)</p>
-        </div>
-        <div class="leftcontainer">
-            <h2>solution</h2>
-            <p>our decision support tool (DSS) gives users an estimate of the amount of time they should spend working on their term project. as time management is one of the most difficult and most important aspects when completing a term project, our tool not only outputs how much time an individual should spend on the project, it also displays the percent of time in a week that should be spent on different tasks altogether.</p>
-        </div>
-        <div class="prototypeprocessbuttons">
+        <div  data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
             <div class="leftcontainer">
-                <ul>
-                    <li><a href="#finaldesign" style="color:white" class="button" id="longbutton">see final prototype</a></li>
-                    <li><a href="#container" style="color:white" class="button" id="ghostbutton">see process</a></li>
-                </ul>
+                <h2>project details</h2>
+                <p>role | developer <br> team | 4 people <br> timespan | sept-nov 2019 <br> technologies | Excel VBA</p>
+            </div>
+            <div class="leftcontainer">
+                <h2>task</h2>
+                <p>to create a decision support tool in Excel to help you plan and execute term projects (such as this term project)</p>
+            </div>
+            <div class="leftcontainer">
+                <h2>solution</h2>
+                <p>our decision support tool (DSS) gives users an estimate of the amount of time they should spend working on their term project. as time management is one of the most difficult and most important aspects when completing a term project, our tool not only outputs how much time an individual should spend on the project, it also displays the percent of time in a week that should be spent on different tasks altogether.</p>
+            </div>
+            <div class="prototypeprocessbuttons">
+                <div class="leftcontainer">
+                    <ul>
+                        <li><a href="#finaldesign" style="color:white" class="button" id="longbutton">see final prototype</a></li>
+                        <li><a href="#container" style="color:white" class="button" id="ghostbutton">see process</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -82,7 +84,7 @@
                 <li class="primarybulletpoint">we were able to experimentally determine the scaling factors and did manual testing to see if they were reasonable.</li>
             </ul>
         </div> -->
-        <div class="project" id="shortproject">
+        <div class="project" id="shortproject" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
             <div class="projecttextbuttonleft" id="projecttextbuttonleft60">
                 <h2 id="header2nomargin">creation process</h2>
                 <p>to determine what information should be collected from the user, we looked at many factors that would be important when calculating the amount of hours one should spend on a project. some factors include:</p>
@@ -101,7 +103,7 @@
                 <!-- <img src="assets/DSS 1.png" height="243" width="400"> -->
             </div>
         </div>
-        <div class="leftcontainer">
+        <div class="leftcontainer" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
             <h2>design considerations</h2>
             <p>many factors were considered not only in calculating the final output of the DSS, but in the design of the Excel tool as well. this included:</p>
             <ul>
@@ -119,9 +121,9 @@
                 </li>
             </ul>
         </div>
-        <div class="leftcontainer">
+        <div class="leftcontainer" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
             <h2>final product: how it works</h2>
-            <ul>
+            <ul id="toprow">
                 <li class="primarybulletpoint">after starting the program, a sequence of messageboxes and forms will pop up, and ask the user to fill in information on several different aspects of their life, and fill in information about the term project at hand.</li>
                 <li class="primarybulletpoint">after the program collects the information, the program will internally calculate the amount of available hours the user has in a week, based on the inputted information.</li>
                 <li class="primarybulletpoint">then, the program will scale the amount of available hours while increasing the amount of hours the user should spend on the project. the more difficult or unfamiliar the project tasks are, the more the program will increase the amount of hours the user should spend on the project, while simultaneously reducing and scaling down the amount of available, "free" hours the user has.</li>
@@ -129,6 +131,10 @@
             </ul>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <hr>
     <footer>
         <h2>let's connect</h2>
