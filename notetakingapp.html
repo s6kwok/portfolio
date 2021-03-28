@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacy Kwok's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="main.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=Lbx6zORrWL">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=Lbx6zORrWL">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=Lbx6zORrWL">
+    <link rel="manifest" href="/site.webmanifest?v=Lbx6zORrWL">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=Lbx6zORrWL" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon.ico?v=Lbx6zORrWL">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" id="logo"><img src="assets/stacy kwok.svg" height="24"></a>
+        <ul id="links">
+            <li><a href="index.html">portfolio</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="#">resume</a></li>
+        </ul>
+    </nav>
+    <div class="shortcentercontainer" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+        <p class="subtitle"><span style="color: #7CAFC9">notetaking app design challenge</span></p>
+        <h1 id="headernomargin">noteworthy</h1>
+        <p id="bottomrow">helping users determine how to allocate their time for term projects</p>
+        <ul class="photogrid" id="bottomalign">
+            <li class="photogridimg20"><img src="assets/DSS 2.png" style="max-width:100%; height:auto;"></li>
+            <li class="photogridimg60"><img src="assets/DSS.png" style="max-width:100%; height:auto;"></li>
+            <li class="photogridimg20"><img src="assets/DSS 3.png" style="max-width:100%; height:auto;"></li>
+        </ul>
+    </div>
+    <div id="scroll-target">
+        <div  data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+            <div class="leftcontainer">
+                <h2>project details</h2>
+                <p>role | developer <br> team | 4 people <br> timespan | sept-nov 2019 <br> technologies | Excel VBA</p>
+            </div>
+            <div class="leftcontainer">
+                <h2>task</h2>
+                <p>to create a decision support tool in Excel to help you plan and execute term projects (such as this term project)</p>
+            </div>
+            <div class="leftcontainer">
+                <h2>solution</h2>
+                <p>our decision support tool (DSS) gives users an estimate of the amount of time they should spend working on their term project. as time management is one of the most difficult and most important aspects when completing a term project, our tool not only outputs how much time an individual should spend on the project, it also displays the percent of time in a week that should be spent on different tasks altogether.</p>
+            </div>
+            <div class="prototypeprocessbuttons">
+                <div class="leftcontainer">
+                    <ul>
+                        <li><a href="#finaldesign" style="color:white" class="button" id="longbutton">see final prototype</a></li>
+                        <li><a href="#container" style="color:white" class="button" id="ghostbutton">see process</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <p id="subheader"><span style="color: #7CAFC9;">the process</span></p>
+        <!-- <div class="leftcontainer">
+            <h2>creation process</h2>
+            <p>to determine what information should be collected from the user, we looked at many factors that would be important when calculating the amount of hours one should spend on a project. some factors include:</p>
+            <ul>
+                <li class="primarybulletpoint">personalized factors, which depend on each person. this includes factors such as class time based on faculty, sleep, extracurriculars, etc.</li>
+                <li class="primarybulletpoint">external factors, including project details. this includes project weight, time until due, amount of project already completed, etc.</li>
+            </ul>
+            <p>the numerical scaling factors, which are the values we reduce the available hours by and increase project hours by, were also very important when creating the tool.</p>
+            <ul id="bottomrow">
+                <li class="primarybulletpoint">based on the information the user enters about their schedule, the program would calculate the amount of available hours the student has per week, and then scales down the available hours based on factors such as comfortability with software, time until due, etc.</li>
+                <li class="primarybulletpoint">we were able to experimentally determine the scaling factors and did manual testing to see if they were reasonable.</li>
+            </ul>
+        </div> -->
+        <div class="project" id="shortproject" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+            <div class="projecttextbuttonleft" id="projecttextbuttonleft60">
+                <h2 id="header2nomargin">creation process</h2>
+                <p>to determine what information should be collected from the user, we looked at many factors that would be important when calculating the amount of hours one should spend on a project. some factors include:</p>
+                <ul>
+                    <li class="primarybulletpoint">personalized factors, which depend on each person. this includes factors such as class time based on faculty, sleep, extracurriculars, etc.</li>
+                    <li class="primarybulletpoint">external factors, including project details. this includes project weight, time until due, amount of project already completed, etc.</li>
+                </ul>
+                <p>the numerical scaling factors, which are the values we reduce the available hours by and increase project hours by, were also very important when creating the tool.</p>
+                <ul id="bottomrow">
+                    <li class="primarybulletpoint">based on the information the user enters about their schedule, the program would calculate the amount of available hours the student has per week, and then scales down the available hours based on factors such as comfortability with software, time until due, etc.</li>
+                    <li class="primarybulletpoint">we were able to experimentally determine the scaling factors and did manual testing to see if they were reasonable.</li>
+                </ul>
+            </div>
+            <div class="projectimage" id="projectimage40">
+                <img src="assets/DSS Flowchart.png" style="max-width:100%;height:auto;">
+                <!-- <img src="assets/DSS 1.png" height="243" width="400"> -->
+            </div>
+        </div>
+        <div class="leftcontainer" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+            <h2>design considerations</h2>
+            <p>many factors were considered not only in calculating the final output of the DSS, but in the design of the Excel tool as well. this included:</p>
+            <ul>
+                <li class="primarybulletpoint">clean, easy to use, simple layout</li>
+                <li class="primarybulletpoint">start the program with a click of the button and then would follow step by step popup boxes</li>
+                <li class="primarybulletpoint">clear previous program results with a click of a button</li>
+                <li class="primarybulletpoint">all information visualized in a pie chart</li>
+                <li class="primarybulletpoint">lots of validation throughout to ensure accuracy</li>
+                <li class="primarybulletpoint">user friendly interface
+                    <ul id="toprow">
+                        <li class="secondarybulletpoint">used userforms to create drop down menus and checkboxes to avoid errors made by the user, compared to manually typing it in</li>
+                        <li class="secondarybulletpoint">quick and easy to select or check a box</li>
+                        <li class="secondarybulletpoint">minimize amount of message boxes the user has to go through</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="leftcontainer" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+            <h2>final product: how it works</h2>
+            <ul id="toprow">
+                <li class="primarybulletpoint">after starting the program, a sequence of messageboxes and forms will pop up, and ask the user to fill in information on several different aspects of their life, and fill in information about the term project at hand.</li>
+                <li class="primarybulletpoint">after the program collects the information, the program will internally calculate the amount of available hours the user has in a week, based on the inputted information.</li>
+                <li class="primarybulletpoint">then, the program will scale the amount of available hours while increasing the amount of hours the user should spend on the project. the more difficult or unfamiliar the project tasks are, the more the program will increase the amount of hours the user should spend on the project, while simultaneously reducing and scaling down the amount of available, "free" hours the user has.</li>
+                <li class="primarybulletpoint">after performing calculations, the program will advise the user on the amount of hours they should spend working on the term project on a daily and weekly basis, and will display all relevant calculations done on the interface.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <hr>
+    <footer>
+        <h2>let's connect</h2>
+        <ul>
+            <li><a href="mailto:@stacykwok01@gmail.com">email</a></li>
+            <li><a href="https://ca.linkedin.com/in/stacy-kwok-48a3a919b">linkedin</a></li>
+            <li><a href="#">twitter</a></li>
+            <li><a href="#">facebook</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
