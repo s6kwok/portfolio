@@ -42,7 +42,7 @@ h1 {
     font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
     font-size: 48px;
-    line-height: 80px;
+    line-height: 60px;
     letter-spacing: -0.01em;
     text-align: center;
     margin: 10px;
@@ -128,7 +128,9 @@ nav {
     padding-left: 17%;
     padding-right: 17%;
     margin-top: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
+    /* margin-top: 24px;
+    margin-bottom: 24px; */
     margin-left: 0%;
 }
 
@@ -163,12 +165,26 @@ ul li a:active {
     list-style: none;
 }
 
+#bottomalign {
+    align-items: center;
+}
+
 .photogridimg {
     padding: 0%;
     width: 33%;
     /* display: block; */
     /* flex: 0 1 auto; Default */
     /* list-style-type: none; */
+}
+
+.photogridimg20 {
+    padding: 0%;
+    width: 20%;
+}
+
+.photogridimg60 {
+    padding: 0%;
+    width: 60%;
 }
 
 #toprow {
@@ -191,19 +207,15 @@ ul li a:active {
     margin: 0%;
 }
 
-.primarybulletpoint {
+.primarybulletpoint, .secondarybulletpoint {
     margin-left: 30px;
     padding-bottom: 2%;
-}
-
-.secondarybulletpoint {
-    margin-left: 30px;
-    padding-bottom: 2%;
+    line-height: 30px;
 }
 
 .prototypeprocessbuttons > .leftcontainer {
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 17%;
+    padding-right: 17%;
 }
 
 .prototypeprocessbuttons > .leftcontainer > ul > li {
@@ -234,23 +246,39 @@ div {
     padding-left: 17%;
     padding-right: 17%;
     text-align: center;
-    height: 85vh;
-    /* display: block; */
-    position: relative;
+    /* margin: auto 0; */
+    /* padding-top: 2%;
+    padding-bottom: 7%; */
+    /* padding-top: 8%;
+    padding-bottom: 26%; */
+    /* padding-bottom: 50vh; */
+    /* top: 10vh; */
+    /* min-height: 85vh;
+    display: block;
+    position: relative; */
     /* border: 3px solid green; */
-    display: flex;
+    /* overflow: auto; */
     /* flex-direction: row;
     align-items: flex-start; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    margin-top: 0%;
 }
 
 .verticallycenter {
-  margin: 0;
-  position: absolute;
-  /* width: 70%; */
-  top: 45%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+    /* min-height: 85vh; */
+    display: block;
+    position: relative;
+    margin: 0%;
+    margin-bottom: 40px;
+    /* position: absolute; */
+    /* width: 70%; */
+    /* top: 45%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 #verticallycenterhigher {
@@ -304,7 +332,7 @@ div {
 
 .button:hover {
     background-color: #72A5BA;
-    color: white;
+    border-bottom: 0px;
 }
 
 #mainbutton {
@@ -346,8 +374,8 @@ a .fa {
     background-color: #393c4e;
     background-size: cover;
     color: #F4F4F5;
-    padding-left: 17%;
-    padding-right: 17%;
+    /* padding-left: 17%;
+    padding-right: 17%; */
     /* padding-top: 50px; */
     padding-top: 4%;
     margin: 0%;
@@ -363,10 +391,14 @@ a .fa {
     padding-bottom: 5%;
 }
 
+.socials > ul {
+    width: 100%;
+}
+
 .socials > ul > li {
     display: inline;
-    padding-right: 8px;
-    padding-left: 8px;
+    padding-right: 3px;
+    padding-left: 3px;
     padding-top: 0%;
     padding-bottom: 0%;
 }
@@ -382,7 +414,12 @@ a .fa {
 }
 
 #projectsheader {
-    padding-bottom: 9%;
+    padding-bottom: 4%;
+}
+
+#header2nomargin {
+    margin-top: 0%;
+    margin-bottom: 16px;
 }
 
 .project {
@@ -390,7 +427,14 @@ a .fa {
     flex-direction: row;
     align-items: center;
     margin: 0%;
-    padding-bottom: 16%;
+    padding-bottom: 9%;
+    /* padding-bottom: 16%; */
+    padding-left: 17%;
+    padding-right: 17%;
+}
+
+#shortproject {
+    padding-bottom: 3%;
 }
 
 .projecttextbuttonleft {
@@ -405,8 +449,17 @@ a .fa {
     /* padding-right: 80px; */
 }
 
+#projecttextbuttonleft60 {
+    width: 70%;
+    text-align: left;
+}
+
 .projectimage {
     width: 50%;
+}
+
+#projectimage40 {
+    width: 30%;
 }
 
 .projecttextleft {
@@ -421,8 +474,8 @@ a .fa {
 }
 
 #scroll-target > .leftcontainer {
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 17%;
+    padding-right: 17%;
     padding-bottom: 2%;
 }
 
@@ -501,14 +554,15 @@ footer ul li {
 
 @media (max-width: 392px) {
     a .fa {
-        font-size:1em;
+        font-size:1.05em;
     }
     .socials {
         width: 100%;
     }
-    .socials > li {
-        padding-right: 1%;
-        padding-left: 1%;
+    .socials > ul > li {
+        padding-right: 1px;
+        padding-left: 1px;
+        font-size: 16px;
     }
     #links > li {
         padding-left: 0%;
@@ -517,6 +571,13 @@ footer ul li {
     .button {
         padding: 14px 26px;
         font-size: 14px;
+    }
+    #longbutton {
+        padding: 14px 13px;
+        font-size: 14px;
+    }
+    .prototypeprocessbuttons > .leftcontainer > ul > li {
+        line-height: 40px;
     }
     #ghostbutton {
         padding: 11px 22px;
@@ -549,14 +610,17 @@ footer ul li {
     h2 {
         font-size: 24px;
     }
-    .centercontainer, .shortcentercontainer {
+    ul {
+        font-size: 14px;
+    }
+    .centercontainer, .shortcentercontainer, .project {
         padding-left: 12%;
         padding-right: 12%;
         width: 76%;
     }
-    .centercontainer > .verticallycenter {
+    /* .centercontainer > .verticallycenter {
         width: 76%;
-    }
+    } */
     #intro {
         font-size: 36px;
         line-height: 50px;
@@ -567,18 +631,27 @@ footer ul li {
     .photogrid {
         display: block;
     }
+    .photogridimg, .photogridimg60 {
+        width: 100%;
+    }
+    .photogridimg20 {
+        width: 60%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
     #toprow {
         padding-top: 8%;
     }
     .prototypeprocessbuttons {
         padding-bottom: 5%;
     }
-    .prototypeprocessbuttons > .leftcontainer > li {
+    .prototypeprocessbuttons > .leftcontainer > ul > li {
         display: block;
         padding-top: 4%;
         padding-bottom: 12%;
     }
-    nav, .leftcontainer, #scroll-target, footer {
+    nav, .leftcontainer, footer {
         padding-left: 12%;
         padding-right: 12%;
     }
@@ -621,6 +694,17 @@ footer ul li {
     .projectimage {
         width: 80%;
         padding-bottom: 4%;
+    }
+    #projecttextbuttonleft60 {
+        width: 100%;
+        text-align: left;
+    }
+    #projectimage40 {
+        width: 60%;
+    }
+    #shortproject {
+        display: flex;
+        flex-direction: column;
     }
 }
 
