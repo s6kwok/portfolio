@@ -41,7 +41,8 @@ body {
 h1 {
     font-family: "Lexend", sans-serif;
     font-weight: 500;
-    font-size: 42px;
+    font-size: 38px;
+    /* font-size: 42px; */
     line-height: 60px;
     letter-spacing: 0.01em;
     text-align: center;
@@ -63,9 +64,10 @@ h1 {
 h2 {
     font-family: "Lexend", sans-serif;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 26px;
+    /* font-size: 30px; */
     line-height: 40px;
-    letter-spacing: 0.01em;
+    /* letter-spacing: -0.01em; */
 }
 
 #noscrollfade {
@@ -86,8 +88,8 @@ h3 {
 
 ul {
     font-family: "Noto Sans", sans-serif;
-    font-size: 15px;
-    line-height: 27px;
+    font-size: 14.5px;
+    line-height: 30px;
     letter-spacing: 0.02em;
     /* list-style-type: none; */
     /* overflow: hidden; */
@@ -109,9 +111,15 @@ nav > ul > li, footer > ul > li {
 p {
     font-family: "Noto Sans", sans-serif;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 32px;
-    letter-spacing: 0.01em;
+    font-size: 14.5px;
+    line-height: 30px;
+    /* font-size: 15px;
+    line-height: 32px; */
+    letter-spacing: 0.015em;
+}
+
+strong {
+    letter-spacing: 0.05em;
 }
 
 a {
@@ -168,6 +176,7 @@ ul li a:active {
 }
 
 #bottomalign {
+    padding-top: 28px;
     align-items: center;
 }
 
