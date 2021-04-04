@@ -39,20 +39,21 @@ body {
 }
 
 h1 {
-    font-family: "Red Hat Text", sans-serif;
-    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     font-size: 38px;
     /* font-size: 42px; */
     line-height: 60px;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
     text-align: center;
     margin: 10px;
 }
 
 #intro {
+    font-weight: 600;
     font-size: 48px;
     padding-bottom: 16px;
-    /* letter-spacing: 0em; */
+    letter-spacing: -0.01em;
 }
 
 .subtitle {
@@ -62,12 +63,12 @@ h1 {
 }
 
 h2 {
-    font-family: "Red Hat Text", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 30px;
     /* font-size: 30px; */
-    line-height: 46px;
-    letter-spacing: -0.01em;
+    line-height: 50px;
+    letter-spacing: -0.015em;
 }
 
 #noscrollfade {
@@ -79,18 +80,18 @@ h2 {
 }
 
 h3 {
-    font-family: "Red Hat Text", sans-serif;
-    font-weight: 500;
-    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     line-height: 30px;
-    /* letter-spacing: -0.01em; */
+    letter-spacing: 0.02em;
 }
 
 ul {
-    font-family: "Red Hat Text", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
-    line-height: 28px;
-    letter-spacing: 0.025em;
+    line-height: 34px;
+    letter-spacing: 0.005em;
     /* list-style-type: none; */
     /* overflow: hidden; */
     margin: 0%;
@@ -109,17 +110,17 @@ nav > ul > li, footer > ul > li {
 }
 
 p {
-    font-family: "Red Hat Text", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 15px;
-    line-height: 30px;
+    line-height: 36px;
     /* font-size: 15px;
     line-height: 32px; */
-    letter-spacing: 0.025em;
+    letter-spacing: 0.005em;
 }
 
 strong {
-    letter-spacing: 0.05em;
+    letter-spacing: 0.015em;
 }
 
 a {
@@ -339,13 +340,13 @@ div {
 }
 
 .button {
-    font-family: Red Hat Text;
-    font-size: 15px;
+    font-family: Montserrat;
+    font-size: 14px;
     line-height: 28px;
     background: #7CAFC4;
     color: white;
     margin-top: 0%;
-    padding: 15px 36px;
+    padding: 17px 34px;
     /* padding-bottom: 16px; */
     /* padding: 2% 5%; */
     border-radius: 34px;
@@ -441,7 +442,8 @@ a .fa {
     /* padding-top: 2px; */
     font-size: 42px;
     padding-bottom: 64px;
-    /* letter-spacing: -0.01em; */
+    letter-spacing: 0em;
+    font-weight: 500;
     /* padding-bottom: 5%; */
 }
 
