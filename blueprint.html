@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacy Kwok's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Inter:wght@300;400;500&family=Red+Hat+Text:wght@400;500&family=Montserrat:wght@400;500;600&family=Lato&family=Lexend:wght@400;500&family=Noto+Sans&family=Mulish:wght@400;500;600&family=Nunito+Sans:wght@400;600&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="main.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=Lbx6zORrWL">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=Lbx6zORrWL">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=Lbx6zORrWL">
+    <link rel="manifest" href="/site.webmanifest?v=Lbx6zORrWL">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=Lbx6zORrWL" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon.ico?v=Lbx6zORrWL">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" id="logo"><img src="assets/Stacy Kwok.svg" height="22"></a>
+        <ul id="links">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Resume</a></li>
+        </ul>
+    </nav>
+    <div class="shortcentercontainer" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+        <p class="subtitle"><span style="color: #7CAFC9">Designing for social good on</span></p>
+        <h1 id="headernomargin">UW Blueprint</h1>
+        <p id="bottomrow">A group of ~80+ UWaterloo students building technology for non-profits</p>
+    </div>
+    <div id="scroll-target">
+        <div  data-aos="fade-up" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+            <div class="leftcontainer">
+                <h3>CONTEXT</h3>
+                <p>Since fall 2020, I’ve been volunteering my time to UW Blueprint, a club aiming to make technology accessible to community non-profits without the funding. Each term I’ve got to work on a project team with other students, and each project team partners with a specific non-profit to build a solution to help equip them with tools they need.</p>
+                <p>I’m super grateful to have been on blueprint for 2 terms (and counting!) and it has been so wonderful to be able to give back to the community and see the impact we can make working together. In fall 2020, I designed for the Region of Waterloo paramedics project team, in which we were building a mass casualty patient tracking application, to help paramedics better navigate through large mass casulty events. Last term in winter 2021, I designed for Raising the Roof project team, in which we were working on a storefront, team dashboard, and admin dashboard, for their annual toque campaign for homelessness.</p>
+            </div>
+            <div class="leftcontainer">
+                <p>Check out some of the highlights of key user moments and flows I’ve worked on, below. <br> For more details and iterations of work, feel free to reach out!</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+    </script>
+    <div id="container">
+        <div class="leftcontainer" data-aos="fade-up" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+            <h3>MASS CASUALTY PATIENT TRACKING APPLICATION</h3>
+            <p><strong>Region of Waterloo Paramedics Project Team</strong></p>
+            <p>Key Learnings</p>
+            <ul>
+                <li class="primarybulletpoint">I learned so much about error handling, offline, real time updates, which is especially important for an app like this</li>
+                <li class="primarybulletpoint">Lots of learning about shipping a product, and the auditing and consolodation of designs to ensure everything is as intended</li>
+            </ul>
+            <img src="assets/Noteworthy User Persona.png" style="max-width:100%; height:auto;" id="photo">
+        </div>
+        <div class="leftcontainer" data-aos="fade-up" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+            <h3>BUILDING UP TOQUE CAMPAIGN ADMIN DASHBOARD</h3>
+            <p><strong>Raising the Roof Project Team</strong></p>
+            <ul>
+                <li class="primarybulletpoint">It’s important to keep branding in mind, even in parts of the product that are dealt by a third party!</li>
+                <li class="primarybulletpoint">Learned alot about designing using a fixed design system, which a third party design agency created for the non-profit</li>
+            </ul>
+            <img src="assets/Noteworthy Competitive Analysis.png" style="max-width:100%; height:auto;" id="photo">
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <hr>
+    <footer>
+        <h2>Let's connect</h2>
+        <ul>
+            <li><a href="mailto:@stacykwok01@gmail.com">Email</a></li>
+            <li><a href="https://ca.linkedin.com/in/stacy-kwok-48a3a919b">Linkedin</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
