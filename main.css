@@ -212,6 +212,10 @@ ul li a:active {
     padding-bottom: 1%;
 }
 
+#bottomrow2 {
+    padding-bottom: 50px;
+}
+
 #container {
     padding-top: 1%;
     padding-bottom: 2%;
@@ -228,6 +232,10 @@ ul li a:active {
     margin-left: 30px;
     padding-bottom: 6px;
     line-height: 30px;
+}
+
+.extrabuttonpadding {
+    padding-bottom: 32px;
 }
 
 .prototypeprocessbuttons > .leftcontainer {

@@ -48,25 +48,25 @@
     <div id="scroll-target">
         <div  data-aos="fade-up" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
             <div class="leftcontainer">
-                <h3>PROJECT DETAILS</h3>
+                <h3 id="header2nomargin">PROJECT DETAILS</h3>
                 <p>Role: Developer, designer <br> Team: 4 people <br> Timespan: Sept-Nov 2019 <br> Technologies: Excel VBA</p>
             </div>
             <div class="leftcontainer">
-                <h3>TASK</h3>
+                <h3 id="header2nomargin">TASK</h3>
                 <p>To create a decision support tool in Excel to help students plan and execute term projects (such as this term project)</p>
             </div>
-            <div class="leftcontainer">
-                <h3>SOLUTION</h3>
+            <div class="leftcontainer" id="bottomrow2">
+                <h3 id="header2nomargin">SOLUTION</h3>
                 <p>Our decision support tool (DSS) gives users an estimate of the amount of time they should spend working on their term project. As time management is one of the most difficult and most important aspects when completing a term project, our tool not only outputs how much time an individual should spend on the project, but also displays the percent of time in a week that should be spent on different tasks altogether.</p>
             </div>
-            <div class="prototypeprocessbuttons">
+            <!-- <div class="prototypeprocessbuttons">
                 <div class="leftcontainer">
                     <ul>
                         <li><a href="#finaldesign" style="color:white" class="button" id="longbutton">see final prototype</a></li>
                         <li><a href="#container" style="color:white" class="button" id="ghostbutton">see process</a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -131,7 +131,7 @@
             </div>
         </div>
         <div class="leftcontainer" data-aos="fade-up" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-            <h3>DESIGN CONSIDERATIONS</h3>
+            <h3 id="header2nomargin">DESIGN CONSIDERATIONS</h3>
             <p>Many factors were considered not only in calculating the final output of the DSS, but in the design of the Excel tool as well. This included:</p>
             <ul>
                 <li class="primarybulletpoint">Clean, easy to use, simple layout</li>
@@ -150,12 +150,14 @@
         </div>
         <div class="leftcontainer" id="finaldesign" data-aos="fade-up" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
             <h3>FINAL PRODUCT: HOW IT WORKS</h3>
-            <ul id="toprow">
+            <p></p>
+            <ul>
                 <li class="primarybulletpoint">After starting the program, a sequence of messageboxes and forms will pop up, and ask the user to fill in information on several different aspects of their life, and fill in information about the term project at hand.</li>
                 <li class="primarybulletpoint">After the program collects the information, the program will internally calculate the amount of available hours the user has in a week, based on the inputted information.</li>
                 <li class="primarybulletpoint">Then, the program will scale the amount of available hours while increasing the amount of hours the user should spend on the project. The more difficult or unfamiliar the project tasks are, the more the program will increase the amount of hours the user should spend on the project, while simultaneously reducing and scaling down the amount of available, "free" hours the user has.</li>
                 <li class="primarybulletpoint">After performing calculations, the program will advise the user on the amount of hours they should spend working on the term project on a daily and weekly basis, and will display all relevant calculations done on the interface.</li>
             </ul>
+            
         </div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
