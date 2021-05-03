@@ -289,7 +289,7 @@ div {
     justify-content: center;
     align-items: center;
     /* height: 540px; */
-    min-height: 80vh;
+    height: 80vh;
     /* min-height: 85vh; */
     margin-top: 0%;
 }
