@@ -680,6 +680,9 @@ footer ul li {
         padding-top: 8%;
         padding-bottom: 8%;
     }
+    #headshot > img {
+        max-width: 90% !important;
+    }
 }
 
 @media (max-width: 532px) {
@@ -693,6 +696,9 @@ footer ul li {
     .intro {
         font-size: 36px;
         line-height: 50px;
+    }
+    #headshot > img {
+        max-width: 90% !important;
     }
 }
 
