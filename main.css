@@ -770,7 +770,7 @@ footer ul li {
         font-size: 14px;
     }
     #headshot > img {
-        width: 90% !important;
+        max-width: 90% !important;
     }
 }
 
@@ -812,7 +812,7 @@ footer ul li {
         flex-direction: column;
     }
     #headshot > img {
-        width: 50%;
+        max-width: 50%;
     }
 }
 
@@ -829,6 +829,6 @@ footer ul li {
         width: 595px;
     }
     #headshot > img {
-        width: 50%;
+        max-width: 50%;
     }
 }
