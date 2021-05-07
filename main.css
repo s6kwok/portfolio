@@ -769,9 +769,12 @@ footer ul li {
     #links > li {
         font-size: 14px;
     }
+    #headshot > img {
+        width: 90% !important;
+    }
 }
 
-@media (max-width: 885px) {
+@media (max-width: 900px) {
     #projectsheader {
         padding-top: 4%;
         padding-bottom: 3%;
@@ -808,6 +811,9 @@ footer ul li {
         display: flex;
         flex-direction: column;
     }
+    #headshot > img {
+        width: 50%;
+    }
 }
 
 @media (min-width: 900px) {
@@ -821,5 +827,8 @@ footer ul li {
     }
     #projectphotomain {
         width: 595px;
+    }
+    #headshot > img {
+        width: 50%;
     }
 }
