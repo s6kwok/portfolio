@@ -7,8 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stacy Kwok's Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=DM+Sans:wght@400;500&family=Raleway:wght@400;500&family=Inter:wght@300;400;500&family=Red+Hat+Text:wght@400;500&family=Montserrat:wght@400;500&family=Lato&family=Lexend:wght@400;500&family=Noto+Sans&family=Mulish:wght@400;500;600&family=Nunito+Sans:wght@400;600&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Unna:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="main.css" rel="stylesheet">
 
@@ -24,26 +26,21 @@
 
 <body>
     <nav>
-        <a href="index.html" id="logo"><img src="assets/stacy kwok.svg" height="22"></a>
+        <h5 class="logo">Stacy Kwok</h5>
         <ul id="links">
             <li><a href="index.html">Portfolio</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="assets/Stacy Kwok Resume S21.pdf" target="_blank">Resume</a></li>
-            <!-- <li>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars" id="hamburger"></i>
-                </a>
-            </li> -->
         </ul>
     </nav>
-    <div class="centercontainer" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-        <div class="verticallycenter" id="hero">
-            <h1 class="intro"><span id="span1">Hi there, I'm Stacy</span></h1>
-            <p>An engineering student/product designer who is passionate about understanding people + the world to create meaningful experiences for all</p>
-            <p>Currently looking for a fall 2021 internship!</p>
-            <div id="mainbutton">
-                <a href="#scroll-target" style="color:white" class="button">view work</a>
-            </div>
+    <div class="herocontainer" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+        <p id="subparagraph" style="color: #3C4681">Hi there,</p>
+        <h1 class="intro"><span id="span1">I'm Stacy Kwok</span></h1>
+        <p>A product designer passionate about solving meaningful problems and shaping positive experiences through understanding people + the world</p>
+        <p>Currently interning <span style="color: #3C4681; font-weight: bold;">@LCBOnext</span> for fall 2021!</p>
+        <div id="herocontainer-arrow">
+            <i class="material-icons">arrow_downward</i>
+            <a href="#scroll-target" style="color: #3C4681; font-weight: bold;">View work</a>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
@@ -74,105 +71,57 @@
         </script>
     </div>
     <div id="scroll-target">
-        <h1 id="projectsheader" data-aos="fade" data-aos-delay="100" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-            My recent work
-        </h1>
+        <h2 id="scroll-target-header" data-aos="fade" data-aos-delay="100" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">My Recent Work</h2>
         <br>
         <div class="project" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-            <div class="projecttextbuttonleft">
-                <div class="projecttextleft">
-                    <h2>Reimagining the personal fitness training experience</h2>
+            <div class="projectrow">
+                <div class="projectrowtext">
+                    <h3>Reimagining the personal fitness training experience</h3>
                     <p>Mobilizing the personal training experience to enable gym trainers and clients to continue training together during the pandemic</p>
                 </div>
-                <div id="projectbutton">
-                    <a href="fitnessapp.html" style="color:white" class="button">check it out</a>
-                </div>
+                <a href="fitnessapp.html" style="color:white" class="button">Check it out</a>
             </div>
             <div class="projectimage">
                 <img src="assets/Fitness Training App.png" style="max-width:100%;height:auto;">
-                <!-- <img src="assets/Noteworthy.png" height="243" width="400"> -->
             </div>
         </div>
-        <div class="project" id="projectright" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-            <div class="projectimage">
-                <img src="assets/Noteworthy.png" style="max-width:100%;height:auto;">
-                <!-- <img src="assets/Notecatcher 1.png" height="243" width="400"> -->
-            </div>
-            <div class="projecttextbuttonright">
-                <div class="projecttextright">
-                    <h2>Notetaking app design challenge</h2>
+        <div class="project" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+            <div class="projectrow">
+                <div class="projectrowtext">
+                    <h3>Notetaking app design challenge</h3>
                     <p>Boosting productivity for university students in a simplified notetaking experience promoting motivation, focus, and engagement of study community</p>
                 </div>
-                <div id="projectbutton">
-                    <a href="notetakingapp.html" style="color:white" class="button">check it out</a>
-                </div>
+                <a href="notetakingapp.html" style="color:white" class="button">Check it out</a>
+            </div>
+            <div class="projectimage">
+                <img src="assets/Noteworthy.png" style="max-width:100%;height:auto;">
             </div>
         </div>
-        <!-- <div class="project" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-            <div class="projecttextbuttonleft">
-                <div class="projecttextleft">
-                    <h2>Designing on UW Blueprint</h2>
+        <div class="project" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+            <div class="projectrow">
+                <div class="projectrowtext">
+                    <h3>Designing on UW Blueprint</h3>
                     <p>Designing on projects for non-profits to help empower them through building technology they need</p>
                 </div>
-                <div id="projectbutton">
-                    <a href="blueprint.html" style="color:white" class="button">check it out</a>
-                </div>
+                <a href="blueprint.html" style="color:white" class="button">Check it out</a>
             </div>
             <div class="projectimage">
-                <img src="assets/UW Blueprint.png" style="max-width:100%;height:auto;"> -->
-                <!-- <img src="assets/Noteworthy.png" height="243" width="400"> -->
-            <!-- </div>
-        </div> -->
-        <div class="project" id="projectleft" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-            <div class="projecttextbuttonleft">
-                <div class="projecttextleft">
-                    <h2>Note catcher game</h2>
-                    <p>Musical falling objects game where players are challenged to catch all the falling notes into the basket to play the correct note for the melody of the song (built using JavaScript, HTML, CSS)</p>
-                </div>
-                <div id="projectbutton">
-                    <a style="color:white" class="button" id="disabledbutton">coming soon</a>
-                </div>
-            </div>
-            <div class="projectimage">
-                <img src="assets/Notecatcher 1.png" style="max-width:100%;height:auto;">
-                <!-- <img src="assets/Notecatcher 1.png" height="243" width="400"> -->
+                <img src="assets/UW Blueprint.png" style="max-width:100%;height:auto;">
             </div>
         </div>
-        <!-- <div class="project" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-            <div class="projecttextbuttonleft">
-                <div class="projecttextleft">
-                    <h2>Time budgeter decision support tool</h2>
-                    <p>Determines the time that should be spent on a term project based on determining factors inputted by the user</p>
-                </div>
-                <div id="projectbutton">
-                    <a href="dss.html" style="color:white" class="button">check it out</a>
-                </div>
-            </div>
-            <div class="projectimage">
-                <img src="assets/DSS 1.png" style="max-width:100%;height:auto;"> -->
-                <!-- <img src="assets/DSS 1.png" height="243" width="400"> -->
-            <!-- </div>
-        </div> -->
+        <br>
     </div>
-    <!-- <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-    </script> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <hr>
     <footer>
-        <h2>Let's connect</h2>
+        <h5>Say hi</h5>
+        <p>Let's have a chat sometime! I'd love to talk about anything and everything</p>
+        <br>
         <ul>
-            <li><a href="mailto:@stacykwok01@gmail.com">Email</a></li>
+            <li id="first"><a href="mailto:@stacykwok01@gmail.com">Email</a></li>
             <li><a href="https://ca.linkedin.com/in/stacy-kwok-48a3a919b">Linkedin</a></li>
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Facebook</a></li>
