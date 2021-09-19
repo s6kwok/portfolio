@@ -33,42 +33,47 @@
             <li><a href="assets/Stacy Kwok Resume S21.pdf" target="_blank">Resume</a></li>
         </ul>
     </nav>
-    <div class="herocontainer" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-        <p id="subparagraph" style="color: #3C4681">Hi there,</p>
-        <h1 class="intro"><span id="span1">I'm Stacy Kwok</span></h1>
-        <p>A product designer passionate about solving meaningful problems and shaping positive experiences through understanding people + the world</p>
-        <p>Currently interning <span style="color: #3C4681; font-weight: bold;">@LCBOnext</span> for fall 2021!</p>
-        <div id="herocontainer-arrow">
-            <i class="material-icons">arrow_downward</i>
-            <a href="#scroll-target" style="color: #3C4681; font-weight: bold;">View work</a>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-            
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-            
-                // Store hash
-                var hash = this.hash;
-            
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 1000, function(){
-            
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
+    <div class="area">
+        <div class="herocontainer" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+            <p id="subparagraph" style="color: #3C4681">Hi there,</p>
+            <h1 class="intro"><span id="span1">I'm Stacy Kwok</span></h1>
+            <p>A product designer passionate about solving meaningful problems and shaping positive experiences through understanding people + the world</p>
+            <p>Currently interning <span style="color: #3C4681; font-weight: bold;">@LCBOnext</span> for fall 2021!</p>
+            <div id="herocontainer-arrow">
+                <i class="material-icons">arrow_downward</i>
+                <a href="#scroll-target" style="color: #3C4681; font-weight: bold;">View work</a>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+                
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                
+                    // Store hash
+                    var hash = this.hash;
+                
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, function(){
+                
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                    } // End if
                 });
-                } // End if
-            });
-            });
-        </script>
+                });
+            </script>
+        </div>
+        <div class="herocontainer-img">
+            <img src="assets/Flowers.png" style="max-width:100%;height:auto;">
+        </div>
     </div>
     <div id="scroll-target">
         <h2 id="scroll-target-header" data-aos="fade" data-aos-delay="100" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">My Recent Work</h2>
@@ -118,7 +123,7 @@
     <hr>
     <footer>
         <h5>Say hi</h5>
-        <p>Let's have a chat sometime! I'd love to talk about anything and everything</p>
+        <p>Let's have a chat sometime! I'd love to talk about anything and everything :)</p>
         <br>
         <ul>
             <li id="first"><a href="mailto:@stacykwok01@gmail.com">Email</a></li>
