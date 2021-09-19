@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stacy Kwok's Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Inter:wght@300;400;500&family=Red+Hat+Text:wght@400;500&family=Montserrat:wght@400;500;600&family=Lato&family=Lexend:wght@400;500&family=Noto+Sans&family=Mulish:wght@400;500;600&family=Nunito+Sans:wght@400;600&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Unna:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="main.css" rel="stylesheet">
 
@@ -22,49 +23,29 @@
 
 <body>
     <nav>
-        <a href="index.html" id="logo"><img src="assets/stacy kwok.svg" height="22"></a>
+        <a href="index.html"><h5 class="logo">Stacy Kwok</h5></a>
         <ul id="links">
             <li><a href="index.html">Portfolio</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="assets/Stacy Kwok Resume S21.pdf" target="_blank">Resume</a></li>
         </ul>
     </nav>
-    <div class="shortcentercontainer" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-        <p class="subtitle"><span style="color: #7CAFC9">Take home design challenge</span></p>
-        <h1>Notetaking app design challenge</h1>
+    <div class="content" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+        <h2>Notetaking app design challenge</h2>
         <p id="bottomrow">Notetaking app designed to boost productivity for university students</p>
-        <div>
-            <img src="assets/Noteworthy 2.png" style="max-width:100%; height:auto;" id="photo">
+        <img src="assets/Noteworthy 2.png" style="max-width:100%; height:auto;" id="photo">
+        <br><br><br><br>
+        <div class="section">
+            <h6>Project Details</h6>
+            <p>Role: Product designer <br> Team: Solo <br> Timeline: ~7 days in March 2021 <br> Methods: User research, sketching, wireframes, prototyping (lo/hi-fi)</p>
         </div>
-    </div>
-    <div id="scroll-target">
-        <div class="leftcontainer" data-aos="fade-up" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-            <div class="section">
-                <h3>PROJECT DETAILS</h3>
-                <p>Role: Product designer <br> Team: Solo <br> Sprint: ~5 evenings in March 2021<br> Platform: iPad/tablet <br> Methods: User research, sketching, wireframes, prototyping (lo/hi-fi) </p>
-            </div>
-            <div class="section">
-                <h3>OVERVIEW</h3>
-                <p>As part of the interview process for a company I applied to in late 2020, I was assigned a take home design challenge. While I decided not to move forward in their hiring process and not to partake in this design challenge, I was still intrigued by the topic of the challenge, and later on decided to tackle this challenge on my own time.</p>
-            </div>
-            <div class="section">
-                <h3>CHALLENGE</h3>
-                <p><strong>Design a notetaking app for UWaterloo students.</strong> </p>
-                <p>With learning being virtual nowadays, more and more students are investing in iPads and digital hand notetaking apps. I decided I wanted to cater my app specifically to this growing audience, and to have my main audience to be digital notetakers who take notes on their iPad/tablet using an apple pencil/stylus.</p>
-            </div>
-            <div class="section">
-                <h3>SOLUTION</h3>
-                <p>Boosting student productivity through the ability to customize digital notetaking workflows based on school deadlines and deliverables, while encouraging healthy study patterns and engagement of study community.</p>
-            </div>
-            <div class="prototypeprocessbuttons">
-                <div class="section">
-                    <ul>
-                        <li><a href="#finaldesign" style="color:white" class="button" id="longbutton">see final product</a></li>
-                        <li><a href="#container" style="color:white" class="button" id="ghostbutton">see process</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="section">
+            <h6>Overview</h6>
+            <p>As part of the interview process for a company I applied to in late 2020, I was assigned a take home design challenge. While I decided not to move forward in their hiring process and not to partake in this design challenge, I was still intrigued by the topic of the challenge, and later on decided to tackle this challenge on my own time.</p>
         </div>
+        <br><br>
+        <a href="#" style="color:white" class="button">See final designs</a>
+        <a href="#" style="color:white" class="button">See process</a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -93,14 +74,13 @@
         });
         });
     </script>
-    <div id="container">
-        <p id="subheader"><span style="color: #7CAFC9;">The process</span></p>
-        <div class="leftcontainer" data-aos="fade-up" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-            <h2 id="h2center">Understanding the problem</h2>
-            <div class="section">
-                <h3>USER RESEARCH</h3>
-                <p>To uncover the struggles university students face in digital notetaking and learn more about different notetaking experiences, I conducted three user interviews with university students from different programs, who have centered their school workflow around their use of digital notetaking apps. <br> An empathy map was created for each user interview conducted, using the gatherings and key insights gained.</p>
-                <img src="assets/Noteworthy User Interviews.png" style="max-width:100%; height:auto;">
+    <div class="content" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+        <p style="color: #3C4681">The process</p>
+        <h4>Understanding the problem</h4>
+        <div class="section">
+            <h6>User Research</h6>
+            <p>To uncover the struggles university students face in digital notetaking and learn more about different notetaking experiences, I conducted three user interviews with university students from different programs, who have centered their school workflow around their use of digital notetaking apps. <br> An empathy map was created for each user interview conducted, using the gatherings and key insights gained.</p>
+            <img src="assets/Noteworthy User Interviews.png" style="max-width:100%; height:auto;">
                 <p>The key insights found from talking with these students include</p>
                 <ul>
                     <li class="primarybulletpoint">With the new online remote learning, the digital submission process of tests and assignments completed in digital notetaking apps can be quite a hassle</li>
@@ -108,18 +88,26 @@
                     <li class="primarybulletpoint">Students have trouble staying motivated to do schoolwork</li>
                 </ul>
                 <p>After consolidating such findings, a user persona was created to help inform design decisions and summarize expectations, user concerns, and motivations.</p>
-                <img src="assets/Noteworthy User Persona.png" style="max-width:100%; height:auto;">
-            </div>
-            <div class="section">
-                <h3>COMPETITIVE ANALYSIS</h3>
-                <p>To further my understanding of the digital notetaking space, I took a deeper look into several notetaking apps that already exist. This research and analysis allowed me to gain strategic insight into the features and flows of the existing design solutions on the market, to help better design my solution.</p>
-                <img src="assets/Noteworthy Competitive Analysis.png" style="max-width:100%; height:auto;">
-            </div>
-            <div class="section">
-                <h3>PROBLEM STATEMENT</h3>
-                <p>A UWaterloo student needs a better way to keep their notetaking workflow organized efficiently and stay motivated to actively listen during lectures, because they need to keep up with long and fast paced online learning.</p>
-            </div>
+                <img src="assets/Noteworthy User Persona.png" style="max-width:75%; height:auto;">
         </div>
+        <div class="section">
+            <h6>Competitive Analysis</h6>
+            <p>To further my understanding of the digital notetaking space, I took a deeper look into several notetaking apps that already exist. This research and analysis allowed me to gain strategic insight into the features and flows of the existing design solutions on the market, to help better design my solution.</p>
+            <img src="assets/Noteworthy Competitive Analysis.png" style="max-width:75%; height:auto;">
+        </div>
+        <div class="section">
+            <h6>PROBLEM STATEMENT</h6>
+            <p>A UWaterloo student needs a better way to keep their notetaking workflow organized efficiently and stay motivated to actively listen during lectures, because they need to keep up with long and fast paced online learning.</p>
+        </div>
+        <br><br>
+    </div>
+
+
+
+
+
+
+
         
         <div class="leftcontainer" data-aos="fade-up" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
             <h2 id="h2center">Ideation</h2>
@@ -193,9 +181,11 @@
     </script>
     <hr>
     <footer>
-        <h2>Let's connect</h2>
+        <h5>Say hi</h5>
+        <p>Let's have a chat sometime! I'd love to talk about anything and everything :)</p>
+        <br>
         <ul>
-            <li><a href="mailto:@stacykwok01@gmail.com">Email</a></li>
+            <li id="first"><a href="mailto:@stacykwok01@gmail.com">Email</a></li>
             <li><a href="https://ca.linkedin.com/in/stacy-kwok-48a3a919b">Linkedin</a></li>
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Facebook</a></li>
