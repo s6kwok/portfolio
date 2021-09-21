@@ -111,6 +111,56 @@ hr {
     background-color: #C2C7F5;
     border-bottom: 0px;
 }
+.button-dark {
+    background: #3C4681;
+    border-radius: 32px;
+
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffFF !important;
+    padding: 16px 34px;
+    border: transparent;
+    outline: none;
+}
+.button-dark:hover {
+    background-color: #323C77;
+    border-bottom: 0px;
+}
+.button-ghost {
+    background: transparent;
+    border: 2px solid #3C4681;
+    border-radius: 32px;
+
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #323C77 !important;
+    padding: 16px 34px;
+    outline: none;
+}
+.button-ghost:hover {
+    background-color: #CCD1FF;
+    border-bottom: 0px;
+}
+.button-disabled {
+    background: #B3B3B3;
+    border-radius: 32px;
+
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #373737 !important;
+    padding: 16px 34px;
+    border: transparent;
+    outline: none;
+}
 
 /* ANIMATIONS */
 .fade-in {
@@ -422,6 +472,27 @@ footer > h5 {
 .section > h6 {
     margin-top: 16px;
     margin-bottom: 8px;
+}
+.content > .section > ul {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    /* margin: 0%; */
+    /* padding: 10px; */
+    padding-inline-start: 20px;
+}
+.content > .section > ul > li {
+    padding-left: 16px;
+    padding-bottom: 1px;
+}
+#scroll-target > .section {
+    margin: 0px;
+    padding-left: 240px;
+    padding-right: 240px;
+    padding-bottom: 64px;
+    padding-top: 64px;
 }
 
 

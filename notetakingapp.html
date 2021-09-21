@@ -43,10 +43,12 @@
             <h6>Overview</h6>
             <p>As part of the interview process for a company I applied to in late 2020, I was assigned a take home design challenge. While I decided not to move forward in their hiring process and not to partake in this design challenge, I was still intrigued by the topic of the challenge, and later on decided to tackle this challenge on my own time.</p>
         </div>
-        <br><br>
-        <a href="#" style="color:white" class="button">See final designs</a>
-        <a href="#" style="color:white" class="button">See process</a>
+        <br>
+        <a href="#final" class="button-dark">See final designs</a>
+        <a href="#process" class="button-ghost">See process</a>
     </div>
+    <br><br><br><br><br>
+    <hr>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -74,7 +76,7 @@
         });
         });
     </script>
-    <div class="content" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+    <div class="content" id="process" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <p style="color: #3C4681">The process</p>
         <h4>Understanding the problem</h4>
         <div class="section">
@@ -83,9 +85,9 @@
             <img src="assets/Noteworthy User Interviews.png" style="max-width:100%; height:auto;">
                 <p>The key insights found from talking with these students include</p>
                 <ul>
-                    <li class="primarybulletpoint">With the new online remote learning, the digital submission process of tests and assignments completed in digital notetaking apps can be quite a hassle</li>
-                    <li class="primarybulletpoint">Keeping notes organized and neat can take up a lot of time, but is enjoyable</li>
-                    <li class="primarybulletpoint">Students have trouble staying motivated to do schoolwork</li>
+                    <li>With the new online remote learning, the digital submission process of tests and assignments completed in digital notetaking apps can be quite a hassle</li>
+                    <li>Keeping notes organized and neat can take up a lot of time, but is enjoyable</li>
+                    <li>Students have trouble staying motivated to do schoolwork</li>
                 </ul>
                 <p>After consolidating such findings, a user persona was created to help inform design decisions and summarize expectations, user concerns, and motivations.</p>
                 <img src="assets/Noteworthy User Persona.png" style="max-width:75%; height:auto;">
@@ -95,86 +97,73 @@
             <p>To further my understanding of the digital notetaking space, I took a deeper look into several notetaking apps that already exist. This research and analysis allowed me to gain strategic insight into the features and flows of the existing design solutions on the market, to help better design my solution.</p>
             <img src="assets/Noteworthy Competitive Analysis.png" style="max-width:75%; height:auto;">
         </div>
+        <br><br>
+    </div>
+    <div id="scroll-target" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <div class="section">
-            <h6>PROBLEM STATEMENT</h6>
+            <h6>Problem Statement</h6>
             <p>A UWaterloo student needs a better way to keep their notetaking workflow organized efficiently and stay motivated to actively listen during lectures, because they need to keep up with long and fast paced online learning.</p>
+        </div>
+    </div>
+    <div class="content" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">                <h4>Ideation</h4>
+        <div class="section">
+            <h6>Solution Exploration & Sketches</h6>
+            <p>After gaining a deep understanding of the problem I wanted to design for, I began generating ideas to tackle the main problem I was aiming to solve, and solidfied the features and user flows that I would focus on during the design challenge.</p>
+            <p>I decided to move forward with the first exploration because the customizable and guided structure ability to sort notes would help simplify the workflow of online schooling. During interviews, people said that organization of notes is a top priority but time conusming, and this Kanban board structure of organizing notes freely based on the structure of UWaterloo courses, will help boost productivity. This option also still allows the room to be able to move forwards with the built-in submission feature, which will further improve the struggles of the virtual student notetaking workflow.</p>
+            <img src="assets/Notetaking App Sketches.png" style="max-width:75%; height:auto;">
+        </div>
+        <div class="section">
+            <h6>Lo-fi Wireframes & Iterations</h6>
+            <p>To keep this design challenge as realistic and true to the fast paced nature as possible, I wanted to keep my time restricted and move through the challenge efficiently. Since I found that I already had a very good sense of the solution I wanted to move forwards with and how it would look based on the sketches I drew, <strong>I decided that I was comfortable enough to jump into creating the visual design system and then moving onto building out hi-fidelity designs.</strong></p>
         </div>
         <br><br>
     </div>
-
-
-
-
-
-
-
-        
-        <div class="leftcontainer" data-aos="fade-up" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-            <h2 id="h2center">Ideation</h2>
-            <div class="section">
-                <h3>SOLUTION EXPLORATION & SKETCHES</h3>
-                <p>After gaining a deep understanding of the problem I wanted to design for, I began generating ideas to tackle the main problem I was aiming to solve, and solidfied the features and user flows that I would focus on during the design challenge.</p>
-                <p>I decided to move forward with the first exploration because the customizable and guided structure ability to sort notes would help simplify the workflow of online schooling. During interviews, people said that organization of notes is a top priority but time conusming, and this Kanban board structure of organizing notes freely based on the structure of UWaterloo courses, will help boost productivity. This option also still allows the room to be able to move forwards with the built-in submission feature, which will further improve the struggles of the virtual student notetaking workflow.</p>
-                <img src="assets/Notetaking App Sketches.png" style="max-width:100%; height:auto;" id="photo">
-            </div>
-            <div class="section">
-                <h3>LO-FI WIREFRAMES & ITERATIONS</h3>
-                <p>To keep this design challenge as realistic and true to the fast paced nature as possible, I wanted to keep my time restricted and move through the challenge efficiently. Since I found that I already had a very good sense of the solution I wanted to move forwards with and how it would look based on the sketches I drew, <strong>I decided that I was comfortable enough to jump into creating the visual design system and then moving onto building out hi-fidelity designs.</strong></p>
-            </div>
+    <hr>
+    <div class="content" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+        <h4>Visual Design</h4>
+        <div class="section">
+            <h6>Design System</h6>
+            <p>After some thought, I decided that I wanted the app to feel modern, sleek, and be quite minimalistic. Not only will keeping it minimalistic help users by encouraging focus, it has also become quite trendy and desired among students. To fit this theme, I chose a light color palette with mainly white, light grey, and a soft black, with small bursts of colorful accent colors.</p>
+            <img src="assets/Noteworthy Style Guide.png" style="max-width:100%; height:auto;">
         </div>
-
-        <div class="leftcontainer" data-aos="fade-up" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-            <h2 id="h2center">Visual Design</h2>
-            <div class="section"> 
-                <h3>DESIGN SYSTEM</h3>
-                <p>After some thought, I decided that I wanted the app to feel modern, sleek, and be quite minimalistic. Not only will keeping it minimalistic help users by encouraging focus, it has also become quite trendy and desired among students. To fit this theme, I chose a light color palette with mainly white, light grey, and a soft black, with small bursts of colorful accent colors. </p>
-                <img src="assets/Noteworthy Style Guide.png" style="max-width:100%; height:auto;" id="photo">
-            </div>
-        </div>
-
-        <div class="leftcontainer" data-aos="fade-up" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-            <p id="finaldesign"></p>
-            <h2 id="h2center">Final product</h2>
-            <div class="section">
-                <h3>PROTOTYPE</h3>
-                <video width="100%" height="auto" style="background-color: #E2E8FD;" controls>
-                    <source src="assets/Noteworthy 2021-05-16_Trim.mp4" type="video/mp4">
-                </video>
-                <br><br>
-                <p>To play with the prototype yourself, click below!</p>
-                <div class="extrabuttonpadding">
-                    <a href="https://www.figma.com/proto/N7v12q6E4c5iPYUad4dl36/%E2%9C%8F-Design-Projects?node-id=360%3A4&scaling=contain" target="_blank" style="color:white" class="button" id="longbutton">see prototype</a>
-                </div>
-            </div>
-            <div class="section">
-                <h3>MAKING DESIGN DECISIONS</h3>
-                <img src="assets/Noteworthy Final Designs 1.png" style="max-width:100%; height:auto;" id="photo">
-                <img src="assets/Noteworthy Final Designs 2.png" style="max-width:100%; height:auto;" id="photo">
-                <img src="assets/Noteworthy Final Designs 3.png" style="max-width:100%; height:auto;" id="photo">
-            </div>
-        </div>
-
-        <div class="leftcontainer" id="bottomrow2" data-aos="fade-up" data-aos-delay="10" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
-            <h2 id="h2center">Reflection</h2>
-            <div class="section">
-                <h3>KEY LEARNINGS</h3>
-                <p>Overall I had alot of fun creating Noteworthy! I learned alot from this design challenge, with some noteworthy learnings including</p>
-                <ul>
-                    <li class="primarybulletpoint">As there already exist very popular digital notetaking app solutions, I learned alot about staying focused on ways to further enhance the notetaking experience based on struggles people currently face, rather than just re-designing the same functionality of digital notetaking but with a different asthetic</li>
-                    <li class="primarybulletpoint">Being able to detach from personal biases while still factoring some of my own personal experiences as a digital notetaker myself</li>
-                </ul>
-            </div>
-            <div class="section">
-                <h3>NEXT STEPS</h3>
-                <p>Although this was a design challenge that was meant to be completed in a short time span, if I were to move forwards I would continue by</p>
-                <ul>
-                    <li class="primarybulletpoint">Performing usability testing to iterate and improve on this design</li>
-                    <li class="primarybulletpoint">Continue refining and building out features, such as the “hand in” feature and tasks list management</li>
-                </ul>
-            </div>
-        </div>
-
+        <br><br><br><br>
     </div>
+    <div id="scroll-target">
+        <div class="section" id="final">
+            <h4>Final Designs</h4>
+            <h6>Prototype</h6>
+            <br>
+            <video width="100%" height="auto" style="background-color: #E2E8FD;" controls>
+                <source src="assets/Noteworthy 2021-05-16_Trim.mp4" type="video/mp4">
+            </video>
+            <br><br><br><br><br>
+            <h6>Making Design Decisions</h6>
+            <img src="assets/Noteworthy Final Designs 1.png" style="max-width:100%; height:auto;" id="photo">
+            <img src="assets/Noteworthy Final Designs 2.png" style="max-width:100%; height:auto;" id="photo">
+            <img src="assets/Noteworthy Final Designs 3.png" style="max-width:100%; height:auto;" id="photo">
+        </div>
+        <br><br>
+    </div>
+    <div class="content" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">                       <h4>Reflection</h4>
+        <div class="section">
+            <h6>Key Learnings</h6>
+            <p>Overall I had alot of fun creating Noteworthy! I learned alot from this design challenge, with some noteworthy learnings including</p>
+            <ul>
+                <li>As there already exist very popular digital notetaking app solutions, I learned alot about staying focused on ways to further enhance the notetaking experience based on struggles people currently face, rather than just re-designing the same functionality of digital notetaking but with a different asthetic</li>
+                <li>Being able to detach from personal biases while still factoring some of my own personal experiences as a digital notetaker myself</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h6>Next Steps</h6>
+            <p>Although this was a design challenge that was meant to be completed in a short time span, if I were to move forwards I would continue by</p>
+            <ul>
+                <li>Performing usability testing to iterate and improve on this design</li>
+                <li>Continue refining and building out features, such as the “hand in” feature and tasks list management</li>
+            </ul>
+        </div>
+        <br><br>
+    </div>
+    <br><br><br>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
