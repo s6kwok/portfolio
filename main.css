@@ -740,8 +740,17 @@ footer > h5 {
     .photogrid > li, .photogrid > li > img {
         width: 100%;
     }
-    .project {
+    .project-no-padding {
+        padding-bottom: 3.5rem;
+    }
+    .project, .project-no-padding {
         flex-direction: column-reverse;
+    }
+    .project-no-padding > .projectimage {
+        max-width: 90%;
+    }
+    .project-no-padding > .projectrow > .section {
+        padding-bottom: 2rem;
     }
     .card {
         flex-direction: column;
@@ -831,6 +840,9 @@ footer > h5 {
     .projectimage {
         width: 100%;
         padding-bottom: 1.5rem;
+    }
+    .project-no-padding > .projectimage {
+        max-width: 100%;
     }
     .section > img {
         max-width: 100% !important;
