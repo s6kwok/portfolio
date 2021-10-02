@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacy Kwok's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Unna:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="main.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=Lbx6zORrWL">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=Lbx6zORrWL">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=Lbx6zORrWL">
+    <link rel="manifest" href="/site.webmanifest?v=Lbx6zORrWL">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=Lbx6zORrWL" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon.ico?v=Lbx6zORrWL">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><h5 class="logo">Stacy Kwok</h5></a>
+        <ul id="links">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">Me</a></li>
+            <li><a href="assets/Stacy Kwok Resume S21.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    <div class="content" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+        <h2>SDC Program Registration Platform</h2>
+        <p>Building Social Diversity for Children Foundation (SDC) a platform to streamline their program registration process for volunteers and parents of kids with disabilities</p>
+        <br><br>
+        <img src="assets/sdc-header.png" style="max-width:100%; height:auto;" id="photo">
+        <br><br><br>
+        <div class="section">
+            <h6>Context</h6>
+            <p>Since fall 2020, I’ve been volunteering my time on UW Blueprint, a club aiming to make technology accessible to community non-profits without the funding. Each term I’ve got to work on a project team with other students, and each project team works with a non-profit with a need to help build them a solution and equip them with the tools they need.</p>
+            <p>Last term in spring 2021, UW Blueprint partnered with <strong>Social Diversity for Children Foundation</strong> (SDC) to build them a tool to <strong>simplify and streamline the program and volunteer registration processes</strong>. SDC is a non profit that empowers youth to empower children with disabilities through a variety of programs.</p>
+        </div>
+        <div class="section">
+            <h6>Project Details</h6>
+            <p><strong>TEAM:</strong> 2 product designers  (Christina Ru & I) + 1 product manager + 1 project lead + 6 developers <br><strong>TIMELINE:</strong> May-Aug 2021 <br><strong>MY ROLE:</strong> User research, product strategy, interaction & visual design</p>
+        </div>
+        <br>
+        <div id="double-buttons">
+            <a href="#final" class="button-dark">See final designs</a>
+            <a href="#process" class="button-ghost">See process</a>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+    </script>
+    <div class="scroll-target" id="light-blue">
+        <div class="section">
+            <p>The project</p>
+            <h2>How might we improve the SDC program & volunteer registration experience to encourage registration and ease volunteer management?</h2>
+        </div>
+    </div>
+    <br><br>
+    <div class="content">
+        <img src="assets/sdc-hifi-1.png" style="max-width:100%; height:auto;">
+        <br><br><br><br>
+        <p id="process">The process</p>
+        <h2>Understanding the problem</h2>
+        <br>
+        <div class="section">
+            <h6>Users</h6>
+            <p><strong>PARENTS</strong><br>Parents who want to register their kids in the SDC programs</p>
+            <p><strong>VOLUNTEERS</strong><br>High school students who want to give back through supporting youth with disabilities, and primarily help through supporting and assisting SDC teachers during programs</p>
+            <p><strong>SDC PROGRAM COORDINATORS/ADMIN</strong><br>Staff who would be managing the platform, posting classes</p>
+            <p><strong>TEACHERS</strong><br>Staff who teach at the programs and work with youth hands-on</p>
+        </div>
+        <div class="section">
+            <h6>Constraints & requirements</h6>
+            <ul>
+                <li>Multi-language platform (4 languages!)</li>
+                <li>Background check & proof of income document upload</li>
+                <li>Mobile & desktop friendly</li>
+                <li>1 platform with different access points for different users</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h6>Secondary research</h6>
+            <p>User interviews were conducted with volunteers and program coordinators/teachers. This led to insightful knowledge and helped squash any assumptions we still had.</p>
+            <p>After collecting all research and scoping knowledge of users and the problem, we held a discovery session in which we mapped the pain points, opportunities, and goals of each user. This was helpful in ensuring we all had an aligned vision for the product, and reinforcing our knowledge of each users. We also proceeded to map user journeys for each user, to really understand their experience through the processes they encounter.</p>
+            <br><br>
+            <img src="assets/sdc-research-1.png" style="max-width:100%; height:auto;">
+            <img src="assets/sdc-research-2.png" style="max-width:100%; height:auto;">
+            <br>
+        </div>
+        <br><br>
+    </div>
+    <div class="scroll-target" id="light-blue">
+        <div class="section">
+            <h6>Problem Statements</h6>
+            <p><strong>PARENTS</strong><br>A parent needs a way to save their registrant information so that they can easily register their child for a program/class</p>
+            <p><strong>VOLUNTEERS</strong><br>A volunteer needs a way to save their registrant information so that they can easily register to volunteer for a program/class</p>
+            <p><strong>SDC PROGRAM COORDINATORS/ADMIN</strong><br>A program coordinator needs a way to manage information gathered in the parent and volunteer registration so that they can easily manage programs</p>
+            <p><strong>TEACHERS</strong><br>A teacher needs a way to have full awareness of participant information while planning the program before class starts so that they can cater their planning based on their students needs</p>
+        </div>
+    </div>
+    <div class="content">
+        <h2>Ideation</h2>
+        <br>
+        <div class="section">
+            <h6>User flows</h6>
+            <p>High level user flows were mapped out so we could get a high level understanding of the product. These flows were also helpful for the developers as well!</p>
+            <br>
+            <img src="assets/sdc-ideation-1.png" style="max-width:100%; height:auto;">
+            <br>
+        </div>
+        <div class="section">
+            <h6>Lo-fi Wireframes & User testing</h6>
+            <p>After doing more than 4 different mobile explorations and experimenting with 3 different versions of lo-fidelity designs, we finalized a <strong>mobile prototype that we sent to parents & volunteers for user testing</strong>. We use Maze, a user-testing platform that allowed us to see how users directly interacted with our prototype. We were able to see many statistics and heat maps from the testing, and were able to get questions we had for them asked within the same platform. The lo-fi designs used in the prototype are shown below.</p>
+            <br>
+            <img src="assets/sdc-ideation-2.png" style="max-width:80%; height:auto;">
+        </div>
+        <br>
+    </div>
+    <div class="content">
+        <h2>Iterative Design</h2>
+        <br>
+        <div class="section">
+            <h6>The transformation of the main landing page</h6>
+            <p>Iterative design was used for the entire platform, especially after recieving feedback from client meetings, user testing, and design critiques. One page in particular went through many different iterations before arriving at the final design, which I highlight below.</p>
+            <img src="assets/sdc-iterative-1.png" style="max-width:100%; height:auto;">
+        </div>
+        <br><br><br>
+    </div>
+    <div class="scroll-target" id="light-blue">
+        <div class="section" id="final">
+            <h2>Final Designs</h2>
+            <br>
+            <div class="project-no-padding">
+                <div class="projectimage">
+                    <video width="100%" height="auto" style="background-color: #E2E8FD;" autoplay loop>
+                        <source src="assets/sdc-demo-1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="projectrow">
+                    <div class="section">
+                        <h6>Inviting programs & classes to browse through</h6>
+                        <ul>
+                            <li>Provides all users of the platform with the information they need to know about the classes as well as the registeration process itself</li>
+                            <li>Toggle for information targeted for parents & volunteers</li>
+                            <li>Clear descriptions on the program and classes provided</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="project-no-padding">
+                <div class="projectimage">
+                    <video width="100%" height="auto" style="background-color: #E2E8FD;" autoplay loop>
+                        <source src="assets/sdc-demo-2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="projectrow">
+                    <div class="section">
+                        <h6>Simple account sign up & program registration</h6>
+                        <ul>
+                            <li>Notice to provide proof of income or background check if haven’t yet</li>
+                            <li>Notice of expired check within process</li>
+                            <li>Easy option within registeration process to upload, as well as ability to upload in account</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="project-no-padding">
+                <div class="projectimage">
+                    <video width="100%" height="auto" style="background-color: #E2E8FD;" autoplay loop>
+                        <source src="assets/sdc-demo-3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="projectrow">
+                    <div class="section">
+                        <h6>Account management</h6>
+                        <ul>
+                            <li>Ability to add multiple children to a parent account to register into classes</li>
+                            <li>Check status of submitted documents with ease</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <br>               
+        <h2>Reflection</h2>
+        <br>
+        <div class="section">
+            <h6>Key Learnings</h6>
+            <ul>
+                <li>Working with design system and assets provided by a non profit</li>
+                <li>Designing mobile-first while also keeping in mind developer needs of coding desktop first</li>
+                <li>Using a data driven user-testing platform like Maze</li>
+                <li>Recieving feedback at design critique with other designers</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h6>Next Steps</h6>
+            <ul>
+                <li>Performing additional usability testing to iterate and improve on this design</li>
+                <li>Work on internal platform aspect which focuses on program coordinator & admin management!</li>
+            </ul>
+        </div>
+        <br>
+    </div>
+    <br><br><br>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <hr>
+    <footer>
+        <h5>Say hi</h5>
+        <!-- <p>Let's have a chat sometime! I'd love to talk about anything and everything :)</p> -->
+        <br>
+        <ul>
+            <li id="first"><a href="mailto:@stacykwok01@gmail.com">Email</a></li>
+            <li><a href="https://ca.linkedin.com/in/stacy-kwok-48a3a919b">Linkedin</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

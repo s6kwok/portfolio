@@ -181,8 +181,7 @@ hr {
     outline: none;
 }
 .button-ghost:hover {
-    background-color: #CCD1FF;
-    border-bottom: 0px;
+    background-color: #c5c5c5;
 }
 .button-disabled {
     background: #B3B3B3;
@@ -417,7 +416,7 @@ ul li a:active {
 }
 
 /* SCROLL TARGET */
-#scroll-target {
+.scroll-target {
     background-color: #E2E8FD;
     background-size: cover;
     /* color: #F4F4F5; */
@@ -450,6 +449,13 @@ ul li a:active {
     /* padding-left: 240px;
     padding-right: 240px;
     padding-bottom: 160px; */
+}
+.project-no-padding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    padding-bottom: 6rem;
 }
 .card {
     display: flex;
@@ -649,7 +655,7 @@ footer > h5 {
     /* margin-top: 16px;
     margin-bottom: 8px; */
 }
-.content > .section > ul {
+.content > .section > ul, .projectrow > .section > ul {
     font-family: "Rubik";
     font-style: normal;
     font-weight: normal;
@@ -664,13 +670,13 @@ footer > h5 {
     padding-inline-start: 2rem;
     /* padding-inline-start: 20px; */
 }
-.content > .section > ul > li {
+.content > .section > ul > li, .projectrow > .section > ul > li {
     padding-left: 0.75rem;
     padding-bottom: 0.0625rem;
     /* padding-left: 16px;
     padding-bottom: 1px; */
 }
-#scroll-target > .section {
+.scroll-target > .section {
     margin: 0px;
     padding-left: 15rem;
     padding-right: 15rem;
@@ -686,14 +692,14 @@ footer > h5 {
 }
 
 @media (min-width: 1200px) {
-    nav, .area, #scroll-target-header, .project, footer, .content, #scroll-target > .section {
+    nav, .area, #scroll-target-header, .project, footer, .content, .scroll-target > .section {
         padding-left: 16%;
         padding-right: 16%;
     }
 }
 
 @media (max-width: 1200px) {
-    nav, .area, #scroll-target-header, .project, footer, .content, #scroll-target > .section {
+    nav, .area, #scroll-target-header, .project, footer, .content, .scroll-target > .section {
         padding-left: 16%;
         padding-right: 16%;
     }
@@ -706,7 +712,7 @@ footer > h5 {
     html {
         font-size: 14px;
     }
-    nav, .area, #scroll-target-header, .project, footer, .content, #scroll-target > .section {
+    nav, .area, #scroll-target-header, .project, footer, .content, .scroll-target > .section {
         padding-left: 18%;
         padding-right: 18%;
     }
@@ -765,7 +771,7 @@ footer > h5 {
     html {
         font-size: 14px;
     }
-    nav, .area, #scroll-target-header, .project, footer, .content, #scroll-target > .section {
+    nav, .area, #scroll-target-header, .project, footer, .content, .scroll-target > .section {
         padding-left: 4rem;
         padding-right: 4rem;
     }
