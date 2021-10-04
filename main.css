@@ -438,6 +438,9 @@ ul li a:active {
     padding-left: 240px;
     padding-right: 240px; */
 }
+#scroll-target-h2-shortened {
+    margin-bottom: 1.25rem;
+}
 .project {
     display: flex;
     flex-direction: row;
