@@ -3,14 +3,16 @@
 html {
     font-size: 16px;
     color: #3a3a3a;
-    background-color: #FFF2E9;
+    background-color: #fff0e4;
+    /* FFF2E9 */
     /* F6F8FD or F6FCFD or FDFCF6 */
     /* display: flex;
     justify-content: center; */
 }
 #cursor {
     /* background: radial-gradient(63.37% 50% at 50% 50%, #FFEDCA 0%, #FFEDCA 47.4%, rgba(255, 237, 202, 0.7) 74.48%, rgba(255, 237, 202, 0.4) 100%); */
-    background: radial-gradient(63.37% 50% at 50% 50%, #FFD8BC 0%, #FFD8BC 47.4%, rgba(255, 237, 202, 0.7) 74.48%, rgba(255, 237, 202, 0.4) 100%);
+    /* background: radial-gradient(63.37% 50% at 50% 50%, #FFD8BC 0%, #FFD8BC 47.4%, rgba(255, 237, 202, 0.7) 74.48%, rgba(255, 237, 202, 0.4) 100%); */
+    background: #FFD8BC;
     height:2.5rem;
     width:2.5rem;
     border-radius:50%;
