@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Unna:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link href="main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -21,7 +25,17 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
+<style>
+    html {
+        cursor: none;
+    }
+    nav, footer {
+        cursor: auto;
+    }
+</style>
+
 <body>
+    <div id="cursor"></div>
     <nav>
         <a href="index.html"><h5 class="logo">Stacy Kwok</h5></a>
         <ul id="links">
@@ -41,11 +55,11 @@
             <p>Currently studying management engineering <strong>@UWaterloo</strong>, I’m a curious creative who is fueled by my desire to make a <strong>positive impact</strong> with everything I do. I believe in designing with <strong>kindness</strong> and an <strong>open mind</strong>, shaping meaningful experiences through the power of understanding others.</p>
         </div>
         <div class="projectimage">
-            <img src="assets/about-me.png" style="max-width:100%;height:auto;">
+            <img src="assets/about-me.png" style="width:130%;height:auto;">
         </div>
     </div>
     <div class="project" id="project-small" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top">
-        <div class="projectrow-right">
+        <div class="projectrow-right" id="test">
             <h4>What are some things to know about Stacy?</h4>
             <p>Besides being a sucker for puns and bad jokes, I also really enjoy...</p>
             <ul>
@@ -57,7 +71,7 @@
             </ul>
         </div>
         <div class="projectimage">
-            <img src="assets/about-fun.JPG" style="max-width:100%;height:auto;">
+            <img src="assets/about-fun.JPG" style="width:130%;height:auto;">
         </div>
     </div>
     <br><br><br>
@@ -73,9 +87,11 @@
         <ul>
             <li id="first"><a href="mailto:@stacykwok01@gmail.com">Email</a></li>
             <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank">Linkedin</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
+            <!-- <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li> -->
         </ul>
+        <br><br>
+        <p style="font-size: 13px;">Designed + developed with lots of love, and lots of Vitasoy juice boxes ;)</p>
     </footer>
 </body>
 

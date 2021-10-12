@@ -35,10 +35,10 @@
     </nav>
     <div class="area" data-aos="fade" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <div class="herocontainer">
-            <p id="subparagraph">Hi there,</p>
+            <p id="subparagraph">Hi there!</p>
             <h1 class="intro"><span id="span1">I'm Stacy Kwok</span></h1>
             <p>TL;DR? I’m a product designer passionate about solving <strong>meaningful problems</strong> and <strong>shaping positive experiences</strong> through understanding people + the world</p>
-            <p>Currently interning <strong>@LCBOnext</strong> and mentoring <strong>@UWBlueprint</strong> for fall 2021!</p>
+            <p>Currently interning <a href="https://www.lcbonext.com/" target="_blank" id="bold-link"><strong>@LCBOnext </strong></a> and mentoring <a href="https://uwblueprint.org/" target="_blank" id="bold-link"><strong>@UWBlueprint </strong></a> for fall 2021!</p>
             <div id="herocontainer-arrow">
                 <i class="material-icons">arrow_downward</i>
                 <a href="#scroll-target-header" style="font-weight: bold;">View work</a>
@@ -77,28 +77,38 @@
     </div>
     <h2 id="scroll-target-header" data-aos="fade" data-aos-delay="100" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top">My Recent Work</h2>
     <br>
-    <div class="card" id="light-blue" onclick="location.href='sdc.html';" style="cursor: pointer;" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+    <div class="card" onclick="location.href='sdc.html';" style="cursor: pointer;" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <div class="projectimage">
             <img src="assets/sdc.png" style="max-width:100%;height:auto;">
         </div>
-        <div class="projectrow">
-            <p id="subtitle">UW BLUEPRINT</p>
-            <h3>SDC Program Registration Platform</h3>
-            <p>Designing a program registration for the non-profit Social Diversity for Children</p>
+        <div class="projectrow-card">
+            <p id="subtitle" style="font-size: 13px;">UW BLUEPRINT X SOCIAL DIVERSITY FOR CHILDREN</p>
+            <h3>Program Registration Platform</h3>
+            <p>Designing a program registration platform for volunteers & parents of kids with disabilities</p>
             <!-- <a href="#.html" class="button-disabled">Coming Soon</a> -->
         </div>
     </div>
-    <div class="card" id="green" onclick="location.href='fitness.html';" style="cursor: pointer;" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+    <div class="card" onclick="location.href='paramedics.html';" style="cursor: pointer;" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+        <div class="projectimage">
+            <img src="assets/paramedics.png" style="max-width:100%;height:auto;">
+        </div>
+        <div class="projectrow-card">
+            <p id="subtitle" style="font-size: 13px;">UW BLUEPRINT X WATERLOO PARAMEDIC SERVICES</p>
+            <h3>Mass Casualty Patient Triaging Platform</h3>
+            <p>Customizing the triaging process to help ROWPS better manage mass casualty events</p>
+        </div>
+    </div>
+    <div class="card" onclick="location.href='fitness.html';" style="cursor: pointer;" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <div class="projectimage">
             <img src="assets/fitness.png" style="max-width:100%;height:auto;">
         </div>
-        <div class="projectrow">
-            <p id="subtitle">UX HACK NIGHT</p>
+        <div class="projectrow-card">
+            <p id="subtitle" style="font-size: 13px;">UX HACK NIGHT</p>
             <h3>Remote Fitness Training</h3>
             <p>Mobilizing the personal training experience for comfortable at home personal training</p>
         </div>
     </div>
-    <div class="card" id="dark-blue" onclick="location.href='noteworthy.html';" style="cursor: pointer;" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
+    <!-- <div class="card" onclick="location.href='noteworthy.html';" style="cursor: pointer;" data-aos="fade-up" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" data-aos-anchor-placement="top-center">
         <div class="projectimage">
             <img src="assets/Noteworthy.png" style="max-width:100%;height:auto;">
         </div>
@@ -107,7 +117,7 @@
             <h3>Noteworthy Notetaking</h3>
             <p>Boosting productivity during remote learning through a simiplified notetaking experience</p>
         </div>
-    </div>
+    </div> -->
     <br><br><br><br>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -121,9 +131,11 @@
         <ul>
             <li id="first"><a href="mailto:@stacykwok01@gmail.com">Email</a></li>
             <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank">Linkedin</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
+            <!-- <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li> -->
         </ul>
+        <br><br>
+        <p style="font-size: 13px;">Designed + developed with lots of love, and lots of Vitasoy juice boxes ;)</p>
     </footer>
 </body>
 
