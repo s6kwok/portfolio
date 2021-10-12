@@ -13,8 +13,8 @@ html {
     /* background: radial-gradient(63.37% 50% at 50% 50%, #FFEDCA 0%, #FFEDCA 47.4%, rgba(255, 237, 202, 0.7) 74.48%, rgba(255, 237, 202, 0.4) 100%); */
     /* background: radial-gradient(63.37% 50% at 50% 50%, #FFD8BC 0%, #FFD8BC 47.4%, rgba(255, 237, 202, 0.7) 74.48%, rgba(255, 237, 202, 0.4) 100%); */
     background: #FFD8BC;
-    height:2.5rem;
-    width:2.5rem;
+    height:2rem;
+    width:2rem;
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
@@ -816,10 +816,12 @@ tr:first-child {
         padding-bottom: 7rem;
     }
     .card {
-        margin-left: 17%;
-        margin-right: 16%;
+        margin-left: 15%;
+        margin-right: 12%;
         padding-left: 2.5rem;
-        padding-right: 2rem;
+        padding-right: 3rem;
+        padding-top: 3.5rem;
+        padding-bottom: 4rem;
     }
 }
 
@@ -873,8 +875,8 @@ tr:first-child {
         flex-direction: column;
         margin-left: 18%;
         margin-right: 18%;
-        padding-left: 4rem;
-        padding-right: 4.5rem;
+        padding-left: 2.5rem;
+        padding-right: 3rem;
         padding-bottom: 3rem;
     }
     .projectrow, .projectrow-video {
@@ -891,7 +893,7 @@ tr:first-child {
     .projectimage {
         max-width: 80%;
         padding-right: 1rem;
-        padding-bottom: 1.5rem;
+        padding-bottom: 2rem;
     }
     .projectimage > img {
         width: 100% !important;
