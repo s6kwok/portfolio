@@ -9,10 +9,10 @@ html {
     /* display: flex;
     justify-content: center; */
 }
-#cursor {
+/* #cursor { */
     /* background: radial-gradient(63.37% 50% at 50% 50%, #FFEDCA 0%, #FFEDCA 47.4%, rgba(255, 237, 202, 0.7) 74.48%, rgba(255, 237, 202, 0.4) 100%); */
     /* background: radial-gradient(63.37% 50% at 50% 50%, #FFD8BC 0%, #FFD8BC 47.4%, rgba(255, 237, 202, 0.7) 74.48%, rgba(255, 237, 202, 0.4) 100%); */
-    background: #FFD8BC;
+    /* background: #FFD8BC;
     height:2rem;
     width:2rem;
     border-radius:50%;
@@ -20,7 +20,7 @@ html {
     -webkit-border-radius:50%;
     position: absolute;
     z-index: 1;
-}
+} */
 body {
     margin-left: 0%;
     margin-right: 0%;
