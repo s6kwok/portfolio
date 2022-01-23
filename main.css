@@ -570,6 +570,9 @@ border-radius: 20px;
     left: -2px;
     background: #FFD8BC;
 }
+#grey {
+    background: #F5F5F5;
+}
 #purple {
     background: #F7F4FF;
 }
@@ -710,17 +713,18 @@ border-radius: 20px;
 }
 
 .sidenav {
-    width: 100px;
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
     z-index: 1;
-    top: 12rem;
-    left: 18rem;
+    top: 10.5rem;
+    left: 12rem;
     /* background: #eee;
     overflow-x: hidden;
     padding: 8px 0; */
 }
 .sidenav a:hover {
-    color: #838383;
+    color: #3a3a3a;
 }
 
 
@@ -881,7 +885,7 @@ td, th {
 }
 tr:first-child {
 /* tr:nth-child(even) { */
-    background-color: #F7F4FF;
+    background-color: #F5F5F5;
     font-weight: bold;
 }
 

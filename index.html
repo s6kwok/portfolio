@@ -97,12 +97,17 @@
         </div> -->
     </div>
     <style>
-        .tab a.active { color: #3a3a3a; }
+        .tab a.active {
+            color: #3a3a3a;
+        }
+        .tab a:focus, .active {
+            color: #3a3a3a;
+        }
     </style>
     <div class="area" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 5rem;">
         <div class="tab" style="display: flex; justify-content: space-between;" id="scroll-target">
-            <a class="tablinks" onclick="openTab(event, 'Work')" style="font-family: 'Unna'; font-style: normal; font-weight: bold; font-size: 48px; line-height: 55px; letter-spacing: 0.01em; margin-top: 0rem; margin-bottom: 2rem; cursor: pointer;">My recent work</a>
-            <a class="tablinks" onclick="openTab(event, 'About')" style="font-family: 'Unna'; font-style: normal; font-weight: bold; font-size: 48px; line-height: 55px; letter-spacing: 0.01em; margin-top: 0rem; margin-bottom: 2rem; cursor: pointer;">Get to know me</a>
+            <a class="tablinks active" onclick="openTab(event, 'Work')" href="#scroll-target" style="font-family: 'Unna'; font-style: normal; font-weight: bold; font-size: 48px; line-height: 55px; letter-spacing: 0.01em; margin-top: 0rem; margin-bottom: 2rem; cursor: pointer;">My recent work</a>
+            <a class="tablinks" onclick="openTab(event, 'About')" href="#scroll-target" style="font-family: 'Unna'; font-style: normal; font-weight: bold; font-size: 48px; line-height: 55px; letter-spacing: 0.01em; margin-top: 0rem; margin-bottom: 2rem; cursor: pointer;">Get to know me</a>
             <a href="assets/Stacy Kwok Resume W22.pdf" target="_blank" style="font-family: 'Unna'; font-style: normal; font-weight: bold; font-size: 48px; line-height: 55px; letter-spacing: 0.01em; margin-top: 0rem; margin-bottom: 2rem; cursor: pointer;">Resume</a>
             <!-- <a class="tablinks" onclick="openTab(event, 'Tokyo')">Tokyo</a> -->
         </div>
@@ -113,7 +118,7 @@
         </div> -->
     </div>
 
-    <div class="body-width" id="Work">
+    <div class="body-width" id="Work" style="display:block;">
         <!-- onclick="location.href='#.html';" style="cursor: pointer;" href="#"  -->
         <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: center; padding-bottom: 9rem;">
             <div class="projectrow-right">
@@ -159,20 +164,33 @@
                 <img src="assets/fitness.png" style="max-width:105%;height:auto;">
             </div>
         </div>
+        <footer data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-left: 2rem; padding-right: 3rem;">
+            <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
+            <h5 style="margin-top: 4.5rem; margin-bottom: 1.5rem;">Thanks for stopping by...</h5>
+            <p>While you’re here, you should definately send a message and say hi!</p>
+            <br><br>
+            <ul>
+                <li id="first"><a href="mailto:@stacykwok01@gmail.com" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Linkedin</a></li>
+            </ul>
+            <br><br><br>
+            <!-- <p style="font-size: 13px;">Designed + developed with lots of love, and lots of Vitasoy juice boxes ;)</p> -->
+        </footer>
     </div>
 
 
-    <div class="body-width" id="About">
-        <p>Hey there, great to meet you!</p>
+    <div class="body-width" id="About" style="display:none; padding-left: 20rem; padding-right: 20rem;">
+        <p>Hi I'm Stacy, great to meet you! 🙂</p>
         <div class="project" style="align-items: center; padding-bottom: 4rem;">
-            <div class="projectrow-right">
+            <div class="projectrow-right" style="max-width: 60%;">
                 <h4>Taking on the world, one <strong>human</strong> focused experience at a time</h4>
                 <p>I’m an ENFJ, cancer ♋️, and currently a management engineering student @UWaterloo. My work is fueled by my desire to make a positive impact with everything I do. I believe in designing with kindness and an open mind, shaping meaningful experiences through the power of understanding others.</p>
             </div>
-            <div class="projectimage">
-                <img src="assets/about-me-2.JPG" style="width:60%;height:auto;">
+            <div class="projectimage" style="max-width: 30%;">
+                <img src="assets/about-me-2.JPG" style="width:100%;height:auto;">
             </div>
         </div>
+        <br>
         <div>
             <h4>What I get up to, outside of design</h4>
             <p>Besides being a sucker for puns and bad jokes, I also really enjoy...</p>
@@ -189,6 +207,19 @@
             <img src="assets/about-fun.JPG" style="width:40%;height:auto;padding-right: 2%;">
             <img src="assets/about-fun-2.jpeg" style="width:40%;height:auto;">
         </div>
+        <br><br>
+        <footer style="padding-left: 0rem; padding-right: 0rem;">
+            <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
+            <h5 style="margin-top: 4.5rem; margin-bottom: 1.5rem;">Thanks for stopping by...</h5>
+            <p>While you’re here, you should definately send a message and say hi!</p>
+            <br><br>
+            <ul>
+                <li id="first"><a href="mailto:@stacykwok01@gmail.com" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Linkedin</a></li>
+            </ul>
+            <br><br><br>
+            <!-- <p style="font-size: 13px;">Designed + developed with lots of love, and lots of Vitasoy juice boxes ;)</p> -->
+        </footer>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -208,21 +239,11 @@
           }
           document.getElementById(tabName).style.display = "block";
           evt.currentTarget.className += " active";
+          foot = document.getElementsByClassName("happyday");
         }
     </script>
     
-    <footer data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
-        <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
-        <h5 style="margin-top: 4.5rem; margin-bottom: 1.5rem;">Thanks for stopping by...</h5>
-        <p>While you’re here, you should definately send a message and say hi!</p>
-        <br><br>
-        <ul>
-            <li id="first"><a href="https://uwblueprint.org/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Linkedin</a></li>
-        </ul>
-        <br><br><br>
-        <!-- <p style="font-size: 13px;">Designed + developed with lots of love, and lots of Vitasoy juice boxes ;)</p> -->
-    </footer>
+    
 </body>
 
 </html>
