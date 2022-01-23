@@ -27,7 +27,7 @@
         function PassWord() {
             answer="happy-reading";
             input=window.prompt("This is a password protected case study! Please enter in the password to read more.", "");
-            if (input == answer) {
+            if (input === answer) {
                 // history.go(index.html)
                 window.location.href = "lcbo.html";
             }
@@ -135,7 +135,7 @@
             <div class="projectrow-right">
                 <h3 style="margin-top: 0rem; margin-bottom: 0rem;">LCBO|next Internship: LCBOdesk Gold</h3>
                 <p style="padding-bottom: 1.5rem;">Feedback reporting & defect management platform aiming to bridge gaps in the user acceptance testing feedback cycle, between key user testers from business and the LCBOnext team</p>
-                <a href="lcbo.html" class="button-dark" onclick="PassWord()">Check it out</a>
+                <a class="button-dark" onclick="PassWord()" style="cursor: pointer;">Check it out<span class="material-icons" style="color: white; font-size: 14px; padding-left: 0.4rem;">lock</span></a>
             </div>
             <div class="projectimage">
                 <br>
@@ -146,7 +146,7 @@
             <div class="projectrow-right">
                 <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Mass Casualty Patient Triaging Platform</h3>
                 <p style="padding-bottom: 1.5rem;">Customizing the triaging process to help the Region of Waterloo Paramedics better manage mass casualty events</p>
-                <a href="lcbo.html" class="button-dark">Check it out</a>
+                <a href="paramedics.html" class="button-dark">Check it out</a>
             </div>
             <div class="projectimage">
                 <br>
@@ -157,7 +157,7 @@
             <div class="projectrow-right">
                 <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Remote Fitness Training App</h3>
                 <p style="padding-bottom: 1.5rem;">Mobilizing the personal training experience for comfortable at home personal training</p>
-                <a href="lcbo.html" class="button-dark">Check it out</a>
+                <a href="fitness.html" class="button-dark">Check it out</a>
             </div>
             <div class="projectimage">
                 <br>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacy Kwok's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="main.css" rel="stylesheet">
+
+    <meta name="robots" content="noindex">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><h5 class="logo">Stacy Kwok</h5></a>
+        <ul id="links">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">Me</a></li>
+            <li style="padding-right: 0rem;"><a href="assets/Stacy Kwok Resume W22.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    <div class="content" data-aos="fade" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
+        <h1>remote fitness training app</h1>
+        <p id="bottomrow">Reimagining the personal fitness training experience through a fitness training app enabling clients to find and train with personal trainers remotely</p>
+        <br><br>
+        <img src="assets/fitness-header.png" style="max-width:100%; height:auto;" id="photo">
+        <br><br><br>
+        <div class="section">
+            <h6>Overview</h6>
+            <p>My friend and I wanted to get involved and meet others in the Markham UX community, so we decided to attend a virtual hack night series hosted by a Markham UX Meetup group. As part of the hack night series, we were given a problem to solve, and were challenged to design a product to help tackle the problem.</p>
+        </div>
+        <div class="section">
+            <h6>Project Details</h6>
+            <p><strong>TEAM:</strong> Shaahana Naufal & I<br><strong>TIMELINE:</strong> ~7 evenings in April 2021<br><strong>METHODS:</strong> Persona creation, user flows, information architecture, wireframes, prototyping</p>
+        </div>
+        <br>
+        <div id="double-buttons">
+            <div id="double-buttons-responsive">
+                <a href="#final" class="button-dark">See final designs</a>
+            </div>
+            <div id="double-buttons-responsive">
+                <a href="#process" class="button-ghost">See process</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+    </script>
+    <div class="scroll-target" id="purple">
+        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+        <br><br>
+        <div class="content">
+            <p>The prompt</p>
+            <h2>Gym owners/trainers are struggling to make ends meet because of the constant lockdowns.</h2>
+            <p>Some have changed to online models, but it still doesn’t come close to the revenue they’d make in person.  In a recent survey by fitness researcher Nicholas Rizzo with RunRepeat, only 31% of Canadians who belonged to a gym have returned and many more plan to cancel their memberships.</p>
+            <br>
+        </div>
+        <br><br><br>
+    </div>
+    <br><br><br>
+    <div class="content">
+        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+        <img src="assets/fitness-hifi-1.png" style="max-width:100%; height:auto;">
+        <br><br><br><br><br><br>
+        <p id="process">The process</p>
+        <h2>Understanding the problem</h2>
+        <br>
+        <div class="section">
+            <h6>User Personas</h6>
+            <p>After taking a look at the resources given in the brief and then conducting some research of our own, we felt ready to consolidate all that we learned about the problem into two user personas. We created a persona for a personal trainer, and one for a gym attendee. The realistic representations of our key audiences we created really helped to keep our design decisions aligned to our audiences moving forwards.</p>
+            <br>
+            <img src="assets/fitness-research-1.png" style="max-width:100%; height:auto;">
+        </div>
+        <br><br>
+        <div class="section">
+            <h6>Discovery Session</h6>
+            <p>After creating the personas, we felt comfortable in moving on towards discovery & then crafting the problem statement.</p>
+            <br>
+            <img src="assets/fitness-research-2.png" style="max-width:100%; height:auto;">
+        </div>
+    </div>
+    <br><br>
+    <div class="content">
+        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+        <h2>Ideation</h2>
+        <br>
+        <div class="section">
+            <h6>Feature Ideation</h6>
+            <p>We began the ideation stage by coming up with ideas for the features we wanted to include in our app. We then reflected on the motivations, pain points, and problems faced by our audiences and then prioritized the features we were to build out.</p>
+            <br><br>
+            <img src="assets/fitness-ideation-1.png" style="max-width:100%; height:auto;">
+        </div>
+        <br><br>
+        <div class="section">
+            <h6>Information Architecture</h6>
+            <p>Based upon the feature ideation, we decided to then decide on a general idea of how we were going to structure the app. The final iteration of IA is shown below, but before this one we had a previous iteration.</p>
+            <br><br>
+            <img src="assets/fitness-ideation-2.png" style="max-width:100%; height:auto;">
+        </div>
+        <br><br><br>
+        <div class="section">
+            <h6>User Flows</h6>
+            <p>User flows were then created based off the main features we wanted to include and the IA we created. Crafting the user flows was a key step in allowing us to see the bigger picture, but also to help create as seemless of a user experience possible throughout the apps. User flows were essential in understanding how all journeys will tie in together and to prevent from getting lost in features.</p>
+            <br>
+            <img src="assets/fitness-ideation-3.png" style="max-width:100%; height:auto;">
+        </div>
+        <br><br><br>
+        <div class="section">
+            <h6>Lo-fi Wireframes</h6>
+            <br>
+            <p><strong>ITERATION #1</strong></p>
+            <p>The first iteration of lo-fi focused on creating the designs for each part of the app:</p>
+            <img src="assets/fitness-ideation-4.png" style="max-width:80%; height:auto;">
+            <br><br>
+            <p><strong>ITERATION #2</strong></p>
+            <p>We then did another iteration of working ideation and lo-fi wireframes, where we adjusted and put together our designs based on our user flows.</p>
+            <img src="assets/fitness-ideation-5.png" style="max-width:80%; height:auto;">
+        </div>
+    </div>
+    <br><br>
+    <div class="content">
+        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+        <h2>Visual Design</h2>
+        <br>
+        <div class="section">
+            <h6>Design System</h6>
+            <p>For the design system, we wanted the app to fun feel and motivating, yet also wanted users to feel trusting in our app to find them the right trainer for them. We went with an overall contemporary color scheme, paired with a font that was also modern and sleek.</p>
+            <br>
+            <img src="assets/fitness-visual-1.png" style="max-width:100%; height:auto;">
+        </div>
+        <br><br><br><br>
+    </div>
+    <div class="scroll-target" id="purple">
+        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+        <div class="content" id="final">
+            <br><br><br>
+            <h2>Final Designs</h2>
+            <br>
+            <div class="project-no-padding">
+                <div class="projectimage-video" style="width: 50%;">
+                    <video width="80%" height="auto" autoplay loop muted playsinline>
+                        <source src="assets/fitness-demo-1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="projectrow-video" style="padding-left: 0%; margin-left: 0%;">
+                    <div class="section">
+                        <h6>Connecting individuals with their ideal trainer</h6>
+                        <ul>
+                            <li>Ability for your trainer to customize workout exercises and stay on call while working out at home</li>
+                            <li>View scheduled workouts</li>
+                            <li>Find new trainers and connect with others in the fitness community</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+        <br>                     
+        <h2>Reflection</h2>
+        <br>
+        <div class="section">
+            <h6>Key Learnings</h6>
+            <ul>
+                <li>I learned how to build better design systems! There’s a lot that goes into one, including choosing the right icons. I also learned about creating better shadows & gradients for components that I built.</li>
+                <li>I learned alot about incorporating a mix of illustrations and real life photos within an app. It was super challenging to be able to figure out how to make the use of both types of images work together, but the main takeaway is going back to the reasoning for the different types, the audience, and impact. For example, using real photos for classes is favorable, but having illustrations to guide the user through a workout is also favorable--and that’s okay!</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h6>Next Steps</h6>
+            <p>This project was mainly for fun, but if we were to keep working on it, we would try to go back and conduct user testing and use those findings to do more iterations and revisions of the user flows to improve the organization and enhance functionalities of our product.</p>
+        </div>
+        <br><br>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true"></div>
+    <footer data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true">
+        <br>
+        <h5>Thanks for stopping <i>by</i>...</h5>
+        <p>While you’re here, you should definately send a message and say <strong><i>hi</i></strong> 😊</p>
+        <br><br>
+        <ul>
+            <li id="first"><a href="mailto:@stacykwok01@gmail.com">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank">Linkedin</a></li>
+        </ul>
+        <br><br><br>
+    </footer>
+</body>
+
+</html>
