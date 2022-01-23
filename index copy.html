@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacy Kwok's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="main.css" rel="stylesheet">
+
+    <meta name="robots" content="noindex">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <script language="JavaScript">
+        function PassWord() {
+            answer="happy-reading";
+            input=window.prompt("This is a password protected case study! Please enter in the password to read more.", "");
+            if (input == answer) {
+                // history.go(index.html)
+                window.location.href = "lcbo.html";
+            }
+            else if (input === null) {
+                return;
+            }
+            else {
+                window.alert("The password you have entered is incorrect. Please try again, or send me a message for the password!");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><h5 class="logo">Stacy Kwok</h5></a>
+        <ul id="links">
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">Me</a></li>
+            <li style="padding-right: 0rem;"><a href="assets/Stacy Kwok Resume W22.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    <div class="area">
+        <div class="herocontainer">
+            <!-- <p id="subparagraph">Hi there!</p> -->
+            <br>
+            <h1 class="intro"><span id="span1">hi, i’m stacy!</span></h1>
+            <p>Cultivating minds & problem spaces, with purpose, kindness, & <strong><i>care</i></strong> 🌱 <br> Shaping positive experiences, through the stories I help to <strong><i>share</i></strong> 📚</p>
+            <p>Previously designing <a href="https://www.lcbonext.com/" target="_blank" id="bold-link">@LCBOnext </a> and currently designing <a href="https://uwblueprint.org/" target="_blank" id="bold-link">@UWBlueprint</a>!</p>
+            <div id="container-arrow">
+                <i class="material-icons" style="color: #5E4AE3;">arrow_downward</i>
+                <a href="#scroll-target-header"  style="font-weight: bold; color: #5E4AE3; text-decoration: underline;">View work</a>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+                
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                
+                    // Store hash
+                    var hash = this.hash;
+                
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, function(){
+                
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                    } // End if
+                });
+                });
+            </script>
+        </div>
+        <!-- <div class="herocontainer-img">
+            <img src="assets/Flowers.png" style="max-width:100%;height:auto;">
+        </div> -->
+    </div>
+    <h1 id="scroll-target-header">my recent work</h1>
+    <br><br>
+    <!-- onclick="location.href='#.html';" style="cursor: pointer;" href="#"  -->
+    <div class="container" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
+        <div class="container-content" onclick="location.href='sdc.html';">
+            <h3>Program & Volunteer Registration Platform</h3>
+            <p>Designing a platform to streamline the registration process for the non-profit Social Diversity for Children</p>
+            <div id="container-arrow">
+                <i class="material-icons" style="color: #5E4AE3;">arrow_forward</i>
+                <a href="sdc.html" style="font-weight: bold; color: #5E4AE3; text-decoration: underline;">Check it out</a>
+            </div>
+            <img src="assets/sdc.png" style="max-width:80%;height:auto;">
+        </div>
+    </div>
+    <br>
+    <div class="container" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
+        <div class="container-content" onclick="PassWord()">
+            <h3>LCBO|next Internship: LCBOdesk Gold</h3>
+            <!-- <h3>LCBOdesk Gold: Feedback Reporting & Defect Management Platform</h3> -->
+            <p>Feedback reporting & defect management platform aiming to bridge gaps in the user acceptance testing feedback cycle, between key user testers from business and the LCBOnext team</p>
+            <div id="container-arrow">
+                <i class="material-icons" style="color: #5E4AE3;">arrow_forward</i>
+                <a href="sdc.html" style="font-weight: bold; color: #5E4AE3; text-decoration: underline;">Check it out</a>
+                <!-- <i class="material-icons" style="color: #3a3a3a;">arrow_forward</i>
+                <a style="font-weight: bold; color: #3a3a3a;">Please ask for access to case study!</a> -->
+            </div>
+            <img src="assets/lcbo-desk.png" style="max-width:80%;height:auto;">
+        </div>
+        
+    </div>
+    <br>
+    <!-- <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div> -->
+    <div class="container" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
+        <div class="container-content" onclick="location.href='paramedics.html';">
+            <h3>Mass Casualty Patient Triaging Platform</h3>
+            <p>Customizing the triaging process to help the Region of Waterloo Paramedics better manage mass casualty events</p>
+            <div id="container-arrow">
+                <i class="material-icons" style="color: #5E4AE3;">arrow_forward</i>
+                <a href="paramedics.html" style="font-weight: bold; color: #5E4AE3; text-decoration: underline;">Check it out</a>
+            </div>
+            <img src="assets/paramedics.png" style="max-width:80%;height:auto;">
+        </div>
+    </div>
+    <br>
+    <!-- <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div> -->
+    <div class="container" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
+        <div class="container-content" onclick="location.href='fitness.html';">
+            <h3>Remote Fitness Training App</h3>
+            <p>Mobilizing the personal training experience for comfortable at home personal training</p>
+            <div id="container-arrow">
+                <i class="material-icons" style="color: #5E4AE3;">arrow_forward</i>
+                <a href="fitness.html" style="font-weight: bold; color: #5E4AE3; text-decoration: underline;">Check it out</a>
+            </div>
+            <img src="assets/fitness.png" style="max-width:80%;height:auto;">
+        </div>
+    </div>
+    <br><br><br>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
+    <footer data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
+        <br>
+        <h5>Thanks for stopping <i>by</i>...</h5>
+        <p>While you’re here, you should definately send a message and say <strong><i>hi</i></strong> 😊</p>
+        <br><br>
+        <ul>
+            <li id="first"><a href="mailto:@stacykwok01@gmail.com">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank">Linkedin</a></li>
+        </ul>
+        <br><br><br>
+        <!-- <p style="font-size: 13px;">Designed + developed with lots of love, and lots of Vitasoy juice boxes ;)</p> -->
+    </footer>
+</body>
+
+</html>

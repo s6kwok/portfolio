@@ -41,25 +41,28 @@
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <a href="index.html"><h5 class="logo">Stacy Kwok</h5></a>
         <ul id="links">
             <li><a href="index.html">Portfolio</a></li>
             <li><a href="about.html">Me</a></li>
             <li style="padding-right: 0rem;"><a href="assets/Stacy Kwok Resume W22.pdf" target="_blank">Resume</a></li>
         </ul>
-    </nav>
+    </nav> -->
     <div class="area">
-        <div class="herocontainer">
-            <!-- <p id="subparagraph">Hi there!</p> -->
-            <br>
-            <h1 class="intro"><span id="span1">hi, i’m stacy!</span></h1>
-            <p>Cultivating minds & problem spaces, with purpose, kindness, & <strong><i>care</i></strong> 🌱 <br> Shaping positive experiences, through the stories I help to <strong><i>share</i></strong> 📚</p>
-            <p>Previously designing <a href="https://www.lcbonext.com/" target="_blank" id="bold-link">@LCBOnext </a> and currently designing <a href="https://uwblueprint.org/" target="_blank" id="bold-link">@UWBlueprint</a>!</p>
-            <div id="container-arrow">
-                <i class="material-icons" style="color: #5E4AE3;">arrow_downward</i>
-                <a href="#scroll-target-header"  style="font-weight: bold; color: #5E4AE3; text-decoration: underline;">View work</a>
+            <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
+                <div class="projectrow-right">
+                    <h1>Hi there, I'm Stacy</h1>
+                    <h1 style="opacity: 0.6;">Hi there, I'm Stacy</h1>
+                    <h1 style="opacity: 0.35;">Hi there, I'm Stacy</h1>
+                    <h1 style="opacity: 0.15;">Hi there, I'm Stacy</h1>
+                </div>
+                <div class="project-side">
+                    <p>I’m a product designer, currently making magic at <a href="https://uwblueprint.org/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">UWBlueprint</a> and previously at <a href="https://www.lcbonext.com/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">LCBOnext</a>.</p>
+                    <p>I work to cultivate minds and problem spaces with purpose and care, and shape positive experiences through the stories I help to share.</p>
+                </div>
             </div>
+
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script>
                 $(document).ready(function(){
@@ -87,81 +90,139 @@
                 });
                 });
             </script>
-        </div>
+
         <!-- <div class="herocontainer-img">
             <img src="assets/Flowers.png" style="max-width:100%;height:auto;">
         </div> -->
     </div>
-    <h1 id="scroll-target-header">my recent work</h1>
-    <br><br>
-    <!-- onclick="location.href='#.html';" style="cursor: pointer;" href="#"  -->
-    <div class="container" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
-        <div class="container-content" onclick="location.href='sdc.html';">
-            <h3>Program & Volunteer Registration Platform</h3>
-            <p>Designing a platform to streamline the registration process for the non-profit Social Diversity for Children</p>
-            <div id="container-arrow">
-                <i class="material-icons" style="color: #5E4AE3;">arrow_forward</i>
-                <a href="sdc.html" style="font-weight: bold; color: #5E4AE3; text-decoration: underline;">Check it out</a>
-            </div>
-            <img src="assets/sdc.png" style="max-width:80%;height:auto;">
+    <div class="area" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 5rem;">
+        <div style="display: flex; justify-content: space-between;" id="scroll-target">
+            <a onclick="openTab('Work')" style="cursor: pointer;" id="tabs" style="opacity: 1.0;"><h1>My recent work</h1></a>
+            <a onclick="openTab('About')" style="cursor: pointer;" id="tabs"><h1>Get to know me</h1></a>
+            <a href="assets/Stacy Kwok Resume W22.pdf" target="_blank" id="tabs"><h1>Resume</h1></a>
         </div>
     </div>
-    <br>
-    <div class="container" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
-        <div class="container-content" onclick="PassWord()">
-            <h3>LCBO|next Internship: LCBOdesk Gold</h3>
-            <!-- <h3>LCBOdesk Gold: Feedback Reporting & Defect Management Platform</h3> -->
-            <p>Feedback reporting & defect management platform aiming to bridge gaps in the user acceptance testing feedback cycle, between key user testers from business and the LCBOnext team</p>
-            <div id="container-arrow">
-                <i class="material-icons" style="color: #5E4AE3;">arrow_forward</i>
-                <a href="sdc.html" style="font-weight: bold; color: #5E4AE3; text-decoration: underline;">Check it out</a>
-                <!-- <i class="material-icons" style="color: #3a3a3a;">arrow_forward</i>
-                <a style="font-weight: bold; color: #3a3a3a;">Please ask for access to case study!</a> -->
+    <script>
+        function openTab(tabName) {
+          var i;
+          var x = document.getElementsByClassName("body-width");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          document.getElementById(tabName).style.display = "block";  
+        }
+    </script>
+
+    <div class="body-width" id="Work">
+        <!-- onclick="location.href='#.html';" style="cursor: pointer;" href="#"  -->
+        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: center; padding-bottom: 9rem;">
+            <div class="projectrow-right">
+                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Program & Volunteer Registration Platform</h3>
+                <p style="padding-bottom: 1.5rem;">Designing a platform to streamline the registration process for the non-profit Social Diversity for Children</p>
+                <a href="sdc.html" class="button-dark">Check it out</a>
             </div>
-            <img src="assets/lcbo-desk.png" style="max-width:80%;height:auto;">
-        </div>
-        
-    </div>
-    <br>
-    <!-- <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div> -->
-    <div class="container" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
-        <div class="container-content" onclick="location.href='paramedics.html';">
-            <h3>Mass Casualty Patient Triaging Platform</h3>
-            <p>Customizing the triaging process to help the Region of Waterloo Paramedics better manage mass casualty events</p>
-            <div id="container-arrow">
-                <i class="material-icons" style="color: #5E4AE3;">arrow_forward</i>
-                <a href="paramedics.html" style="font-weight: bold; color: #5E4AE3; text-decoration: underline;">Check it out</a>
+            <div class="projectimage">
+                <br>
+                <img src="assets/sdc.png" style="max-width:105%;height:auto;">
             </div>
-            <img src="assets/paramedics.png" style="max-width:80%;height:auto;">
         </div>
-    </div>
-    <br>
-    <!-- <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div> -->
-    <div class="container" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
-        <div class="container-content" onclick="location.href='fitness.html';">
-            <h3>Remote Fitness Training App</h3>
-            <p>Mobilizing the personal training experience for comfortable at home personal training</p>
-            <div id="container-arrow">
-                <i class="material-icons" style="color: #5E4AE3;">arrow_forward</i>
-                <a href="fitness.html" style="font-weight: bold; color: #5E4AE3; text-decoration: underline;">Check it out</a>
+        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: center; padding-bottom: 9rem;">
+            <div class="projectrow-right">
+                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">LCBO|next Internship: LCBOdesk Gold</h3>
+                <p style="padding-bottom: 1.5rem;">Feedback reporting & defect management platform aiming to bridge gaps in the user acceptance testing feedback cycle, between key user testers from business and the LCBOnext team</p>
+                <a href="lcbo.html" class="button-dark" onclick="PassWord()">Check it out</a>
             </div>
-            <img src="assets/fitness.png" style="max-width:80%;height:auto;">
+            <div class="projectimage">
+                <br>
+                <img src="assets/lcbo-desk.png" style="max-width:105%;height:auto;padding-left: 2rem;">
+            </div>
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: center; padding-bottom: 9rem;">
+            <div class="projectrow-right">
+                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Mass Casualty Patient Triaging Platform</h3>
+                <p style="padding-bottom: 1.5rem;">Customizing the triaging process to help the Region of Waterloo Paramedics better manage mass casualty events</p>
+                <a href="lcbo.html" class="button-dark">Check it out</a>
+            </div>
+            <div class="projectimage">
+                <br>
+                <img src="assets/paramedics.png" style="max-width:100%;height:auto;padding-left: 2rem;">
+            </div>
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: center; padding-bottom: 4rem;">
+            <div class="projectrow-right">
+                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Remote Fitness Training App</h3>
+                <p style="padding-bottom: 1.5rem;">Mobilizing the personal training experience for comfortable at home personal training</p>
+                <a href="lcbo.html" class="button-dark">Check it out</a>
+            </div>
+            <div class="projectimage">
+                <br>
+                <img src="assets/fitness.png" style="max-width:105%;height:auto;">
+            </div>
         </div>
     </div>
-    <br><br><br>
+
+
+    <div class="body-width" id="About">
+        <!-- onclick="location.href='#.html';" style="cursor: pointer;" href="#"  -->
+        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: center; padding-bottom: 9rem;">
+            <div class="projectrow-right">
+                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Program & Volunteer Registration Platform</h3>
+                <p style="padding-bottom: 1.5rem;">Designing a platform to streamline the registration process for the non-profit Social Diversity for Children</p>
+                <a href="sdc.html" class="button-dark">Check it out</a>
+            </div>
+            <div class="projectimage">
+                <br>
+                <img src="assets/sdc.png" style="max-width:105%;height:auto;">
+            </div>
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: center; padding-bottom: 9rem;">
+            <div class="projectrow-right">
+                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">LCBO|next Internship: LCBOdesk Gold</h3>
+                <p style="padding-bottom: 1.5rem;">Feedback reporting & defect management platform aiming to bridge gaps in the user acceptance testing feedback cycle, between key user testers from business and the LCBOnext team</p>
+                <a href="lcbo.html" class="button-dark" onclick="PassWord()">Check it out</a>
+            </div>
+            <div class="projectimage">
+                <br>
+                <img src="assets/lcbo-desk.png" style="max-width:105%;height:auto;padding-left: 2rem;">
+            </div>
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: center; padding-bottom: 9rem;">
+            <div class="projectrow-right">
+                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Mass Casualty Patient Triaging Platform</h3>
+                <p style="padding-bottom: 1.5rem;">Customizing the triaging process to help the Region of Waterloo Paramedics better manage mass casualty events</p>
+                <a href="lcbo.html" class="button-dark">Check it out</a>
+            </div>
+            <div class="projectimage">
+                <br>
+                <img src="assets/paramedics.png" style="max-width:100%;height:auto;padding-left: 2rem;">
+            </div>
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: center; padding-bottom: 4rem;">
+            <div class="projectrow-right">
+                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Remote Fitness Training App</h3>
+                <p style="padding-bottom: 1.5rem;">Mobilizing the personal training experience for comfortable at home personal training</p>
+                <a href="lcbo.html" class="button-dark">Check it out</a>
+            </div>
+            <div class="projectimage">
+                <br>
+                <img src="assets/fitness.png" style="max-width:105%;height:auto;">
+            </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
+    
     <footer data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
-        <br>
-        <h5>Thanks for stopping <i>by</i>...</h5>
-        <p>While you’re here, you should definately send a message and say <strong><i>hi</i></strong> 😊</p>
+        <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
+        <h5 style="margin-top: 4.5rem; margin-bottom: 1.5rem;">Thanks for stopping by...</h5>
+        <p>While you’re here, you should definately send a message and say hi!</p>
         <br><br>
         <ul>
-            <li id="first"><a href="mailto:@stacykwok01@gmail.com">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank">Linkedin</a></li>
+            <li id="first"><a href="mailto:@stacykwok01@gmail.com" style="font-weight: bold; text-decoration-line: underline;">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Linkedin</a></li>
         </ul>
         <br><br><br>
         <!-- <p style="font-size: 13px;">Designed + developed with lots of love, and lots of Vitasoy juice boxes ;)</p> -->
