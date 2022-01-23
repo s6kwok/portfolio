@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,23 +96,22 @@
             <img src="assets/Flowers.png" style="max-width:100%;height:auto;">
         </div> -->
     </div>
+    <style>
+        .tab a.active { color: #3a3a3a; }
+    </style>
     <div class="area" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 5rem;">
-        <div style="display: flex; justify-content: space-between;" id="scroll-target">
-            <a onclick="openTab('Work')" style="cursor: pointer;" id="tabs" style="opacity: 1.0;"><h1>My recent work</h1></a>
-            <a onclick="openTab('About')" style="cursor: pointer;" id="tabs"><h1>Get to know me</h1></a>
-            <a href="assets/Stacy Kwok Resume W22.pdf" target="_blank" id="tabs"><h1>Resume</h1></a>
+        <div class="tab" style="display: flex; justify-content: space-between;" id="scroll-target">
+            <a class="tablinks" onclick="openTab(event, 'Work')" style="font-family: 'Unna'; font-style: normal; font-weight: bold; font-size: 48px; line-height: 55px; letter-spacing: 0.01em; margin-top: 0rem; margin-bottom: 2rem; cursor: pointer;">My recent work</a>
+            <a class="tablinks" onclick="openTab(event, 'About')" style="font-family: 'Unna'; font-style: normal; font-weight: bold; font-size: 48px; line-height: 55px; letter-spacing: 0.01em; margin-top: 0rem; margin-bottom: 2rem; cursor: pointer;">Get to know me</a>
+            <a href="assets/Stacy Kwok Resume W22.pdf" target="_blank" style="font-family: 'Unna'; font-style: normal; font-weight: bold; font-size: 48px; line-height: 55px; letter-spacing: 0.01em; margin-top: 0rem; margin-bottom: 2rem; cursor: pointer;">Resume</a>
+            <!-- <a class="tablinks" onclick="openTab(event, 'Tokyo')">Tokyo</a> -->
         </div>
+        <!-- <div class="tab" style="display: flex; justify-content: space-between;" id="scroll-target">
+            <a class="tablinks" onclick="openTab(event, 'Work')" style="cursor: pointer;" id="tabs" style="opacity: 1.0;"><h1>My recent work</h1></a>
+            <a class="tablinks" onclick="openTab(event, 'About')" style="cursor: pointer;" id="tabs"><h1>Get to know me</h1></a>
+            <a href="assets/Stacy Kwok Resume W22.pdf" target="_blank" id="tabs"><h1>Resume</h1></a>
+        </div> -->
     </div>
-    <script>
-        function openTab(tabName) {
-          var i;
-          var x = document.getElementsByClassName("body-width");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          document.getElementById(tabName).style.display = "block";  
-        }
-    </script>
 
     <div class="body-width" id="Work">
         <!-- onclick="location.href='#.html';" style="cursor: pointer;" href="#"  -->
@@ -163,56 +163,52 @@
 
 
     <div class="body-width" id="About">
-        <!-- onclick="location.href='#.html';" style="cursor: pointer;" href="#"  -->
-        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: center; padding-bottom: 9rem;">
+        <p>Hey there, great to meet you!</p>
+        <div class="project" style="align-items: center; padding-bottom: 4rem;">
             <div class="projectrow-right">
-                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Program & Volunteer Registration Platform</h3>
-                <p style="padding-bottom: 1.5rem;">Designing a platform to streamline the registration process for the non-profit Social Diversity for Children</p>
-                <a href="sdc.html" class="button-dark">Check it out</a>
+                <h4>Taking on the world, one <strong>human</strong> focused experience at a time</h4>
+                <p>I’m an ENFJ, cancer ♋️, and currently a management engineering student @UWaterloo. My work is fueled by my desire to make a positive impact with everything I do. I believe in designing with kindness and an open mind, shaping meaningful experiences through the power of understanding others.</p>
             </div>
             <div class="projectimage">
-                <br>
-                <img src="assets/sdc.png" style="max-width:105%;height:auto;">
+                <img src="assets/about-me-2.JPG" style="width:60%;height:auto;">
             </div>
         </div>
-        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: center; padding-bottom: 9rem;">
-            <div class="projectrow-right">
-                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">LCBO|next Internship: LCBOdesk Gold</h3>
-                <p style="padding-bottom: 1.5rem;">Feedback reporting & defect management platform aiming to bridge gaps in the user acceptance testing feedback cycle, between key user testers from business and the LCBOnext team</p>
-                <a href="lcbo.html" class="button-dark" onclick="PassWord()">Check it out</a>
-            </div>
-            <div class="projectimage">
-                <br>
-                <img src="assets/lcbo-desk.png" style="max-width:105%;height:auto;padding-left: 2rem;">
-            </div>
+        <div>
+            <h4>What I get up to, outside of design</h4>
+            <p>Besides being a sucker for puns and bad jokes, I also really enjoy...</p>
+            <ul style="padding-left: 2rem;">
+                <li>Chasing sunsets on my trusty bike</li>
+                <li>Video journalling my life through the lens of my iPhone 12</li>
+                <li>Making music on my piano, guitar, and vocals</li>
+                <li>Going on food adventures</li>
+                <li>Designing for social good 💕</li>
+            </ul>
+            <br><br>
         </div>
-        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: center; padding-bottom: 9rem;">
-            <div class="projectrow-right">
-                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Mass Casualty Patient Triaging Platform</h3>
-                <p style="padding-bottom: 1.5rem;">Customizing the triaging process to help the Region of Waterloo Paramedics better manage mass casualty events</p>
-                <a href="lcbo.html" class="button-dark">Check it out</a>
-            </div>
-            <div class="projectimage">
-                <br>
-                <img src="assets/paramedics.png" style="max-width:100%;height:auto;padding-left: 2rem;">
-            </div>
-        </div>
-        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: center; padding-bottom: 4rem;">
-            <div class="projectrow-right">
-                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Remote Fitness Training App</h3>
-                <p style="padding-bottom: 1.5rem;">Mobilizing the personal training experience for comfortable at home personal training</p>
-                <a href="lcbo.html" class="button-dark">Check it out</a>
-            </div>
-            <div class="projectimage">
-                <br>
-                <img src="assets/fitness.png" style="max-width:105%;height:auto;">
-            </div>
+        <div style="display: flex; flex-direction: row; align-items: center;">
+            <img src="assets/about-fun.JPG" style="width:40%;height:auto;padding-right: 2%;">
+            <img src="assets/about-fun-2.jpeg" style="width:40%;height:auto;">
         </div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        function openTab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("body-width");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
     </script>
     
     <footer data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
@@ -221,7 +217,7 @@
         <p>While you’re here, you should definately send a message and say hi!</p>
         <br><br>
         <ul>
-            <li id="first"><a href="mailto:@stacykwok01@gmail.com" style="font-weight: bold; text-decoration-line: underline;">Email</a></li>
+            <li id="first"><a href="https://uwblueprint.org/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Email</a></li>
             <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Linkedin</a></li>
         </ul>
         <br><br><br>

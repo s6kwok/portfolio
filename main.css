@@ -146,7 +146,10 @@ a {
     margin: 0%;
     padding: 0%;
     text-decoration: none;
-    color: #3a3a3a;
+    color: #CECECE;
+}
+a:hover {
+    color: #3A3A3A;
 }
 /* #bold-link:hover { */
     /* text-decoration: underline #7CAFC4 4px; */
@@ -359,14 +362,14 @@ nav {
     margin-top: 24px;
     margin-bottom: 12px; */
 }
-ul li a {
+/* ul li a {
     text-decoration:none;
     color: #3a3a3a;
 }
 ul li a:active {
-    font-weight: bold;
+    font-weight: bold; */
     /* border-bottom: 4px #3a3a3a solid; */
-}
+/* } */
 .logo {
     font-family: "Unna";
     font-style: normal;
@@ -402,13 +405,14 @@ ul li a:active {
     font-size: 1rem;
     line-height: 1.1875rem;
     letter-spacing: 0.015rem;
+    color: #CECECE;
     /* font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.01em; */
 }
 #links > li > a:hover {
     /* text-decoration: underline #7CAFC4 4px; */
-    color: #5E4AE3;
+    color: #3A3A3A;
     font-weight: bold;
     /* border-bottom: 4px #8C4843 solid; */
 }
@@ -752,8 +756,8 @@ footer {
 /* ABOUT PAGE */
 .content {
     padding-top: 1.5rem;
-    padding-left: 33rem;
-    padding-right: 18rem;
+    padding-left: 24rem;
+    padding-right: 24rem;
     /* padding-top: 24px;
     padding-left: 240px;
     padding-right: 240px; */
