@@ -37,3 +37,226 @@
         <br><br><br>
         <!-- <p style="font-size: 13px;">Designed + developed with lots of love, and lots of Vitasoy juice boxes ;)</p> -->
     </footer>
+
+
+
+    @media (max-width: 1200px) {
+    nav, .area, #scroll-target-header, .project, footer, .content, .line, .container {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .scroll-target > .section {
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+    .project {
+        padding-bottom: 7rem;
+    }
+    .card {
+        margin-left: 15%;
+        margin-right: 12%;
+        padding-left: 2.5rem;
+        padding-right: 3rem;
+        padding-top: 3.5rem;
+        padding-bottom: 4rem;
+    }
+}
+
+    /* nav, #scroll-target-header, .project, footer, .content, .line, .container { */
+        /* padding-left: 19%;
+        padding-right: 21%; */
+        /* max-width: 760px; */
+        /* margin-left: auto;
+        margin-right: auto; */
+    /* } */
+    .scroll-target > .section {
+        padding-left: 13%;
+        padding-right: 13%;
+    }
+    .card {
+        max-width: 860px;
+        /* margin-left: 17%;
+        margin-right: 15%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    @media (max-width: 1024px) {
+    /* html {
+        font-size: 16px;
+    } */
+    nav, .area, #scroll-target-header, .project, footer, .content, .line, .container {
+        padding-left: 19%;
+        padding-right: 19%;
+    }
+    .scroll-target > .section {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    .herocontainer-img {
+        max-width: 0%;
+    }
+    .herocontainer {
+        max-width: 100%;
+    }
+    .area {
+        margin-top: 4rem;
+    }
+    #top > img {
+        width: 100%;
+    }
+    .content > ul > li, .content > .section > ul > li {
+        padding-left: 0.25rem;
+    }
+    .photogrid {
+        display: block;
+    }
+    .photogrid > li, .photogrid > li > img {
+        width: 100%;
+    }
+    .project-no-padding {
+        padding-bottom: 3.5rem;
+    }
+    .project, .project-no-padding {
+        flex-direction: column-reverse;
+    }
+    
+    .project-no-padding > .projectimage-video {
+        max-width: 100%;
+    }
+    .project-no-padding > .projectrow > .section {
+        padding-bottom: 2rem;
+    }
+    .card {
+        flex-direction: column;
+        margin-left: 18%;
+        margin-right: 18%;
+        padding-left: 2.5rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+    }
+    .projectrow, .projectrow-video {
+        width: 100%;
+        padding-left: 0%;
+    }
+    .projectrow-card {
+        padding-left: 2rem;
+    }
+    .projectrow-right {
+        max-width: 100%;
+        padding-right: 0%;
+    }
+    .projectimage {
+        max-width: 80%;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+    }
+    .projectimage > img {
+        width: 100% !important;
+    }
+    @media (max-width: 714px) {
+        .projectimage {
+            max-width: 100%;
+            padding-right: 1rem;
+            padding-bottom: 1rem;
+        }
+        .card {
+            padding-left: 2rem;
+            padding-right: 2.5rem;
+            padding-bottom: 3rem;
+        }
+    }
+    .section > img {
+        max-width: 100% !important;
+    }
+
+}
+
+@media (max-width: 440px) {
+    html {
+        font-size: 14px;
+    }
+    nav, .area, #scroll-target-header, .project, footer, .content, .line, .container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .scroll-target > .section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .card {
+        margin-left: 4rem;
+        margin-right: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+    #links {
+        float: left;
+    }
+    #links > li {
+        margin-left: 0rem;
+        padding-left: 0rem;
+        padding-right: 1.4rem;
+    }
+    nav > ul > li {
+        padding-left: 0.2rem;
+        padding-left: 0.2rem;
+    }
+    footer > ul > li {
+        padding-left: 0rem;
+        padding-right: 0.5rem;
+        line-height: 2.5rem;
+    }
+    .herocontainer-img {
+        max-width: 0%;
+    }
+    .herocontainer {
+        max-width: 100%;
+    }
+    .area {
+        margin-top: 4rem;
+    }
+    #top > img {
+        width: 100%;
+    }
+    .content > ul > li, .content > .section > ul > li {
+        padding-left: 0.25rem;
+    }
+    .photogrid {
+        display: block;
+    }
+    .photogrid > li, .photogrid > li > img {
+        width: 100%;
+    }
+    .project {
+        flex-direction: column-reverse;
+    }
+    .projectrow {
+        max-width: 100%;
+        padding-right: 0%;
+    }
+    .projectrow-video {
+        width: 90%;
+        padding-left: 0%;
+    }
+    .projectimage {
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+    .project-no-padding > .projectimage {
+        max-width: 100%;
+    }
+    .section > img {
+        max-width: 100% !important;
+    }
+    .button-dark {
+        margin-bottom: 50px;
+    }
+    #double-buttons-responsive {
+        display: block;
+        margin-bottom: 2rem;
+    }
+}
