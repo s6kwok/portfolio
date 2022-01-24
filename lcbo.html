@@ -21,496 +21,475 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-
-
 </head>
 
 <body>
     <nav>
-        <a href="index.html"><h5 class="logo">Stacy Kwok</h5></a>
         <ul id="links">
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="about.html">Me</a></li>
-            <li style="padding-right: 0rem;"><a href="assets/Stacy Kwok Resume W22.pdf" target="_blank">Resume</a></li>
+            <li><a href="index.html"><h5 style="font-size: 22px;">Portfolio</h5></a></li>
+            <li style="padding-right: 0rem;"><a href="assets/Stacy Kwok Resume W22.pdf" target="_blank"><h5 style="font-size: 22px;">Resume</h5></a></li>
         </ul>
     </nav>
-    <div class="content" data-aos="fade" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
-        <h1>LCBO|next internship: LCBOdesk gold</h1>
-        <p>Designing 2 new LCBOdesk platform channels to help simplify the user acceptance testing process for several LCBO teams (building additional platforms to expand the original use case of LCBOdesk)</p>
-        <!-- <p>Scoping & designing the experience of 2 new platform channels building onto core MVP functionality, to solve additional problems faced by business users</p> -->
-        <br><br>
-        <img src="assets/lcbo-header.png" style="max-width:100%; height:auto;" id="photo">
-        <br><br><br><br>
-        <div class="section">
-            <h6>Context</h6>
-            <p>During my Fall 2021 internship at LCBO|next, one of the projects I led and really enjoyed working on was LCBOdesk. The MVP of this project was in the works when I started my internship, and had been previously touched by 2 different designers across 2 different terms.</p>
-        </div>
-        <br>
-        <div class="section">
-            <h6>Project Details</h6>
-            <p><strong>TEAM:</strong> 1 UX/UI designer (me!) + 1 product manager + 2 developers <br><strong>TIMELINE:</strong> Nov-Dec 2021 <br><strong>MY ROLE:</strong> Product strategy, scoping, user research, interaction & visual design</p>
-        </div>
-        <br>
-        <!-- <a href="#" class="button-dark" id="back-to-top">Back to top</a> -->
-        <div id="double-buttons">
-            <div id="double-buttons-responsive">
-                <a href="#final" class="button-dark">Skip to final designs</a>
-            </div>
-            <div id="double-buttons-responsive">
-                <a href="#process" class="button-ghost">Read about design decisions</a>
-            </div>
-        </div>
+
+
+    <div class="sidenav">
+        <a href="#context" target="_blank" style="font-weight: semi-bold;">Context</a>
+        <a href="#empathize" target="_blank" style="font-weight: semi-bold;">Empathize</a>
+        <a href="#define" target="_blank" style="font-weight: semi-bold;">Define</a>
+        <a href="#ideate" target="_blank" style="font-weight: semi-bold;">Ideate</a>
+        <a href="#prototype" target="_blank" style="font-weight: semi-bold;">Prototype</a>
+        <a href="#user-testing" target="_blank" style="font-weight: semi-bold;">Test</a>
+        <a href="#final" target="_blank" style="font-weight: semi-bold;">Final Designs</a>
+        <a href="#reflection" target="_blank" style="font-weight: semi-bold;">Reflection</a>
     </div>
-    <br><br><br><br><br><br>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-        
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-        
-            // Store hash
-            var hash = this.hash;
-        
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 1000, function(){
-        
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-            } // End if
-        });
-        });
-    </script>
-    <div class="scroll-target" id="purple">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <br><br>
-        <div class="content">
-            <p>Let’s catch up to speed</p>
-            <h2>What is LCBOdesk?</h2>
-            <p>The core concept of LCBOdesk MVP (bronze phase) is to provide users of LCBO|next products a means to streamline the way they receive help. LCBOdesk essentially consists of 2 seperate platforms:</p>
-            <ul>
-                <li>Presented in a widget, a simple questionnaire for users of live LCBO|next products to submit concerns, feedback, and suggestions</li>
-                <li>A portal counterpart where the reports submitted through the widget are centralized in one place to allow for easy monitoring, enabling the LCBO|next team to strengthen the support provided to stakeholders in a more efficient manner</li>
-            </ul>
-        </div>
-        <div class="content">
-            <h2>What are the "Bronze", "Silver", and "Gold" phases you speak of?</h2>
-            <p>At LCBOnext, all of our projects are broken out into phases, and we take our projects one phase at a time.</p>
-            <p>Bronze phase: MVP</p>
-            <p>Silver phase: Focus on improving the MVP and adding enhancements, additional functionality</p>
-            <p>Gold phase: Final product, completely flushed out and all functionality & channels completed</p>
-        </div>
-        <div class="content">
-            <h2>Where did I pick up from? What still needed to be done?</h2>
-            <p>The MVP (bronze phase) as mentioned above had been almost completely designed for, with only a few small changes and screens left for me to design. Check out the case study on the LCBO|next website <a href="https://www.lcbonext.com/copy-of-inline-spotlight" style="font-weight: bold; color: #5E4AE3; text-decoration: underline;">here</a> to see in further detail what the state of the designs were, before I joined.</p>
-            <p>With Fall 2021, it was now up to my team to figure out where we wanted to take the product; what enhancements/functionality we wanted for the silver & gold phases of the product.</p>
-        </div>
-        <br><br><br><br><br><br><br>
-    </div>
-    <div class="content">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <br><br>
-        <!-- <p>Let's fast track all the work done leading up to LBCOdesk Gold phase</p> -->
-        <h2>For the span of this case study, I’ll focus on the work done for the LCBOdesk Gold Phase specifically.</h2>
-        <br>
-        <p>I won't be talking about my contributions to the Bronze (MVP) design phase, nor my work scoping and designing the Silver design phase. Feel free to reach out if you want to hear more!</p>
-        <br>
-        <!-- <p>Work was done on the bronze phase designs including:</p>
-        <ul>
-            <li>Improving usability through adjusting the proportioning and adding missing navigational elements</li>
-            <li>Improving structuring of currrent screens and components (autolayout)</li>
-            <li>Redesigning several screens for improved scalability</li>
-            <li>Building out missing screens (ex. login page)</li>
-        </ul>
-        <br><br>
-        <p>Upon completion of MVP, the silver phase was then scoped and completed as well. The focus on the silver phase was technical enhancements for the developers, as well as designing new feature enhancements building upon the bronze MVP. This includes features such as:</p>
-        <ul>
-            <li>Contacting user who reported the issue</li>
-            <li>Comment/report history</li>
-            <li>Archive submitted reports on widget side</li>
-            <li>Edit submitted requests</li>
-            <li>Group/merge similar reports that come into the LCBO|next team portal</li>
-        </ul> -->
-    </div>
-    <br><br><br><br><br>
-    <div class="scroll-target" id="purple">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <br>
-        <div class="content">
-            <p>The project</p>
-            <h2>Noticing an additional user need for a different use case, that LCBOdesk could help with</h2>
-            <br>
-            <p>One big part of my team’s term at LCBO|next was the <strong>UAT (user acceptance testing) testing cycles regularly done at the lab for live products</strong>. This process was quite time consuming, disorganized, and not as efficient as it could have been and was sometimes frustrating for all parties involved for a variety of reasons. With LCBOdesk’s ability to recieve reports into a portal, I realized that this product could be a great solution to help ease many of the pain points faced by key business stakeholders who test the new changes to live platforms, as well as the pain points of our team in dealing with many defect reports and communicating with multiple teams.</p>
+
+    <div class="main">
+        <div class="content" data-aos="fade" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
+            <p class="message" style="color: red; display: none;">This case study has not been optimized for smaller screensizes yet! <strong>For an easier reading experience, please view on a larger screen. </strong>Stay tuned for improved mobile view!</p>
+            <h1>LCBO|next internship: LCBOdesk gold</h1>
+            <p>Designing 2 new LCBOdesk platform channels to help simplify the user acceptance testing process for several LCBO teams (building additional platforms to expand the original use case of LCBOdesk)</p>
             <br><br>
-            <img src="assets/lcbo-project.png" style="max-width:90%; height:auto;">
-        </div>
-        <br><br><br><br><br><br>
-    </div>
-    <br><br><br>
-    <div style="display: flex; justify-content: center;">
-        <!-- data-aos="fade-up" data-aos-once="true" -->
-        <img src="assets/lcbo-final-1.png" style="max-width:90%; height:auto;">
-    </div>
-    <div class="content">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <br><br>
-        <p>The process</p>
-        <h2>Gaining a deeper understanding of the problems being faced</h2>
-        <br>
-        <p>While the idea went noticed based on personal experience partaking in UAT testing cycles at the lab, it was still important to conduct user research to gain further perspective on pain points. </p>
-        <br><br>
-        <div class="section">
-            <h6>Users</h6>
-            <p><strong>UAT Testers:</strong> Key users from the business side of LCBO who help us with diligent testing of the enhancements and changes they request, for the products we build for them. They are avid users of the products our team builds, and provide constant feedback and improvement ideas for us to make the products better and better for their changing needs.</p>
-            <p><strong>LCBO|next team:</strong> My team at the lab, a small group within LCBO IT Innovation</p>
-        </div>
-        <br><br>
-        <div class="section">
-            <h6>User research</h6>
-            <p>I conducted 3 user interviews with both UAT testers and LCBO|next team members. A series of structured questions were asked to gain information on their background, learn about the problem space, and any thoughts they might have in regards to the solution space. Notes were taken during the interview as questions were asked.</p>
+            <img src="assets/lcbo-header.png" style="max-width:100%; height:auto;" id="photo">
+            <br><br><br><br>
+            <div class="section" id="context">
+                <h6>Context</h6>
+                <p>During my Fall 2021 internship at LCBO|next, one of the projects I led and really enjoyed working on was LCBOdesk. The MVP of this project was in the works when I started my internship, and had been previously touched by 2 different designers across 2 different terms.</p>
+            </div>
             <br>
-            <img src="assets/lcbo-research-1.png" style="max-width:90%; height:auto;">
-        </div>
-        <br><br>
-        <div class="section">
-            <h6>Uncovering patterns from user research</h6>
-            <p>After the interviews, key points were drawn from each of the user interview notes and were organized through affinity mapping to discover groups and themes based on relationships. They were sorted into categories, and each point was also classified as a thought, feeling, action, or something said.</p>
-            <p>Afterwards, the key insights from the user interviews were summarized even further.</p>
-        </div>
-    </div>
-    <div style="display: flex; justify-content: center;">
-        <!-- data-aos="fade-up" data-aos-once="true" -->
-        <img src="assets/lcbo-research-2.png" style="max-width:90%; height:auto;">
-    </div>
-    <br>
-    <div style="display: flex; justify-content: center;">
-        <!-- data-aos="fade-up" data-aos-once="true" -->
-        <img src="assets/lcbo-research-3.png" style="max-width:55%; height:auto;">
-    </div>
-    <div class="content">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <br><br>
-        <div class="section">
-            <h6>Synthesizing the learnings</h6>
-            <p>All the learnings from the user interviews and affinity mapping were then consolidating into 2 user personas for the main users of the LCBOdesk Gold platform; one for the UAT testers, and one for the LCBO|next PM.</p>
-            <p>Problem statements were also crafted for each persona, take a read at them below!</p>
-        </div>
-    </div>
-    <div style="display: flex; justify-content: center;">
-        <!-- data-aos="fade-up" data-aos-once="true" -->
-        <img src="assets/lcbo-research-4.png" style="max-width:90%; height:auto;">
-    </div>
-    <div class="content">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <div class="section">
-            <p>It was clear that the UAT tester and PM personas face quite different challenges during the UAT testing process, with the UAT testers mainly facing issues around <strong>defect reporting and explaining/viewing status of defects</strong>, while PMs struggle more with <strong>communication and organization between teams, as well as term to term handoff</strong>.</p>
+            <div class="section">
+                <h6>Project Details</h6>
+                <p><strong>TEAM:</strong> 1 UX/UI designer (me!) + 1 product manager + 2 developers <br><strong>TIMELINE:</strong> Nov-Dec 2021 <br><strong>MY ROLE:</strong> Product strategy, scoping, user research, interaction & visual design</p>
+            </div>
+            <br>
         </div>
         <br><br><br>
-        <div class="section">
-            <h6>Consolidating the journey</h6>
-            <p>Before moving onto ideation, a journey map for the tester was crafted as a means to dive into detail on the current journey of a UAT tester, as it was much more complex ompared to the PM journey. This was a great opportunity to be able to visual see the journey and the pain points come up in the journey, as well as have the space to list the channels and motivations within each phase of the journey. This was helpful for to look back onto when further along in designing LCBOdesk gold, in seeing how the journey would change compared to the current process or how it might fit in.</p>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+            
+                // Store hash
+                var hash = this.hash;
+            
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 1000, function(){
+            
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+            });
+        </script>
+        <div class="scroll-target" id="grey">
+            <br>
+            <div class="content">
+                <p>Let’s catch up to speed</p>
+                <h2>What is LCBOdesk?</h2>
+                <p>The core concept of LCBOdesk MVP (bronze phase) is to provide users of LCBO|next products a means to streamline the way they receive help. LCBOdesk essentially consists of 2 seperate platforms:</p>
+                <ul>
+                    <li>Presented in a widget, a simple questionnaire for users of live LCBO|next products to submit concerns, feedback, and suggestions</li>
+                    <li>A portal counterpart where the reports submitted through the widget are centralized in one place to allow for easy monitoring, enabling the LCBO|next team to strengthen the support provided to stakeholders in a more efficient manner</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>What are the "Bronze", "Silver", and "Gold" phases you speak of?</h2>
+                <p>At LCBOnext, all of our projects are broken out into phases, and we take our projects one phase at a time.</p>
+                <p>Bronze phase: MVP</p>
+                <p>Silver phase: Focus on improving the MVP and adding enhancements, additional functionality</p>
+                <p>Gold phase: Final product, completely flushed out and all functionality & channels completed</p>
+            </div>
+            <div class="content">
+                <h2>Where did I pick up from? What still needed to be done?</h2>
+                <p>The MVP (bronze phase) as mentioned above had been almost completely designed for, with only a few small changes and screens left for me to design. Check out the case study on the LCBO|next website <a href="https://www.lcbonext.com/copy-of-inline-spotlight" style="font-weight: bold; text-decoration: underline; color: #3a3a3a;">here</a> to see in further detail what the state of the designs were, before I joined.</p>
+                <p>With Fall 2021, it was now up to my team to figure out where we wanted to take the product; what enhancements/functionality we wanted for the silver & gold phases of the product.</p>
+            </div>
+            <br><br><br><br><br><br>
         </div>
-    </div>
-    <div style="display: flex; justify-content: center;">
-        <!-- data-aos="fade-up" data-aos-once="true" -->
-        <img src="assets/lcbo-research-5.png" style="max-width:90%; height:auto;">
-    </div>
-    <br><br>
-    <div class="content">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <br>
-        <h2>Ideation</h2>
-        <br>
-        <div class="section">
-            <h6>Solving the key problems</h6>
-            <p>Alot of the major problems and pain points had been discovered; it was now time to think of ways LCBOdesk can help address the problems identified and shape the solution that LCBOdesk Gold will provide.</p>
+        <div class="content">
+            <br><br>
+            <h2>For the span of this case study, I’ll focus on the work done for the LCBOdesk Gold Phase specifically.</h2>
+            <br>
+            <p>I won't be talking about my contributions to the Bronze (MVP) design phase, nor my work scoping and designing the Silver design phase. Feel free to reach out if you want to hear more!</p>
         </div>
-        <table>
-            <tr >
-              <td>Problem Statement</td>
-              <td>HMW alleviate this problem/pain point?</td>
-            </tr>
-            <tr>
-                <td>LCBO UAT testers need a way to track the status of both changes requested, and defects found in testing, because they feel disjointed from the processes after defects are reported.</td>
-                <td>Reporting the defects in formats that show as tickets, and having a status shown for each ticket</td>
-            </tr>
-            <tr>
-                <td>Varying level of ease for parents in signing up for an account; one tester notably kept starting the sign up process then clicking X and going back to the first sign up page and then starting and clicking the back button. Looked like tester was confused about back versus X button, appeared as though they were trying to use a back button on the Sign Up page that wasn't there.</td>
-                <td>Made sure to double check that we had the back button on all pages we needed it on, as well as the X button. Added the text "Back" to make it clearer the function of the back arrow.</td>
-            </tr>
-            <tr>
-                <td>LCBO UAT testers need a guided way to submit defects found because they have a hard time explaining more complex defects that are harder to reproduce.</td>
-                <td>Submit a new defect found in UAT testing through a structured form, enabling them a clearer way to get their point across and space to explain better (also for us to get what we need from the defect reported, ex. how to reproduce the defect)</td>
-            </tr>
-            <tr>
-                <td>LCBO UAT testers want a way to keep a record of future enhancements because it would simplify and ease the process of collectively tracking each round of future enhancements. </td>
-                <td>Ability to submit suggestions on the platform, to collect for backlog</td>
-            </tr>
-            <tr>
-                <td>LCBOnext product managers need a way to enable UAT testers from all teams to collectively view all defects submitted because product managers spend a lot of time addressing differing opinions and confusion from teams regarding the aspects being fixed.</td>
-                <td>Ability for all teams to view all the defeccts submitted, as well as which team submitted the defect</td>
-            </tr>
-            <tr>
-                <td>LCBOnext product managers need a way to facilitate effective handoff and onboarding of what UAT change requests and defects have been fixed because they have difficulty gauging what aspects of each defect report have been completing.</td>
-                <td>Through showing status of each defect and having the ability to keep track of which defects are being attended to, handoff/onboarding process will be easier for next team to see what types of defects are left to be submitted</td>
-            </tr>
-        </table>
+        <br><br><br><br><br>
+        <div class="scroll-target" id="grey">
+            <br>
+            <div class="content">
+                <p>The project</p>
+                <h2>Noticing an additional user need for a different use case, that LCBOdesk could help with</h2>
+                <br>
+                <p>One big part of my team’s term at LCBO|next was the <strong>UAT (user acceptance testing) testing cycles regularly done at the lab for live products</strong>. This process was quite time consuming, disorganized, and not as efficient as it could have been and was sometimes frustrating for all parties involved for a variety of reasons. With LCBOdesk’s ability to recieve reports into a portal, I realized that this product could be a great solution to help ease many of the pain points faced by key business stakeholders who test the new changes to live platforms, as well as the pain points of our team in dealing with many defect reports and communicating with multiple teams.</p>
+                <br><br>
+                <img src="assets/lcbo-project.png" style="max-width:90%; height:auto;">
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+        <br><br><br>
+        <div style="display: flex; justify-content: center;">
+            <!-- data-aos="fade-up" data-aos-once="true" -->
+            <img src="assets/lcbo-final-1.png" style="max-width:75%; height:auto;">
+        </div>
+        <div class="content" id="empathize">
+            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+            <br><br>
+            <p>The process</p>
+            <h2>Gaining a deeper understanding of the problems being faced</h2>
+            <br>
+            <p>While the idea went noticed based on personal experience partaking in UAT testing cycles at the lab, it was still important to conduct user research to gain further perspective on pain points. </p>
+            <br><br>
+            <div class="section">
+                <h6>Users</h6>
+                <p><strong>UAT Testers:</strong> Key users from the business side of LCBO who help us with diligent testing of the enhancements and changes they request, for the products we build for them. They are avid users of the products our team builds, and provide constant feedback and improvement ideas for us to make the products better and better for their changing needs.</p>
+                <p><strong>LCBO|next team:</strong> My team at the lab, a small group within LCBO IT Innovation</p>
+            </div>
+            <br><br>
+            <div class="section">
+                <h6>User research</h6>
+                <p>I conducted 3 user interviews with both UAT testers and LCBO|next team members. A series of structured questions were asked to gain information on their background, learn about the problem space, and any thoughts they might have in regards to the solution space. Notes were taken during the interview as questions were asked.</p>
+                <br>
+                <img src="assets/lcbo-research-1.png" style="max-width:90%; height:auto;">
+            </div>
+            <br><br>
+            <div class="section">
+                <h6>Uncovering patterns from user research</h6>
+                <p>After the interviews, key points were drawn from each of the user interview notes and were organized through affinity mapping to discover groups and themes based on relationships. They were sorted into categories, and each point was also classified as a thought, feeling, action, or something said.</p>
+                <p>Afterwards, the key insights from the user interviews were summarized even further.</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <!-- data-aos="fade-up" data-aos-once="true" -->
+            <img src="assets/lcbo-research-2.png" style="max-width:75%; height:auto;">
+        </div>
+        <br>
+        <div style="display: flex; justify-content: center;">
+            <!-- data-aos="fade-up" data-aos-once="true" -->
+            <img src="assets/lcbo-research-3.png" style="max-width:50%; height:auto;">
+        </div>
+        <div class="content" id="define">
+            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+            <div class="section">
+                <h6>Synthesizing the learnings</h6>
+                <p>All the learnings from the user interviews and affinity mapping were then consolidating into 2 user personas for the main users of the LCBOdesk Gold platform; one for the UAT testers, and one for the LCBO|next PM.</p>
+                <p>Problem statements were also crafted for each persona, take a read at them below!</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <!-- data-aos="fade-up" data-aos-once="true" -->
+            <img src="assets/lcbo-research-4.png" style="max-width:75%; height:auto;">
+        </div>
+        <div class="content">
+            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+            <div class="section">
+                <p>It was clear that the UAT tester and PM personas face quite different challenges during the UAT testing process, with the UAT testers mainly facing issues around <strong>defect reporting and explaining/viewing status of defects</strong>, while PMs struggle more with <strong>communication and organization between teams, as well as term to term handoff</strong>.</p>
+            </div>
+            <br><br><br>
+            <div class="section">
+                <h6>Consolidating the journey</h6>
+                <p>Before moving onto ideation, a journey map for the tester was crafted as a means to dive into detail on the current journey of a UAT tester, as it was much more complex ompared to the PM journey. This was a great opportunity to be able to visual see the journey and the pain points come up in the journey, as well as have the space to list the channels and motivations within each phase of the journey. This was helpful for to look back onto when further along in designing LCBOdesk gold, in seeing how the journey would change compared to the current process or how it might fit in.</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <!-- data-aos="fade-up" data-aos-once="true" -->
+            <img src="assets/lcbo-research-5.png" style="max-width:75%; height:auto;">
+        </div>
         <br><br>
-        <p>At this point, we had a strong idea of how we were to use the concept of LCBOdesk bronze & silver, to address these new problems. We were ready to solidify the concept of LCBOdesk gold and consolidate (from a product standpoint) what we wanted to build to address the problems and challenges we've discovered</p>
-    </div>
-    <br><br><br><br><br>
-    <div class="scroll-target" id="purple">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+        <div class="content" id="ideate">
+            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+            <br>
+            <h2>Ideation</h2>
+            <br>
+            <div class="section">
+                <h6>Solving the key problems</h6>
+                <p>Alot of the major problems and pain points had been discovered; it was now time to think of ways LCBOdesk can help address the problems identified and shape the solution that LCBOdesk Gold will provide.</p>
+            </div>
+            <table>
+                <tr >
+                  <td>Problem Statement</td>
+                  <td>HMW alleviate this problem/pain point?</td>
+                </tr>
+                <tr>
+                    <td>LCBO UAT testers need a way to track the status of both changes requested, and defects found in testing, because they feel disjointed from the processes after defects are reported.</td>
+                    <td>Reporting the defects in formats that show as tickets, and having a status shown for each ticket</td>
+                </tr>
+                <tr>
+                    <td>Varying level of ease for parents in signing up for an account; one tester notably kept starting the sign up process then clicking X and going back to the first sign up page and then starting and clicking the back button. Looked like tester was confused about back versus X button, appeared as though they were trying to use a back button on the Sign Up page that wasn't there.</td>
+                    <td>Made sure to double check that we had the back button on all pages we needed it on, as well as the X button. Added the text "Back" to make it clearer the function of the back arrow.</td>
+                </tr>
+                <tr>
+                    <td>LCBO UAT testers need a guided way to submit defects found because they have a hard time explaining more complex defects that are harder to reproduce.</td>
+                    <td>Submit a new defect found in UAT testing through a structured form, enabling them a clearer way to get their point across and space to explain better (also for us to get what we need from the defect reported, ex. how to reproduce the defect)</td>
+                </tr>
+                <tr>
+                    <td>LCBO UAT testers want a way to keep a record of future enhancements because it would simplify and ease the process of collectively tracking each round of future enhancements. </td>
+                    <td>Ability to submit suggestions on the platform, to collect for backlog</td>
+                </tr>
+                <tr>
+                    <td>LCBOnext product managers need a way to enable UAT testers from all teams to collectively view all defects submitted because product managers spend a lot of time addressing differing opinions and confusion from teams regarding the aspects being fixed.</td>
+                    <td>Ability for all teams to view all the defeccts submitted, as well as which team submitted the defect</td>
+                </tr>
+                <tr>
+                    <td>LCBOnext product managers need a way to facilitate effective handoff and onboarding of what UAT change requests and defects have been fixed because they have difficulty gauging what aspects of each defect report have been completing.</td>
+                    <td>Through showing status of each defect and having the ability to keep track of which defects are being attended to, handoff/onboarding process will be easier for next team to see what types of defects are left to be submitted</td>
+                </tr>
+            </table>
+            <br><br>
+            <p>At this point, we had a strong idea of how we were to use the concept of LCBOdesk bronze & silver, to address these new problems. We were ready to solidify the concept of LCBOdesk gold and consolidate (from a product standpoint) what we wanted to build to address the problems and challenges we've discovered</p>
+        </div>
+        <br><br><br><br><br>
+        <div class="scroll-target" id="grey">
+            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+            <br><br>
+            <div class="content">
+                <p>LCBOdesk Gold concept</p>
+                <h2>Part #1: Building a web platform for UAT testers to submit defects and suggestions</h2>
+                <br>
+                <h2>Part #2: Expanding the LCBOdesk Admin Portal to also manage the UAT defect reports that come in</h2>
+                <br><br>
+                <p>Essentially, with LCBOdesk gold we want to improve the feedback cycle between our lab and UAT testers, through enabling UAT testers from business to be able to <strong>submit and track progress of defect reports & enhancements systematically</strong>, through a web portal. This will provide structure to how they submit defects they find, convenience in all UAT related information on the portal, and increased transparency of timelines and defects being fixed.</p>
+                <ul>
+                    <li>UAT testers may be able to report defects, add photos, notes, markup screens right through the platform. They may also be able to see the links, status of defect fixes, etc. right on the platform itself.</li>
+                    <li>On the LCBOdesk admin portal side, the bronze feature widget reports would still be able to be collected, however there would be a new section for UAT testing as well.</li>
+                </ul>
+                <br><br>
+                <img src="assets/lcbo-research-6.png" style="max-width:75%; height:auto;">
+            </div>
+            <br><br><br><br>
+        </div>
         <br><br>
         <div class="content">
-            <p>LCBOdesk Gold concept</p>
-            <h2>Part #1: Building a web platform for UAT testers to submit defects and suggestions</h2>
-            <br>
-            <h2>Part #2: Expanding the LCBOdesk Admin Portal to also manage the UAT defect reports that come in</h2>
-            <br><br>
-            <p>Essentially, with LCBOdesk gold we want to improve the feedback cycle between our lab and UAT testers, through enabling UAT testers from business to be able to <strong>submit and track progress of defect reports & enhancements systematically</strong>, through a web portal. This will provide structure to how they submit defects they find, convenience in all UAT related information on the portal, and increased transparency of timelines and defects being fixed.</p>
-            <ul>
-                <li>UAT testers may be able to report defects, add photos, notes, markup screens right through the platform. They may also be able to see the links, status of defect fixes, etc. right on the platform itself.</li>
-                <li>On the LCBOdesk admin portal side, the bronze feature widget reports would still be able to be collected, however there would be a new section for UAT testing as well.</li>
-            </ul>
-            <br><br>
-            <img src="assets/lcbo-research-6.png" style="max-width:90%; height:auto;">
+            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+            <div class="section">
+                <h6>User flows</h6>
+                <p>With a high level understanding of what the purpose of the gold phase would entail and what new channels were to be created, it was then time to craft user flows to shape how the product would work and how the user would move through the product. This was a helpful step to identify how the channels interrelate, and to nail down the concept and core functionality for the LCBOdesk Gold product.</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <!-- data-aos="fade-up" data-aos-once="true" -->
+            <img src="assets/lcbo-ideation-1.png" style="max-width:75%; height:auto;">
         </div>
         <br><br><br><br>
-    </div>
-    <br><br>
-    <div class="content">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <div class="section">
-            <h6>User flows</h6>
-            <p>With a high level understanding of what the purpose of the gold phase would entail and what new channels were to be created, it was then time to craft user flows to shape how the product would work and how the user would move through the product. This was a helpful step to identify how the channels interrelate, and to nail down the concept and core functionality for the LCBOdesk Gold product.</p>
-        </div>
-    </div>
-    <div style="display: flex; justify-content: center;">
-        <!-- data-aos="fade-up" data-aos-once="true" -->
-        <img src="assets/lcbo-ideation-1.png" style="max-width:90%; height:auto;">
-    </div>
-    <br><br><br><br>
-    <div class="content">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <br>
-        <h2>Wireframing & Prototyping: Making design decisions</h2>
-        <br>
-        <p>In beginning to wireframe and build out the product vision, many important design decisions were considered and made. Take a look at some of them below!</p>
-        <br><br>
-        <div class="section" style="padding-bottom: 0.5rem;">
-            <h6>Design decision #1: Seperating reports by project (UAT Tester View)</h6>
-            <p>4 different options were explored, in regards of how to visually show and group all the claims that come in from LCBO|next projects were created. This final option of a preliminary page of projects then clicking into each project to view tickets was chosen, because it was the least likely to overwhelm the users with all possible tickets submitted, and the less hassle in not needing to apply filters or scroll to the project they want.</p>
-            <br><br>
-            <video width="100%" height="auto" autoplay loop muted playsinline>
-                <source src="assets/lcbo-demo-1.mp4" type="video/mp4">
-            </video>
-        </div>
-        <br><br><br><br><br><br><br>
-        <div class="section" style="padding-bottom: 0.5rem;">
-            <h6>Design decision #2: Active/inactive projects (Admin View)</h6>
-            <p>With the decision to organize claims through needing to select the project first, it was important to consider how projects would be shown on the preliminary page. It was decided to have an active/inactive status on each project, to inform users and provide full transparency of which projects the lab is currently working on. It also makes it easier to find projects that need testing as well, preventing the situation of having to scroll through a list of inactive projects!</p>
-            <br><br>
-            <video width="100%" height="auto" autoplay loop muted playsinline>
-                <source src="assets/lcbo-demo-2.mp4" type="video/mp4">
-            </video>
-        </div>
-        <br><br><br><br><br><br><br>
-        <div class="section" style="padding-bottom: 0.5rem;">
-            <h6>Design decision #3: Comment upon changing status (UAT Tester View)</h6>
-            <p>The status on each ticket is a really big part of solving challenges faced by both users, and it was really important to take extra care in defining the interaction that occurs when changing a status, especially as it would alert others. To provide transparency and to let others know why the status is changed or to note down any thoughts, the opportunity is provided upon change to note down any important comments. Not only is this an informative way to provide thorough context and updates to teammembers, but this is also a familar pattern seen in other platforms created by LCBO|next as well.</p>
-        </div>
-        <br><br>
-            <video width="100%" height="auto" autoplay loop muted playsinline>
-                <source src="assets/lcbo-demo-3.mp4" type="video/mp4">
-            </video>
-        <br><br><br><br><br><br><br>
-    </div>
-    <div class="scroll-target" id="purple">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <div class="section" id="final">
-            <h2 id="scroll-target-h2-shortened">Hi-Fidelity Designs</h2>
+        <div class="content" id="prototype">
+            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
             <br>
-            <div class="project-no-padding">
-                <div class="projectimage-video">
-                    <video width="100%" height="auto" autoplay loop muted playsinline>
-                        <source src="assets/lcbo-demo-4.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="projectrow-video">
-                    <div class="section">
-                        <h6>The uat tester portal</h6>
-                        <p>Building a similar portal to the LCBOdesk bronze/silver portal for admins, but intended for UAT testers to submit defect report and improvement ideas.</p>
-                        <p>Enabling UAT testers to provide their reports in a structured manner, see transparency throughout the process of getting the defects fixed, and having a systematic method of organizing and referring back to previously reported defects.</p>
+            <h2>Wireframing & Prototyping: Making design decisions</h2>
+            <br>
+            <p>In beginning to wireframe and build out the product vision, many important design decisions were considered and made. Take a look at some of them below!</p>
+            <br><br>
+            <div class="section" style="padding-bottom: 0.5rem;">
+                <h6>Design decision #1: Seperating reports by project (UAT Tester View)</h6>
+                <p>4 different options were explored, in regards of how to visually show and group all the claims that come in from LCBO|next projects were created. This final option of a preliminary page of projects then clicking into each project to view tickets was chosen, because it was the least likely to overwhelm the users with all possible tickets submitted, and the less hassle in not needing to apply filters or scroll to the project they want.</p>
+                <br><br>
+                <video width="100%" height="auto" autoplay loop muted playsinline>
+                    <source src="assets/lcbo-demo-1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <br><br><br><br><br><br><br>
+            <div class="section" style="padding-bottom: 0.5rem;">
+                <h6>Design decision #2: Active/inactive projects (Admin View)</h6>
+                <p>With the decision to organize claims through needing to select the project first, it was important to consider how projects would be shown on the preliminary page. It was decided to have an active/inactive status on each project, to inform users and provide full transparency of which projects the lab is currently working on. It also makes it easier to find projects that need testing as well, preventing the situation of having to scroll through a list of inactive projects!</p>
+                <br><br>
+                <video width="100%" height="auto" autoplay loop muted playsinline>
+                    <source src="assets/lcbo-demo-2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <br><br><br><br><br><br><br>
+            <div class="section" style="padding-bottom: 0.5rem;">
+                <h6>Design decision #3: Comment upon changing status (UAT Tester View)</h6>
+                <p>The status on each ticket is a really big part of solving challenges faced by both users, and it was really important to take extra care in defining the interaction that occurs when changing a status, especially as it would alert others. To provide transparency and to let others know why the status is changed or to note down any thoughts, the opportunity is provided upon change to note down any important comments. Not only is this an informative way to provide thorough context and updates to teammembers, but this is also a familar pattern seen in other platforms created by LCBO|next as well.</p>
+            </div>
+            <br><br>
+                <video width="100%" height="auto" autoplay loop muted playsinline>
+                    <source src="assets/lcbo-demo-3.mp4" type="video/mp4">
+                </video>
+            <br><br><br><br><br><br><br>
+        </div>
+        <div class="scroll-target" id="grey">
+            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+            <div class="section" id="final">
+                <h2 id="scroll-target-h2-shortened">Hi-Fidelity Designs</h2>
+                <br>
+                <div class="project-no-padding">
+                    <div class="projectimage-video">
+                        <video width="100%" height="auto" autoplay loop muted playsinline>
+                            <source src="assets/lcbo-demo-4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="projectrow-video">
+                        <div class="section">
+                            <h6>The uat tester portal</h6>
+                            <p>Building a similar portal to the LCBOdesk bronze/silver portal for admins, but intended for UAT testers to submit defect report and improvement ideas.</p>
+                            <p>Enabling UAT testers to provide their reports in a structured manner, see transparency throughout the process of getting the defects fixed, and having a systematic method of organizing and referring back to previously reported defects.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="project-no-padding">
-                <div class="projectimage-video">
-                    <video width="100%" height="auto" autoplay loop muted playsinline>
-                        <source src="assets/lcbo-demo-5.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="projectrow-video">
-                    <div class="section">
-                        <h6>Expanding the admin portal</h6>
-                        <p>Incorporating another tab to the LCBOdesk bronze/silver portal for admins, to seperate widget submitted feedback with UAT feedback.</p>
-                        <p>Enabling the LCBO|next team to create new projects, manage users, add a general project status, view submitted reports, update status of reports, etc.</p>
+                <div class="project-no-padding">
+                    <div class="projectimage-video">
+                        <video width="100%" height="auto" autoplay loop muted playsinline>
+                            <source src="assets/lcbo-demo-5.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="projectrow-video">
+                        <div class="section">
+                            <h6>Expanding the admin portal</h6>
+                            <p>Incorporating another tab to the LCBOdesk bronze/silver portal for admins, to seperate widget submitted feedback with UAT feedback.</p>
+                            <p>Enabling the LCBO|next team to create new projects, manage users, add a general project status, view submitted reports, update status of reports, etc.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <br><br><br>
-    <div style="display: flex; justify-content: center;">
-        <!-- data-aos="fade-up" data-aos-once="true" -->
-        <img src="assets/lcbo-final-2.png" style="max-width:90%; height:auto;">
-    </div>
-    <br><br><br>
-    <div style="display: flex; justify-content: center;">
-        <!-- data-aos="fade-up" data-aos-once="true" -->
-        <img src="assets/lcbo-final-3.png" style="max-width:90%; height:auto;">
-    </div>
-    <br><br><br>
-    <div class="content" id="process">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <div class="section" style="padding-bottom: 0.5rem;">
-            <br>
-            <h2>It’s time... for testing</h2>
-            <h6>Conducting usability testing</h6>
-            <p>After creating the hi-fidelity wireframes, I wanted to get feedback from potential users. I conducted usability testing with 4 interviewees; 2 of which for UAT testers, and 2 for LCBO|next team members.</p>
-            <br>
-            <img src="assets/lcbo-testing-1.png" style="max-width:90%; height:auto;">
-            <br><br>
-            <p>After that, it was time to prototype and seperate the prototype into the series of tasks I wanted each type of tester to attempt during the testing session. 5 tasks for each type of user were prepared, and during the session many valuable observations and insights were uncovered, such as from the questions asked.</p>
+        <br><br><br>
+        <div style="display: flex; justify-content: center;">
+            <!-- data-aos="fade-up" data-aos-once="true" -->
+            <img src="assets/lcbo-final-2.png" style="max-width:75%; height:auto;">
         </div>
-    </div>
-    <div class="content">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <h6 style="margin-bottom: 2rem; margin-top: 0rem;">UAT Tester usability testing findings</h6>
-        <table>
-            <tr>
-              <td>Testing observation</td>
-              <td>Change to be made</td>
-            </tr>
-            <tr>
-                <td>Like it being shown whether a project is active or inactive</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Confusion on what join/leave project meant, and if you only had to join one time; active/inactive was enough</td>
-                <td>Removal of join/leave project, ability for everyone with access to Portal to view defects reported for each project, for transparency</td>
-            </tr>
-            <tr>
-                <td>Assumption that upon creating defect, would have to select which project the defect pertains to</td>
-                <td>Re-stating the project defect would be pertaining to, at the top of the defect reporting form</td>
-            </tr>
-            <tr>
-                <td>Likes seeing the timeline displayed on information, as ETA is super important to their teams</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Overall metric for completion more helpful than a general status on what the general status of LCBO|next progress is</td>
-                <td>Having metrics on project information section, rather than a general status that is similar to the tickets. Emphasis on 80/80 defects completed, or an overall percentage of competion</td>
-            </tr>
-            <tr>
-                <td>Bigger box for comment space</td>
-                <td>Widening the modal for comment space</td>
-            </tr>
-            <tr>
-                <td>Asked tester about the easiest and most relevant terminology to use</td>
-                <td>“Enhancement” easier terminology to grasp, rather than “Suggestion” or “Improvement”</td>
-            </tr>
-            <tr>
-                <td>Would like to type into text fields, and not just select from options for certain questions; confusion on whether user has to type out numbers for steps or if they are labels</td>
-                <td>Having conversation with developers in regards to feasibility and complexity of having text boxes that have drop down select as well as the ability to type into them</td>
-            </tr>
-            <tr>
-                <td>Showing the generic team who submitted defect is not as helpful as being able to see the exact person who submitted it</td>
-                <td>Removing the team aspect with specific name of user who submitted defect, for transparency</td>
-            </tr>
-        </table>
-    </div>
-    <div class="content">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <h6 style="margin-bottom: 2rem;">Admin usability testing findings</h6>
-        <table>
-            <tr>
-              <td>Testing observation</td>
-              <td>Change to be made</td>
-            </tr>
-            <tr>
-                <td>Asked tester about the easiest and most relevant terminology to use</td>
-                <td>Change “environment link” to “development link”</td>
-            </tr>
-            <tr>
-                <td>Enjoys the section with the development link, as testers repeatedly lose the link and ask for it over and over again. However, development links don’t change often, would be annoying for it to go away with a change in status</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Don’t like how easily status can be removed</td>
-                <td>Ensure the information on the status is accessible no matter what stage the project is in; replace status information with project information section with all the relevent links needed</td>
-            </tr>
-            <tr>
-                <td>Status on each ticket as well as overall status is confusing; if they’re the same thing, would feel like doubling up on statuses, which could be unnecessary</td>
-                <td>Make distinction between overall project status clearer from individual ticket statuses; make it clearer what it is and the purpose, or remove it</td>
-            </tr>
-            <tr>
-                <td>Enjoys the user mangement section</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Tester asked questions regarding email updates that would be sent, and the frequency</td>
-                <td>One email at the end of the day summarizing all the changes of statuses made for tickets</td>
-            </tr>
-        </table>
-    </div>
-    <br><br>
-    <div class="content">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <h2>Leaving off at the completion of testing: the close of the term</h2>
+        <br><br><br>
+        <div style="display: flex; justify-content: center;">
+            <!-- data-aos="fade-up" data-aos-once="true" -->
+            <img src="assets/lcbo-final-3.png" style="max-width:75%; height:auto;">
+        </div>
+        <br><br><br>
+        <div class="content" id="user-testing">
+            <div class="section" style="padding-bottom: 0.5rem;">
+                <br>
+                <h2>It’s time... for testing</h2>
+                <h6>Conducting usability testing</h6>
+                <p>After creating the hi-fidelity wireframes, I wanted to get feedback from potential users. I conducted usability testing with 4 interviewees; 2 of which for UAT testers, and 2 for LCBO|next team members.</p>
+                <br>
+                <img src="assets/lcbo-testing-1.png" style="max-width:75%; height:auto;">
+                <br><br>
+                <p>After that, it was time to prototype and seperate the prototype into the series of tasks I wanted each type of tester to attempt during the testing session. 5 tasks for each type of user were prepared, and during the session many valuable observations and insights were uncovered, such as from the questions asked.</p>
+            </div>
+        </div>
+        <div class="content">
+            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+            <h6 style="margin-bottom: 2rem; margin-top: 0rem;">UAT Tester usability testing findings</h6>
+            <table>
+                <tr>
+                  <td>Testing observation</td>
+                  <td>Change to be made</td>
+                </tr>
+                <tr>
+                    <td>Like it being shown whether a project is active or inactive</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Confusion on what join/leave project meant, and if you only had to join one time; active/inactive was enough</td>
+                    <td>Removal of join/leave project, ability for everyone with access to Portal to view defects reported for each project, for transparency</td>
+                </tr>
+                <tr>
+                    <td>Assumption that upon creating defect, would have to select which project the defect pertains to</td>
+                    <td>Re-stating the project defect would be pertaining to, at the top of the defect reporting form</td>
+                </tr>
+                <tr>
+                    <td>Likes seeing the timeline displayed on information, as ETA is super important to their teams</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Overall metric for completion more helpful than a general status on what the general status of LCBO|next progress is</td>
+                    <td>Having metrics on project information section, rather than a general status that is similar to the tickets. Emphasis on 80/80 defects completed, or an overall percentage of competion</td>
+                </tr>
+                <tr>
+                    <td>Bigger box for comment space</td>
+                    <td>Widening the modal for comment space</td>
+                </tr>
+                <tr>
+                    <td>Asked tester about the easiest and most relevant terminology to use</td>
+                    <td>“Enhancement” easier terminology to grasp, rather than “Suggestion” or “Improvement”</td>
+                </tr>
+                <tr>
+                    <td>Would like to type into text fields, and not just select from options for certain questions; confusion on whether user has to type out numbers for steps or if they are labels</td>
+                    <td>Having conversation with developers in regards to feasibility and complexity of having text boxes that have drop down select as well as the ability to type into them</td>
+                </tr>
+                <tr>
+                    <td>Showing the generic team who submitted defect is not as helpful as being able to see the exact person who submitted it</td>
+                    <td>Removing the team aspect with specific name of user who submitted defect, for transparency</td>
+                </tr>
+            </table>
+        </div>
+        <div class="content">
+            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+            <h6 style="margin-bottom: 2rem;">Admin usability testing findings</h6>
+            <table>
+                <tr>
+                  <td>Testing observation</td>
+                  <td>Change to be made</td>
+                </tr>
+                <tr>
+                    <td>Asked tester about the easiest and most relevant terminology to use</td>
+                    <td>Change “environment link” to “development link”</td>
+                </tr>
+                <tr>
+                    <td>Enjoys the section with the development link, as testers repeatedly lose the link and ask for it over and over again. However, development links don’t change often, would be annoying for it to go away with a change in status</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Don’t like how easily status can be removed</td>
+                    <td>Ensure the information on the status is accessible no matter what stage the project is in; replace status information with project information section with all the relevent links needed</td>
+                </tr>
+                <tr>
+                    <td>Status on each ticket as well as overall status is confusing; if they’re the same thing, would feel like doubling up on statuses, which could be unnecessary</td>
+                    <td>Make distinction between overall project status clearer from individual ticket statuses; make it clearer what it is and the purpose, or remove it</td>
+                </tr>
+                <tr>
+                    <td>Enjoys the user mangement section</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tester asked questions regarding email updates that would be sent, and the frequency</td>
+                    <td>One email at the end of the day summarizing all the changes of statuses made for tickets</td>
+                </tr>
+            </table>
+        </div>
         <br><br>
-        <p>Overall, usability testing was quite successful and was actually the last deliverable I was able to complete before the term came to a close. There were alot of insights from testing and changes to be made, however I wasn’t able to be the one to complete the changes since the term closed off quite quickly. This will be a task for the next designer coming onto the lab, should they choose to implement the changes from testing insights given!</p>
-    </div>
-    <div class="content">
-        <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
-        <br><br><br><br>
-        <h2>Reflecting on LCBOdesk Gold</h2>
-        <br>
-        <div class="section">
-            <h6>Key Learnings</h6>
-            <ul>
-                <li>Writing product and design documentation; I wrote an addendum and all the user interview/testing documentation on my own, which was interesting!</li>
-                <li>Breaking up design work into bronze, silver and gold phases. I’ve worked with MVP and MVP enhancement phases before, but never structured like this!</li>
-                <li>Keeping version history was another key learning and very important to the longevity of the project, especially as multiple designers have and will continue to touch this project.</li>
-            </ul>
+        <div class="content">
+            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+            <h2>Leaving off at the completion of testing: the close of the term</h2>
+            <br><br>
+            <p>Overall, usability testing was quite successful and was actually the last deliverable I was able to complete before the term came to a close. There were alot of insights from testing and changes to be made, however I wasn’t able to be the one to complete the changes since the term closed off quite quickly. This will be a task for the next designer coming onto the lab, should they choose to implement the changes from testing insights given!</p>
         </div>
-        <br>
+        <div class="content">
+            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
+            <br><br><br><br>
+            <h2>Reflecting on LCBOdesk Gold</h2>
+            <br>
+            <div class="section" id="reflection">
+                <h6>Key Learnings</h6>
+                <ul>
+                    <li>Writing product and design documentation; I wrote an addendum and all the user interview/testing documentation on my own, which was interesting!</li>
+                    <li>Breaking up design work into bronze, silver and gold phases. I’ve worked with MVP and MVP enhancement phases before, but never structured like this!</li>
+                    <li>Keeping version history was another key learning and very important to the longevity of the project, especially as multiple designers have and will continue to touch this project.</li>
+                </ul>
+            </div>
+            <br>
+        </div>
     </div>
-    <br><br><br>
+    <br>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true"></div>
-    <footer data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true">
-        <br>
-        <h5>Thanks for stopping <i>by</i>...</h5>
-        <p>While you’re here, you should definately send a message and say <strong><i>hi</i></strong> 😊</p>
+    <footer data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-left: 24rem; padding-right: 24rem;">
+        <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
+        <h5 style="margin-top: 4.5rem; margin-bottom: 1.5rem;">Thanks for stopping by...</h5>
+        <p>While you’re here, you should definately send a message and say hi!</p>
         <br><br>
         <ul>
-            <li id="first"><a href="mailto:@stacykwok01@gmail.com">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank">Linkedin</a></li>
+            <li id="first"><a href="mailto:@stacykwok01@gmail.com" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Linkedin</a></li>
         </ul>
         <br><br><br>
+        <!-- <p style="font-size: 13px;">Designed + developed with lots of love, and lots of Vitasoy juice boxes ;)</p> -->
     </footer>
 </body>
 
