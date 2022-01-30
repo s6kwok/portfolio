@@ -25,7 +25,7 @@
 
 <body>
     <div class="area">
-            <div class="project" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: initial;">
+            <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="align-items: initial;">
                 <div class="projectrow-right">
                     <h1>Hi there, I'm Stacy</h1>
                     <h1 style="opacity: 0.6;">Hi there, I'm Stacy</h1>
@@ -46,7 +46,7 @@
             color: #3a3a3a;
         }
     </style>
-    <div class="area" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 5rem;">
+    <div class="area" data-aos="fade-up" data-aos-once="true" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 5rem;">
         <div class="tab" style="display: flex; justify-content: space-between;" id="scroll-target">
             <a class="tablinks active" onclick="openTab(event, 'Work')" href="#scroll-target" style="font-family: 'Unna'; font-style: normal; font-weight: bold; font-size: 48px; line-height: 55px; letter-spacing: 0.01em; margin-top: 0rem; margin-bottom: 2rem; cursor: pointer;">My recent work</a>
             <a class="tablinks" onclick="openTab(event, 'About')" href="#scroll-target" style="font-family: 'Unna'; font-style: normal; font-weight: bold; font-size: 48px; line-height: 55px; letter-spacing: 0.01em; margin-top: 0rem; margin-bottom: 2rem; cursor: pointer;">Get to know me</a>
@@ -54,7 +54,7 @@
         </div>
     </div>
     <div class="body-width" id="Work" style="display:block;">
-        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 9rem;">
+        <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 9rem;">
             <div class="projectrow-right">
                 <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Program & Volunteer Registration Platform</h3>
                 <p style="padding-bottom: 1.5rem;">Designing a platform to streamline the registration process for the non-profit Social Diversity for Children</p>
@@ -65,7 +65,7 @@
                 <img src="assets/sdc.png" style="max-width:105%;height:auto;">
             </div>
         </div>
-        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 9rem;">
+        <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 9rem;">
             <div class="projectrow-right">
                 <h3 style="margin-top: 0rem; margin-bottom: 0rem;">LCBO|next Internship: LCBOdesk Gold</h3>
                 <p style="padding-bottom: 1.5rem;">Feedback reporting & defect management platform aiming to bridge gaps in the user acceptance testing feedback cycle, between key user testers from business and the LCBOnext team</p>
@@ -76,7 +76,7 @@
                 <img src="assets/lcbo-desk.png" style="max-width:105%;height:auto;padding-left: 2rem;">
             </div>
         </div>
-        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 9rem;">
+        <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 9rem;">
             <div class="projectrow-right">
                 <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Mass Casualty Patient Triaging Platform</h3>
                 <p style="padding-bottom: 1.5rem;">Customizing the triaging process to help the Region of Waterloo Paramedics better manage mass casualty events</p>
@@ -87,7 +87,7 @@
                 <img src="assets/paramedics.png" style="max-width:100%;height:auto;padding-left: 2rem;">
             </div>
         </div>
-        <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 4rem;">
+        <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 4rem;">
             <div class="projectrow-right">
                 <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Remote Fitness Training App</h3>
                 <p style="padding-bottom: 1.5rem;">Mobilizing the personal training experience for comfortable at home personal training</p>
@@ -98,14 +98,77 @@
                 <img src="assets/fitness.png" style="max-width:105%;height:auto;">
             </div>
         </div>
-        <footer data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-left: 2rem; padding-right: 3rem;">
-            <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
+        <script language="JavaScript">
+            function PassWord() {
+                answer="happy-reading";
+                input=window.prompt("This is a password protected case study! Please enter in the password to read more.", "");
+                if (input === answer) {
+                    // history.go(index.html)
+                    window.location.href = "lcbo.html";
+                }
+                else if (input === null) {
+                    return;
+                }
+                else {
+                    window.alert("The password you have entered is incorrect. Please try again, or send me a message for the password!");
+                }
+            }
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            function openTab(evt, tabName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("body-width");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(tabName).style.display = "block";
+              evt.currentTarget.className += " active";
+              foot = document.getElementsByClassName("happyday");
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+            
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+            
+                // Store hash
+                var hash = this.hash;
+            
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 1000, function(){
+            
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+            });
+        </script>
+        <footer data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-left: 2rem; padding-right: 3rem;">
+            <div class="line" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
             <h5 style="margin-top: 4.5rem; margin-bottom: 1.5rem;">Thanks for stopping by...</h5>
             <p>While you’re here, you should definately send a message and say hi!</p>
             <br><br>
             <ul>
-                <li id="first"><a href="mailto:@stacykwok01@gmail.com" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Email</a></li>
-                <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Linkedin</a></li>
+                <li id="first"><a href="mailto:@stacykwok01@gmail.com" target="_blank" style="color: #3a3a3a; font-weight: bold; text-decoration-line: underline;">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" style="color: #3a3a3a; font-weight: bold; text-decoration-line: underline;">Linkedin</a></li>
             </ul>
             <br><br><br>
         </footer>
@@ -139,80 +202,17 @@
         </div>
         <br><br>
         <footer style="padding-left: 0rem; padding-right: 0rem;">
-            <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
+            <div class="line"></div>
             <h5 style="margin-top: 4.5rem; margin-bottom: 1.5rem;">Thanks for stopping by...</h5>
             <p>While you’re here, you should definately send a message and say hi!</p>
             <br><br>
             <ul>
-                <li id="first"><a href="mailto:@stacykwok01@gmail.com" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Email</a></li>
-                <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Linkedin</a></li>
+                <li id="first"><a href="mailto:@stacykwok01@gmail.com" target="_blank" style="color: #3a3a3a; font-weight: bold; text-decoration-line: underline;">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" style="color: #3a3a3a; font-weight: bold; text-decoration-line: underline;">Linkedin</a></li>
             </ul>
             <br><br><br>
         </footer>
     </div>
-    <script language="JavaScript">
-        function PassWord() {
-            answer="happy-reading";
-            input=window.prompt("This is a password protected case study! Please enter in the password to read more.", "");
-            if (input === answer) {
-                // history.go(index.html)
-                window.location.href = "lcbo.html";
-            }
-            else if (input === null) {
-                return;
-            }
-            else {
-                window.alert("The password you have entered is incorrect. Please try again, or send me a message for the password!");
-            }
-        }
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script>
-        function openTab(evt, tabName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("body-width");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(tabName).style.display = "block";
-          evt.currentTarget.className += " active";
-          foot = document.getElementsByClassName("happyday");
-        }
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-        
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-        
-            // Store hash
-            var hash = this.hash;
-        
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 1000, function(){
-        
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-            } // End if
-        });
-        });
-    </script>
 </body>
 
 </html>
