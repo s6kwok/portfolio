@@ -25,10 +25,8 @@
 
 <body>
     <nav>
-        <!-- <a href="index.html"><h5 class="logo">Stacy Kwok</h5></a> -->
         <ul id="links">
             <li><a href="index.html"><h5 style="font-size: 22px;">Portfolio</h5></a></li>
-            <!-- <li><a href="index.html#scroll-target"><h5 style="font-size: 22px;">Get to know me</h5></a></li> -->
             <li style="padding-right: 0rem;"><a href="assets/stacy-kwok-resume-w22.pdf" target="_blank"><h5 style="font-size: 22px;">Resume</h5></a></li>
         </ul>
     </nav>
@@ -62,35 +60,7 @@
             </div>
         </div>
         <br><br><br><br>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-            
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-            
-                // Store hash
-                var hash = this.hash;
-            
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 1000, function(){
-            
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-                } // End if
-            });
-            });
-        </script>
         <div class="scroll-target" id="grey">
-            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
             <br><br>
             <div class="content" id="prompt">
                 <p>The prompt</p>
@@ -102,7 +72,6 @@
         </div>
         <br><br><br>
         <div class="content">
-            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
             <img src="assets/fitness-hifi-1.png" style="max-width:100%; height:auto;">
             <br><br><br><br><br><br>
             <p id="define">The process</p>
@@ -124,7 +93,6 @@
         </div>
         <br><br>
         <div class="content" id="ideate">
-            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
             <h2>Ideation</h2>
             <br>
             <div class="section">
@@ -162,7 +130,6 @@
         </div>
         <br><br>
         <div class="content">
-            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
             <h2>Visual Design</h2>
             <br>
             <div class="section">
@@ -174,7 +141,6 @@
             <br><br><br><br>
         </div>
         <div class="scroll-target" id="grey">
-            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
             <div class="content" id="final">
                 <br><br><br>
                 <h2>Final Designs</h2>
@@ -199,7 +165,6 @@
             </div>
         </div>
         <div class="content" id="reflection">
-            <!-- data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" data-aos-once="true" -->
             <br>                     
             <h2>Reflection</h2>
             <br>
@@ -241,6 +206,33 @@
           document.documentElement.scrollTop = 0;
         }
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+    </script>
     <footer data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-left: 24rem; padding-right: 24rem;">
         <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
         <h5 style="margin-top: 4.5rem; margin-bottom: 1.5rem;">Thanks for stopping by...</h5>
@@ -251,7 +243,6 @@
             <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Linkedin</a></li>
         </ul>
         <br><br><br>
-        <!-- <p style="font-size: 13px;">Designed + developed with lots of love, and lots of Vitasoy juice boxes ;)</p> -->
     </footer>
 </body>
 

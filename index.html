@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,34 +21,9 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-
-    <script language="JavaScript">
-        function PassWord() {
-            answer="happy-reading";
-            input=window.prompt("This is a password protected case study! Please enter in the password to read more.", "");
-            if (input === answer) {
-                // history.go(index.html)
-                window.location.href = "lcbo.html";
-            }
-            else if (input === null) {
-                return;
-            }
-            else {
-                window.alert("The password you have entered is incorrect. Please try again, or send me a message for the password!");
-            }
-        }
-    </script>
 </head>
 
 <body>
-    <!-- <nav>
-        <a href="index.html"><h5 class="logo">Stacy Kwok</h5></a>
-        <ul id="links">
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="about.html">Me</a></li>
-            <li style="padding-right: 0rem;"><a href="assets/Stacy Kwok Resume W22.pdf" target="_blank">Resume</a></li>
-        </ul>
-    </nav> -->
     <div class="area">
             <div class="project" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
                 <div class="projectrow-right">
@@ -63,38 +37,6 @@
                     <p>I work to cultivate minds and problem spaces with purpose and care, and shape positive experiences through the stories I help to share.</p>
                 </div>
             </div>
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script>
-                $(document).ready(function(){
-                // Add smooth scrolling to all links
-                $("a").on('click', function(event) {
-                
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-                
-                    // Store hash
-                    var hash = this.hash;
-                
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 1000, function(){
-                
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                    } // End if
-                });
-                });
-            </script>
-
-        <!-- <div class="herocontainer-img">
-            <img src="assets/Flowers.png" style="max-width:100%;height:auto;">
-        </div> -->
     </div>
     <style>
         .tab a.active {
@@ -109,17 +51,9 @@
             <a class="tablinks active" onclick="openTab(event, 'Work')" href="#scroll-target" style="font-family: 'Unna'; font-style: normal; font-weight: bold; font-size: 48px; line-height: 55px; letter-spacing: 0.01em; margin-top: 0rem; margin-bottom: 2rem; cursor: pointer;">My recent work</a>
             <a class="tablinks" onclick="openTab(event, 'About')" href="#scroll-target" style="font-family: 'Unna'; font-style: normal; font-weight: bold; font-size: 48px; line-height: 55px; letter-spacing: 0.01em; margin-top: 0rem; margin-bottom: 2rem; cursor: pointer;">Get to know me</a>
             <a href="assets/stacy-kwok-resume-w22.pdf" target="_blank" style="font-family: 'Unna'; font-style: normal; font-weight: bold; font-size: 48px; line-height: 55px; letter-spacing: 0.01em; margin-top: 0rem; margin-bottom: 2rem; cursor: pointer;">Resume</a>
-            <!-- <a class="tablinks" onclick="openTab(event, 'Tokyo')">Tokyo</a> -->
         </div>
-        <!-- <div class="tab" style="display: flex; justify-content: space-between;" id="scroll-target">
-            <a class="tablinks" onclick="openTab(event, 'Work')" style="cursor: pointer;" id="tabs" style="opacity: 1.0;"><h1>My recent work</h1></a>
-            <a class="tablinks" onclick="openTab(event, 'About')" style="cursor: pointer;" id="tabs"><h1>Get to know me</h1></a>
-            <a href="assets/Stacy Kwok Resume W22.pdf" target="_blank" id="tabs"><h1>Resume</h1></a>
-        </div> -->
     </div>
-
     <div class="body-width" id="Work" style="display:block;">
-        <!-- onclick="location.href='#.html';" style="cursor: pointer;" href="#"  -->
         <div class="project" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 9rem;">
             <div class="projectrow-right">
                 <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Program & Volunteer Registration Platform</h3>
@@ -174,11 +108,8 @@
                 <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Linkedin</a></li>
             </ul>
             <br><br><br>
-            <!-- <p style="font-size: 13px;">Designed + developed with lots of love, and lots of Vitasoy juice boxes ;)</p> -->
         </footer>
     </div>
-
-
     <div class="body-width" id="About" style="display:none;">
         <p>Hi I'm Stacy, great to meet you! 🙂</p>
         <div class="project" style="align-items: center; padding-bottom: 4rem;">
@@ -217,10 +148,24 @@
                 <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" style="font-weight: bold; text-decoration-line: underline;">Linkedin</a></li>
             </ul>
             <br><br><br>
-            <!-- <p style="font-size: 13px;">Designed + developed with lots of love, and lots of Vitasoy juice boxes ;)</p> -->
         </footer>
     </div>
-
+    <script language="JavaScript">
+        function PassWord() {
+            answer="happy-reading";
+            input=window.prompt("This is a password protected case study! Please enter in the password to read more.", "");
+            if (input === answer) {
+                // history.go(index.html)
+                window.location.href = "lcbo.html";
+            }
+            else if (input === null) {
+                return;
+            }
+            else {
+                window.alert("The password you have entered is incorrect. Please try again, or send me a message for the password!");
+            }
+        }
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -241,8 +186,33 @@
           foot = document.getElementsByClassName("happyday");
         }
     </script>
-    
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+    </script>
 </body>
 
 </html>
