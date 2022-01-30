@@ -539,8 +539,8 @@ ul li a:active {
 
 .body-width {
     margin: 0rem;
-    padding-left: 16rem;
-    padding-right: 15rem;
+    /* padding-left: 16rem;
+    padding-right: 15rem; */
 }
 
 .project {
@@ -781,6 +781,37 @@ footer {
     padding-left: 0px;
 }
 
+#background-1 {
+    background-image: url(/assets/rectangle-1.svg);
+    padding-left: 16rem;
+    padding-right: 15rem;
+    padding-top: 5rem;
+    padding-bottom: 7rem !important;
+}
+#background-2 {
+    background-image: url(/assets/rectangle-2.svg);
+    padding-left: 16rem;
+    padding-right: 15rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem !important;
+    /* padding-top: 1rem;
+    padding-bottom: 1.5rem !important; */
+}
+#background-3 {
+    background-image: url(/assets/rectangle-3.svg);
+    padding-left: 16rem;
+    padding-right: 15rem;
+    padding-top: 2rem;
+    padding-bottom: 4.5rem !important;
+}
+#background-4 {
+    background-image: url(/assets/rectangle-4.svg);
+    padding-left: 16rem;
+    padding-right: 15rem;
+    padding-top: 6.5rem;
+    padding-bottom: 8rem !important;
+}
+
 /* ABOUT PAGE */
 .content {
     padding-top: 1.5rem;
@@ -934,6 +965,11 @@ tr:first-child {
         margin-left: auto;
         margin-right: auto;
     }
+    #background-1, #background-2, #background-3, #background-4 {
+        background-image: none;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+    }
     .area {
         padding-left: 0rem;
         padding-right: 0rem;
@@ -963,7 +999,7 @@ tr:first-child {
         padding-right: 0rem;
     }
     footer {
-        padding-left: 4rem !important;
+        padding-left: 0rem !important;
         padding-right: 0rem !important;
     }
     div > img {
