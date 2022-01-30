@@ -33,7 +33,6 @@
         </ul>
     </nav>
 
-
     <div class="sidenav">
         <a href="#prompt" target="_blank" style="font-weight: semi-bold;">Prompt</a>
         <a href="#define" target="_blank" style="font-weight: semi-bold;">Empathize & Define</a>
@@ -42,6 +41,8 @@
         <a href="#final" target="_blank" style="font-weight: semi-bold;">Final Designs</a>
         <a href="#reflection" target="_blank" style="font-weight: semi-bold;">Reflection</a>
     </div>
+
+    <button onclick="topFunction()" id="toTop" title="Go to top" style="display: none;"><i class="material-icons" style="padding-right: 4px; padding-bottom: 4px;">arrow_upward</i>Jump back to top</button>
 
     <div class="main">
         <div class="content">
@@ -218,6 +219,27 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("toTop");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.display = "flex";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
     </script>
     <footer data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-left: 24rem; padding-right: 24rem;">
         <div class="line" data-aos="fade-up" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
