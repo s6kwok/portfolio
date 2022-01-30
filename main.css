@@ -546,7 +546,7 @@ ul li a:active {
 .project {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
+    align-items: center;
     margin: 0px;
     /* padding-left: 10rem;
     padding-right: 15rem; */
