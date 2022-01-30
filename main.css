@@ -811,6 +811,19 @@ footer {
     padding-top: 6.5rem;
     padding-bottom: 8rem !important;
 }
+#background-5 {
+    background-image: url(/assets/rectangle-5.svg);
+    padding-top: 4rem;
+    padding-right: 6.25rem;
+    padding-left: 4rem;
+    padding-bottom: 2.25rem;
+}
+#background-6 {
+    background-image: url(/assets/rectangle-6.svg);
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 4.75rem;
+}
 
 /* ABOUT PAGE */
 .content {
@@ -965,7 +978,7 @@ tr:first-child {
         margin-left: auto;
         margin-right: auto;
     }
-    #background-1, #background-2, #background-3, #background-4 {
+    #background-1, #background-2, #background-3, #background-4, #background-5, #background-6 {
         background-image: none;
         padding-left: 0rem !important;
         padding-right: 0rem !important;
@@ -985,8 +998,8 @@ tr:first-child {
         padding-right: 0rem;
     }
     #About {
-        padding-left: 7rem;
-        padding-right: 6rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
     .content {
         padding-left: 4rem;
