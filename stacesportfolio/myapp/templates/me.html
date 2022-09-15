@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="main.css" rel="stylesheet">
+    {% load static %}
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
 
     <meta name="robots" content="noindex">
 
@@ -25,10 +26,10 @@
 
 <body>
     <nav data-aos="fade" data-aos-once="true" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="false" style="min-height: 5rem;">
-        <a href="index.html"><h5 class="logo">SK</h5></a>
+        <a href="/"><h5 class="logo">SK</h5></a>
         <ul id="links">
-            <li><a href="index.html">Portfolio</a></li>
-            <li><a href="me.html" id="active">Me</a></li>
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="me/" id="active">Me</a></li>
             <li><a href="assets/stacy-kwok-resume-s22.pdf" target="_blank">Resume</a></li>
         </ul>
     </nav>
