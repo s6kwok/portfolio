@@ -4,6 +4,7 @@ html {
     font-size: 16px;
     color: #E9E9EB;
     background-color: #26292B;
+    /* background-color: #26292B; */
     margin-left: 0%;
     margin-right: 0%;
     overflow-x: hidden;
@@ -212,7 +213,7 @@ nav {
     align-items: bottom;
     padding-left: 14rem;
     padding-right: 14rem;
-    padding-top: 0rem;
+    padding-top: 1.5rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
 }
