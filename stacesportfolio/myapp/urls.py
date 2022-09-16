@@ -7,5 +7,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('lcbo/', views.lcbo, name='lcbo'),
     path('me/', views.me, name='me'),
-    path('sdc/', views.sdc, name='sdc')
+    path('sdc/', views.sdc, name='sdc'),
+    path('questrade/', views.questrade, name='questrade')
 ]

@@ -12,3 +12,6 @@ def me(request):
 
 def sdc(request):
     return render(request, 'sdc.html')
+
+def questrade(request):
+    return render(request, 'questrade.html')
