@@ -129,10 +129,10 @@
     <div style="display: flex; justify-content: center;">
         <img src="{% static 'assets/questrade-research-3.png' %}" style="max-width:60%; height:auto;">
     </div>
-    <br><br>
+    <br><br><br>
 
     <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem;" id="empathize">
-        <div style="display: flex; flex-direction: row; justify-content: space-between; padding-bottom: 3rem;">
+        <div style="display: flex; flex-direction: row; justify-content: space-between; padding-bottom: 2rem;">
             <div class="section" id="context" style="padding-right: 2rem;">
                 <h2>04: Narrowing the design scope</h2>
                 <p>With there being big unknowns as to what features could be announced using the solution, it was helpful to broadly define and categorize possible use cases.</p><br>
@@ -142,23 +142,24 @@
                 <img src="{% static 'assets/questrade-research-4.png' %}" style="max-width:100%; height:auto;">
             </div>
         </div>
-        <br>
     </div>
 
     <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem;" id="empathize">
         <br>
         <h2>05: Exploring solutions</h2>
-        <p><strong>The problem was broken down into 2 aspects to ideate upon.</strong></p><br>
-        <div class="section">
-            <h6>Part 1: Feature explaination</h6>
-            <p>Displaying media and relevant information in a simple educational manner.<br>How might we intuitively explain how the feature works?</p>
+        <p><strong>The problem was broken down into 2 aspects to ideate upon.</strong></p>
+        
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div class="section" id="context" style="padding-right: 2rem;">
+                <h6>Part 1: Feature explaination</h6>
+                 <p>Displaying media and relevant information in a simple educational manner.<br>How might we intuitively explain how the feature works?</p>
+            </div>
+            <div class="section" id="context" >
+                <h6>Part 2: Feature visibility</h6>
+                <p>Entry point of announcement, visability of new features.<br>How might we tell users a new feature was released?<br>How might we tell the users where the new feature is located?</p>
+            </div>
         </div>
-        <div class="section">
-            <h6>Part 2: Feature visibility</h6>
-            <p>Entry point of announcement, visability of new features.<br>How might we tell users a new feature was released?<br>How might we tell the users where the new feature is located?</p>
-        </div>
-        <br>
-        <p><strong>14 different solution concepts were explored</strong> (yay!!). The competitive analysis was used as a starting point to generate ideas.</p><br>
+        <p><strong>14 different solution concepts were explored</strong> (yay!!). The competitive analysis was used as a starting point to generate ideas.</p>
         <p>Keeping in mind that the design would be a template, a recently released feature was used as a placeholder feature. However, it was essential to think broadly regarding the placement and location of where potential new features may live.</p>
     </div>
     <br><br>
@@ -240,7 +241,7 @@
                 <img src="{% static 'assets/sdc-research-2.png' %}" style="width:100%;height:auto;">
         </div>
     </div>
-    <br><br><br>
+    <br><br>
 
 
     <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem;" id="empathize">
@@ -262,7 +263,7 @@
             <p>For 1 new feature, it was decided to add another CTA which could be used for many applications. The default application is to dismiss the announcement. This means there are 2 ways to close the modal, which each serves a different user journey; one for users who immediately want to close it, and one for users who read the entire announcement. Being a template, this button can encourage use of the new feature by redirecting the user to settings or enabling the new feature right on the announcement.</p>
         </div>
     </div>
-    <br><br><br>
+    <br><br>
 
     <div class="main" style="margin-bottom: 0px;">
         <div class="scroll-target" style="background-color: #E4F8E6">
@@ -272,24 +273,17 @@
                 <p>There were still questions that needed to be answered from the collaboration with visual and content designers (ex. the grid for raised elements), but also still more UX decisions that needed to be made regarding feature behaviour. This includes appearance logic, dismissal logic, maximum number of announcements, interaction with other features, etc. Edge cases also needed to be addressed, for which developer collaboration was cruicial. For example, how would the announcement look when the carousel reaches the last item?</p><br>
                 <p><strong>The final template design for new feature announcements is shown below!</strong></p>
 
-
-                <div class="project-no-padding">
-                    <div class="projectimage-video">
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <div class="section" id="context" style="padding-right: 2rem;">
+                        <h6>1 feature announcement</h6><br>
                         <img src="{% static 'assets/questrade-demo-1.png' %}" style="max-width:100%; height:auto;">
                         <!-- <video width="100%" height="auto" autoplay loop muted playsinline>
                             <source src="{% static 'assets/sdc-demo-1.mp4' %}" type="video/mp4">
                         </video> -->
                     </div>
-                    <div class="projectrow-video">
-                        <h6>1 feature announcement</h6>
-                    </div>
-                </div>
-                <div class="project-no-padding">
-                    <div class="projectimage-video">
+                    <div class="section" id="context" >
+                        <h6>>1 feature announcements</h6><br>
                         <img src="{% static 'assets/questrade-demo-2.png' %}" style="max-width:100%; height:auto;">
-                    </div>
-                    <div class="projectrow-video">
-                        <h6>>1 feature announcements</h6>
                     </div>
                 </div>
             </div>
