@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacy Kwok's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    {% load static %}
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+    <meta name="robots" content="noindex">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <nav style="min-height: 7rem; background-color: #26292A;">
+        <a href="/"><h5 class="logo">SK</h5></a>
+        <ul id="links">
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="/me/">Me</a></li>
+            <li><a href="{% static 'assets/stacy-kwok-resume-f22.pdf' %}" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+
+    <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem; margin-top: 0px; margin-bottom: 0px; background-color: #26292A; color: #E9E9EB;">
+        <p class="message" style="color: red; display: none;">This case study has not been optimized for smaller screensizes yet! <strong>For an easier reading experience, please view on a larger screen. </strong>Stay tuned for improved mobile view!</p>
+        <br>
+        <img src="{% static 'assets/questrade-header.png' %}" style="max-width:100%; height:auto;" id="photo">
+        <br><br><br><br><br>
+        <h1 style="margin-top: 0px;">Creating the <span style="color: #E4F8E6;">template design </span> for announcing new web trading features</h1>
+        <p>Over the years, Questrade’s web trading platform has expanded to give users many powerful new features which some users are not aware of, even to this day.</p>
+        <p>With no way to share new features released on the web platform, it was time Questrade worked on a means to communicate new features to web trading users.</p>
+        <br>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; padding-bottom: 3rem;">
+            <div class="section" id="context" >
+                <h6><span style="color: #E4F8E6;">Organization</span></h6>
+                <p>Questrade</p>
+            </div>
+            <div class="section" id="context" >
+                <h6><span style="color: #E4F8E6;">Timeline</span></h6>
+                <p>July-Aug 2022</p>
+            </div>
+            <div class="section" id="context" >
+                <h6><span style="color: #E4F8E6;">Design team</span></h6>
+                <p>1 UX designer <br> 1 visual designer <br> 1 content designer</p>
+            </div>
+            <div class="section" id="context" >
+                <h6><span style="color: #E4F8E6;">Skills</span></h6>
+                <p>Interaction design <br> Visual & content design thinking <br> Product & engineering collaboration</p>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem;" id="empathize">
+        <br>
+        <h6>The problem</h6>
+        <h2>Wait, a new feature was released?</h2>
+        <p>To this day, there are some previously released features that some users are not aware of, which was emphasized in reports done by the user research team.</p><br>
+        <p><strong>Questrade needs a way to communicate new feature releases to the web trading platform, so that users can fully maximize their workflow and use of  product enhancements.</strong></p>
+        <br><br><br>
+    </div>
+
+    <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem; margin-top: 0px; color: #26292A; background-color: #E4F8E6;">
+        <br><br>
+        <h6>The challenge</h6>
+        <h2>One template, for infinite applications</h2>
+        <p>Creating a pattern out of the feature announcement was an important aspect to the project. Not only would following the same design template be a time-saver for other designers, more importantly it creates consistency for users to recognize a feature announcement immediately.</p><br>
+        <p><strong>How might we build a flexible and versatile way to share information about new web trading features?</strong></p>
+        <br><br><br><br>
+    </div>
+
+    <button onclick="topFunction()" id="toTop" title="Go to top" style="display: none;"><i class="material-icons" style="padding-right: 4px; padding-bottom: 4px;">arrow_upward</i>Jump back to top</button>
+
+    <style>
+        html {
+            font-size: 16px;
+            color: #3a3a3a;
+            background-color: #FFFFFF;
+            margin-left: 0%;
+            margin-right: 0%;
+            overflow-x: hidden;
+        }
+    </style>
+
+    <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem;" id="empathize">
+        <br><br>
+        <h6>The process</h6>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; padding-bottom: 3rem;">
+            <div class="section" id="context" style="padding-right: 2rem;">
+                <h2>01: Gathering context on current Questmobile feature announcements</h2>
+                <p>Despite having the pattern already defined on the mobile app counterpart, based on user statistics it is known that lot of web users aren’t on mobile. This means majority of web users haven’t seen the mobile feature announcement pattern at all.</p><br><p>Regardless, it was important to keep some consistency, for the users using both mobile and web.</p>
+            </div>
+            <div class="section" id="context" style="padding-top: 50px;" >
+                <img src="{% static 'assets/questrade-research-1.png' %}" style="max-width:100%; height:auto;">
+            </div>
+        </div>
+    </div>
+
+    <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem;" id="empathize">
+        <h2>02: Establishing design goals</h2>
+        <p>Besides exploring and using the web trading platform myself, I also familarized myself with the platform and the users through conversations with real web trading users. Discussing the user journey and personas created by other designers also greatly aided to empathizing with users.</p><br>
+        <p>Using this new knowledge, I revisited the project business and design requirements and reflected on the design goals for designing new feature announcements.</p>
+        <br>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <img src="{% static 'assets/questrade-research-2.png' %}" style="max-width:60%; height:auto;">
+    </div>
+    <br><br>
+
+    <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem;" id="empathize">
+        <br>
+        <h2>03: Competitive analysis on web feature announcements</h2>
+        <p>Upon researching several web platforms and web apps, <strong>4 of the more common patterns </strong>for feature announcements were noted.</p>
+        <br>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <img src="{% static 'assets/questrade-research-3.png' %}" style="max-width:55%; height:auto;">
+    </div>
+    <br><br><br>
+
+    <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem;" id="empathize">
+        <div style="display: flex; flex-direction: row; justify-content: space-between; padding-bottom: 2rem;">
+            <div class="section" id="context" style="padding-right: 2rem;">
+                <h2>04: Narrowing the design scope</h2>
+                <p>With there being big unknowns as to what features could be announced using the solution, it was helpful to broadly define and categorize possible use cases.</p><br>
+                <p>Upon collaboration with the product team, it was then determined it was safe to assume that <strong> small features and feature enhancements would not need to be announced</strong>.</p>
+            </div>
+            <div class="section" id="context" style="padding-top: 50px;" >
+                <img src="{% static 'assets/questrade-research-4.png' %}" style="max-width:100%; height:auto;">
+            </div>
+        </div>
+    </div>
+
+    <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem;" id="empathize">
+        <br>
+        <h2>05: Exploring solutions</h2>
+        <p><strong>The problem was broken down into 2 aspects to ideate upon.</strong></p>
+        
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <div class="section" id="context" style="width: 50%; padding-right: 2rem;">
+                <h6>Part 1: Feature explaination</h6>
+                 <p>Displaying media and relevant information in a simple educational manner.<br>How might we intuitively explain how the feature works?</p>
+            </div>
+            <div class="section" id="context" >
+                <h6>Part 2: Feature visibility</h6>
+                <p>Entry point of announcement, visability of new features.<br>How might we tell users a new feature was released?<br>How might we tell the users where the new feature is located?</p>
+            </div>
+        </div>
+        <p><strong>14 different solution concepts were explored</strong> (yay!!). The competitive analysis was used as a starting point to generate ideas.</p>
+        <p>Keeping in mind that the design would be a template, a recently released feature was used as a placeholder feature. However, it was essential to think broadly regarding the placement and location of where potential new features may live.</p>
+    </div>
+    <br><br>
+
+    <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem;" id="empathize">
+        <br>
+        <h2>06: Assessing the top explorations</h2>
+        <p>Part 1: Focus on feature explaination</p><br>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between; padding-bottom: 2rem;">
+            <div class="section" id="context" style="width: 150%; padding-right: 2rem;">
+                <h6>Concept #1: Guided tour</h6>
+                <p>Visibility: <span style="color: #27AE60;">Very noticable.</span><br>
+                Educational impact: <span style="color: #27AE60;">Very educational, teaches users all about the features.</span><br>
+                Minimal disruption: <span style="color: #EB5757;">Highly disruptive.</span><br>
+                Versatility: <span style="color: #EB5757;">Difficulty being used as a template, would need to define extensive rules for placement/location.</span></p>
+            </div>
+            <div class="section" id="context" >
+                <img src="{% static 'assets/questrade-explorations-1.png' %}" style="max-width:100%; height:auto;">
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between; padding-bottom: 2rem;">
+            <div class="section" id="context" style="width: 150%; padding-right: 2rem;">
+                <h6>Concept #2: Fixed raised side panel</h6>
+                <p>Visibility: <span style="color: #27AE60;">Users will immediately see modal at the corner of the page.</span><br>
+                Educational impact: <span style="color: #EB5757;">Sufficient but missing connection to actual feature on page.</span><br>
+                Minimal disruption: <span style="color: #27AE60;">May block a bit of content on smaller screen, however this promotes sense of urgency to view announcement.</span><br>
+                Versatility: <span style="color: #27AE60;">Can be used for all new features.</span></p>
+            </div>
+            <div class="section" id="context" style="padding-top: 50px;">
+                <img src="{% static 'assets/questrade-explorations-2.png' %}" style="max-width:100%; height:auto;">
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between; padding-bottom: 2rem;">
+            <div class="section" id="context" style="width: 150%; padding-right: 2rem;">
+                <h6>Concept #3: Full screen popup</h6>
+                <p>Visibility: <span style="color: #27AE60;">Very noticable.</span><br>
+                Educational impact: <span style="color: #EB5757;">Somewhat educational, popup prevents user from seeing the new feature on the page.</span><br>
+                Minimal disruption: <span style="color: #EB5757;">Highly disruptive.</span><br>
+                Versatility: <span style="color: #27AE60;">Applicable for all types of new features.</span></p>
+            </div>
+            <div class="section" id="context" style="padding-top: 20px;">
+                <img src="{% static 'assets/questrade-explorations-3.png' %}" style="max-width:100%; height:auto;">
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between; padding-bottom: 2rem;">
+            <div class="section" id="context" style="width: 150%; padding-right: 2rem;">
+                <h6>Concept #8: Top banner with no media & no carousel</h6>
+                <p>Feedback from content designer: <span style="color: #EB5757;">Carousel is preferred as it is hard to digest multiple announcements at once. Should avoid announcing 2 features through content, and break up the feature announcements instead.</span></p>
+            </div>
+            <div class="section" id="context" style="padding-top: 20px;">
+                <img src="{% static 'assets/questrade-explorations-4.png' %}" style="width:100%;height:auto;">
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between; padding-bottom: 2rem;">
+            <div class="section" id="context" style="width: 150%; padding-right: 2rem;">
+                <h6>Concept #9: Inline banner with content</h6>
+                <p>Visibility: <span style="color: #EB5757;">Varying levels of discoverability for users with more panels on the right side.</span><br>
+                Educational impact: <span style="color: #27AE60;">Somewhat educational.</span><br>
+                Minimal disruption: <span style="color: #27AE60;">Low disruption.</span><br>
+                Versatility: <span style="color: #EB5757;">How would this work for features on other pages, where there might not be blank space to put an inline banner?</span></p>
+            </div>
+            <div class="section" id="context" style="padding-top: 50px;">
+                <img src="{% static 'assets/questrade-explorations-5.png' %}" style="width:100%;height:auto;">
+            </div>
+        </div>
+        <div class="section">
+            <h6>Concept #14: Hybrid concept of guided tour (concept #1) and current education mode panel behaviour</h6>
+            <p><strong>Iteration #1: Popup constrained to both side margins</strong></p>
+            <p>Visibility: <span style="color: #EB5757;">Depending on location of new feature on the page, announcement modal may or may not be discoverable. For elements housed at the bottom of the page, the announcement modal may be hidden on first glance.</span><br>
+                Educational impact: <span style="color: #27AE60;">Somewhat educational.</span><br>
+                Minimal disruption: <span style="color: #EB5757;">Right side interferes with support menus, informational notifications like feature announcements do not belong on the support side.</span><br>
+                Versatility: <span style="color: #EB5757;">What would be the location for generic features, like dark mode, which is not housed on the page?</span></p>
+                <br>
+                <img src="{% static 'assets/questrade-explorations-6.png' %}" style="width:100%;height:auto;">
+            <br><br>
+            <p><strong>Iteration #2: Popup constrained to left margin only</strong></p>
+            <p>Visibility: <span style="color: #EB5757;">Dependent on location of new feature on page.</span><br>
+                Educational impact: <span style="color: #27AE60;">Keeping the popup on the left margin will solve the issue of preventing interference with the support menus, </span><span style="color: #EB5757;">however there is a lack of correlation between announcement modal and feature being announced. </span><br>
+                Minimal disruption: <span style="color: #EB5757;">Will interfere with education mode panel, when education mode is turned on.</span><br>
+                Versatility: <span style="color: #EB5757;">Would need to define rules for generic features.</span></p>
+                <br>
+                <img src="{% static 'assets/questrade-explorations-7.png' %}" style="width:100%;height:auto;">
+        </div>
+        <p>Part 2: Focus on new feature visibility</p><br>
+        <div class="section">
+            <h6>Concept #4: Entry point in help section</h6>
+            <p>Visibility: <span style="color: #EB5757;">Easy to notice a notification in the help section, but whether users are inclined to go through the flow to open the notice is dependent on the user.</span><br>
+                Educational impact: <span style="color: #EB5757;">Very little educational impact in showing how a new feature may work. Lack of correlation between actual announcement and feature, especially with steps inbetween before seeing the announcement.</span><br>
+                Minimal disruption: <span style="color: #27AE60;">Very little disruption to current flow.</span><br>
+                Versatility: <span style="color: #27AE60;">Would be able to apply to almost all new features.</span></p>
+                <br>
+                <img src="{% static 'assets/questrade-explorations-8.png' %}" style="width:100%;height:auto;">
+        </div>
+        <br><br><br>
+        <div class="section">
+            <h6>Concept #13: NEW tag inline with new feature</h6>
+            <p>Visibility: <span style="color: #27AE60;">For inline new features, very discoverable!</span><br>
+                Educational impact: <span style="color: #27AE60;">Would need to be accompanied by informational modal.</span><br>
+                Minimal disruption: <span style="color: #EB5757;">May disrupt visual design spacing in relation to other elements.</span><br>
+                Versatility: <span style="color: #EB5757;">Difficulty being used as a template solution, would need to define extensive rules for placement/location.</span></p>
+                <br>
+                <img src="{% static 'assets/questrade-explorations-9.png' %}" style="width:100%;height:auto;">
+        </div>
+    </div>
+
+    <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem;" id="empathize">
+        <br>
+        <h2>07: Making design decisions</h2>
+        <p>After evaluating all concepts, concept #2 was selected as the final solution due to the strong versatility, minimal disruption, and high visability. However, the educational impact could be improved and was an aspect to be explored further.</p><br>
+        <p><strong>How might we strengthen the connection between the feature announcement, with the feature location and how it works?</strong></p><br>
+        <div class="section">
+            <h6>Design decision #1: Using descriptive animations to strengthen visual correlation</h6>
+            <p>While static images are effective to convey what a feature is, animations can deepen visual understanding and allow more complex ideas to be communicated quickly and effectively.<br>The goal of using animations is to demonstrate the concept of a new feature by showing how it works, which may improve learning.</p>
+        </div>
+        <div class="section">
+            <h6>Design decision #2: Announcement only shown on the relevant page</h6>
+            <p>For the appearance logic of the announcement, the modal is only to appear on the same page the new feature is on. This will reduce the distance between the announcement and the new feature being announced.</p>
+        </div>
+        <div class="section">
+            <h6>Design decision #3: Additional button for when there is only 1 announcement</h6>
+            <p>For >1 new features, it would follow the same carousel style of grouping announcements.</p><br>
+            <p>For 1 new feature, it was decided to add another CTA which could be used for many applications. The default application is to dismiss the announcement. This means there are 2 ways to close the modal, which each serves a different user journey; one for users who immediately want to close it, and one for users who read the entire announcement. Being a template, this button can encourage use of the new feature by redirecting the user to settings or enabling the new feature right on the announcement.</p>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="main" style="margin-bottom: 0px;">
+        <div class="scroll-target" style="background-color: #E4F8E6">
+            <div class="section" id="final">
+                <h2 id="scroll-target-h2-shortened">08: The final solution</h2>
+                <p>There were still questions that needed to be answered from the collaboration with visual and content designers (ex. the grid for raised elements), but also still more UX decisions that needed to be made regarding feature behaviour. This includes appearance logic, dismissal logic, maximum number of announcements, interaction with other features, etc. Edge cases also needed to be addressed, for which developer collaboration was cruicial. For example, how would the announcement look when the carousel reaches the last item?</p><br>
+                <p><strong>The final template design for new feature announcements is shown below!</strong></p>
+
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <div class="section" id="context" style="padding-right: 2rem;">
+                        <h6>1 feature announcement</h6><br>
+                        <img src="{% static 'assets/questrade-demo-1.png' %}" style="max-width:100%; height:auto;">
+                        <!-- <video width="100%" height="auto" autoplay loop muted playsinline>
+                            <source src="{% static 'assets/sdc-demo-1.mp4' %}" type="video/mp4">
+                        </video> -->
+                    </div>
+                    <div class="section" id="context" >
+                        <h6>>1 feature announcements</h6><br>
+                        <img src="{% static 'assets/questrade-demo-2.png' %}" style="max-width:100%; height:auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="left-right-padding" style="padding-left: 21rem; padding-right: 21rem; background-color: #26292A; color: #E9E9EB; padding-top: 1.5rem; padding-bottom: 0.75rem; margin-top: 0px; margin-bottom: 0px;" id="reflection">
+        <br><br>
+        <h6><span style="color: #E4F8E6;">Reflection</span></h6>
+        <h2>Check it out, live on the platform!</h2>
+        <p>This feature was released in Sept 2022, shortly after the development was completed!<br>Upon launch, the announcements modal was used to announce discreet mode (also a feature I owned!). This template will be used by other designers for all future feature announcements in the web trading platform.</p>
+        <br><br>
+        <h2>Learnings</h2>
+        <div class="section">
+            <h6>01: Stay high level!!</h6>
+            <p>With template design, it’s extremely important to stay broad and take versitility highly into account when making decisions. It’s hard to train your brain to think broad (especially when there are many unknowns as to the type of new features that can be announced), but working in a lower fidelity and focusing purely on concept can be helpful.</p>
+        </div>
+        <div class="section">
+            <h6>02: Cover all the edge cases</h6>
+            <p>For >1 new features, it would follow the same carousel style of grouping announcements.</p><br>
+            <p>Working with content and visual designers throughout my internship really emphasized my focus on designing for edge cases. It’s easy to get caught up in the details of visual behaviour or the type of content used, but really important to think about how the new feature impacts the product as a whole, and interacts with the current features. Especially with template design, thinking needs to be adaptive and conceptual.</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("toTop");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.display = "flex";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="left-right-padding" style="background-color: #26292A; color: #E9E9EB; padding-top: 0rem; padding-bottom: 0.4rem; margin-top: 0px; margin-bottom: 0px;">
+        <footer style="margin-top: 0px; margin-bottom: 0px; padding-top: 2rem; padding-bottom: 4rem;">
+            <!-- was 3 and 3 before -->
+            <div class="line"></div>
+            <h2 style="margin-top: 4rem;">Hope I made your day a bit <span style="color: #F9F58E">brighter</span>!</h2>
+            <p>While you’re here, send a message and say hi!</p>
+            <!-- <i style="color: #F9F58E">(rhyme intended)</i> -->
+            <br><br>
+            <ul>
+                <li id="first"><a href="mailto:@stacykwok01@gmail.com" target="_blank" id="links-detached">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" id="links-detached">Linkedin</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

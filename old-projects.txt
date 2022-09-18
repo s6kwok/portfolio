@@ -1,0 +1,24 @@
+<div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 2rem;">
+            <!--  -->
+            <div class="projectrow-right">
+                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Mass Casualty Patient Triaging Platform</h3>
+                <p style="padding-bottom: 1.5rem;">Customizing the triaging process to help the Region of Waterloo Paramedics better manage mass casualty events</p>
+                <a href="paramedics.html" class="button-dark">Check it out</a>
+            </div>
+            <div class="projectimage">
+                <br>
+                <img src="{% static 'assets/paramedics.png' %}" style="max-width:100%;height:auto;padding-left: 2rem;">
+            </div>
+        </div>
+        <!-- <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 6rem;"> -->
+            <!--  -->
+            <!-- <div class="projectrow-right">
+                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Remote Fitness Training App</h3>
+                <p style="padding-bottom: 1.5rem;">Mobilizing the personal training experience for comfortable at home personal training</p>
+                <a href="fitness.html" class="button-dark">Check it out</a>
+            </div>
+            <div class="projectimage">
+                <br>
+                <img src="assets/fitness.png" style="max-width:100%;height:auto;">
+            </div>
+        </div> -->
