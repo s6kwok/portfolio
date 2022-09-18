@@ -4,6 +4,7 @@ html {
     font-size: 16px;
     color: #E9E9EB;
     background-color: #26292B;
+    /* background-color: #26292B; */
     margin-left: 0%;
     margin-right: 0%;
     overflow-x: hidden;
@@ -54,10 +55,12 @@ h6 {
     font-family: "Unna";
     font-style: normal;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     line-height: 2rem;
     letter-spacing: 0.06rem;
-    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* text-transform: uppercase; */
 }
 p {
     font-family: "Rubik";
@@ -92,11 +95,11 @@ a {
     color: #9793B0;
 }
 a:hover {
-    color: #FFFCA9;
+    color: #F9F58E;
 }
 
 .button-dark {
-    background: #FFFCA9;
+    background: #F9F58E;
 
     display: flex;
     flex-direction: row;
@@ -156,7 +159,7 @@ a:hover {
     z-index: 99;
     cursor: pointer;
 
-    background: #FFFCA9;
+    background: #F9F58E;
     border-radius: 2rem;
     font-family: "Rubik";
     font-style: normal;
@@ -212,7 +215,7 @@ nav {
     align-items: bottom;
     padding-left: 14rem;
     padding-right: 14rem;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
 }
@@ -235,7 +238,7 @@ nav > ul > li {
     color: #9793B0;
 }
 .logo:hover {
-    color: #FFFCA9;
+    color: #F9F58E;
 }
 #links {
     float: right; 
@@ -259,7 +262,7 @@ nav > ul > li {
 
 #links-detached:hover, #active, #links > li > a:hover, #links > li > a:active {
     color: #E9E9EB !important;
-    border-bottom: 3px solid #FFFCA9;
+    border-bottom: 3px solid #F9F58E;
     padding-bottom: 3px;
 }
 
@@ -298,7 +301,7 @@ footer > ul {
 /* LINE */
 .line {
     height: 1px;
-    background-color: #FFFCA980;
+    background-color: #F9F58E80;
 }
 
 /* HERO */
