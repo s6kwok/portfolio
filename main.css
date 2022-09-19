@@ -174,9 +174,16 @@ a:hover {
 #toTop:hover {
     background-color: #FCD94B;
 }
+body {
+    margin: 0rem;
+}
 div {
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
+}
+.margin-top {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }
 
 /* ANIMATIONS */
@@ -389,12 +396,6 @@ footer > ul {
 }
 #scroll-target-h2-shortened {
     margin-bottom: 1.25rem;
-}
-
-.body-width {
-    margin: 0rem;
-    /* padding-left: 16rem;
-    padding-right: 15rem; */
 }
 
 .project {
@@ -739,7 +740,7 @@ tr:first-child {
 
 /* RESPONSIVENESS */
 @media (min-width: 1400px) {
-    body {
+    .margins {
         width: 1512px;
         margin-left: auto;
         margin-right: auto;

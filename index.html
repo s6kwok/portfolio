@@ -25,125 +25,127 @@
 </head>
 
 <body>
-    <nav data-aos="fade" data-aos-once="true" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="false">
-        <!-- <a href="/"><h5 class="logo"><span class="material-icons" style="color: #F9F58E; font-size: 40px; padding-left: 0.4rem;">light_mode</span></h5></a> -->
-        
-        <!-- <a href="/"><img src="{% static 'assets/sun.png' %}" style="width: 44px; height: 44px;"></a> -->
-        <a href="/"><h5 class="logo">SK</h5></a>
-        <ul id="links">
-            <li><a href="/" id="active">Portfolio</a></li>
-            <li><a href="me.html">Me</a></li>
-            <li><a href="assets/stacy-kwok-resume-f22.pdf" target="_blank">Resume</a></li>
-        </ul>
-    </nav>
-    
-    <div class="hero" data-aos="fade" data-aos-once="true" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="false">
-        <br>
-        <h3>Hi there, I’m Stacy!</h3>
-        <h1>A designer who will explore <span style="color: #F9F58E">all</span> the ideas, and brings <span style="color: #F9F58E">sunshine</span> to design teams.</h1>
-        <p>Previously at <a href="https://www.questrade.com/home" target="_blank" id="links-detached">Questrade</a>, currently co-leading the design team at <a href="https://uwblueprint.org/" target="_blank" id="links-detached">UW Blueprint</a>!</p>
-    </div>
-    
-     <!--  data-aos="fade-up" data-aos-once="true" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" -->
-     <div class="left-right-padding" data-aos="fade-up" data-aos-once="true" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 1rem;">
-       <h1>My recent work</h1> 
-     </div>
-
-    <div class="left-right-padding">
-        <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 9rem;">
-            <div class="projectrow-right">
-                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Creating the template design for announcing new web trading features</h3>
-                <p style="padding-bottom: 1.5rem;">Questrade, Spring 2022</p>
-                <a href="questrade.html" class="button-dark">Check it out</a>
-            </div>
-            <div class="projectimage">
-                <br>
-                <img src="assets/questrade.png" style="max-width:105%;height:auto;">
-            </div>
-        </div>
-
-        <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 9rem;">
-            <!--  -->
-            <div class="projectrow-right">
-                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Simplifing the feedback cycle for LCBO teams through building a defect reporting platform</h3>
-                <p style="padding-bottom: 1.5rem;">LCBO|next, Fall 2021</p>
-                <a class="button-dark" onclick="PassWord()" style="cursor: pointer;">Check it out<span class="material-icons" style="color: #3a3a3a; font-size: 14px; padding-left: 0.4rem;">lock</span></a>
-            </div>
-            <div class="projectimage">
-                <br>
-                <img src="assets/lcbo-desk.png" style="max-width:105%;height:auto;padding-left: 1rem;">
-            </div>
-        </div>
-
-        <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 5rem;">
-            <div class="projectrow-right">
-                <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Re-envisioning the SDC program registration experience for parents & volunteers</h3>
-                <p style="padding-bottom: 1.5rem;">UW Blueprint collaboration with Social Diversity for Children Foundation, Spring 2021</p>
-                <a href="sdc.html" class="button-dark">Check it out</a>
-            </div>
-            <div class="projectimage">
-                <br>
-                <img src="assets/sdc.png" style="max-width:105%;height:auto;">
-            </div>
-        </div>
-
-        <script language="JavaScript">
-            function PassWord() {
-                answer="happy-reading";
-                input=window.prompt("This is a password protected case study! Please enter in the password to read more.", "");
-                if (input === answer) {
-                    // history.go(index.html)
-                    window.location.href = "lcbo.html";
-                }
-                else if (input === null) {
-                    return;
-                }
-                else {
-                    window.alert("The password you have entered is incorrect. Please try again, or send me a message for the password!");
-                }
-            }
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
+    <div class="margins">
+        <nav data-aos="fade" data-aos-once="true" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="false">
+            <!-- <a href="/"><h5 class="logo"><span class="material-icons" style="color: #F9F58E; font-size: 40px; padding-left: 0.4rem;">light_mode</span></h5></a> -->
             
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-            
-                // Store hash
-                var hash = this.hash;
-            
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 1000, function(){
-            
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-                } // End if
-            });
-            });
-        </script>
-        <footer data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
-            <!-- was 3 and 3 before -->
-            <div class="line" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
-            <h2 style="margin-top: 4rem;">Hope I made your day a bit <span style="color: #F9F58E">brighter</span>!</h2>
-            <p>While you’re here, send a message and say hi!</p>
-            <br><br>
-            <ul>
-                <li id="first"><a href="mailto:@stacykwok01@gmail.com" target="_blank" id="links-detached">Email</a></li>
-                <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" id="links-detached">Linkedin</a></li>
+            <!-- <a href="/"><img src="{% static 'assets/sun.png' %}" style="width: 44px; height: 44px;"></a> -->
+            <a href="/"><h5 class="logo">SK</h5></a>
+            <ul id="links">
+                <li><a href="/" id="active">Portfolio</a></li>
+                <li><a href="me.html">Me</a></li>
+                <li><a href="assets/stacy-kwok-resume-f22.pdf" target="_blank">Resume</a></li>
             </ul>
-        </footer>
+        </nav>
+        
+        <div class="hero" data-aos="fade" data-aos-once="true" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="false">
+            <br>
+            <h3>Hi there, I’m Stacy!</h3>
+            <h1>A designer who will explore <span style="color: #F9F58E">all</span> the ideas, and brings <span style="color: #F9F58E">sunshine</span> to design teams.</h1>
+            <p>Previously at <a href="https://www.questrade.com/home" target="_blank" id="links-detached">Questrade</a>, currently co-leading the design team at <a href="https://uwblueprint.org/" target="_blank" id="links-detached">UW Blueprint</a>!</p>
+        </div>
+        
+        <!--  data-aos="fade-up" data-aos-once="true" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" -->
+        <div class="left-right-padding" data-aos="fade-up" data-aos-once="true" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 1rem;">
+        <h1>My recent work</h1> 
+        </div>
+
+        <div class="left-right-padding">
+            <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 9rem;">
+                <div class="projectrow-right">
+                    <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Creating the template design for announcing new web trading features</h3>
+                    <p style="padding-bottom: 1.5rem;">Questrade, Spring 2022</p>
+                    <a href="questrade.html" class="button-dark">Check it out</a>
+                </div>
+                <div class="projectimage">
+                    <br>
+                    <img src="assets/questrade.png" style="max-width:105%;height:auto;">
+                </div>
+            </div>
+
+            <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 9rem;">
+                <!--  -->
+                <div class="projectrow-right">
+                    <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Simplifing the feedback cycle for LCBO teams through building a defect reporting platform</h3>
+                    <p style="padding-bottom: 1.5rem;">LCBO|next, Fall 2021</p>
+                    <a class="button-dark" onclick="PassWord()" style="cursor: pointer;">Check it out<span class="material-icons" style="color: #3a3a3a; font-size: 14px; padding-left: 0.4rem;">lock</span></a>
+                </div>
+                <div class="projectimage">
+                    <br>
+                    <img src="assets/lcbo-desk.png" style="max-width:105%;height:auto;padding-left: 1rem;">
+                </div>
+            </div>
+
+            <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 5rem;">
+                <div class="projectrow-right">
+                    <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Re-envisioning the SDC program registration experience for parents & volunteers</h3>
+                    <p style="padding-bottom: 1.5rem;">UW Blueprint collaboration with Social Diversity for Children Foundation, Spring 2021</p>
+                    <a href="sdc.html" class="button-dark">Check it out</a>
+                </div>
+                <div class="projectimage">
+                    <br>
+                    <img src="assets/sdc.png" style="max-width:105%;height:auto;">
+                </div>
+            </div>
+
+            <script language="JavaScript">
+                function PassWord() {
+                    answer="happy-reading";
+                    input=window.prompt("This is a password protected case study! Please enter in the password to read more.", "");
+                    if (input === answer) {
+                        // history.go(index.html)
+                        window.location.href = "lcbo.html";
+                    }
+                    else if (input === null) {
+                        return;
+                    }
+                    else {
+                        window.alert("The password you have entered is incorrect. Please try again, or send me a message for the password!");
+                    }
+                }
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                // Add smooth scrolling to all links
+                $("a").on('click', function(event) {
+                
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                
+                    // Store hash
+                    var hash = this.hash;
+                
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, function(){
+                
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                    } // End if
+                });
+                });
+            </script>
+            <footer data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
+                <!-- was 3 and 3 before -->
+                <div class="line" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
+                <h2 style="margin-top: 4rem;">Hope I made your day a bit <span style="color: #F9F58E">brighter</span>!</h2>
+                <p>While you’re here, send a message and say hi!</p>
+                <br><br>
+                <ul>
+                    <li id="first"><a href="mailto:@stacykwok01@gmail.com" target="_blank" id="links-detached">Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" id="links-detached">Linkedin</a></li>
+                </ul>
+            </footer>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init();</script>
 </body>
 
 </html>
