@@ -313,14 +313,14 @@ footer > ul {
 
 /* HERO */
 .hero {
-    padding-left: 14rem;
-    padding-right: 14rem;
+    /* padding-left: 14rem;
+    padding-right: 14rem; */
     padding-bottom: 9rem;
 }
-.left-right-padding {
+/* .left-right-padding {
     padding-left: 14rem;
     padding-right: 14rem;
-}
+} */
 
 .area{
     /* display: flex;
@@ -747,14 +747,33 @@ tr:first-child {
         margin-top: 0px;
         margin-bottom: 0px;
     }
+    .left-right-padding {
+        padding-left: 21rem;
+        padding-right: 21rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .left-right-padding-small {
+        padding-left: 14rem;
+        padding-right: 14rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
 /* 1100 to 1512 */
 @media (max-width: 1399px) {
-    body {
+    .margins {
         width: 900px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
+    /* body {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    } */
     #background-1, #background-2, #background-3, #background-4, #background-5, #background-6 {
         background-image: none;
         padding-left: 0rem !important;
@@ -787,6 +806,7 @@ tr:first-child {
     }
     nav {
         padding-right: 0rem;
+        padding-left: 0rem;
     }
     footer {
         padding-left: 0rem !important;
@@ -809,12 +829,16 @@ tr:first-child {
     .projectrow-video {
         padding-left: 0rem;
     }
+    .left-right-padding {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
 }
 
 /* 600 to 1099 */
 @media (max-width: 1099px) {
     body {
-        width: 500px;
+        /* width: 500px; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -859,7 +883,7 @@ tr:first-child {
 /* 320 to 599 */
 @media (max-width: 599px) {
     body {
-        width: 270px;
+        /* width: 270px; */
         margin-left: auto;
         margin-right: auto;
     }
