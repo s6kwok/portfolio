@@ -68,7 +68,7 @@
                 <div class="projectrow-right">
                     <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Simplifing the feedback cycle for LCBO teams through building a defect reporting platform</h3>
                     <p style="padding-bottom: 1.5rem;">LCBO|next, Fall 2021</p>
-                    <a class="button-dark" onclick="PassWord()" style="cursor: pointer;">Check it out<span class="material-icons" style="color: #3a3a3a; font-size: 14px; padding-left: 0.4rem;">lock</span></a>
+                    <a class="button-dark" onclick="login()" style="cursor: pointer;">Check it out<span class="material-icons" style="color: #3a3a3a; font-size: 14px; padding-left: 0.4rem;">lock</span></a>
                 </div>
                 <div class="projectimage">
                     <br>
@@ -88,7 +88,7 @@
                 </div>
             </div>
 
-            <script language="JavaScript">
+            <!-- <script language="JavaScript">
                 function PassWord() {
                     answer="happy-reading";
                     input=window.prompt("This is a password protected case study! Please enter in the password to read more.", "");
@@ -103,7 +103,7 @@
                         window.alert("The password you have entered is incorrect. Please try again, or send me a message for the password!");
                     }
                 }
-            </script>
+            </script> -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script>
                 $(document).ready(function(){
@@ -145,7 +145,33 @@
         </div>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>AOS.init();</script>
+        <script type="text/javascript" src="app.js"></script>
     </div>
+
+    <!-- FIREBASE -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyD0-P9Em0iGFJu55_33Y8Cf9QhA2Fjr34Y",
+          authDomain: "stacesportfolio.firebaseapp.com",
+          projectId: "stacesportfolio",
+          storageBucket: "stacesportfolio.appspot.com",
+          messagingSenderId: "76691093933",
+          appId: "1:76691093933:web:748699474444dc225c4924",
+          measurementId: "G-Y0DS208X8J"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 
 </html>
