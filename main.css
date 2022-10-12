@@ -3,8 +3,8 @@
 html {
     font-size: 16px;
     color: #E9E9EB;
-    background-color: #1C1F21;
-    /* background-color: #1C1F21; */
+    background-color: #26292B;
+    /* background-color: #26292B; */
     margin-left: 0%;
     margin-right: 0%;
     overflow-x: hidden;
@@ -166,7 +166,7 @@ a:hover {
     font-weight: normal;
     font-size: 0.875rem;
     line-height: 1.75rem;
-    color: #1C1F21 !important;
+    color: #26292B !important;
     padding: 0.75rem 1.9rem;
     border: transparent;
     outline: none;
@@ -728,7 +728,7 @@ td, th {
 tr:first-child {
 /* tr:nth-child(even) { */
     /* background-color: #B1E8FF; */
-    color: #1C1F21;
+    color: #26292B;
     font-weight: bold;
 }
 
