@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stacy Kwok's Portfolio</title>
+    <title>Stace's Portfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link href="main.css" rel="stylesheet">
@@ -26,67 +28,76 @@
 
 <body>
     <div class="margins">
-        <nav data-aos="fade" data-aos-once="true" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="false">
-            <!-- <a href="/"><h5 class="logo"><span class="material-icons" style="color: #F9F58E; font-size: 40px; padding-left: 0.4rem;">light_mode</span></h5></a> -->
-            
-            <!-- <a href="/"><img src="{% static 'assets/sun.png' %}" style="width: 44px; height: 44px;"></a> -->
+        <nav>
             <a href="/"><h5 class="logo">SK</h5></a>
-            <ul id="links">
+            <ul>
                 <li><a href="/" id="active">Portfolio</a></li>
                 <li><a href="me.html">Me</a></li>
-                <li><a href="assets/stacy-kwok-resume-f22.pdf" target="_blank">Resume</a></li>
+                <li><a href="#" target="_blank">Resume</a></li>
             </ul>
         </nav>
         
-        <div class="left-right-padding-small" data-aos="fade" data-aos-once="true" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-top: 2rem; padding-bottom: 9rem;">
-            <br>
-            <h3>Hi there, I’m Stacy!</h3>
-            <h1>A designer who will explore <span style="color: #F9F58E">all</span> the ideas, and brings <span style="color: #F9F58E">sunshine</span> to design teams.</h1>
-            <p>Previously at <a href="https://www.questrade.com/home" target="_blank" id="links-detached">Questrade</a>, currently co-leading the design team at <a href="https://uwblueprint.org/" target="_blank" id="links-detached">UW Blueprint</a>!</p>
+        <div class="left-right-padding-small" style="padding-top: 3.25rem; padding-bottom: 10rem;">
+            <h4 data-aos="fade" data-aos-once="true" data-aos-duration="1100" data-aos-easing="ease-in-out" data-aos-mirror="false">Hi, I’m Stacy!</h4>
+            <div data-aos="fade-up" data-aos-once="true" data-aos-delay="1400" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false">
+                <div class="hero">
+                    <div>
+                        <h1 style="margin-top: 0.75rem; margin-bottom: 1.25rem;">A product designer who brings <span style="font-weight: 700; font-size: 44px; line-height: 62px; letter-spacing: 0.01em; color: #3C3C3C;">sunshine</span> to design teams & users.</h1>
+                        <p>Currently <a href="https://www.jamcity.com/" target="_blank">@Jam City</a>, previously <a href="https://www.questrade.com/" target="_blank">@Questrade</a> and <a href="https://uwblueprint.org/" target="_blank">@UW Blueprint</a>.</p>
+                    </div>
+                    <img src="assets-index/sun.svg" style="max-width:110%;height:auto;padding-bottom: 1.5rem;">
+                </div>
+            </div>
         </div>
         
-        <!--  data-aos="fade-up" data-aos-once="true" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" -->
-        <div class="left-right-padding-small" data-aos="fade-up" data-aos-once="true" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 1rem;">
-        <h1>My recent work</h1> 
+        <div class="left-right-padding-small" data-aos="fade-up" data-aos-once="false" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 1.6rem;">
+            <h4>My recent work</h4> 
         </div>
 
         <div class="left-right-padding-small">
-            <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 9rem;">
-                <div class="projectrow-right">
-                    <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Creating the template design for announcing new web trading features</h3>
-                    <p style="padding-bottom: 1.5rem;">Questrade, Spring 2022</p>
-                    <a href="questrade.html" class="button-dark">Check it out</a>
+            <div class="project-2-col" data-aos="fade-up" data-aos-once="false" data-aos-delay="650" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false">
+                <div class="project-2-col-text">
+                    <h3>Creating the template design for announcing new trading features</h3>
+                    <p>Questrade, Spring 2022</p>
+                    <a href="questrade.html" class="button-primary">Check it out</a>
                 </div>
-                <div class="projectimage">
-                    <br>
-                    <img src="assets/questrade.png" style="max-width:105%;height:auto;">
-                </div>
-            </div>
-
-            <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 9rem;">
-                <!--  -->
-                <div class="projectrow-right">
-                    <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Simplifing the feedback cycle for LCBO teams through building a defect reporting platform</h3>
-                    <p style="padding-bottom: 1.5rem;">LCBO|next, Fall 2021</p>
-                    <a class="button-dark" onclick="PassWord()" style="cursor: pointer;">Check it out<span class="material-icons" style="color: #3a3a3a; font-size: 14px; padding-left: 0.4rem;">lock</span></a>
-                </div>
-                <div class="projectimage">
-                    <br>
-                    <img src="assets/lcbo-desk.png" style="max-width:105%;height:auto;padding-left: 1rem;">
+                <div class="project-2-col-image">
+                    <img src="assets-index/questrade.png" style="max-width:105%;height:auto;">
                 </div>
             </div>
 
-            <div class="project" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false" style="padding-bottom: 5rem;">
-                <div class="projectrow-right">
-                    <h3 style="margin-top: 0rem; margin-bottom: 0rem;">Re-envisioning the SDC program registration experience for parents & volunteers</h3>
-                    <p style="padding-bottom: 1.5rem;">UW Blueprint collaboration with Social Diversity for Children Foundation, Spring 2021</p>
-                    <a href="sdc.html" class="button-dark">Check it out</a>
+            <div class="project-1-col" data-aos="fade-up" data-aos-once="false" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false">
+                <div class="project-1-col-text">
+                    <h3>Re-envisioning the SDC program registration experience</h3>
+                    <p>UW Blueprint collaboration with Social Diversity for Children Foundation, Spring 2021</p>
+                    <a href="sdc.html" class="button-primary">Check it out</a>
                 </div>
-                <div class="projectimage">
-                    <br>
-                    <img src="assets/sdc.png" style="max-width:105%;height:auto;">
+                <img src="assets-index/sdc.png" style="max-width:102.25%;height:auto;">
+            </div>
+
+            <div class="project-2-col" data-aos="fade-up" data-aos-once="false" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false">
+                <div class="project-2-col-text">
+                    <h3>Simplifying the feedback cycle with a defect reporting platform</h3>
+                    <p>LCBO|next, Fall 2021</p>
+                    <a class="button-primary" onclick="PassWord()" style="cursor: pointer;">Check it out<span class="material-icons" style="color: #ffffff; font-size: 14px; padding-left: 0.6rem; padding-bottom: 0.2rem;">lock</span></a>
+                </div>
+                <div class="project-2-col-image">
+                    <img src="assets-index/lcbo.png" style="max-width:105%;height:auto;">
                 </div>
             </div>
+
+            <div class="project-2-col" data-aos="fade-up" data-aos-once="false" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false">
+                <div class="project-2-col-text">
+                    <h3>Registration portal UI redesign challenge</h3>
+                    <p>Human computer interaction passion project, Fall 2022</p>
+                    <a href="#" class="button-primary">Check it out</a>
+                </div>
+                <div class="project-2-col-image">
+                    <img src="assets-index/city.png" style="max-width:105%;height:auto;">
+                </div>
+            </div>
+
+            
 
             <script language="JavaScript">
                 function PassWord() {
@@ -131,15 +142,14 @@
                 });
                 });
             </script>
-            <footer data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false">
-                <!-- was 3 and 3 before -->
-                <div class="line" data-aos="fade-up" data-aos-once="true" data-aos-delay="8" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-mirror="false"></div>
-                <h2 style="margin-top: 4rem;">Hope I made your day a bit <span style="color: #F9F58E">brighter</span>!</h2>
-                <p>While you’re here, send a message and say hi!</p>
-                <br><br>
+            <footer data-aos="fade-up" data-aos-once="false" data-aos-delay="50" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-mirror="false">
+                <div class="line"></div>
+                <h2>Hope I made your day a bit <span style="font-weight: 700; font-size: 36px; line-height: 40px; letter-spacing: -0.01em; color: #3C3C3C;">sunnier</span>!</h2>
+                <p>Thanks for stopping by! While you’re here, why not say hi?</p>
+                <br>
                 <ul>
-                    <li id="first"><a href="mailto:@stacykwok01@gmail.com" target="_blank" id="links-detached">Email</a></li>
-                    <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" id="links-detached">Linkedin</a></li>
+                    <li><a href="mailto:@stacykwok01@gmail.com" target="_blank">Send me an email</a></li>
+                    <li><a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank">Connect on Linkedin</a></li>
                 </ul>
             </footer>
         </div>
