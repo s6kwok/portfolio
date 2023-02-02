@@ -16,8 +16,8 @@ html {
 h1 {
     /* H1 header */
     font-weight: 400;
-    font-size: 44px;
-    line-height: 62px;
+    font-size: 40px;
+    line-height: 56px;
     letter-spacing: -0.03em;
     color: #1A1A1A;
 }
@@ -218,14 +218,15 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 1.25rem;
+    padding-left: 2rem;
     padding-right: 2rem;
 }
 .project-1-col {
     margin: 0px;
     padding-bottom: 6rem;
-    padding-left: 1.25rem;
+    padding-left: 2rem;
     padding-right: 3rem;
+    padding-top: 1.5rem;
 }
 .project-1-col-text {
     margin: 0%;
@@ -249,7 +250,7 @@ body {
     margin: 0px;
     justify-content: space-between;
     padding-bottom: 6rem;
-    padding-left: 1.25rem;
+    padding-left: 2rem;
     padding-right: 3.25rem;
 }
 .project-2-col-text {
