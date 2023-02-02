@@ -810,12 +810,12 @@ tr:first-child {
         left: 7rem;
     }
     nav {
-        padding-right: 0rem;
-        padding-left: 0rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
     footer {
-        padding-left: 0rem !important;
-        padding-right: 0rem !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
     }
     div > img {
         max-width: 100% !important;
@@ -837,6 +837,12 @@ tr:first-child {
     .left-right-padding {
         margin-top: 0rem;
         margin-bottom: 0rem;
+    }
+    .case-study-4-col {
+        width: 100% !important;
+    }
+    #project-2-col-text-wide {
+        max-width: 45% !important;
     }
 }
 
@@ -900,7 +906,8 @@ tr:first-child {
         padding-right: 0rem;
     }
     nav {
-        padding-left: 0rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
     #grey > .content {
         padding-left: 1rem;
