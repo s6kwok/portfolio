@@ -187,7 +187,7 @@ h1 > span:hover, h2 > span:hover {
 }
 footer {
     margin-top: 0rem;
-    margin-bottom: 7rem;
+    margin-bottom: 6rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -279,7 +279,7 @@ body {
     align-items: center;
     margin: 0px;
     justify-content: space-between;
-    padding-bottom: 6rem;
+    padding-bottom: 7rem;
     padding-left: 2rem;
     padding-right: 3.25rem;
 }
