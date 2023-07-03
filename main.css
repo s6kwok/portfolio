@@ -52,7 +52,7 @@ h4 {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.01em;
     color: #1A1A1A;
     /* Positioning */
     float: left;
@@ -156,29 +156,32 @@ nav > ul > li {
     padding-right: 0rem;
 }
 nav > ul > li > a {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 17px;
     line-height: 20px;
-    letter-spacing: -0.005em;
-    color: #1A1A1A;
+    letter-spacing: -0.01em;
+    color: #3C3C3C;
     text-decoration: none;
 }
 nav > ul > li > a:hover {
     /* font-weight: 700;
     letter-spacing: -0.005em; */
+    color: #1A1A1A;
     text-decoration: underline;
 }
 a {
     /* Text link */
-    font-weight: 700;
+    font-weight: 500;
     font-size: 17px;
     line-height: 32px;
-    letter-spacing: -0.005em;
-    text-decoration-line: underline;
+    letter-spacing: -0.01em;
+    text-decoration-line: none;
     color: #3C3C3C;
 }
 a:hover {
     /* color: #565656; */
+    color: #1A1A1A;
+    text-decoration: underline;
     background: #FCF5B9;
 }
 h1 > span:hover, h2 > span:hover {
@@ -187,13 +190,21 @@ h1 > span:hover, h2 > span:hover {
 }
 footer {
     margin-top: 0rem;
-    margin-bottom: 6rem;
+    margin-bottom: 2.25rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
 footer > h2 {
-    margin-top: 68px;
-    margin-bottom: 28px;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+footer > h2 > a {
+    /* H2 footer title */
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    color: #3C3C3C;
 }
 footer > ul {
     padding-left: 0px;
