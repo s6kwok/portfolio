@@ -78,10 +78,12 @@ h4 {
     padding-right: 26px;
     background: #3C3C3C;
     border-radius: 6px;
+    text-decoration: none;
 }
 .button-primary:hover {
     background: #565656;
     color: #FFFFFF;
+    text-decoration: none;
 }
 .button-secondary, .button-secondary:hover {
     /* Button text */
@@ -258,8 +260,8 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 2.65rem;
     /* padding-right: 2rem; */
 }
 .project-1-col {
