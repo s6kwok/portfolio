@@ -17,7 +17,7 @@ h1 {
     /* H1 header */
     font-weight: 400;
     font-size: 40px;
-    line-height: 56px;
+    line-height: 60px;
     letter-spacing: -0.03em;
     color: #1A1A1A;
 }
@@ -186,10 +186,10 @@ a:hover {
     text-decoration: underline;
     background: #FCF5B9;
 }
-h1 > span:hover, h2 > span:hover {
+/* h1 > span:hover, h2 > span:hover {
     background: #FCF5B9;
     cursor: default;
-}
+} */
 footer {
     margin-top: 0rem;
     margin-bottom: 2.25rem;
@@ -199,13 +199,14 @@ footer {
 footer > h2 {
     margin-top: 34px;
     margin-bottom: 34px;
+    font-weight: 400;
 }
 footer > h2 > a {
     /* H2 footer title */
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
     line-height: 40px;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.01em;
     color: #3C3C3C;
 }
 footer > ul {
@@ -219,9 +220,18 @@ footer > ul {
     padding-right: 48px;
 }
 .line {
-    height: 1px;
-    background-color: #3C3C3C;
+    height: 2px;
+    /* background-color: #3C3C3C; */
+    background-color: #dfdfdf;
+    margin-left: 1rem;
+    margin-right: 3rem;
 }
+.emphasis {
+    font-weight: 700; font-size: 40px; line-height: 56px; letter-spacing: 0.01em; color: #3C3C3C;
+
+}
+
+
 
 /* ANIMATIONS */
 .fade-in {
@@ -266,12 +276,41 @@ body {
 }
 .project-1-col {
     margin: 0px;
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
     padding-left: 2rem;
     padding-right: 3rem;
     padding-top: 1.5rem;
 }
 .project-1-col-text {
+    /* margin: 0%; */
+    margin: auto;
+    padding: 0%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    /* padding-bottom: 3rem; */
+    padding-bottom: 1rem;
+    max-width: 85%;
+    text-align: center;
+}
+.project-1-col-text > .button-primary {
+    display: inline;
+}
+/* .project-1-col-text > p {
+    margin-top: 0.8rem;
+    padding-bottom: 1.25rem;
+} */
+.project-1-col-text > h3 {
+    margin-top: 0.8rem;
+    /* padding-bottom: 1.25rem; */
+}
+.project-1-col-left {
+    margin: 0px;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 3rem;
+    padding-top: 1.5rem;
+}
+.project-1-col-text-left {
     margin: 0%;
     padding: 0%;
     padding-left: 0rem;
@@ -279,10 +318,7 @@ body {
     padding-bottom: 3rem;
     max-width: 85%;
 }
-.project-1-col-text > .button-primary {
-    display: inline;
-}
-.project-1-col-text > p {
+.project-1-col-text-left > p {
     margin-top: 0.8rem;
     padding-bottom: 1.25rem;
 }
@@ -316,6 +352,99 @@ body {
     padding-top: 1%;
     text-align: right;
 }
+.line-behind {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    
+    &:before {
+        border-top: 2px solid #dfdfdf;
+        content:"";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 95%;
+        z-index: -1;
+    }
+}
+#no-decor {
+    font-weight: 400;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 17px;
+    color: #565656;
+    line-height: 32px;
+    letter-spacing: -0.005em;
+    text-decoration: none;
+}
+#no-decor:hover {
+    text-decoration: none;
+}
+.glow-gold, .glow-green, .glow-blue {
+    transform: scale(0.96);
+    transition: all .3s ease-in-out;
+}
+.glow-gold:hover {
+    /* border:2px solid #dfdfdf;
+    border-radius: 48px; */
+    /* background-color: #FFFFFF; */
+    /* margin-left: 0.5rem;
+    margin-right: 1.5rem; */
+
+    transform: scale(1.02);
+    /* background-color: #F7CF60; */
+    cursor: pointer;
+
+    background-image: radial-gradient(ellipse at 50% 54%, #FBF6C9 0%, #FCFCFC 66%);
+    background-position: bottom; /* Align the glow to the bottom */
+}
+
+.glow-green:hover {
+    /* border:2px solid #dfdfdf; */
+    border-radius: 36px;
+    /* background-color: #FFFFFF; */
+    /* margin-left: 0.5rem;
+    margin-right: 1.5rem; */
+
+    transform: scale(1.02);
+    /* background-color: #F7CF60; */
+    cursor: pointer;
+
+    background-image: radial-gradient(ellipse at 50% 54%, #E4FEE2 0%, #FCFCFC 66%);
+    background-position: bottom; /* Align the glow to the bottom */
+}
+
+.glow-blue:hover {
+    /* border:2px solid #dfdfdf; */
+    border-radius: 36px;
+    /* background-color: #FFFFFF; */
+    /* margin-left: 0.5rem;
+    margin-right: 1.5rem; */
+
+    transform: scale(1.02);
+    /* background-color: #F7CF60; */
+    cursor: pointer;
+
+    background-image: radial-gradient(ellipse at 50% 54%, #DEEFFF 0%, #FCFCFC 66%);
+    background-position: bottom; /* Align the glow to the bottom */
+}
+
+#HiddenText {
+    display: none;
+    color: #1A1A1A;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.glow-gold:hover #HiddenText, .glow-green:hover #HiddenText, .glow-blue:hover #HiddenText {
+    display: block;
+}
+#HiddenText-img {
+    display: flex; align-items: center; justify-content: center; margin-top: 2rem;
+}
+.glow-gold:hover #HiddenText-img, .glow-green:hover #HiddenText-img, .glow-blue:hover #HiddenText-img {
+    margin-top: 0rem;
+}
+
 
 /* ME PAGE */
 .photos-1-row {
