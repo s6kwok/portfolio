@@ -17,8 +17,8 @@ h1 {
     /* H1 header */
     font-weight: 400;
     font-size: 40px;
-    line-height: 60px;
-    letter-spacing: -0.03em;
+    line-height: 62px;
+    letter-spacing: -0.02em;
     color: #1A1A1A;
 }
 h2 {
@@ -226,10 +226,6 @@ footer > ul {
     margin-left: 1rem;
     margin-right: 3rem;
 }
-.emphasis {
-    font-weight: 700; font-size: 40px; line-height: 56px; letter-spacing: 0.01em; color: #3C3C3C;
-
-}
 
 
 
@@ -261,6 +257,58 @@ footer > ul {
 0% {opacity:0;}
 100% {opacity:1;}
 }
+
+.title-word {
+    animation: color-animation 6s linear infinite;
+    font-weight: 700; font-size: 40px; line-height: 56px; letter-spacing: 0.01em; color: #3C3C3C;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+    /* padding-left: 0.25rem;
+    padding-right: 0.25rem; */
+    /* -webkit-text-stroke: 1px black; */
+    /* background-color: #1A1A1A; */
+  }
+  
+  .title-word-1 {
+    /* --color-1: #F9EE8B; */
+    --color-1: radial-gradient(ellipse at 50% 50%, #F9EE8B 0%, #FCFCFC 100%);
+    --color-2: #FCFCFC;
+    --color-3: #FCFCFC;
+    /* --background-color-1: #F9EE8B;
+    --background-color-2: #3C3C3C;
+    --background-color-3: #3C3C3C; */
+  }
+  
+  .title-word-2 {
+    --color-1: #FCFCFC;
+    /* --color-2: #7FD368; */
+    --color-2: radial-gradient(ellipse at 50% 50%, #84D86D 0%, #FCFCFC 100%);
+    --color-3: #FCFCFC;
+    /* --background-color-1: #3C3C3C;
+    --background-color-2: #6BBF54;
+    --background-color-3: #3C3C3C; */
+  }
+  
+  .title-word-3 {
+    --color-1: #FCFCFC;
+    --color-2: #FCFCFC;
+    --color-3: radial-gradient(ellipse at 50% 50%, #F0C0D0 0%, #FCFCFC 100%);
+    /* --color-3: #F0C0D0; */
+    /* --background-color-1: #3C3C3C;
+    --background-color-2: #3C3C3C;
+    --background-color-3: #F0C0D0; */
+  }
+  
+  @keyframes color-animation {
+    0%    {background-image: var(--color-1)}
+    32%   {background-image: var(--color-1)}
+    33%   {background-image: var(--color-2)}
+    65%   {background-image: var(--color-2)}
+    66%   {background-image: var(--color-3)}
+    99%   {background-image: var(--color-3)}
+    100%  {background-image: var(--color-1)}
+  }
+
 
 /* INDEX PAGE */
 body {
@@ -395,7 +443,8 @@ body {
     /* background-color: #F7CF60; */
     cursor: pointer;
 
-    background-image: radial-gradient(ellipse at 50% 54%, #FBF6C9 0%, #FCFCFC 66%);
+    /* background-image: radial-gradient(ellipse at 50% 54%, #FBF6C9 0%, #FCFCFC 66%); */
+    background-image: radial-gradient(ellipse at 50% 56%, #FFFFB5 0%, #FCFCFC 66%);
     background-position: bottom; /* Align the glow to the bottom */
 }
 
