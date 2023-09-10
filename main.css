@@ -8,14 +8,15 @@ html {
     line-height: 32px;
     letter-spacing: -0.005em;
     /* Background */
-    background-color: #FCFCFC;
+    /* background-color: #FCFCFC; */
+    background-color: #F8F6F4;
     margin-left: 0%;
     margin-right: 0%;
     overflow-x: hidden;
 }
 h1 {
     /* H1 header */
-    font-weight: 400;
+    font-weight: 500;
     font-size: 40px;
     line-height: 62px;
     letter-spacing: -0.02em;
@@ -199,7 +200,7 @@ footer {
 footer > h2 {
     margin-top: 34px;
     margin-bottom: 34px;
-    font-weight: 400;
+    font-weight: 500;
 }
 footer > h2 > a {
     /* H2 footer title */
@@ -271,28 +272,28 @@ footer > ul {
   
   .title-word-1 {
     /* --color-1: #F9EE8B; */
-    --color-1: radial-gradient(ellipse at 50% 50%, #F9EE8B 0%, #FCFCFC 100%);
-    --color-2: #FCFCFC;
-    --color-3: #FCFCFC;
+    --color-1: radial-gradient(ellipse at 50% 50%, #84D86D 0%, #F8F6F4 100%);
+    --color-2: #F8F6F4;
+    --color-3: #F8F6F4;
     /* --background-color-1: #F9EE8B;
     --background-color-2: #3C3C3C;
     --background-color-3: #3C3C3C; */
   }
   
   .title-word-2 {
-    --color-1: #FCFCFC;
+    --color-1: #F8F6F4;
     /* --color-2: #7FD368; */
-    --color-2: radial-gradient(ellipse at 50% 50%, #84D86D 0%, #FCFCFC 100%);
-    --color-3: #FCFCFC;
+    --color-2: radial-gradient(ellipse at 50% 50%, #F9EE8B 0%, #F8F6F4 100%);
+    --color-3: #F8F6F4;
     /* --background-color-1: #3C3C3C;
     --background-color-2: #6BBF54;
     --background-color-3: #3C3C3C; */
   }
   
   .title-word-3 {
-    --color-1: #FCFCFC;
-    --color-2: #FCFCFC;
-    --color-3: radial-gradient(ellipse at 50% 50%, #F0C0D0 0%, #FCFCFC 100%);
+    --color-1: #F8F6F4;
+    --color-2: #F8F6F4;
+    --color-3: radial-gradient(ellipse at 50% 50%, #F0C0D0 0%, #F8F6F4 100%);
     /* --color-3: #F0C0D0; */
     /* --background-color-1: #3C3C3C;
     --background-color-2: #3C3C3C;
@@ -444,7 +445,7 @@ body {
     cursor: pointer;
 
     /* background-image: radial-gradient(ellipse at 50% 54%, #FBF6C9 0%, #FCFCFC 66%); */
-    background-image: radial-gradient(ellipse at 50% 56%, #FFFFB5 0%, #FCFCFC 66%);
+    background-image: radial-gradient(ellipse at 50% 56%, #FFFFB5 0%, #F8F6F4 66%);
     background-position: bottom; /* Align the glow to the bottom */
 }
 
@@ -459,7 +460,7 @@ body {
     /* background-color: #F7CF60; */
     cursor: pointer;
 
-    background-image: radial-gradient(ellipse at 50% 54%, #E4FEE2 0%, #FCFCFC 66%);
+    background-image: radial-gradient(ellipse at 50% 54%, #E4FEE2 0%, #F8F6F4 70%);
     background-position: bottom; /* Align the glow to the bottom */
 }
 
@@ -474,7 +475,7 @@ body {
     /* background-color: #F7CF60; */
     cursor: pointer;
 
-    background-image: radial-gradient(ellipse at 50% 54%, #DEEFFF 0%, #FCFCFC 66%);
+    background-image: radial-gradient(ellipse at 50% 54%, #DEEFFF 0%, #F8F6F4 70%);
     background-position: bottom; /* Align the glow to the bottom */
 }
 
