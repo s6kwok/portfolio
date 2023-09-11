@@ -261,7 +261,8 @@ footer > ul {
 
 .title-word {
     animation: color-animation 6s linear infinite;
-    font-weight: 700; font-size: 40px; line-height: 56px; letter-spacing: 0.01em; color: #3C3C3C;
+    /* font-weight: 700; font-size: 40px; line-height: 56px; letter-spacing: 0.01em; color: #3C3C3C; */
+    font-weight: 700;
     padding-top: 0.5rem;
     padding-bottom: 0.25rem;
     /* padding-left: 0.25rem;
