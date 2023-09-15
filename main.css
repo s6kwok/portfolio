@@ -200,6 +200,7 @@ footer {
 footer > h2 {
     margin-top: 34px;
     margin-bottom: 34px;
+    line-height: 42px;
     font-weight: 500;
 }
 footer > h2 > a {
