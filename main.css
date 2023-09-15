@@ -32,7 +32,7 @@ h2 {
 }
 h3 {
     /* H3 project titles */
-    font-weight: 400;
+    font-weight: 500;
     font-size: 28px;
     line-height: 38px;
     letter-spacing: -0.005em;
@@ -561,13 +561,22 @@ body {
 
 /* Modal Content (image) */
 .modal-content {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
-  width: 80%;
+  width: 90%;
+  /* width: 80%; */
   opacity: 1 !important;
-  height: 80vh;
-  width: auto;
+  height: auto;
+  margin-top: 6%;
+  /* width: auto; */
   /* max-width: 1200px; */
+  background-color: #F8F6F4;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+  border-radius: 16px;
 }
 
 /* Caption of Modal Image */
@@ -619,8 +628,36 @@ body {
   cursor: pointer;
 }
 
-
-
+/* STICKY NAV */
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.main, .sidebar {
+    /* border: 3px solid black; */
+    padding-top: 3.5rem;
+    /* background-color: #fff; */
+    padding-bottom: 8rem;
+}
+.main {
+    width: 68%;
+    height: 915vh;
+}
+.sidebar {
+    width: 24%;
+    height: 55vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.main > ul > li {
+    padding-left: 0.7rem;
+}
+.main > p, .main > .case-study-4-col > div > p, .main > ul > li, .main > ol > li {
+    font-size: 16px;
+}
 
 
 
