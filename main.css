@@ -408,14 +408,17 @@ body {
     z-index: 1;
     text-align: center;
     margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
     
     &:before {
         border-top: 2px solid #dfdfdf;
         content:"";
         margin: 0 auto; /* this centers the line to the full width specified */
+        margin-left: 0.5rem;
+        margin-right: 0rem;
         position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
         top: 50%; left: 0; right: 0; bottom: 0;
-        width: 95%;
+        width: 100%;
         z-index: -1;
     }
 }
