@@ -656,7 +656,7 @@ body {
     position: sticky;
     top: 0;
 }
-.main > ul > li {
+.main > ul > li, .main > ol > li {
     padding-left: 0.7rem;
 }
 .main > p, .main > .case-study-4-col > div > p, .main > ul > li, .main > ol > li {
