@@ -651,10 +651,16 @@ body {
 }
 .sidebar {
     width: 24%;
-    height: 62vh;
+    /* height: 62vh; */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+}
+#sidebar-questrade {
+    height: 61vh;
+}
+#sidebar-sdc {
+    height: 71vh;
 }
 .main > ul > li, .main > ol > li {
     padding-left: 0.7rem;
