@@ -662,6 +662,9 @@ body {
 #sidebar-sdc {
     height: 71vh;
 }
+#sidebar-jamcity {
+    height: 71vh;
+}
 .main > ul > li, .main > ol > li {
     padding-left: 0.7rem;
 }
