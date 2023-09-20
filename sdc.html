@@ -43,6 +43,8 @@
                 <li><a href="stacy-kwok-resume-f23.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
+
+        <p id="demo"></p>
         
         <div class="left-right-padding-small">
 
@@ -65,23 +67,24 @@
             <div class="wrapper" data-aos="fade-up" data-aos-once="true" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="false" >
                 <div class="sidebar" id="sidebar-sdc">
                     <ul style="list-style-type: none; padding-left: 0rem; margin-left: 0rem; margin-top: 0rem;">
-                        <li style="padding-bottom: 0.85rem; font-size: 16px;">Skip to section ↓</li>
-                        <li style="padding-bottom: 1rem;"><a href="#overview" style="font-size: 16px;">Overview</a></li>
-                        <li style="padding-bottom: 1rem; "><a href="#problem" style="font-size: 16px;">Identifying the problem</a></li>
-                        <li style="padding-bottom: 1rem; "><a href="#research" style="font-size: 16px;">User research ⭐️</a></li>
-                        <li style="padding-bottom: 1rem;"><a href="#lofi" style="font-size: 16px;">Mobile lo-fi explorations</a></li>
-                        <li style="padding-bottom: 1rem;"><a href="#testing" style="font-size: 16px;">Usability testing ⭐️</a></li>
-                        <li style="padding-bottom: 1rem;"><a href="#responsiveness" style="font-size: 16px;">Responsiveness</a></li>
-                        <li style="padding-bottom: 1rem;"><a href="#iteration" style="font-size: 16px;">Exploring & iterating on the main landing page</a></li>
-                        <li style="padding-bottom: 1rem;"><a href="#visuals" style="font-size: 16px;">Creating a visual design system</a></li>
-                        <li style="padding-bottom: 1rem;"><a href="#final" style="font-size: 16px;">Final design ⭐️</a></li>
-                        <li style="padding-bottom: 1rem;"><a href="#handoff" style="font-size: 16px;">Handoff</a></li>
-                        <li><a href="#learnings" style="font-size: 16px;">Learnings</a></li>
+                        <li><a class="button-primary" href="/#work" style="opacity: 100% !important;">← Back</a></li>
+                        <!-- <li style="padding-bottom: 0.85rem; font-size: 16px;">Skip to section ↓</li> -->
+                        <li style="padding-top: 1.75rem; padding-bottom: 0.75rem;"><a href="#overview" style="font-size: 14px;" class="active">Overview</a></li>
+                        <li style="padding-bottom: 0.75rem; "><a href="#problem" style="font-size: 14px;">Identifying the problem</a></li>
+                        <li style="padding-bottom: 0.75rem; "><a href="#research" style="font-size: 14px;">User research ⭐️</a></li>
+                        <li style="padding-bottom: 0.75rem;"><a href="#lofi" style="font-size: 14px;">Mobile lo-fi explorations</a></li>
+                        <li style="padding-bottom: 0.75rem;"><a href="#testing" style="font-size: 14px;">Usability testing ⭐️</a></li>
+                        <li style="padding-bottom: 0.75rem;"><a href="#responsiveness" style="font-size: 14px;">Responsiveness</a></li>
+                        <li style="padding-bottom: 0.75rem;"><a href="#iteration" style="font-size: 14px;">Exploring & iterating on the main landing page</a></li>
+                        <li style="padding-bottom: 0.75rem;"><a href="#visuals" style="font-size: 14px;">Creating a visual design system</a></li>
+                        <li style="padding-bottom: 0.75rem;"><a href="#final" style="font-size: 14px;">Final design ⭐️</a></li>
+                        <li style="padding-bottom: 0.75rem;"><a href="#handoff" style="font-size: 14px;">Handoff</a></li>
+                        <li><a href="#learnings" style="font-size: 14px;">Learnings</a></li>
                     </ul>
                 </div>
 
-                <div class="main">
-                    <h2 id="overview" style="font-size: 30px; margin-top: 0rem; margin-bottom: 0rem;">Overview</h2>
+                <div class="main" id="sections">
+                    <h2 id="overview" class="section" style="font-size: 30px; margin-top: 0rem; margin-bottom: 0rem;">Overview</h2>
                     <div class="case-study-4-col" style="display: flex; flex-direction: row; justify-content: space-between; padding-top: 0.5rem; padding-bottom: 0.25rem; max-width: 95%;">
                         <div style="width: 50%;">
                             <h4 style="margin-bottom: 0rem;">Design team</h4>
@@ -99,7 +102,7 @@
                     <h3 style="font-size: 24px; margin-top: 1.5rem;">What is SDC Foundation?</h3>
                     <p style="margin-top: 0.75rem;">Social Diversity for Children Foundation (“SDC” for short), our client, is a non profit organization. They provide youth with the platform to empower other youth/children with disabilities, through building community and running a variety of programs.</p>
 
-                    <h2 id="problem" style="font-size: 30px; margin-top: 5rem; line-height: 46px;">Why did SDC Foundation want to improve their registration process?</h2>
+                    <h2 id="problem" class="section" style="font-size: 30px; margin-top: 5rem; line-height: 46px;">Why did SDC Foundation want to improve their registration process?</h2>
                     <p style="margin-top: 2rem;">In 2021, SDC Foundation switched from paper/manual registration to a digital registration platform where parents can sign their children up for classes, and volunteers can sign up to be a volunteer.</p>
                     <p style="margin-top: 2rem;">However, SDC Foundation received feedback from registrants about their new process which caused them to want to seek an improved alternative.</p>
                     <img src="assets-sdc/problem-new-1.png" style="max-width:100%;height:auto;margin-top: 1rem;">
@@ -116,7 +119,7 @@
                     <p style="margin-top: 2.5rem;">Resultantly, SDC requested Blueprint’s help in re-imaging their digital web registration platform. The <strong>main design goal</strong> can be summarized with the question:</p>
                     <img src="assets-sdc/callout-3.png" style="max-width:100%;height:auto;margin-top: 0.25rem;">
 
-                    <h2 id="research" style="font-size: 30px; margin-top: 5rem; line-height: 46px;">User research to better understand our client, and their users ⭐️</h2>
+                    <h2 id="research" class="section" style="font-size: 30px; margin-top: 5rem; line-height: 46px;">User research to better understand our client, and their users ⭐️</h2>
                     <p style="margin-top: 2rem;">Blueprint’s scoping team had already helped scope out information on SDC’s users.<br>However, secondary research was conducted by the product team (including my fellow product designer, my product manager, and myself), to first-hand empathize with who we were designing for, and to squash any assumptions we had.</p>
                     <p style="margin-top: 2rem;"><strong>User interviews were conducted with 2 volunteers, and 2 program coordinators/teachers (limited based on resources and time)</strong>. We were unable to speak to parents first-hand, because as a more sensitive user group, SDC wanted to maintain complete privacy of their registrants. <strong>It was definitely a challenge to not be able to interview parents, but we worked around this later through lots of testing!</strong></p>
                     <h3 style="font-size: 24px; margin-top: 4rem;">Translating findings into design requirements & constraints</h3>
@@ -132,12 +135,12 @@
                     <p style="margin-top: 2rem;">Therefore, the <strong>user journey map</strong>, along with the <strong>design requirements</strong> identified, were <strong>used as a starting point to create a user flow</strong> for the new platform, to better organize and conceptualize how the platform would fit in with the processes.</p>
                     <img class="modal-target" src="assets-sdc/user-flows-new-1.png" style="max-width:100%;height:auto;margin-top: 0.25rem;">
 
-                    <h2 id="lofi" style="font-size: 30px; margin-top: 5rem;">Mobile lo-fi explorations</h2>
+                    <h2 id="lofi" class="section" style="font-size: 30px; margin-top: 5rem;">Mobile lo-fi explorations</h2>
                     <p style="margin-top: 1.25rem;">Lo-fi wireframes were then created, building out the screens and architecture <strong>based on the user flow</strong> created above. <strong>Lo-fis were done in mobile first, because it was one of the design requirements.</strong></p>
                     <p style="margin-top: 1.25rem;">The initial lo-fis underwent multiple iterations, before project timelines required us to begin testing our mobile lo-fis and translating them to desktop.</p>
                     <img class="modal-target" src="assets-sdc/lofi-new-1.png" style="max-width:75%;height:auto;margin-top: 1.25rem;">
 
-                    <h2 id="testing" style="font-size: 30px; margin-top: 5rem;">Usability testing ⭐️</h2>
+                    <h2 id="testing" class="section" style="font-size: 30px; margin-top: 5rem;">Usability testing ⭐️</h2>
                     <p style="margin-top: 1rem;">To obtain feedback from users, we sent a <strong>mobile, lo-fi prototype of the platform to parents & volunteers for usability testing</strong>. This enabled us to collect feedback, even from parents, while protecting the privacy of individuals.</p>
                     <img class="modal-target" src="assets-sdc/testing-1.png" style="max-width:100%;height:auto;margin-top: 0rem;">
                     <img class="modal-target" src="assets-sdc/testing-2.png" style="max-width:100%;height:auto;margin-top: 0.5rem;">
@@ -147,11 +150,11 @@
                     <img src="assets-sdc/callout-5.png" style="max-width:100%;height:auto;margin-top: 1rem;">
                     <img src="assets-sdc/callout-6.png" style="max-width:100%;height:auto;margin-top: 1rem;">
 
-                    <h2 id="responsiveness" style="font-size: 30px; margin-top: 5rem;">Responsiveness</h2>
+                    <h2 id="responsiveness" class="section" style="font-size: 30px; margin-top: 5rem;">Responsiveness</h2>
                     <p style="margin-top: 2rem;"><strong>After making the changes from testing</strong>, we then pivoted to desktop lo-fis, <strong>due to time constraints and cross-functional needs</strong> (specifically developers!). One example of mobile lo-fis made responsive to desktop, is shown below:</p>
                     <img class="modal-target" src="assets-sdc/mobile-to-desktop.png" style="max-width:100%;height:auto;margin-top: 0.75rem;">
 
-                    <h2 id="iteration" style="font-size: 30px; margin-top: 5rem; line-height: 46px;">Exploring & iterating on the main landing page</h2>
+                    <h2 id="iteration" class="section" style="font-size: 30px; margin-top: 5rem; line-height: 46px;">Exploring & iterating on the main landing page</h2>
                     <p style="margin-top: 2rem;">In moving from mobile to desktop, <strong>it was noticed that for the main landing page, there was a lot of extra space</strong> we could take advantage of, to improve the program/class browsing experience.</p>
                     <h3 style="font-size: 24px; margin-top: 4rem;">How should the extra space on desktop be used?</h3>
                     <p>Different layouts of landing page on desktop were explored and assessed.</p>
@@ -163,12 +166,12 @@
                     <p style="margin-top: 1rem;">The exploration selected previously was iterated upon, to improve and address the client feedback received.</p>
                     <img class="modal-target" src="assets-sdc/main-transformation-2.png" style="max-width:100%;height:auto;margin-top: 0.5rem;">
 
-                    <h2 id="visuals" style="font-size: 30px; margin-top: 5rem;">Creating a visual design system</h2>
+                    <h2 id="visuals" class="section" style="font-size: 30px; margin-top: 5rem;">Creating a visual design system</h2>
                     <p style="margin-top: 2rem;">Again, due to time constraints, we then needed to turn our lo-fis into hi-fis. We created a design system for the project, based on the branding & styling of our client’s main website.</p>
                     <p style="margin-top: 2rem;">Implementing a design system made the process of adding styling and branding to the designs, much smoother.</p>
                     <img class="modal-target" src="assets-sdc/visual-design.png" style="max-width:100%;height:auto;margin-top: 0.25rem;">
 
-                    <h2 id="final" style="font-size: 30px; margin-top: 4.5rem;">Final design ⭐️</h2>
+                    <h2 id="final" class="section" style="font-size: 30px; margin-top: 4.5rem;">Final design ⭐️</h2>
                     <h3 style="font-size: 24px; margin-top: 2rem;">Desktop</h3>
                     <p style="margin-top: 1rem; margin-bottom: 1.5rem;">Inviting programs & classes to browse through</p>
                     <video width="100%" height="auto" autoplay controls loop muted playsinline>
@@ -180,10 +183,10 @@
                         <source src="assets-sdc/final-2.mp4" type="video/mp4">
                     </video>
 
-                    <h2 id="handoff" style="font-size: 30px; margin-top: 5rem;">Handoff</h2>
+                    <h2 id="handoff" class="section" style="font-size: 30px; margin-top: 5rem;">Handoff</h2>
                     <p style="margin-top: 2rem; margin-bottom: 0rem;">The project continued into the next term, where another team designed what the internal side of the platform would look like (admin). The second-term team were the ones last in touch with the client, and who handed off the project and designs!</p>
 
-                    <h2 id="learnings" style="font-size: 30px; margin-top: 5rem;">Learnings</h2>
+                    <h2 id="learnings" class="section" style="font-size: 30px; margin-top: 5rem;">Learnings</h2>
                     <ol style="margin-top: 2rem; margin-bottom: 2rem;">
                         <li><strong>Designing mobile-first while also keeping in mind developer needs</strong>: Impact of designing a mobile-first platform with developers coding the desktop experience first</li>
                         <li><strong>Form design</strong>: Making better forms, as there were lots and lots of them</li>
@@ -261,6 +264,10 @@
                 </ul>
             </footer> -->
         </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="scroll-sdc.js"></script>
+
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>AOS.init();</script>
     </div>

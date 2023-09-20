@@ -63,22 +63,22 @@ h4 {
 }
 .button-primary {
     /* Button text */
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
     color: #FFFFFF;
     text-decoration: none;
     /* Button styling */
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding-top: 18px;
+    align-items: center; */
+    padding-top: 16px;
     padding-bottom: 14px;
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-left: 16px;
+    padding-right: 18px;
     background: #3C3C3C;
-    border-radius: 6px;
+    border-radius: 21px;
     text-decoration: none;
 }
 .button-primary:hover {
@@ -136,6 +136,37 @@ h4 {
 #back-to-top:hover {
     background-color: #565656;
 }
+#back-to-work {
+    /* Button text */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    /* Button styling */
+    align-items: center;
+    position: fixed;
+    top: 3.75rem;
+    left: 6rem;
+    /* bottom: 3.25rem;
+    right: 4.5rem; */
+    /* bottom: 36px;
+    right: 44px; */
+    z-index: 99;
+    cursor: pointer;
+    background: #3C3C3C;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    padding-right: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* padding: 0.75rem 1.9rem; */
+    border: transparent;
+    outline: none;
+}
+#back-to-work:hover {
+    background-color: #565656;
+}
 nav {
     /* Nav link */
     min-height: 8rem;
@@ -186,6 +217,7 @@ a:hover, .logo:hover {
     color: #1A1A1A;
     text-decoration: underline;
     background: #FCF5B9;
+    opacity: 100% !important;
 }
 /* h1 > span:hover, h2 > span:hover {
     background: #FCF5B9;
@@ -646,24 +678,27 @@ body {
     padding-bottom: 8rem;
 }
 .main {
-    width: 68%;
+    width: 70%;
     min-height: 100vh;
 }
 .sidebar {
-    width: 24%;
+    width: 20%;
     /* height: 62vh; */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
 #sidebar-questrade {
-    height: 61vh;
+    height: 58vh;
+}
+#sidebar-questrade > ul > li > a, #sidebar-sdc > ul > li > a, #sidebar-jamcity > ul > li > a {
+    opacity: 35%;
 }
 #sidebar-sdc {
-    height: 71vh;
+    height: 69vh;
 }
 #sidebar-jamcity {
-    height: 71vh;
+    height: 67vh;
 }
 .main > ul > li, .main > ol > li {
     padding-left: 0.7rem;
@@ -671,6 +706,11 @@ body {
 .main > p, .main > .case-study-4-col > div > p, .main > ul > li, .main > ol > li {
     font-size: 16px;
 }
+.active {
+    opacity: 100% !important;
+    /* background: red; */
+}
+
 
 
 
