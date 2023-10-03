@@ -683,6 +683,8 @@ body {
 }
 .sidebar {
     width: 20%;
+    min-width: 195px;
+    min-height: 550px;
     /* height: 62vh; */
     position: -webkit-sticky;
     position: sticky;
@@ -1140,9 +1142,9 @@ tr:first-child {
         padding-left: 2rem !important;
         padding-right: 2rem !important;
     }
-    div > img {
+    /* div > img {
         max-width: 100% !important;
-    }
+    } */
     #grey > .content {
         padding-left: 8rem;
         padding-right: 7rem;
@@ -1239,6 +1241,9 @@ tr:first-child {
         margin-left: auto;
         margin-right: auto;
         font-size: 14px;
+    }
+    .sidebar {
+        min-width: 30% !important;
     }
     h1, h1 > span {
         font-size: 32px !important;
