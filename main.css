@@ -294,7 +294,7 @@ footer > ul {
 
 .title-word {
     animation: color-animation 14s linear infinite;
-    animation-delay: 12s;
+    animation-delay: 20s;
     /* font-weight: 700; font-size: 40px; line-height: 56px; letter-spacing: 0.01em; color: #3C3C3C; */
     font-weight: 700;
     padding-top: 0.5rem;
@@ -541,8 +541,8 @@ body {
     width: 8rem;
     height: 8rem;
     border: 1px solid #f1f1f1;
+    border-radius: 10px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    border-radius: 12px;
 }
 
 /* This container is needed to position the front and back side */
@@ -575,6 +575,7 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+    border-radius: 10px;
 }
 
 /* Style the back side */
@@ -584,10 +585,11 @@ body {
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
     font-size: 13px;
-    line-height: 28px;
+    line-height: 25px;
     text-align: left;
     transform: rotateY(180deg);
     background-color: #FCFAF8;
+    border-radius: 10px;
 }
 
 /* Blue bar title sequence */
@@ -627,7 +629,7 @@ body {
   
   #span1:nth-of-type(1)::before,
   #span1:nth-of-type(1)::after{
-    animation-delay: 1s;
+    animation-delay: 0.25s;
   }
   
   #span1:nth-of-type(2)::before,
