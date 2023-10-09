@@ -293,7 +293,8 @@ footer > ul {
 }
 
 .title-word {
-    animation: color-animation 6s linear infinite;
+    animation: color-animation 14s linear infinite;
+    animation-delay: 12s;
     /* font-weight: 700; font-size: 40px; line-height: 56px; letter-spacing: 0.01em; color: #3C3C3C; */
     font-weight: 700;
     padding-top: 0.5rem;
@@ -534,6 +535,117 @@ body {
 #values-small, #fun-small, #notice {
     display: none;
 }
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    border-radius: 12px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+/* Style the back side */
+.flip-card-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+    font-size: 13px;
+    line-height: 28px;
+    text-align: left;
+    transform: rotateY(180deg);
+    background-color: #FCFAF8;
+}
+
+/* Blue bar title sequence */
+#span1{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.4;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  #span1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #F9EE8B;
+    /* background: linear-gradient(to right, #84D86D, #F9EE8B, #F0C0D0); */
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+  }
+  
+  #span1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+  }
+  
+  #span1:nth-of-type(1)::before,
+  #span1:nth-of-type(1)::after{
+    animation-delay: 1s;
+  }
+  
+  #span1:nth-of-type(2)::before,
+  #span1:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+  }
+  
+  @keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+  }
+
+
 
 
 /* ME PAGE */
@@ -1183,7 +1295,7 @@ tr:first-child {
     }
     .hero, .project-1-col, .project-2-col, .case-study-content {
         padding-left: 2rem !important;
-        padding-right: 2.35rem !important;
+        padding-right: 2rem !important;
     }
     #values-big, #fun-big {
         max-width: 88% !important;
@@ -1234,6 +1346,13 @@ tr:first-child {
         height: 95vh;
     }
 }
+
+@media (max-width: 870px) {
+    #cards {
+        max-width: 465px !important;
+    }
+}
+
 /* 320 to 599 */
 @media (max-width: 599px) {
     body, #no-decor {
@@ -1241,6 +1360,11 @@ tr:first-child {
         margin-left: auto;
         margin-right: auto;
         font-size: 14px;
+    }
+    #cards {
+        flex-direction: column !important;
+        row-gap: 1rem;
+        /* max-width:85% !important; */
     }
     .sidebar {
         min-width: 30% !important;
