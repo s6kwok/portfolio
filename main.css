@@ -293,8 +293,8 @@ footer > ul {
 }
 
 .title-word {
-    animation: color-animation 14s linear infinite;
-    animation-delay: 20s;
+    animation: color-animation 12s linear infinite;
+    animation-delay: 6s;
     /* font-weight: 700; font-size: 40px; line-height: 56px; letter-spacing: 0.01em; color: #3C3C3C; */
     font-weight: 700;
     padding-top: 0.5rem;
@@ -357,6 +357,17 @@ body {
     padding-left: 1rem;
     padding-right: 2.5rem;
     /* padding-right: 2rem; */
+}
+.hero-2-col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* max-width: 888px;
+    margin-left: auto;
+    margin-right: auto; */
 }
 .project-1-col {
     margin: 0px;
@@ -598,8 +609,8 @@ body {
     overflow: hidden;
     display: block;
     line-height: 1.4;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
   }
   
   #span1::after{
@@ -1174,10 +1185,11 @@ tr:first-child {
 
 
 /* RESPONSIVENESS */
-@media (min-width: 1400px) {
+@media (min-width: 1474px) {
     .margins {
         /* width: 1512px; */
-        width: 100%;
+        /* width: 100%; */
+        width: 1474px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
@@ -1196,11 +1208,12 @@ tr:first-child {
         margin-bottom: 0px;
     }
 }
-/* 1100 to 1512 */
-@media (max-width: 1399px) {
+/* 1001 to 1473 */
+@media (max-width: 1473px) {
     .margins {
         /* width: 1100px; */
-        width: 85%;
+        /* width: 85%; */
+        width: 1000px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
@@ -1217,6 +1230,11 @@ tr:first-child {
     }
     #values-big, #fun-big {
         max-width: 88% !important;
+    }
+    #fun {
+        max-width: 80% !important;
+        margin-left: auto;
+        margin-right: auto;
     }
     #background-1, #background-2, #background-3, #background-4, #background-5, #background-6 {
         background-image: none;
@@ -1285,15 +1303,13 @@ tr:first-child {
     }
 }
 
-/* 600 to 1099 */
-@media (max-width: 1099px) {
-    body {
+/* 600 to 1000 */
+@media (max-width: 1000px) {
+    .margins {
+        width: 100%;
         /* width: 500px; */
         margin-left: auto;
         margin-right: auto;
-    }
-    .margins {
-        width: 100%;
     }
     .hero, .project-1-col, .project-2-col, .case-study-content {
         padding-left: 2rem !important;
@@ -1347,15 +1363,27 @@ tr:first-child {
     #sidebar-sdc {
         height: 95vh;
     }
-}
-
-@media (max-width: 870px) {
+    .hero-2-col {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .hero-2-col > div > h1, #header-body {
+        margin-left: auto;
+        margin-right: auto;
+    }
     #cards {
-        max-width: 465px !important;
+        max-width: 100% !important;
+        /* margin-left: 0rem !important; */
     }
 }
 
-/* 320 to 599 */
+/* @media (max-width: 870px) {
+    #cards {
+        max-width: 465px !important;
+    }
+} */
+
+/* 375 to 599 */
 @media (max-width: 599px) {
     body, #no-decor {
         /* width: 270px; */
@@ -1363,10 +1391,18 @@ tr:first-child {
         margin-right: auto;
         font-size: 14px;
     }
-    #cards {
+    .hero-2-col {
         flex-direction: column !important;
-        row-gap: 1rem;
-        /* max-width:85% !important; */
+    }
+    #cards {
+        /* flex-direction: column !important; */
+        column-gap: 0.25rem !important;
+        max-width: 100% !important;
+        margin-left: 0rem !important;
+    }
+    .flip-card-back {
+        font-size: 12px;
+        line-height: 20px;
     }
     .sidebar {
         min-width: 30% !important;
@@ -1406,9 +1442,16 @@ tr:first-child {
     #values-big, #fun-big {
         display: none;
     }
+    #fun-headshot {
+        max-width: 50% !important;
+    }
+    #fun-headshot-text {
+        text-align: center;
+        align-items: center;
+    }
     #values-small {
         display: block;
-        max-width: 55% !important;
+        max-width: 40% !important;
         margin-left: auto;
         margin-right: auto;
         padding-top: 1rem !important;
@@ -1416,7 +1459,7 @@ tr:first-child {
     }
     #fun-small {
         display: block;
-        max-width: 55% !important;
+        max-width: 40% !important;
         margin-left: auto;
         margin-right: auto;
         padding-top: 1rem !important;
@@ -1469,6 +1512,9 @@ tr:first-child {
         max-width: 80% !important;
     }
 
+    #fun {
+        padding-bottom: 0rem !important;
+    }
 
     .sidenav {
         display: none;
@@ -1480,6 +1526,7 @@ tr:first-child {
     nav {
         padding-left: 2rem;
         padding-right: 2rem;
+        min-height: 5.5rem !important;
     }
     #grey > .content {
         padding-left: 1rem;
