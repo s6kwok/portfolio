@@ -1667,3 +1667,11 @@ tr:first-child {
         min-width: fit-content;
     }
 }
+
+/* #rectangle {
+    width:200px;
+    height:100px;
+    background: radial-gradient(ellipse at 50% 50%, #B3E5A4 0%, #FAF8F6 100%);
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+} */
