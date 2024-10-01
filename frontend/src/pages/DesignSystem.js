@@ -13,7 +13,7 @@ import { FaArrowRightLong, FaArrowLeftLong, FaClock, FaLocationArrow, FaCar } fr
 import { MdQuestionMark } from "react-icons/md";
 
 export default function DesignSystem() {
-    const [activeTab, setActiveTab] = useState('none'); // Default state is null (no tabs active)
+    const [activeTab, setActiveTab] = useState('Null'); // Default state is null (no tabs active)
 
     return(
         <>
@@ -30,13 +30,12 @@ export default function DesignSystem() {
                     <h2>h2</h2>
                     <p className="h2-medium">h2-medium</p>
                     <h3>h3</h3>
-                    <p className="h3-link">h3-link</p>
                     <h4>h4</h4>
                     <h5>h5</h5>
                     <h6>h6</h6>
                     <p>b1</p>
                     <p className="b1-medium">b1-medium</p>
-                    <p className="b1-link">b1-link</p>
+                    <a>b1-link</a>
                     <p className="b2">b2</p>
                     <p className="b2-medium">b2-medium</p>
                     <p className="b3">b3</p>

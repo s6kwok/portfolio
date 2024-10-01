@@ -1,29 +1,51 @@
 import React from 'react';
 import './NavTabs.css';
+import { useNavigate } from 'react-router-dom';
 
-export default function NavTabs({ activeTab, onTabChange }) {
-  const tabs = ['Design', 'About', 'Resume'];
 
-  const handleClick = (tab) => {
-    // Change the active tab to the clicked one
-    onTabChange(tab);
+const NavTabs = ({ activeTab, onTabChange }) => {
+  const navigate = useNavigate();
+
+  const handleTabClick = (tab) => {
+    if (activeTab !== tab) {
+      onTabChange(tab);
+    }
+    if (tab === 'Design') {
+      navigate('/');
+    } else if (tab === 'About') {
+      navigate('/about');
+    }
   };
 
   return (
-    <div style={{ display: 'flex', gap: '1rem' }}>
-      {tabs.map((tab) => (
-        <p
-          key={tab}
-          className={activeTab === tab ? 'nav-active' : 'nav-inactive'}
-          style={{ 
-            color: activeTab === tab ? 'var(--PRIMARY-BLUE-500)' : 'inherit',
-            cursor: 'pointer' // Make sure the cursor indicates it's clickable
-          }}
-          onClick={() => handleClick(tab)} // Clicking will always set this tab as active
-        >
-          {tab}
-        </p>
-      ))}
+    <div className="nav-tabs">
+      {/* Design Tab */}
+      <p
+        className={activeTab === 'Design' ? 'nav-active' : 'nav-inactive'}
+        onClick={() => handleTabClick('Design')}
+      >
+        Design
+      </p>
+
+      {/* About Tab */}
+      <p
+        className={activeTab === 'About' ? 'nav-active' : 'nav-inactive'}
+        onClick={() => handleTabClick('About')}
+      >
+        About
+      </p>
+
+      {/* Resume Link */}
+      <a
+        href="/design-system"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="nav-inactive"
+      >
+        Resume
+      </a>
     </div>
   );
-}
+};
+
+export default NavTabs;

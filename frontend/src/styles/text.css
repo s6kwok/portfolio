@@ -10,17 +10,23 @@
 }
 
 .nav-inactive {
+    text-decoration: none;
+    color: inherit;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem; /* 150% */
+    cursor: pointer;
 }
 
-.nav-active {
+.nav-active, .nav-inactive:hover {
+    color: var(--PRIMARY-BLUE-500);
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem; /* 150% */
-    text-decoration-line: underline;
-}
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 100%;
+} 
 
 h1 {
     font-size: 3rem;
@@ -46,13 +52,6 @@ h2 {
 h3 {
     font-size: 2.5rem;
     font-weight: 500;
-    line-height: 3.5rem; /* 140% */
-    letter-spacing: -0.05rem;
-}
-
-.h3-link {
-    font-size: 2.5rem;
-    font-weight: 600;
     line-height: 3.5rem; /* 140% */
     letter-spacing: -0.05rem;
 }
@@ -91,11 +90,18 @@ p {
     line-height: 1.625rem; /* 162.5% */
 }
 
-.b1-link {
+/* b1 link */
+a {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem; /* 150% */
     text-decoration-line: underline;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 80%;
+    cursor: pointer;
 }
 
 .b2 {
