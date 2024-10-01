@@ -1,15 +1,12 @@
 import React from 'react';
 import './NavTabs.css';
 
-export default function NavTabs({ activeTab = null, onTabChange }) {
+export default function NavTabs({ activeTab, onTabChange }) {
   const tabs = ['Design', 'About', 'Resume'];
 
   const handleClick = (tab) => {
-    if (tab === activeTab) {
-      onTabChange(null); // Deselect the tab if it is already active
-    } else {
-      onTabChange(tab); // Set the clicked tab as active
-    }
+    // Change the active tab to the clicked one
+    onTabChange(tab);
   };
 
   return (
@@ -18,8 +15,11 @@ export default function NavTabs({ activeTab = null, onTabChange }) {
         <p
           key={tab}
           className={activeTab === tab ? 'nav-active' : 'nav-inactive'}
-          style={{ color: activeTab === tab ? 'var(--PRIMARY-BLUE-500)' : 'inherit' }}
-          onClick={() => handleClick(tab)}
+          style={{ 
+            color: activeTab === tab ? 'var(--PRIMARY-BLUE-500)' : 'inherit',
+            cursor: 'pointer' // Make sure the cursor indicates it's clickable
+          }}
+          onClick={() => handleClick(tab)} // Clicking will always set this tab as active
         >
           {tab}
         </p>
