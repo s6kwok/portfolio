@@ -35,7 +35,7 @@ export default function DesignSystem() {
                     <h6>h6</h6>
                     <p>b1</p>
                     <p className="b1-medium">b1-medium</p>
-                    <a>b1-link</a>
+                    <a href='#'>b1-link</a>
                     <p className="b2">b2</p>
                     <p className="b2-medium">b2-medium</p>
                     <p className="b3">b3</p>
