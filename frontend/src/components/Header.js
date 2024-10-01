@@ -1,6 +1,6 @@
 
 export default function Header() {
     return (
-        <h1>Header yay</h1>
+        <h1>This is a header component!</h1>
     )
 }

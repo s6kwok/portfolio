@@ -1,10 +1,10 @@
 import Header from "../components/Header"
 
-export default function Design() {
+export default function Home() {
     return(
         <>
             <Header />
-            <h2>Design</h2>
+            <h2>Home page</h2>
         </>
     )
 }

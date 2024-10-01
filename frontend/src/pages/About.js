@@ -4,7 +4,7 @@ export default function About() {
     return(
         <>
             <Header />
-            <h2>About</h2>
+            <h2>About page</h2>
         </>
     )
 }
