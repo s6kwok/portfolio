@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavTabs.css';
 import { useNavigate } from 'react-router-dom';
-
+import { routes } from "../routes/Routes";
 
 const NavTabs = ({ activeTab, onTabChange }) => {
   const navigate = useNavigate();
@@ -11,9 +11,9 @@ const NavTabs = ({ activeTab, onTabChange }) => {
       onTabChange(tab);
     }
     if (tab === 'Design') {
-      navigate('/');
+      navigate(routes.index);
     } else if (tab === 'About') {
-      navigate('/about');
+      navigate(routes.about);
     }
   };
 
@@ -37,7 +37,7 @@ const NavTabs = ({ activeTab, onTabChange }) => {
 
       {/* Resume Link */}
       <a
-        href="/design-system"
+        href={routes.designSystem}
         target="_blank"
         rel="noopener noreferrer"
         className="nav-inactive"

@@ -11,6 +11,7 @@ import { FaBookOpen, FaHeart, FaUtensils, FaFlask, FaLightbulb } from "react-ico
 import { VscSparkleFilled } from "react-icons/vsc";
 import { FaArrowRightLong, FaArrowLeftLong, FaClock, FaLocationArrow, FaCar } from "react-icons/fa6";
 import { MdQuestionMark } from "react-icons/md";
+import { routes } from "../routes/Routes";
 
 export default function DesignSystem() {
     const [activeTab, setActiveTab] = useState('Null'); // Default state is null (no tabs active)
@@ -23,7 +24,7 @@ export default function DesignSystem() {
             <hr />
             <div style={{display: 'flex'}}>
                 <div>
-                    <p className="logo">logo</p>
+                    <a href={routes.designSystem} className="logo">logo</a>
                     <p className="nav-inactive">nav-inactive</p>
                     <p className="nav-active">nav-active</p>
                     <h1>h1</h1>
