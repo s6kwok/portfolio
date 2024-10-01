@@ -1,5 +1,7 @@
-import Header from "../components/Header"
-import Tag from "../components/Tag"
+import React, { useState } from 'react';
+import Header from "../components/Header";
+import Tag from "../components/Tag";
+import NavTabs from "../components/NavTabs";
 import { HiSparkles } from "react-icons/hi2";
 import { IoBalloonSharp, IoHappySharp, IoSad, IoSparklesSharp, IoCloseSharp } from "react-icons/io5";
 import { BsBarChartLineFill } from "react-icons/bs";
@@ -10,8 +12,9 @@ import { VscSparkleFilled } from "react-icons/vsc";
 import { FaArrowRightLong, FaArrowLeftLong, FaClock, FaLocationArrow, FaCar } from "react-icons/fa6";
 import { MdQuestionMark } from "react-icons/md";
 
-
 export default function DesignSystem() {
+    const [activeTab, setActiveTab] = useState('none'); // Default state is null (no tabs active)
+
     return(
         <>
             <Header />
@@ -111,6 +114,9 @@ export default function DesignSystem() {
                     <Tag theme="orange" size="small" icon={FaHeart} text="Stacy" />
                     <Tag theme="blue" size="medium" icon={FaLightbulb} text="strategy" />
                     <Tag theme="primaryBlue" size="large" icon={RiEmotionHappyLine} text="people" />
+                </div>
+                <div>
+                    <NavTabs activeTab={activeTab} onTabChange={setActiveTab} />
                 </div>
             </div>
         </>

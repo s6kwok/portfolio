@@ -1,0 +1,14 @@
+.tabs-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between tabs as needed */
+  }
+  
+  .nav-inactive {
+    color: gray; /* Default inactive color */
+    cursor: pointer; /* Change the cursor to pointer */
+  }
+  
+  .nav-active {
+    color: var(--PRIMARY-BLUE-500); /* Active color */
+    font-weight: bold; /* Make the active tab bold */
+  }
