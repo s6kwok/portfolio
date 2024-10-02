@@ -4,6 +4,7 @@ import Tag from "../components/Tag";
 import NavTabs from "../components/NavTabs";
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import CircleNumber from '../components/CircleNumber';
 import { HiSparkles } from "react-icons/hi2";
 import { IoBalloonSharp, IoHappySharp, IoSad, IoSparklesSharp, IoCloseSharp } from "react-icons/io5";
 import { BsBarChartLineFill } from "react-icons/bs";
@@ -125,6 +126,8 @@ export default function DesignSystem() {
             <br />
             <Footer />
             <Header defaultActiveTab={'Design'} />
+            <CircleNumber />
+            <CircleNumber number={5} colorTheme="green" />
         </>
     )
 }
