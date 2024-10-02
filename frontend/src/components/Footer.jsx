@@ -43,12 +43,12 @@ export default function Footer() {
                 paddingTop: '2.15rem',
             }}
             >
-            <a href="mailto:@s6kwok@uwaterloo.ca">Email</a>
+            <a href="mailto:@s6kwok@uwaterloo.ca" target="_blank" rel="noopener noreferrer">Email</a>
             <a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
         </div>
         <div style={centerAlignedStyle}>
-            <p>Portfolio made with 10000 hours of <a href="https://open.spotify.com/playlist/4Fht6C4JCWNXLrvRjvgQNO?si=92541bf64c9245d2">Spotify music</a>, 10000 <a href="https://github.com/s6kwok">Github commits</a> (eep!), and lots of love.</p>
+            <p>Portfolio made with 10000 hours of <a href="https://open.spotify.com/playlist/4Fht6C4JCWNXLrvRjvgQNO?si=92541bf64c9245d2" target="_blank" rel="noopener noreferrer">Spotify music</a>, 10000 <a href="https://github.com/s6kwok" target="_blank" rel="noopener noreferrer">Github commits</a> (eep!), and lots of love.</p>
         </div>
     </footer>
   );

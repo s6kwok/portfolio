@@ -9,7 +9,7 @@ export default function Header({defaultActiveTab}) {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingTop: '3rem',
+    paddingTop: '2rem',
     position: 'relative',
   };
 

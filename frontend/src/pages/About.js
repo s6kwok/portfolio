@@ -104,7 +104,7 @@ export default function About() {
                             </p>
                             <br />
                             <p>
-                                The simplicity I love, translates outside of design too! From indulging in child-like play (<a>scroll down</a> to see what my play looks like!), to giving smiles to strangers--it’s the little things that bring me joy.
+                                The simplicity I love, translates outside of design too! From indulging in child-like play (<a href='#'>scroll down</a> to see what my play looks like!), to giving smiles to strangers--it’s the little things that bring me joy.
                             </p>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div style={{...wrapTags, gap: '6px', margin: '6rem auto 5rem auto',}} >
+            <div style={{...wrapTags, gap: '6px', margin: '7rem auto 6rem auto',}} >
                 <p>P.S. Thanks for stopping by</p>
                 <FaHeart />
             </div>
