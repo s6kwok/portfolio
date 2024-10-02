@@ -4,8 +4,17 @@ import Footer from '../components/Footer';
 import Tag from "../components/Tag";
 import { RiEmotionHappyLine } from "react-icons/ri";
 import { BsBarChartLineFill } from "react-icons/bs";
+import SnapPeaThumbnail from '../assets/home/snappea-thumbnail.png';
+import '../App.css';
+import '../styles/projects.css';
+import { projectPrimaryContainer, projectPrimaryColor } from '../styles/Projects';
+import { useNavigate } from 'react-router-dom';
+import { routes } from "../routes/Routes";
 
 export default function Home() {
+
+    const navigate = useNavigate();
+
     return(
         <>
             {/* <Test /> */}
@@ -14,15 +23,11 @@ export default function Home() {
             {/* Hero div */}
             <div>
                 {/* Hero container main content to vertically align */}
-                <div
+                <div className='marginsPrimary'
                 style={{
                     height: '68vh',
                     display: 'flex',
                     alignItems: 'center',
-                    marginLeft: '6.25rem',
-                    marginRight: '6.25rem',
-                    paddingLeft: '1.25rem',
-                    paddingReft: '1.25rem',
                     marginBottom: '6.5rem',
                 }}
                 >
@@ -55,19 +60,87 @@ export default function Home() {
                         <p>Prev @Questrade, @Jam City, @LCBO</p>
                     </div>
                 </div>
-                
+
                 {/* Hero footnote */}
-                <div
+                <div className='marginsPrimary'
                     style={{
                         alignItems: 'center',
-                        marginLeft: '6.25rem',
-                        marginRight: '6.25rem',
-                        paddingLeft: '1.25rem',
-                        paddingReft: '1.25rem',
                         marginBottom: '1.75rem',
                     }}
                 >
                     <p>Check out my recent work below! ↓</p>
+                </div>
+            </div>
+
+            {/* Projects div */}
+            <div className='marginsPrimary'>
+                {/* Autolayout of content */}
+                <div className='projectsList'
+                    onClick={() => {
+                        document.documentElement.style.scrollBehavior = 'auto';
+                        navigate(routes.snapPea);
+                        window.scrollTo({ top:0, left:0, behavior: "instant"})
+                    }}
+                    style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        gap: '4.5rem',
+                        marginTop: '5rem',
+                        marginBottom: '5rem',
+                        // marginLeft: '10rem',
+                        // marginRight: '10rem',
+                    }}
+                >
+                    {/* Left Section with photo */}
+                    <div>
+                        <div
+                            style={{
+                            padding: '3rem 3rem',
+                            borderRadius: '1.5rem',
+                            ...projectPrimaryContainer['blue'],
+                            }}
+                        >
+                            <img
+                            src={SnapPeaThumbnail}
+                            alt="This is me!"
+                            style={{
+                                width: '100%',
+                                height: 'auto',
+                                borderRadius: '1rem',
+                            }}
+                            />
+                        </div>
+                    </div>
+
+                    {/* Right Section */}
+                    <div
+                        style={{
+                            maxWidth: '54%',
+                            marginTop: '0.15rem',
+                        }}
+                    >
+                        {/* Header and inline tag */}
+                        <div
+                            style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '1rem',
+                            }}
+                        >
+                            <h3>Accelerating <span style={{...projectPrimaryColor['blue'],}} >value discovery</span> for a mapping platform</h3>
+                        </div>
+
+                        {/* Paragraph */}
+                        <div style={{ marginTop: '1.1rem', }}>
+                            <p className='b2'>
+                                SnapPea Design (Product design, Agency)
+                            </p>
+                            <p>
+                                Strategically improving a platform that had never previously incorporated design, to enhance usability and accessibility
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 

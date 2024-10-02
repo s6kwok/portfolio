@@ -3,25 +3,19 @@ import { IoIosStar } from "react-icons/io";
 import React from 'react';
 
 export default function Footer() {
-  const footerStyle = {
-    padding: '20px',
-    fontFamily: 'Arial, sans-serif',
-  };
 
   const leftAlignedStyle = {
-    marginLeft: '6.25rem',
-    marginRight: '6.25rem',
     textAlign: 'left',
   };
 
   const centerAlignedStyle = {
     textAlign: 'center',
     paddingTop: '3.85rem',
-    paddingBottom: '0.25rem',
+    paddingBottom: '1.5rem',
   };
 
   return (
-    <footer style={footerStyle}>
+    <footer className='marginsPrimary'>
         <div style={leftAlignedStyle}>
             <hr />
             <div

@@ -4,7 +4,7 @@ import { IoIosStar } from "react-icons/io";
 // import "./Tag.css";
 
 // Define a color theme mapping
-const colorThemes = {
+const tagColorThemes = {
     primaryBlue: {
       outlineColor: 'var(--PRIMARY-BLUE-300)',
       iconColor: 'var(--PRIMARY-BLUE-500)',
@@ -30,7 +30,7 @@ const colorThemes = {
 
 export default function Tag({ theme, size, icon: Icon, text }) {
   // Get colors based on the selected theme
-  const { outlineColor, iconColor, backgroundColor } = (colorThemes[theme] || colorThemes.primaryBlue); // Default to blue if theme is not recognized
+  const { outlineColor, iconColor, backgroundColor } = (tagColorThemes[theme] || tagColorThemes.primaryBlue); // Default to blue if theme is not recognized
 
   const tagStyles = {
     large: {

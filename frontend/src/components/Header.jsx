@@ -13,22 +13,12 @@ export default function Header({defaultActiveTab}) {
     position: 'relative',
   };
 
-  const nameStyles = {
-    marginLeft: '6.25rem',
-    paddingLeft: '1.25rem',
-  };
-
-  const navTabsStyles = {
-    marginRight: '6.25rem',
-    paddingRight: '1.25rem',
-  };
-
   return (
-    <header style={headerStyles}>
-        <div style={nameStyles}>
+    <header className='marginsPrimary' style={headerStyles}>
+        <div>
             <a href={routes.designSystem} className="logo">Stacy Kwok</a>
         </div>
-        <div style={navTabsStyles}>
+        <div>
             <NavTabs activeTab={activeTab} onTabChange={setActiveTab} />
         </div>
     </header>

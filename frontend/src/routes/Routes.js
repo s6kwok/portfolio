@@ -3,5 +3,10 @@ export const routes = {
     home: "/home",
 	designSystem: "/design-system",
 	about: "/about",
-    noPage: "/*"
+    noPage: "/*",
+    snapPea: "/snappea",
+    blank: "/blank",
+    jamCity: "/jamcity",
+    blueprint: "/blueprint",
+    questrade: "/questrade",
 };

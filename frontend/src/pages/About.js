@@ -30,7 +30,7 @@ export default function About() {
                 minHeight: '80vh',
                 display: 'flex',
                 alignItems: 'center',
-                margin: '1.15rem auto',
+                margin: '1.35rem auto',
                 // paddingLeft: '1.25rem',
                 // paddingReft: '1.25rem',
                 maxWidth: '70%',
@@ -59,9 +59,8 @@ export default function About() {
                         >
                             <img
                             src={hero}
-                            alt="Stacy Kwok"
+                            alt="This is me!"
                             style={{
-                                display: 'block',
                                 width: '100%',
                                 height: 'auto',
                                 borderRadius: '1rem',

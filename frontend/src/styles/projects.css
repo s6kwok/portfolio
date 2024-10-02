@@ -1,0 +1,19 @@
+.projectHeaderImage {
+    padding: 1.75rem 1.75rem;
+    border-radius: 1.5rem;
+    /* background-color: var(--PRIMARY-BLUE-200);
+    border: 3px solid var(--PRIMARY-BLUE-300); */
+    width: 100%;
+    min-height: 68vh;
+    display: flex;
+    align-items: center;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
