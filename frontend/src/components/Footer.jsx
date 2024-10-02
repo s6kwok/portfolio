@@ -40,7 +40,7 @@ export default function Footer() {
                 display: 'flex',
                 alignItems: 'flex-start',
                 gap: '2.275rem',
-                paddingTop: '2.25rem',
+                paddingTop: '2.15rem',
             }}
             >
             <a href="mailto:@s6kwok@uwaterloo.ca">Email</a>

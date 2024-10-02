@@ -35,7 +35,7 @@ export default function Tag({ theme, size, icon: Icon, text }) {
   const tagStyles = {
     large: {
         display: 'flex',
-        padding: '0.875rem 1.5rem 0.75rem 1.5rem',
+        padding: '0.75rem 1.25rem 0.5rem 1.15rem',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '1.025rem',
@@ -46,7 +46,7 @@ export default function Tag({ theme, size, icon: Icon, text }) {
         backgroundColor: backgroundColor,
     }, medium: {
         display: 'flex',
-        padding: '0.875rem 1.75rem 0.75rem 1.75rem',
+        padding: '0.5rem 1.25rem 0.4rem 1rem',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '0.875rem',
@@ -57,7 +57,7 @@ export default function Tag({ theme, size, icon: Icon, text }) {
         backgroundColor: backgroundColor,
     }, small: {
         display: 'flex',
-        padding: '1rem 1.625rem 0.75rem 1.25rem',
+        padding: '0.75rem 1.45rem 0.45rem 1.35rem',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '0.925rem',
@@ -68,7 +68,7 @@ export default function Tag({ theme, size, icon: Icon, text }) {
         backgroundColor: backgroundColor,
     }, mini: {
         display: 'flex',
-        padding: '0.875rem 1.5rem 0.75rem 1.375rem',
+        padding: '0.55rem 1.15rem 0.35rem 1rem',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '0.675rem',

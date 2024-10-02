@@ -13,25 +13,29 @@ export default function Home() {
             
             <div
             style={{
-                height: '83vh',
+                height: '68vh',
                 display: 'flex',
-                justifyContent: 'center',
+                // justifyContent: 'center',
                 alignItems: 'center',
                 marginLeft: '6.25rem',
                 marginRight: '6.25rem',
-                marginBottom: '2rem',
+                paddingLeft: '1.25rem',
+                paddingReft: '1.25rem',
+                marginBottom: '6.5rem',
             }}
             >
-                <div style={{ textAlign: 'center', }}>
+                <div style={{ 
+                    // textAlign: 'center', 
+                    }}>
                     <div
                         style={{
-                            marginLeft: '12rem',
-                            marginRight: '14rem',
+                            // marginLeft: '12rem',
+                            // marginRight: '14rem',
                         }}
                     >
                         <h1>Hi, I’m Stacy!</h1>
                         {/* <h1>I bring people and data together to design impactful and elegant solutions.</h1> */}
-                        <div
+                        {/* <div
                             style={{
                                 textAlign: 'center',
                                 display: 'flex',
@@ -46,11 +50,47 @@ export default function Home() {
                             <h1 style={{paddingRight: '1rem', paddingLeft: '1rem',}}> and </h1>
                             <Tag theme="orange" size="medium" icon={BsBarChartLineFill} text="data" />
                             <h1 style={{lineHeight: '5.75rem', paddingTop: '0.75rem',}}> together to design impactful and elegant solutions.</h1>
+                        </div> */}
+                        <div
+                        style={{
+                            textAlign: 'left',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'flex-start',
+                            justifyContent: 'flex-start',
+                            paddingTop: '0.75rem',
+                            // marginLeft: '12rem',
+                        }}
+                        >
+                            {/* First line */}
+                            <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'nowrap' }}>
+                                <h1 style={{ paddingRight: '1rem' }}>I bring </h1>
+                                <Tag theme="primaryBlue" size="large" icon={RiEmotionHappyLine} text="people" />
+                                <h1 style={{ paddingRight: '1rem', paddingLeft: '1rem' }}> and </h1>
+                                <Tag theme="orange" size="large" icon={BsBarChartLineFill} text="data" />
+                                <h1 style={{ paddingLeft: '1rem' }}> together</h1>
+                            </div>
+
+                            {/* Second line */}
+                            <div style={{ paddingTop: '0.65rem', paddingBottom: '2.25rem' }}>
+                                <h1 style={{ margin: 0 }}>to design impactful and elegant solutions.</h1>
+                            </div>
                         </div>
-                        <br />
                         <p>Prev @Questrade, @Jam City, @LCBO</p>
                     </div>
                 </div>
+            </div>
+            <div
+                style={{
+                    alignItems: 'center',
+                    marginLeft: '6.25rem',
+                    marginRight: '6.25rem',
+                    paddingLeft: '1.25rem',
+                    paddingReft: '1.25rem',
+                    marginBottom: '1.75rem',
+                }}
+            >
+                <p>Check out my recent work below! ↓</p>
             </div>
 
             <Footer />
