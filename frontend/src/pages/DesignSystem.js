@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import Header from "../components/Header";
+import Test from "../components/Test";
 import Tag from "../components/Tag";
 import NavTabs from "../components/NavTabs";
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 import { HiSparkles } from "react-icons/hi2";
 import { IoBalloonSharp, IoHappySharp, IoSad, IoSparklesSharp, IoCloseSharp } from "react-icons/io5";
 import { BsBarChartLineFill } from "react-icons/bs";
 import { IoIosStar } from "react-icons/io";
-import { RiEmotionHappyLine, RiMusic2Fill } from "react-icons/ri";
+import { RiEmotionHappyLine, RiMusic2Fill, RiEmotionUnhappyLine } from "react-icons/ri";
 import { FaBookOpen, FaHeart, FaUtensils, FaFlask, FaLightbulb } from "react-icons/fa";
 import { VscSparkleFilled } from "react-icons/vsc";
 import { FaArrowRightLong, FaArrowLeftLong, FaClock, FaLocationArrow, FaCar } from "react-icons/fa6";
@@ -18,7 +20,7 @@ export default function DesignSystem() {
 
     return(
         <>
-            <Header />
+            <Test />
             <h2>Design system page</h2>
             <br />
             <hr />
@@ -98,6 +100,7 @@ export default function DesignSystem() {
                     <FaCar />
                     <FaFlask />
                     <RiEmotionHappyLine />
+                    <RiEmotionUnhappyLine />
 
                     <br />
                     <FaLightbulb />
@@ -119,6 +122,9 @@ export default function DesignSystem() {
                     <NavTabs activeTab={activeTab} onTabChange={setActiveTab} />
                 </div>
             </div>
+            <br />
+            <Footer />
+            <Header defaultActiveTab={'Design'} />
         </>
     )
 }

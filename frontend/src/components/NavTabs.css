@@ -1,8 +1,0 @@
-.nav-tabs {
-    display: flex;
-    padding: 3rem 6.25rem 0rem 6.25rem;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3.375rem;
-    width: max-content;
-}

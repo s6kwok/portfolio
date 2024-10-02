@@ -1,5 +1,5 @@
 import React from 'react';
-import './NavTabs.css';
+// import './NavTabs.css';
 import { useNavigate } from 'react-router-dom';
 import { routes } from "../routes/Routes";
 
@@ -17,8 +17,17 @@ const NavTabs = ({ activeTab, onTabChange }) => {
     }
   };
 
+  const navTabsStyling = {
+    display: 'flex',
+    padding: '0rem',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    gap: '3.375rem',
+    width: 'max-content',
+  };
+
   return (
-    <div className="nav-tabs">
+    <div style={navTabsStyling}>
       {/* Design Tab */}
       <p
         className={activeTab === 'Design' ? 'nav-active' : 'nav-inactive'}
