@@ -2,7 +2,8 @@
 
 /* Projects list */
 .projectsList {
-    margin-top: 1.5rem;
+    gap: 9rem;
+    padding-bottom: 2rem;
 }
 
 .projectsListItem {
