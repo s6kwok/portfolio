@@ -1,26 +1,21 @@
 import React, { useState } from 'react';
+
 import NavTabs from './NavTabs';
+
 import { routes } from "../routes/Routes";
 
 export default function Header({defaultActiveTab}) {
+  // Store desired default active tab
   const [activeTab, setActiveTab] = useState(defaultActiveTab);
 
-  const headerStyles = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingTop: '2rem',
-    position: 'relative',
-  };
-
   return (
-    <header className='marginsPrimary' style={headerStyles}>
-        <div>
-            <a href={routes.designSystem} className="logo">Stacy Kwok</a>
-        </div>
-        <div>
-            <NavTabs activeTab={activeTab} onTabChange={setActiveTab} />
-        </div>
+    <header className='marginsPrimary autoLayoutRightEvenGap' style={{paddingTop: '2rem',}}>
+
+        {/* Logo */}
+        <a href={routes.designSystem} className="logo">Stacy Kwok</a>
+
+        {/* Tabs */}
+        <NavTabs activeTab={activeTab} onTabChange={setActiveTab} />
     </header>
   );
 }

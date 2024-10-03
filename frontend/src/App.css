@@ -82,6 +82,14 @@ li {
     /* gap: 1rem; */
 }
 
+/* Right autolayout even gap */
+.autoLayoutRightEvenGap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
 /* Down autolayout align top */
 .autoLayoutDownAlignTop {
     display: flex;
@@ -114,7 +122,11 @@ li {
     gap: 1.5rem;
 }
 
-.gapb1b1, .gaph3h3 {
+.gaph1b1 {
+    gap: 2.25rem;
+}
+
+.gapb1b1, .gaph3h3, .gaph1h1 {
     gap: 1rem;
 }
 

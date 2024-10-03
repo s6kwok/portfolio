@@ -19,7 +19,7 @@ export default function SnapPea() {
             <div className='autoLayoutDownAlignTop gapFullPage'>
                 
                 {/* Can't apply class 'autoLayoutDownAlignTop marginsPrimary' to top div because marginsPrimary would also apply to footer */}
-                <div className='marginsPrimary'>
+                <div className='marginsPrimary autoLayoutDownAlignTop gapFullPage'>
 
                     {/* Header container */}
                     <div className='autoLayoutDownAlignTop projectHeaderContainer'>

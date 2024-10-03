@@ -34,7 +34,7 @@ export default function About() {
                         </div>
 
                         {/* Right section autolayout content down */}
-                        <div className='autoLayoutDownAlignCenter gaph3b1' style={{maxWidth: '52%',}}>
+                        <div className='autoLayoutDownAlignCenter gaph3b1' style={{maxWidth: '52%', marginLeft: 'auto', marginRight: 'auto',}}>
 
                             {/* Header and inline tag autolayout left */}
                             <div className='autoLayoutRightAlignLeft gapSmallTagInlineText'>

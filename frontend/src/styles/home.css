@@ -2,11 +2,19 @@
 
 /* Projects list */
 .projectsList {
+    margin-top: 1.5rem;
+}
+
+.projectsListItem {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
 
-.projectsList:hover {
+.projectsListItem:hover {
     transform: translateY(-14px);
     opacity: 90%;
+}
+
+.projectsListImage {
+    padding: 3.25rem;
 }

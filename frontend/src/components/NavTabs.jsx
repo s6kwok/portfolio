@@ -1,11 +1,12 @@
 import React from 'react';
-// import './NavTabs.css';
 import { useNavigate } from 'react-router-dom';
+
 import { routes } from "../routes/Routes";
 
 const NavTabs = ({ activeTab, onTabChange }) => {
   const navigate = useNavigate();
 
+  // Active tab logic
   const handleTabClick = (tab) => {
     if (activeTab !== tab) {
       onTabChange(tab);
@@ -17,17 +18,16 @@ const NavTabs = ({ activeTab, onTabChange }) => {
     }
   };
 
+  // Styling
   const navTabsStyling = {
-    display: 'flex',
     padding: '0rem',
-    justifyContent: 'center',
-    alignItems: 'flex-start',
     gap: '3.375rem',
     width: 'max-content',
   };
 
   return (
-    <div style={navTabsStyling}>
+    <div className='autoLayoutRightAlignLeft' style={navTabsStyling}>
+
       {/* Design Tab */}
       <p
         className={activeTab === 'Design' ? 'nav-active' : 'nav-inactive'}
@@ -45,15 +45,8 @@ const NavTabs = ({ activeTab, onTabChange }) => {
       </p>
 
       {/* Resume Link */}
-      <a
-        href="/stacy-kwok-resume.pdf"
-        // href={routes.designSystem}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="nav-inactive"
-      >
-        Resume
-      </a>
+      {/* href={routes.designSystem} */}
+      <a href="/stacy-kwok-resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-inactive">Resume</a>
     </div>
   );
 };

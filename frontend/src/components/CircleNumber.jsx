@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Define circle number color theme mapping
 const colorStyles = {
   primaryBlue: {
     border: '2px solid var(--PRIMARY-BLUE-500)',
@@ -28,21 +29,21 @@ const colorStyles = {
   },
 };
 
+// Define circle css
 const circleStyles = {
   width: '42px',
   height: '42px',
   borderRadius: '50%',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
 };
 
 const CircleNumber = ({ number = 1, colorTheme = 'primaryBlue' }) => {
   // Get the styles based on colorTheme prop
+  // Default to primary blue theme if not defined
   const selectedColorStyles = colorStyles[colorTheme] || colorStyles.primaryBlue;
 
   return (
-    <div style={{ ...circleStyles, ...selectedColorStyles }} className="b3">
+    // Return circle given input of color theme and number
+    <div className="autoLayoutRightAlignCenter b3" style={{ ...circleStyles, ...selectedColorStyles, }}>
       {number}
     </div>
   );
