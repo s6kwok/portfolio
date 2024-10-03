@@ -1,18 +1,21 @@
-// import Test from "../components/Test"
+import { useNavigate } from 'react-router-dom';
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Tag from "../components/Tag";
-import { RiEmotionHappyLine } from "react-icons/ri";
-import { BsBarChartLineFill } from "react-icons/bs";
-import SnapPeaThumbnail from '../assets/home/snappea-thumbnail.png';
-import '../App.css';
+
+import '../styles/home.css';
 import '../styles/projects.css';
 import { projectPrimaryContainer, projectPrimaryColor } from '../styles/Projects';
-import { useNavigate } from 'react-router-dom';
+
 import { routes } from "../routes/Routes";
 
-export default function Home() {
+import SnapPeaThumbnail from '../assets/home/snappea-thumbnail.png';
 
+import { RiEmotionHappyLine } from "react-icons/ri";
+import { BsBarChartLineFill } from "react-icons/bs";
+
+export default function Home() {
     const navigate = useNavigate();
 
     return(

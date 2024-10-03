@@ -1,27 +1,37 @@
+// Variables to reference project color themes
+
+// Image containers
 export const projectPrimaryContainer = {
     primaryBlue: {
         border: '3px solid var(--PRIMARY-BLUE-200)',
         backgroundColor: 'var(--PRIMARY-BLUE-100)',
-    }, blue: {
+    },
+    blue: {
         border: '3px solid var(--BLUE-200)',
         backgroundColor: 'var(--BLUE-100)',
-    }, pink: {
+    },
+    pink: {
         border: '3px solid var(--PINK-200)',
         backgroundColor: 'var(--PINK-100)',
-    }, green: {
+    },
+    green: {
         border: '3px solid var(--GREEN-200)',
         backgroundColor: 'var(--GREEN-100)',
     },
 };
 
+// Colored text
 export const projectPrimaryColor = {
     primaryBlue: {
         color: 'var(--PRIMARY-BLUE-500)',
-    }, blue: {
+    },
+    blue: {
         color: 'var(--BLUE-500)',
-    }, pink: {
+    },
+    pink: {
         color: 'var(--PINK-500)',
-    }, green: {
+    },
+    green: {
         color: 'var(--GREEN-500)',
     },
 };

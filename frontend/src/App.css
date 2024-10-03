@@ -43,7 +43,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: var(--B1);
 }
 
 html {
@@ -59,6 +58,7 @@ li {
     list-style: none;
 }
 
+/* Default margins */
 .marginsPrimary {
     margin-left: 6.25rem;
     padding-left: 1.25rem;
@@ -66,12 +66,79 @@ li {
     padding-right: 1.25rem;
 }
 
-.projectsList {
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+/* Right autolayout align center */
+.autoLayoutRightAlignCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1rem; */
 }
 
-.projectsList:hover {
-    transform: translateY(-14px);
-    opacity: 96%;
+/* Right autolayout align left */
+.autoLayoutRightAlignLeft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+/* Down autolayout align top */
+.autoLayoutDownAlignTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* gap: 1rem; */
+}
+
+/* Down autolayout align top */
+.autoLayoutDownAlignCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 1rem; */
+}
+
+.gapFullPage {
+    gap: 6rem;
+}
+
+.gaph3b2 {
+    gap: 1.25rem;
+}
+
+.gaph3b1 {
+    gap: 1.35rem;
+}
+
+.gaph2b1 {
+    gap: 1.5rem;
+}
+
+.gapb1b1, .gaph3h3 {
+    gap: 1rem;
+}
+
+.gapLargeTagInlineText {
+    gap: 0.85rem;
+}
+
+.gapSmallTagInlineText {
+    gap: 0.75rem;
+}
+
+.gapImageText {
+    gap: 4.5rem;
+}
+
+.image {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+}
+
+.imageMount{
+    padding: 1.75rem 1.75rem;
+    border-radius: 1.5rem;
+    /* background-color: var(--PRIMARY-BLUE-200);
+    border: 3px solid var(--PRIMARY-BLUE-300); */
 }

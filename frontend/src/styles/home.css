@@ -1,0 +1,12 @@
+/* Homepage styling */
+
+/* Projects list */
+.projectsList {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.projectsList:hover {
+    transform: translateY(-14px);
+    opacity: 90%;
+}

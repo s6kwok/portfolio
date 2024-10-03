@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+
 import Test from "../components/Test";
 import Tag from "../components/Tag";
 import NavTabs from "../components/NavTabs";
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import CircleNumber from '../components/CircleNumber';
+
 import { HiSparkles } from "react-icons/hi2";
 import { IoBalloonSharp, IoHappySharp, IoSad, IoSparklesSharp, IoCloseSharp } from "react-icons/io5";
 import { BsBarChartLineFill } from "react-icons/bs";
@@ -14,7 +16,10 @@ import { FaBookOpen, FaHeart, FaUtensils, FaFlask, FaLightbulb } from "react-ico
 import { VscSparkleFilled } from "react-icons/vsc";
 import { FaArrowRightLong, FaArrowLeftLong, FaClock, FaLocationArrow, FaCar } from "react-icons/fa6";
 import { MdQuestionMark } from "react-icons/md";
+
 import { routes } from "../routes/Routes";
+
+// Page for testing components and design system
 
 export default function DesignSystem() {
     const [activeTab, setActiveTab] = useState('Null'); // Default state is null (no tabs active)
@@ -25,7 +30,9 @@ export default function DesignSystem() {
             <h2>Design system page</h2>
             <br />
             <hr />
+
             <div style={{display: 'flex'}}>
+                {/* Text styles */}
                 <div>
                     <a href={routes.designSystem} className="logo">logo</a>
                     <p className="nav-inactive">nav-inactive</p>
@@ -46,6 +53,8 @@ export default function DesignSystem() {
                     <p className="b3-medium">b3-medium</p>
                     <p className="small">small</p>
                 </div>
+
+                {/* Colors */}
                 <div>
                     <div style={{ width: '100px', height: '100px', backgroundColor: 'var(--BLACK)' }}></div>
                     <div style={{ width: '100px', height: '100px', backgroundColor: 'var(--GREY-400)' }}></div>
@@ -80,14 +89,16 @@ export default function DesignSystem() {
 
                     <div style={{ width: '100px', height: '100px', backgroundColor: 'var(--RED-500)' }}></div>
                 </div>
+
+                {/* Icons */}
                 <div style={{display: 'flex', flexDirection: 'column'}}>
-                    {/* FUNCTIONAL ICONS */}
+                    {/* Functional icons */}
                     <FaArrowRightLong />
                     <FaArrowLeftLong />
                     <IoCloseSharp />
 
                     <br />
-                    {/* OTHER ICONS */}
+                    {/* Other icons */}
                     <FaClock />
                     <FaLocationArrow />
                     <IoHappySharp />
@@ -113,19 +124,27 @@ export default function DesignSystem() {
                     <VscSparkleFilled />
                     <BsBarChartLineFill />
                 </div>
+                
+                {/* Tag components */}
                 <div>
                     <Tag theme="primaryBlue" size="mini" icon={IoIosStar} text="collab" />
                     <Tag theme="orange" size="small" icon={FaHeart} text="Stacy" />
                     <Tag theme="blue" size="medium" icon={FaLightbulb} text="strategy" />
                     <Tag theme="primaryBlue" size="large" icon={RiEmotionHappyLine} text="people" />
                 </div>
+
+                {/* Navtabs component */}
                 <div>
                     <NavTabs activeTab={activeTab} onTabChange={setActiveTab} />
                 </div>
             </div>
             <br />
+
+            {/* Footer and header components */}
             <Footer />
             <Header defaultActiveTab={'Design'} />
+
+            {/* Project page components */}
             <CircleNumber />
             <CircleNumber number={5} colorTheme="green" />
         </>

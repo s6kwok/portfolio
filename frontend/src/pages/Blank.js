@@ -1,11 +1,16 @@
 import React from 'react';
 import Test from "../components/Test";
 
-export default function Blank() {
+// import '../styles/home.css';
 
+// Test page with test component
+
+export default function Blank() {
     return(
         <>
-            <Test />
+            <div style={{ textAlign: 'center', }}>
+                <Test />
+            </div>
         </>
     )
 }

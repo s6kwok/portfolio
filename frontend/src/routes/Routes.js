@@ -1,3 +1,4 @@
+// Access routes as variables path={routes.blank}
 export const routes = {
     index: "/",
     home: "/home",

@@ -1,11 +1,12 @@
 import React from 'react';
-import Test from "../components/Test";
 
-export default function Blank() {
+// import '../styles/projects.css';
+// import { projectPrimaryContainer, projectPrimaryColor } from '../styles/Projects';
 
+export default function Blueprint() {
     return(
         <>
-            <Test />
+            <h1>Blueprint page</h1>
         </>
     )
 }

@@ -1,43 +1,46 @@
 import React from 'react';
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import '../App.css';
+
 import '../styles/projects.css';
-import snappeaHeader from '../assets/snappea/snappea-header.png';
 import { projectPrimaryContainer, projectPrimaryColor } from '../styles/Projects';
 
-export default function Blank() {
+import snappeaHeader from '../assets/snappea/snappea-header.png';
 
+export default function SnapPea() {
     const theme = 'blue'; 
 
     return(
         <>
             <Header defaultActiveTab={'Null'} />
 
-            <div className='marginsPrimary'>
-                <div className='headerContainer'>
-                    <h3>Accelerating <span style={{...projectPrimaryColor[theme],}} >value discovery</span> for a mapping platform</h3>
-                    <p className='b2'>SnapPea Design, Sept-Dec 2023</p>
-                    <div
-                        className='projectHeaderImage'
-                        style={{
-                            ...projectPrimaryContainer[theme],
-                            marginTop: '1.25rem',
-                        }}
-                    >
-                        <img
-                        src={snappeaHeader}
-                        alt="Display"
-                        style={{
-                            width: '100%',
-                            maxHeight: '100%',
-                            borderRadius: '1rem',
-                        }}
-                        />
+            {/* Whole page auto layout down */}
+            <div className='autoLayoutDownAlignTop gapFullPage'>
+                
+                {/* Can't apply class 'autoLayoutDownAlignTop marginsPrimary' to top div because marginsPrimary would also apply to footer */}
+                <div className='marginsPrimary'>
+
+                    {/* Header container */}
+                    <div className='autoLayoutDownAlignTop projectHeaderContainer'>
+
+                        {/* Header and subtext */}
+                        <div className='autoLayoutDownAlignTop gaph3b2'>
+                            <h3>
+                                Accelerating <span style={{...projectPrimaryColor[theme],}} >value discovery</span> for a mapping platform
+                            </h3>
+                            <p className='b2'>SnapPea Design, Sept-Dec 2023</p>
+                        </div>
+
+                        {/* Image */}
+                        <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
+                            <img src={snappeaHeader} alt="Thumbnail" className='image'/>
+                        </div>
                     </div>
                 </div>
+
+                <Footer />
             </div>
-            <Footer />
         </>
     )
 }

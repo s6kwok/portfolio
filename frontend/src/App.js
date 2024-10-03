@@ -1,8 +1,6 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import "./App.css";
-// import "./styles/buttons.css";
-// import "./styles/pages.css";
 import "./styles/text.css";
 
 import { routes } from "./routes/Routes";
@@ -21,6 +19,7 @@ export default function App() {
     <div>
       <BrowserRouter>
         <Routes>
+          {/* Add new pages to routes list to link pages */}
           <Route index element={<Home />} />
           <Route path={routes.home} element={<Home />} />
           <Route path={routes.about} element={<About />} />
