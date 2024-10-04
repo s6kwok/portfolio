@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CircleNumber from '../components/CircleNumber';
 
-import '../styles/projects.css';
+import '../styles/Projects.css';
 import { projectPrimaryContainer, projectPrimaryColor } from '../styles/Projects';
 
 import jamcityHeader from '../assets/jamcity/jamcity-header.png';

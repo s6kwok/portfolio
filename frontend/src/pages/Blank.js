@@ -1,7 +1,7 @@
 import React from 'react';
 import Test from "../components/Test";
 
-// import '../styles/home.css';
+// import '../styles/Home.css';
 
 // Test page with test component
 

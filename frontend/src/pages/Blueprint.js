@@ -3,7 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-import '../styles/projects.css';
+import '../styles/Projects.css';
 import { projectPrimaryContainer, projectPrimaryColor } from '../styles/Projects';
 
 import blueprintHeader from '../assets/blueprint/blueprint-header.png';

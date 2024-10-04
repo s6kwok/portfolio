@@ -4,8 +4,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Tag from "../components/Tag";
 
-import '../styles/home.css';
-import '../styles/projects.css';
+import '../styles/Home.css';
+import '../styles/Projects.css';
 import { projectPrimaryContainer, projectPrimaryColor } from '../styles/Projects';
 
 import { routes } from "../routes/Routes";
