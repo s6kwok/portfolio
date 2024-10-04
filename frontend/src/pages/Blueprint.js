@@ -111,9 +111,9 @@ export default function Blueprint() {
                             {/* <video width="100%" height="auto" autoPlay controls loop muted playsInline>
                                 <source src={blueprintFinal1} type="video/mp4" />
                             </video> */}
-                            <video autoPlay loop muted playsInline  className='video'>
-                                <source src={blueprintFinal1} type="video/mp4" />
-                            </video>
+                                <video autoPlay loop muted playsInline  className='video'>
+                                    <source src={blueprintFinal1} type="video/mp4" />
+                                </video>
                             </div>
                         </div>
                         <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>

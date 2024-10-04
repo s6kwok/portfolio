@@ -22,6 +22,7 @@ import jamcityResearch1 from '../assets/jamcity/jamcity-research-1.png';
 import jamcityResearch2 from '../assets/jamcity/jamcity-research-2.png';
 import jamcitySuccess1 from '../assets/jamcity/jamcity-success-1.png';
 import jamcitySuccess2 from '../assets/jamcity/jamcity-success-2.png';
+import jamcityFinal from '../assets/jamcity/jamcity-final.mp4';
 
 export default function JamCity() {
     const theme = 'pink'; 
@@ -172,6 +173,41 @@ export default function JamCity() {
 
                     <hr />
 
+                    {/* Final design */}
+                    <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageHeader projectCenter'>
+                        <h5>Final design</h5>
+                        <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme], minHeight: '64vh'}}>
+                            <video autoPlay loop muted playsInline  className='video' style={{padding: '0rem 1rem', borderRadius: '4%'}}>
+                                <source src={jamcityFinal} type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+
+                    <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='projectTextHeader20'>
+                            <h5>Revisiting success metrics</h5>
+                        </div>
+                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                            <div className='autoLayoutDownAlignTop gapb3b1'>
+                                <p className='b3-medium'>Usability testing</p>
+                                <p>Even with my internship nearing its end, I managed to conduct a few <strong>moderated usability tests</strong>! I observed how players interacted with the feature and asked questions aligned with the success metrics:</p>
+                                <ul className='styledList'>
+                                    <li>How easy was it to find the level for a specific reward (easy to use)?</li>
+                                    <li>How quickly could players complete a task (easy to use)?</li>
+                                    <li>How satisfied were they with the feature (satisfaction)?</li>
+                                    <li>How did the feature make them feel (user emotions)?</li>
+                                </ul>
+                                <p>The results showed that <strong>all 3 success metrics were met!</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Fun */}
+                    <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageHeader projectCenter'>
+                        <h5>Highlights: Internship fun</h5>
+                        <img src={jamcityFun} alt="Internship fun!" className='image'/>
+                    </div>
+
                     {/* Learnings */}
                     <div className='autoLayoutRightAlignLeftTop projectTextOnlyMargins gapImageText'>
                         <div className='projectTextHeader20'>
@@ -218,12 +254,6 @@ export default function JamCity() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    {/* Fun */}
-                    <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageHeader projectCenter'>
-                        <h5>Highlights: Internship fun</h5>
-                        <img src={jamcityFun} alt="Internship fun!" className='image'/>
                     </div>
 
                 </div>

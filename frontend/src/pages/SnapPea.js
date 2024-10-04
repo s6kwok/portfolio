@@ -23,8 +23,15 @@ import snappeaInterviews from '../assets/snappea/snappea-interviews.png';
 import snappeaProblem from '../assets/snappea/snappea-problem.png';
 import snappeaStory1 from '../assets/snappea/snappea-story-1.png';
 import snappeaStory2 from '../assets/snappea/snappea-story-2.png';
+import snappeaStory3 from '../assets/snappea/snappea-story-3.png';
+import snappeaStory4 from '../assets/snappea/snappea-story-4.png';
 import snappeaSuccess1 from '../assets/snappea/snappea-success-1.png';
 import snappeaSuccess2 from '../assets/snappea/snappea-success-2.png';
+import sparkles2Blue from '../assets/sparkles-2-blue.png';
+import blueprintFinal1 from '../assets/blueprint/blueprint-final-1.mp4';
+import blueprintFinal2 from '../assets/blueprint/blueprint-final-2.mp4';
+
+import { FaClock, FaLocationArrow } from "react-icons/fa6";
 
 export default function SnapPea() {
     const theme = 'blue'; 
@@ -84,7 +91,7 @@ export default function SnapPea() {
                     </div>
 
                     {/* Impact */}
-                    <div className='autoLayoutDownAlignTop gapProjectGrouping'>
+                    <div className='autoLayoutDownAlignTop gapProjectGroupingImpact'>
                         <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
                             <div className='projectTextHeader20'>
                                 <h5>Impact</h5>
@@ -144,6 +151,36 @@ export default function SnapPea() {
                     <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                         <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
                             <div className='projectTextHeader20'>
+                                <h5>Problem space</h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p className='b3-medium'><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >66.9% of users</span> abandon the platform immediately</p>
+                                    <p>The client observed an <strong>increasing number of user-reported issues</strong> (with themes of frustration and confusion), alongside a <strong>high number of support requests</strong> and <strong>elevated abandonment rates</strong>. This was not good!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaProblem} alt="Problem" className='image'/>
+                        <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5></h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p className='b3-medium'>User frustrations were at an all time high</p>
+                                    <p>The client came to us for help, as they knew their platform <strong>needed strategic design improvements</strong>. It was our job to dive deeper into these issues while improving usability and accessibility, through integrating design principles!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='projectTextImageMargins'>
+                        <img src={snappeaChallenge} alt="Design challenge" className='image'/>
+                    </div>
+
+                    <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
+                        <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
                                 <h5>Defining success</h5>
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
@@ -160,21 +197,49 @@ export default function SnapPea() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Understanding client and user needs</p>
-                                    <p>In order to define success, I first aimed to understand user needs and what would satisfy them, while also aligning with the client's goals. Team discussions on vision and priorities shaped key design decisions. The image below highlights common themes: speed, value, and ease of use!</p>
+                                    <p className='b3-medium'>Developing design goals</p>
+                                    <p>In addition to client goals and user needs, it was crucial to assess the current platform’s alignment with usability heuristics (especially since they’ve <strong>never had a designer before</strong>!). I conducted an <strong>audit and heuristic evaluation</strong>, which revealed key improvement areas and helped define success metrics.</p>
                                 </div>
                             </div>
                         </div>
                         <img src={snappeaSuccess2} alt="Defining success" className='image'/>
                     </div>
 
+                    <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
+                        <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5>Approach</h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p className='b3-medium'>Navigating uncertainty</p>
+                                    <p>At this point, <strong>there was still a lot of unknowns</strong>. To combat this, I devised a strategy for how I would take on this challenge (process is important, after all!).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaApproach} alt="Approach" className='image'/>
+                    </div>
+
 
                     <hr />
 
-                    {/* Reason #1 */}
+                    {/* Reasons */}
+                    <div className='autoLayoutDownAlignTop projectTextOnlyMargins gaph2b1'>
+                        <p className='b1-medium'>Research</p>
+                        <div className='autoLayoutRightAlignLeftCenter gapImageText'>
+                            <div>
+                                <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Why</span> were 66.9% of users abandoning the platform so quickly?</h5>
+                            </div>
+                            <div className='projectRightSparkles'>
+                                <img src={sparkles2Blue} alt="Sparkles" className='image'/>
+                            </div>
+                        </div>
+                        <p>My research began with a deep dive into understanding users, the problem space, and current behaviours. However, one question that I wanted to dive deep into was the high abandonment rate. Why was this happening, and how can we address it?</p>
+                    </div>
+
                     <div className='autoLayoutDownAlignTop projectTextOnlyMargins gapProjectGrouping'>
                         <div className='autoLayoutDownAlignTop gaph3h3'>
-                            <h5><span style={{...projectPrimaryColor[theme],}} >Reason #1:</span> Poor usability</h5>
+                            <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Reason #1:</span> Poor usability</h5>
                             <p>Users have trouble navigating and understanding how to use the platform.</p>
                         </div>
                         <div className='autoLayoutRightAlignLeftTop gapImageText'>
@@ -226,7 +291,272 @@ export default function SnapPea() {
                         </div>
                     </div>
 
+                    <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
+                        <div className='projectTextImageMarginsText autoLayoutDownAlignTop gapProjectGrouping'>
+                            <div className='autoLayoutDownAlignTop gaph3h3'>
+                                <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Reason #2:</span> Delayed platform value discovery</h5>
+                                <p>Users have to go through most of the flow before experiencing the value, causing many to give up early.</p>
+                            </div>
+                            <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                                <div className='projectTextHeader20'>
+                                    <h5>User flow</h5>
+                                </div>
+                                <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                    <div className='autoLayoutDownAlignTop gapb3b1'>
+                                        <p className='b3-medium'>Where does value currently show up in the user flow?</p>
+                                        <p>Currently, the value is revealed late in the user flow, requiring users to complete most of the process before they fully understand and experience the platform’s benefits.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaFlow1} alt="User flow 1" className='image'/>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5></h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p>But <strong>both versions of the user flow are equally important as they cater to different user needs</strong>! Long-term users prefer to create a site immediately, while new users need to quickly grasp the platform’s value by exploring data products.</p>
+                                    <p>This led me to wonder about supporting both flows.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaFlow2} alt="User flow 2" className='image'/>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5></h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p>This gave me an additional goal for the final solution: to integrate both user journeys by allowing upfront access to data products, while providing options to either select a location or choose a data product.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
+                        <div className='projectTextImageMarginsText autoLayoutDownAlignTop gapProjectGrouping'>
+                            <div className='autoLayoutDownAlignTop gaph3h3'>
+                                <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Reason #3:</span> Unclear onboarding</h5>
+                                <p>The initial experience is confusing and overwhelming for newer users.</p>
+                            </div>
+                            <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                                <div className='projectTextHeader20'>
+                                    <h5>User interviews</h5>
+                                </div>
+                                <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                    <div className='autoLayoutDownAlignTop gapb3b1'>
+                                        <p>Currently, the platform provides “hints” through animations, prompting users to create a new site. However, they encounter an immediate error for not zooming in enough.</p>
+                                        <p>In interviews with the customer experience team and various users, a recurring frustration was with the initial onboarding. Users are prompted to create a site but don’t understand the purpose behind it, and on top of that they get an error.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaInterviews} alt="User interviews" className='image'/>
+                    </div>
+
                     <hr />
+
+                    {/* Solution space */}
+                    <div className='autoLayoutDownAlignTop projectTextOnlyMargins gaph2b1'>
+                        <p className='b1-medium'>Solution space</p>
+                        
+                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5>Formulating actionables</h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p className='b3-medium'>Defining strategy</p>
+                                    <p>Specific design actionables were needed to support our strategy. I <strong>synthesized the 3 research findings</strong> (poor usability, lack of perceived value, and complicated onboarding) with the <strong>design goals</strong> (clarity, cognitive load, affordance, and efficiency) to define phases of design work.</p>
+                                    
+                                </div>
+                                <img src={snappeaActionables} alt="Actionables" className='image'/>
+                                <p>After discussing the strategy and specific recommendations with the client, the client was excited and design work was ready to begin!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Actionables */}
+                    <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
+                        <div className='projectTextImageMarginsText autoLayoutDownAlignTop gapProjectGrouping'>
+                            <div className='autoLayoutDownAlignTop gaph3h3'>
+                                <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Actionable #1:</span> Decrease focus of secondary actions</h5>
+                                <p>Removing distractions will refocus user attention on the key actions, which will make onboarding clearer and enhance usability.</p>
+                            </div>
+                            <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                                <div className='projectTextHeader20'>
+                                    <h5>Finding the story</h5>
+                                </div>
+                                <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                    <div className='autoLayoutDownAlignTop gapb3b1'>
+                                        <p>I first decided to evaluate the balance of screen space usage. How can items be better organized to reduce distraction and increase visual focus towards key components?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaStory1} alt="Finding the story 1" className='image'/>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5></h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p>After confirming the removal of the tools panel, I re-allocated the additional screen space to enhance the main navigation panel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaStory2} alt="Finding the story 2" className='image'/>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5></h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p>But what to do with the elements that were originally in the right panel? Breaking it apart, I experimented with different groupings to determine <strong>how they could be reorganized to tell a more coherent and compelling story</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaStory3} alt="Finding the story 3" className='image'/>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5></h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p>For many elements, it was logical to retain them on the map. However, the toolbar felt disconnected from the rest of the interface and cluttered the view.</p>
+                                    <p>Since presenting tools contextually is more effective, I then explored ways to minimize the toolbar’s prominence!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaStory4} alt="Finding the story 4" className='image'/>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5></h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p className='b3-medium'>Option #2 was chosen!</p>
+                                    <p>The second option was selected! This option provides users with immediate tool access when needed, without disrupting other map elements or being buried in the main navigation panel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
+                        <div className='projectTextImageMarginsText autoLayoutDownAlignTop gapProjectGrouping'>
+                            <div className='autoLayoutDownAlignTop gaph3h3'>
+                                <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Actionable #2:</span> Emphasize the first step while simultaneously showing value</h5>
+                                <p>Ensuring users can easily search for a location and create a site, while also providing upfront access to browse data products if desired.</p>
+                            </div>
+                            <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                                <div className='projectTextHeader20'>
+                                    <h5>Supporting dual flows</h5>
+                                </div>
+                                <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                    <div className='autoLayoutDownAlignTop gapb3b1'>
+                                        <p>I then focused on the second set of actionables: establishing a clear first step.</p>
+                                        <p>This part was essential because it would determine how the dual user flows will work together, laying the foundation for the entire journey.</p>
+                                        <p>The design goal is to allow users to <strong>seamlessly enter either flow upon opening the platform</strong>, encouraging exploration of data products while also guiding location searches. Ideally, users would have access to both options at any time, regardless of their immediate preference!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaDualFlows1} alt="Supporting Dual Flows 1" className='image'/>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5></h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p>Location searches and data products share a complex relationship. How can we present both as the possible first step?</p>
+                                    <p>I first focused on optimizing screen space, to have room to highlight the both elements upfront at the same time.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaDualFlows2} alt="Supporting dual flows 2" className='image'/>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5></h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p>After confirming that the location exploration feature could be removed, I gained significantly more space in the main navigation panel!</p>
+                                    <p>This prompted me to explore layout concepts that would support both user goals: facilitating immediate site searches while prominently showcasing data products.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaDualFlows3} alt="Supporting dual flows 3" className='image'/>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5></h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p className='b3-medium'>Option #2 was chosen to iterate on!</p>
+                                    <p>The second option was chosen, because of its clear storytelling! It placed <strong>all location elements on the map</strong>, and used the left panel as a <strong>"data menu”</strong>, which <strong>aligned super well with the client's vision</strong>.</p>
+                                    <p>However, there was still an aspect that could be improved: the zoom status indicator!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaDualFlows4} alt="Supporting dual flows 4" className='image'/>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5></h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p className='b3-medium'>The second iteration shown was a success!</p>
+                                    <p>It maintains visible system status, while highlighting site creation with a prominent blue button and a site box.</p>
+                                    <p><strong>It was then time to polish and turn all the lo-fis into hi-fis!</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    {/* Final design */}
+                    <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageImage projectCenter'>
+                        <div className='autoLayoutDownAlignTop gapImageHeader'>
+                            <h5>Final design</h5>
+                            <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
+                            {/* <video width="100%" height="auto" autoPlay controls loop muted playsInline>
+                                <source src={blueprintFinal1} type="video/mp4" />
+                            </video> */}
+                                <p style={{marginTop: '0.75rem'}}><strong>Flow #1: Browsing data products first</strong></p>
+                                <video autoPlay loop muted playsInline  className='video'>
+                                    <source src={blueprintFinal1} type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                        <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
+                            <p style={{marginTop: '0.75rem'}}><strong>Flow #2: Adding a site first</strong></p>
+                            <video autoPlay loop muted playsInline  className='video'>
+                                <source src={blueprintFinal2} type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+
+                    <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='projectTextHeader20'>
+                            <h5>Revisiting success metrics</h5>
+                        </div>
+                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                            <div className='autoLayoutDownAlignTop gapb3b1'>
+                                <p className='b3-medium'>Usability testing</p>
+                                <p>To assess the final design's <strong>impact on the success metrics</strong> (time to first task completion, ease of use, NPS, and user-reported issues), several moderated usability tests were conducted.</p>
+                                <p>Results showed a 28% faster task completion for first-time users, higher ease-of-use and NPS scores! Furthermore, a drop in user-reported issues was reported after implementation.</p>
+                                <p><strong>All success metrics were achieved!</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Fun */}
+                    <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageHeader projectCenter'>
+                        <h5>Highlights: Internship fun</h5>
+                        <img src={snappeaFun} alt="Internship fun!" className='image'/>
+                    </div>
 
                     {/* Learnings */}
                     <div className='autoLayoutRightAlignLeftTop projectTextOnlyMargins gapImageText'>
@@ -274,12 +604,6 @@ export default function SnapPea() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    {/* Fun */}
-                    <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageHeader projectCenter'>
-                        <h5>Highlights: Internship fun</h5>
-                        <img src={snappeaFun} alt="Internship fun!" className='image'/>
                     </div>
 
                 </div>

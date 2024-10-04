@@ -52,6 +52,10 @@
     gap: 4rem;
 }
 
+.gapProjectGroupingImpact {
+    gap: 7rem;
+}
+
 .projectListNumberCircle {
     min-width: 8%;
 }
@@ -70,4 +74,20 @@
 
 .projectCenterSparkles {
     max-width: 10%;
+}
+
+.projectRightSparkles {
+    max-width: 8%;
+    margin-right: 3.5rem;
+}
+
+.styledList {
+    margin-bottom: 1.5rem;
+}
+
+.styledList > li {
+    list-style: disc;
+    margin-left: 1rem;
+    padding-left: 0.75rem;
+    margin-top: 1rem;
 }

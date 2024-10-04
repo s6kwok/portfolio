@@ -115,10 +115,10 @@ li {
 }
 
 .gapFullPage {
-    gap: 9.5rem;
+    gap: 8rem;
 }
 
-.gaph3b2 {
+.gaph3b2, .gaph2b1 {
     gap: 1.5rem;
 }
 
@@ -128,10 +128,6 @@ li {
 
 .gaph3b1 {
     gap: 1.35rem;
-}
-
-.gaph2b1 {
-    gap: 1.5rem;
 }
 
 .gaph1b1 {
@@ -175,6 +171,7 @@ li {
     max-height: 100%;
     border-radius: 1rem;
 }
+
 .video {
     width: 96%;
     max-height: 100%;
