@@ -76,8 +76,10 @@ export default function Questrade() {
 
                     {/* Impact */}
                     <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
-                        <h5 className='projectTextHeader20'>Impact</h5>
-                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping'>
+                        <div className='projectTextHeader20'>
+                            <h5>Impact</h5>
+                        </div>
+                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                             <div className='autoLayoutDownAlignTop gaph6b1'>
                                 <h6>This project is currently <strong>launched</strong> and live!</h6>
                                 <p>But what impact did the feature have?</p>

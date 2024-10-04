@@ -81,8 +81,10 @@ export default function JamCity() {
 
                     {/* Requirements */}
                     <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
-                        <h5 className='projectTextHeader20'>Gathering requireme nts</h5>
-                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping'>
+                        <div className='projectTextHeader20'>
+                            <h5>Gathering requireme nts</h5>
+                        </div>
+                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                             <div className='autoLayoutDownAlignTop gapb1b1MultiParagraph'>
                                 <p className='b3-medium'>Collaborating with stakeholders</p>
                                 <p>My stakeholders (such as game designers and product managers) were amazing. Collaborating with them, I uncovered the <strong>knowledge of the game economy and the game logic</strong> I would need for the design!</p>
@@ -134,8 +136,10 @@ export default function JamCity() {
 
                     {/* Reason #1 */}
                     <div className='autoLayoutRightAlignLeftTop projectTextOnlyMargins gapImageText'>
-                        <h5 className='projectTextHeader20'>Market research</h5>
-                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping'>
+                        <div className='projectTextHeader20'>
+                            <h5>Market research</h5>
+                        </div>
+                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                             <p>Industry design patterns were also important to look into, because I didn’t want to re-invent the wheel with this feature! I looked into:</p>
                             <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
                                 <div className='projectListNumberCircle'>
@@ -170,8 +174,10 @@ export default function JamCity() {
 
                     {/* Learnings */}
                     <div className='autoLayoutRightAlignLeftTop projectTextOnlyMargins gapImageText'>
-                        <h5 className='projectTextHeader20'>Learnings</h5>
-                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping'>
+                        <div className='projectTextHeader20'>
+                            <h5>Learnings</h5>
+                        </div>
+                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                             <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={1} colorTheme={theme} />

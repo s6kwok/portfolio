@@ -118,7 +118,11 @@ li {
     gap: 9.5rem;
 }
 
-.gaph3b2, .gaph6b1 {
+.gaph3b2 {
+    gap: 1.5rem;
+}
+
+.gaph6b1 {
     gap: 1.25rem;
 }
 

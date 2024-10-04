@@ -86,8 +86,10 @@ export default function SnapPea() {
                     {/* Impact */}
                     <div className='autoLayoutDownAlignTop gapProjectGrouping'>
                         <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
-                            <h5 className='projectTextHeader20'>Impact</h5>
-                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping'>
+                            <div className='projectTextHeader20'>
+                                <h5>Impact</h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gaph6b1'>
                                     <h6>The designs are currently <strong>launched</strong> and live!</h6>
                                     <p>But what impact did the feature have?</p>
@@ -139,6 +141,33 @@ export default function SnapPea() {
                     <hr />
 
                     {/* Problem space */}
+                    <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
+                        <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5>Defining success</h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p className='b3-medium'>Understanding client and user needs</p>
+                                    <p>In order to define success, I first aimed to understand user needs and what would satisfy them, while also aligning with the client's goals. Team discussions on vision and priorities shaped key design decisions. The image below highlights common themes: speed, value, and ease of use!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaSuccess1} alt="Defining success" className='image'/>
+                        <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
+                            <div className='projectTextHeader20'>
+                                <h5></h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
+                                    <p className='b3-medium'>Understanding client and user needs</p>
+                                    <p>In order to define success, I first aimed to understand user needs and what would satisfy them, while also aligning with the client's goals. Team discussions on vision and priorities shaped key design decisions. The image below highlights common themes: speed, value, and ease of use!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src={snappeaSuccess2} alt="Defining success" className='image'/>
+                    </div>
+
 
                     <hr />
 
@@ -149,8 +178,10 @@ export default function SnapPea() {
                             <p>Users have trouble navigating and understanding how to use the platform.</p>
                         </div>
                         <div className='autoLayoutRightAlignLeftTop gapImageText'>
-                            <h5 className='projectTextHeader20'>User reported issues</h5>
-                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping'>
+                            <div className='projectTextHeader20'>
+                                <h5>User reported issues</h5>
+                            </div>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <p>The customer experience team was also super helpful to speak to! They provided user knowledge, insights into user support, support requests, and a <strong>sample of 46 user-reported issues</strong>. This led to the following insights:</p>
                                 <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
                                     <div className='projectListNumberCircle'>
@@ -199,8 +230,10 @@ export default function SnapPea() {
 
                     {/* Learnings */}
                     <div className='autoLayoutRightAlignLeftTop projectTextOnlyMargins gapImageText'>
-                        <h5 className='projectTextHeader20'>Learnings</h5>
-                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping'>
+                        <div className='projectTextHeader20'>
+                            <h5>Learnings</h5>
+                        </div>
+                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                             <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={1} colorTheme={theme} />

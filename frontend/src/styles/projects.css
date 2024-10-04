@@ -40,8 +40,12 @@
 }
 
 .projectTextHeader20 {
-    width: 20%;
-    padding-right: 1.5rem;
+    width: 22%;
+    /* padding-right: 1.5rem; */
+}
+
+.projectTextText80 {
+    width: 78%;
 }
 
 .gapProjectGrouping {
