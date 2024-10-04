@@ -13,4 +13,39 @@
     width: 100%;
 }
 
+/* Text margins */
+.projectTextMargins {
+    margin-left: 12.5rem;
+    margin-right: 12.5rem;
+}
 
+.projectContextLeft {
+    width: 78%;
+    padding-right: 1.5rem;
+}
+
+.projectContextRight {
+    max-width: 26%;
+    gap: 2.5rem;
+}
+
+.projectTextHeader20 {
+    width: 20%;
+    padding-right: 1.5rem;
+}
+
+.gapProjectGrouping {
+    gap: 3.75rem;
+}
+
+.projectListNumberCircle {
+    min-width: 8%;
+}
+
+.gapProjectListNumberGrouping {
+    gap: 1.875rem;
+}
+
+.gapProjectListNumberItem {
+    gap: 2.125rem;
+}

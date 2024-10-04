@@ -38,7 +38,7 @@ export default function Home() {
                     <div className='autoLayoutDownAlignCenter' style={{gap: '4rem', paddingBottom: '2.5rem',}}>
 
                         {/* Hero main paragraph to be center of page */}
-                        <div className='autoLayoutRightAlignLeft' style={{minHeight: '74vh',}}>
+                        <div className='autoLayoutRightAlignLeftCenter' style={{minHeight: '74vh',}}>
 
                             {/* Hero container main content to change styling back to block */}
                             <div className='autoLayoutDownAlignCenter gaph1b1'>
@@ -46,7 +46,7 @@ export default function Home() {
                                     <h1>Hi, I’m Stacy!</h1>
 
                                     {/* Line with tags */}
-                                    <div className='autoLayoutRightAlignLeft gapLargeTagInlineText'>
+                                    <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText'>
                                         <h1>I bring</h1>
                                         <Tag theme="primaryBlue" size="large" icon={RiEmotionHappyLine} text="people" />
                                         <h1>and</h1>

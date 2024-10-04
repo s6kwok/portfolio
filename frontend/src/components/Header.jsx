@@ -9,7 +9,7 @@ export default function Header({defaultActiveTab}) {
   const [activeTab, setActiveTab] = useState(defaultActiveTab);
 
   return (
-    <header className='marginsPrimary autoLayoutRightEvenGap' style={{paddingTop: '2rem',}}>
+    <header className='marginsPrimary autoLayoutRightSplit' style={{paddingTop: '2rem',}}>
 
         {/* Logo */}
         <a href={routes.designSystem} className="logo">Stacy Kwok</a>

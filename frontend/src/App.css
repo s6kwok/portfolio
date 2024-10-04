@@ -74,16 +74,24 @@ li {
     /* gap: 1rem; */
 }
 
-/* Right autolayout align left */
-.autoLayoutRightAlignLeft {
+/* Right autolayout align left centered */
+.autoLayoutRightAlignLeftCenter {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     /* gap: 1rem; */
 }
 
+/* Right autolayout align left top */
+.autoLayoutRightAlignLeftTop {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    /* gap: 1rem; */
+}
+
 /* Right autolayout even gap */
-.autoLayoutRightEvenGap {
+.autoLayoutRightSplit {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,7 +118,7 @@ li {
     gap: 6rem;
 }
 
-.gaph3b2 {
+.gaph3b2, .gaph6b1 {
     gap: 1.25rem;
 }
 
@@ -118,7 +126,7 @@ li {
     gap: 1.35rem;
 }
 
-.gaph2b1 {
+.gaph2b1, .gaph5b1 {
     gap: 1.5rem;
 }
 
@@ -128,6 +136,10 @@ li {
 
 .gapb1b1, .gaph3h3, .gaph1h1 {
     gap: 1rem;
+}
+
+.gapb3b1 {
+    gap: 0.65rem;
 }
 
 .gapLargeTagInlineText {

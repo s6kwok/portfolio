@@ -16,14 +16,14 @@ export default function Footer() {
         <div className='autoLayoutDownAlignTop' style={{gap: '2.15rem', paddingBottom: '1.25rem',}}>
             
             {/* Footer header */}
-            <div className='autoLayoutRightAlignLeft gapSmallTagInlineText'>
+            <div className='autoLayoutRightAlignLeftCenter gapSmallTagInlineText'>
                 <h5>Let's</h5>
                 <Tag theme="primaryBlue" size="mini" icon={IoIosStar} text="collab" />
                 <h5>on something amazing (and have fun along the way)!</h5>
             </div>
 
             {/* List of links */}
-            <div className='autoLayoutRightAlignLeft' style={{gap: '2.275rem',}}>
+            <div className='autoLayoutRightAlignLeftCenter' style={{gap: '2.275rem',}}>
               <a href="mailto:@s6kwok@uwaterloo.ca" target="_blank" rel="noopener noreferrer">Email</a>
               <a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>

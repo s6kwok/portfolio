@@ -37,7 +37,7 @@ export default function About() {
                         <div className='autoLayoutDownAlignCenter gaph3b1' style={{maxWidth: '52%', marginLeft: 'auto', marginRight: 'auto',}}>
 
                             {/* Header and inline tag autolayout left */}
-                            <div className='autoLayoutRightAlignLeft gapSmallTagInlineText'>
+                            <div className='autoLayoutRightAlignLeftCenter gapSmallTagInlineText'>
                                 <h3>Hi internet! I'm </h3>
                                 <Tag theme="orange" size="small" icon={FaHeart} text="Stacy" />
                             </div>

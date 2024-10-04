@@ -26,7 +26,7 @@ const NavTabs = ({ activeTab, onTabChange }) => {
   };
 
   return (
-    <div className='autoLayoutRightAlignLeft' style={navTabsStyling}>
+    <div className='autoLayoutRightAlignLeftCenter' style={navTabsStyling}>
 
       {/* Design Tab */}
       <p
