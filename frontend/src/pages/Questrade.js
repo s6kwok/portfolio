@@ -10,6 +10,10 @@ import { projectPrimaryContainer, projectPrimaryColor } from '../styles/Projects
 import questradeHeader from '../assets/questrade/questrade-header.png';
 import questradeDecisions from '../assets/questrade/questrade-decisions.png';
 import questradeFun from '../assets/questrade/questrade-fun.png';
+import questradeFinal1 from '../assets/questrade/questrade-final-1.png';
+import questradeFinal2 from '../assets/questrade/questrade-final-2.png';
+import sparkles3GreenLeft from '../assets/sparkles-3-green-left.png';
+import sparkles3GreenRight from '../assets/sparkles-3-green-right.png';
 
 export default function Questrade() {
     const theme = 'green'; 
@@ -42,20 +46,20 @@ export default function Questrade() {
                     </div>
 
                     {/* Context */}
-                    <div className='projectTextMargins autoLayoutRightAlignLeftCenter gapImageText'>
+                    <div className='projectTextOnlyMargins autoLayoutRightAlignLeftCenter gapImageText'>
 
                         {/* Left context */}
-                        <div className='autoLayoutDownAlignTop projectContextLeft gaph5b1' >
+                        <div className='autoLayoutDownAlignTop projectContextLeft gaph2b1' >
                             <h5>It’s hard to keep up with the frequent changes to your investing platform.</h5>
                             <p>Keeping up with the latest feature updates on the Questrade web trading platform was proven (through research!) to be challenging.</p>
                             <p>Helpful features are continually released on Questrade’s web trading platform, but <strong>users don’t use many new features because they are unaware of them</strong>. After thoughtful cross-functional deliberation, it was decided that we needed web feature announcements!</p>
                         </div>
 
                         {/* Right context */}
-                        <div className='autoLayoutDownAlignTop projectContextRight' >
+                        <div className='autoLayoutDownAlignCenter projectContextRight' >
                             <div className='autoLayoutDownAlignTop gapb3b1'>
                                 <p className='b3-medium'>Collaborators</p>
-                                <div>
+                                <div className='autoLayoutDownAlignCenter gapb1b1SameParagraph'>
                                     <p>1 UX designer (<strong>me</strong>!)</p>
                                     <p>Content designer</p>
                                     <p>Visual designer</p>
@@ -71,7 +75,7 @@ export default function Questrade() {
                     </div>
 
                     {/* Impact */}
-                    <div className='projectTextMargins autoLayoutRightAlignLeftTop gapImageText'>
+                    <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
                         <h5 className='projectTextHeader20'>Impact</h5>
                         <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping'>
                             <div className='autoLayoutDownAlignTop gaph6b1'>
@@ -82,7 +86,7 @@ export default function Questrade() {
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={1} colorTheme={theme} />
                                 </div>
-                                <div className='autoLayoutDownAlignTop gapb1b1'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
                                     <p className='b3-medium'>
                                         Positive user feedback
                                     </p>
@@ -95,7 +99,7 @@ export default function Questrade() {
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={2} colorTheme={theme} />
                                 </div>
-                                <div className='autoLayoutDownAlignTop gapb1b1'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
                                     <p className='b3-medium'>
                                         Improved learnability & discoverability of new features
                                     </p>
@@ -108,13 +112,52 @@ export default function Questrade() {
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={3} colorTheme={theme} />
                                 </div>
-                                <div className='autoLayoutDownAlignTop gapb1b1'>
-                                    <p className='b3-medium'>
-                                        Adopted as a template!
-                                    </p>
-                                </div>
+                                <p className='b3-medium'>
+                                    Adopted as a template!
+                                </p>
                             </div>
                         </div>
+                    </div>
+
+                    {/* Notice */}
+                    <div className='projectTextOnlyMargins autoLayoutDownAlignCenter gaph3b1 projectCenter'>
+                        <div className='autoLayoutRightAlignLeftCenter gapImageText'>
+                            <div className='projectCenterSparkles'>
+                                <img src={sparkles3GreenLeft} alt="Sparkles" className='image'/>
+                            </div>
+                            <div>
+                                <h3>This case study is being refreshed (yay!)</h3>
+                            </div>
+                            <div className='projectCenterSparkles'>
+                                <img src={sparkles3GreenRight} alt="Sparkles" className='image'/>
+                            </div>
+                        </div>
+                        <div className='autoLayoutDownAlignCenter gapb1b1SameParagraph'>
+                            <p>The revamped case study will be launching soon!</p>
+                            <p><strong>Wanna know more than the summary below?</strong> Please reach out!</p>
+                        </div>
+                    </div>
+
+                    {/* Design decisions */}
+                    <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageHeader projectCenter'>
+                        <h5>Highlights: Key design decisions</h5>
+                        <img src={questradeDecisions} alt="Design decisions" className='image'/>
+                    </div>
+
+                    {/* Final design */}
+                    <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageImage projectCenter'>
+                        <div className='autoLayoutDownAlignTop gapImageHeader'>
+                            <h5>Final design</h5>
+                            <img src={questradeFinal1} alt="Final design case 1" className='image'/>
+                        </div>
+                        <img src={questradeFinal2} alt="Final design case 2" className='image'/>
+                    </div>
+                    
+
+                    {/* Fun */}
+                    <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageHeader projectCenter'>
+                        <h5>Highlights: Internship fun</h5>
+                        <img src={questradeFun} alt="Internship fun!" className='image'/>
                     </div>
 
                 </div>

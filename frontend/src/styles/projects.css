@@ -4,7 +4,7 @@
 .projectHeaderContainer {
     gap: 3rem;
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 4.5rem;
 }
 
 /* Project page header image */
@@ -14,9 +14,19 @@
 }
 
 /* Text margins */
-.projectTextMargins {
+.projectTextOnlyMargins {
     margin-left: 12.5rem;
     margin-right: 12.5rem;
+}
+
+.projectTextImageMargins {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.projectTextImageMarginsText {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 .projectContextLeft {
@@ -35,7 +45,7 @@
 }
 
 .gapProjectGrouping {
-    gap: 3.75rem;
+    gap: 4rem;
 }
 
 .projectListNumberCircle {
@@ -43,9 +53,17 @@
 }
 
 .gapProjectListNumberGrouping {
-    gap: 1.875rem;
+    gap: 2rem;
 }
 
 .gapProjectListNumberItem {
     gap: 2.125rem;
+}
+
+.projectCenter {
+    text-align: center;
+}
+
+.projectCenterSparkles {
+    max-width: 10%;
 }

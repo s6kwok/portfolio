@@ -54,17 +54,17 @@ export default function JamCity() {
                     </div>
 
                     {/* Context */}
-                    <div className='projectTextMargins autoLayoutRightAlignLeftCenter gapImageText'>
+                    <div className='projectTextOnlyMargins autoLayoutRightAlignLeftCenter gapImageText'>
 
                         {/* Left context */}
-                        <div className='autoLayoutDownAlignTop projectContextLeft gaph5b1' >
+                        <div className='autoLayoutDownAlignTop projectContextLeft gaph2b1' >
                             <h5>It’s time for Hogwarts graduates to enter the adult wizarding world.</h5>
                             <p>Longtime players of the game Harry Potter Hogwarts Mystery (HPHM) were starting to finish playing the latest game chapter: graduation.</p>
                             <p><strong>Many players expressed interest in exploring and growing different careers in the next phase of the game.</strong> With that, came the need for an end-to-end careers rewards system design!</p>
                         </div>
 
                         {/* Right context */}
-                        <div className='autoLayoutDownAlignTop projectContextRight'>
+                        <div className='autoLayoutDownAlignCenter projectContextRight'>
                             <div className='autoLayoutDownAlignTop gapb3b1'>
                                 <p className='b3-medium'>Collaborators</p>
                                 <p>1 UX/UI designer (<strong>me</strong>!)</p>
@@ -80,10 +80,10 @@ export default function JamCity() {
                     <hr />
 
                     {/* Requirements */}
-                    <div className='projectTextMargins autoLayoutRightAlignLeftTop gapImageText'>
+                    <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
                         <h5 className='projectTextHeader20'>Gathering requireme nts</h5>
                         <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping'>
-                            <div className='autoLayoutDownAlignTop gapb1b1'>
+                            <div className='autoLayoutDownAlignTop gapb1b1MultiParagraph'>
                                 <p className='b3-medium'>Collaborating with stakeholders</p>
                                 <p>My stakeholders (such as game designers and product managers) were amazing. Collaborating with them, I uncovered the <strong>knowledge of the game economy and the game logic</strong> I would need for the design!</p>
                                 <p>Key design requirements included:</p>
@@ -92,7 +92,7 @@ export default function JamCity() {
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={1} colorTheme={theme} />
                                 </div>
-                                <div className='autoLayoutDownAlignTop gapb1b1'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
                                     <p className='b3-medium'>
                                         3 simultaneous career tracks
                                     </p>
@@ -105,7 +105,7 @@ export default function JamCity() {
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={2} colorTheme={theme} />
                                 </div>
-                                <div className='autoLayoutDownAlignTop gapb1b1'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
                                     <p className='b3-medium'>
                                         Visual distinction from “student” features
                                     </p>
@@ -118,7 +118,7 @@ export default function JamCity() {
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={3} colorTheme={theme} />
                                 </div>
-                                <div className='autoLayoutDownAlignTop gapb1b1'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
                                     <p className='b3-medium'>
                                         Follow the given reward systems logic
                                     </p>
@@ -133,7 +133,7 @@ export default function JamCity() {
                     <hr />
 
                     {/* Reason #1 */}
-                    <div className='autoLayoutRightAlignLeftTop projectTextMargins gapImageText'>
+                    <div className='autoLayoutRightAlignLeftTop projectTextOnlyMargins gapImageText'>
                         <h5 className='projectTextHeader20'>Market research</h5>
                         <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping'>
                             <p>Industry design patterns were also important to look into, because I didn’t want to re-invent the wheel with this feature! I looked into:</p>
@@ -141,7 +141,7 @@ export default function JamCity() {
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={1} colorTheme={theme} />
                                 </div>
-                                <div className='autoLayoutDownAlignTop gapb1b1'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
                                     <p className='b3-medium'>
                                         Narrative theme incorporation
                                     </p>
@@ -154,7 +154,7 @@ export default function JamCity() {
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={2} colorTheme={theme} />
                                 </div>
-                                <div className='autoLayoutDownAlignTop gapb1b1'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
                                     <p className='b3-medium'>
                                         Creating an enticing rewards layout
                                     </p>
@@ -169,14 +169,14 @@ export default function JamCity() {
                     <hr />
 
                     {/* Learnings */}
-                    <div className='autoLayoutRightAlignLeftTop projectTextMargins gapImageText'>
+                    <div className='autoLayoutRightAlignLeftTop projectTextOnlyMargins gapImageText'>
                         <h5 className='projectTextHeader20'>Learnings</h5>
                         <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping'>
                             <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={1} colorTheme={theme} />
                                 </div>
-                                <div className='autoLayoutDownAlignTop gapb1b1'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
                                     <p className='b3-medium'>
                                         Dabbling in UI art
                                     </p>
@@ -189,7 +189,7 @@ export default function JamCity() {
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={2} colorTheme={theme} />
                                 </div>
-                                <div className='autoLayoutDownAlignTop gapb1b1'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
                                     <p className='b3-medium'>
                                         Gotta think like my stakeholders
                                     </p>
@@ -202,7 +202,7 @@ export default function JamCity() {
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={3} colorTheme={theme} />
                                 </div>
-                                <div className='autoLayoutDownAlignTop gapb1b1'>
+                                <div className='autoLayoutDownAlignTop gapb3b1'>
                                     <p className='b3-medium'>
                                         Designing for many states
                                     </p>
@@ -212,6 +212,12 @@ export default function JamCity() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    {/* Fun */}
+                    <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageHeader projectCenter'>
+                        <h5>Highlights: Internship fun</h5>
+                        <img src={jamcityFun} alt="Internship fun!" className='image'/>
                     </div>
 
                 </div>

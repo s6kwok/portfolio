@@ -115,7 +115,7 @@ li {
 }
 
 .gapFullPage {
-    gap: 6rem;
+    gap: 9.5rem;
 }
 
 .gaph3b2, .gaph6b1 {
@@ -126,7 +126,7 @@ li {
     gap: 1.35rem;
 }
 
-.gaph2b1, .gaph5b1 {
+.gaph2b1 {
     gap: 1.5rem;
 }
 
@@ -134,8 +134,12 @@ li {
     gap: 2.25rem;
 }
 
-.gapb1b1, .gaph3h3, .gaph1h1 {
+.gapb1b1MultiParagraph, .gaph3h3, .gaph1h1 {
     gap: 1rem;
+}
+
+.gapb1b1SameParagraph {
+    gap: 0.25rem;
 }
 
 .gapb3b1 {
@@ -150,14 +154,29 @@ li {
     gap: 0.75rem;
 }
 
+.gapImageHeader {
+    gap: 2.65rem;
+}
+
 .gapImageText {
     gap: 4.5rem;
+}
+
+.gapImageImage {
+    gap: 4rem;
 }
 
 .image {
     width: 100%;
     max-height: 100%;
     border-radius: 1rem;
+}
+.video {
+    width: 96%;
+    max-height: 100%;
+    border-radius: 2.25rem;
+    align-self: center;
+    padding: 1.5rem 1rem;
 }
 
 .imageMount{

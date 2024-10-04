@@ -43,7 +43,7 @@ export default function About() {
                             </div>
 
                             {/* Paragraph autolayout down */}
-                            <div className='autoLayoutDownAlignTop gapb1b1'>
+                            <div className='autoLayoutDownAlignTop gapb1b1MultiParagraph'>
                                 <p>
                                     Nice to meet you! I’m a recent grad from the University of Waterloo, who’s interested in designing solutions that <strong>inspire curiosity</strong> and make technology feel <strong>approachable</strong>.
                                 </p>
@@ -51,7 +51,7 @@ export default function About() {
                                     I first stumbled into product design unexpectedly while giving back to the community, joining a team of students to build tech for non-profits. And I’ve been designing ever since!
                                 </p>
                                 <p>
-                                    I thrive amongst <strong>ambition, humility, and community</strong> (if you’re curious of what that means, I would love to share!). I’m passionate about <strong>creating simplicity amongst complexity and chaos</strong>, and empowering informed user decisions. 
+                                    I thrive amongst <strong>ambition, humility, and community</strong>! I’m passionate about <strong>creating simplicity amongst complexity and chaos</strong>, and empowering informed user decisions. 
                                 </p>
                                 <p>
                                     The simplicity I love, translates outside of design too! From indulging in child-like play (<a href='#play'>scroll down</a> to see what my play looks like!), to giving smiles to strangers--it’s the little things that bring me joy.
@@ -62,7 +62,7 @@ export default function About() {
                 </div>
 
                 {/* Sparkles divider autolayout right */}
-                <div className='autoLayoutRightAlignCenter gapb1b1'>
+                <div className='autoLayoutRightAlignCenter gapb1b1MultiParagraph'>
                     {/* <HiSparkles style={{ width: '1rem', height: '1rem' }} /> */}
                     <HiSparkles style={{ fontSize: '20px' }} />
                     <VscSparkleFilled style={{ fontSize: '20px' }} />
