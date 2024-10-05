@@ -64,7 +64,7 @@ export default function SnapPea() {
                     </div>
 
                     {/* Context */}
-                    <div className='projectTextOnlyMargins autoLayoutRightAlignLeftCenter gapImageText'>
+                    <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
 
                         {/* Left context */}
                         <div className='autoLayoutDownAlignTop projectContextLeft gaph2b1' >
@@ -174,10 +174,12 @@ export default function SnapPea() {
                         </div>
                     </div>
 
+                    {/* Challenge */}
                     <div className='projectTextImageMargins'>
                         <img src={snappeaChallenge} alt="Design challenge" className='image'/>
                     </div>
 
+                    {/* Success */}
                     <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                         <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
                             <div className='projectTextHeader20'>
@@ -205,6 +207,7 @@ export default function SnapPea() {
                         <img src={snappeaSuccess2} alt="Defining success" className='image'/>
                     </div>
 
+                    {/* Approach */}
                     <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                         <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
                             <div className='projectTextHeader20'>
@@ -223,7 +226,7 @@ export default function SnapPea() {
 
                     <hr />
 
-                    {/* Reasons */}
+                    {/* Research */}
                     <div className='autoLayoutDownAlignTop projectTextOnlyMargins gaph2b1'>
                         <p className='b1-medium'>Research</p>
                         <div className='autoLayoutRightAlignLeftCenter gapImageText'>
@@ -237,6 +240,7 @@ export default function SnapPea() {
                         <p>My research began with a deep dive into understanding users, the problem space, and current behaviours. However, one question that I wanted to dive deep into was the high abandonment rate. Why was this happening, and how can we address it?</p>
                     </div>
 
+                    {/* Reason 1 */}
                     <div className='autoLayoutDownAlignTop projectTextOnlyMargins gapProjectGrouping'>
                         <div className='autoLayoutDownAlignTop gaph3h3'>
                             <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Reason #1:</span> Poor usability</h5>
@@ -291,6 +295,7 @@ export default function SnapPea() {
                         </div>
                     </div>
 
+                    {/* Reason 2 */}
                     <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                         <div className='projectTextImageMarginsText autoLayoutDownAlignTop gapProjectGrouping'>
                             <div className='autoLayoutDownAlignTop gaph3h3'>
@@ -334,6 +339,7 @@ export default function SnapPea() {
                         </div>
                     </div>
 
+                    {/* Reason 3 */}
                     <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                         <div className='projectTextImageMarginsText autoLayoutDownAlignTop gapProjectGrouping'>
                             <div className='autoLayoutDownAlignTop gaph3h3'>
@@ -377,7 +383,7 @@ export default function SnapPea() {
                         </div>
                     </div>
 
-                    {/* Actionables */}
+                    {/* Actionable 1 */}
                     <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                         <div className='projectTextImageMarginsText autoLayoutDownAlignTop gapProjectGrouping'>
                             <div className='autoLayoutDownAlignTop gaph3h3'>
@@ -443,6 +449,7 @@ export default function SnapPea() {
                         </div>
                     </div>
 
+                    {/* Actionable 2 */}
                     <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                         <div className='projectTextImageMarginsText autoLayoutDownAlignTop gapProjectGrouping'>
                             <div className='autoLayoutDownAlignTop gaph3h3'>
@@ -538,6 +545,7 @@ export default function SnapPea() {
                         </div>
                     </div>
 
+                    {/* Revisiting success */}
                     <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
                         <div className='projectTextHeader20'>
                             <h5>Revisiting success metrics</h5>

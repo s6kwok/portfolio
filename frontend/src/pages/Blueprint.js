@@ -48,7 +48,7 @@ export default function Blueprint() {
                     </div>
 
                     {/* Context */}
-                    <div className='projectTextOnlyMargins autoLayoutRightAlignLeftCenter gapImageText'>
+                    <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
 
                         {/* Left context */}
                         <div className='autoLayoutDownAlignTop projectContextLeft gaph2b1' >

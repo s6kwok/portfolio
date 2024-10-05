@@ -106,7 +106,7 @@ export default function DesignSystem() {
 
                     <br />
                     <IoIosStar />
-                    <FaHeart />
+                    <FaHeart style={{ fontSize: '20px' }} />
                     <FaUtensils />
                     <RiMusic2Fill />
                     <FaCar />
