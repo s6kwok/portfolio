@@ -180,6 +180,12 @@ li {
     padding: 1.5rem 1rem;
 }
 
+.video-projects-list {
+    width: 650px;
+    max-height: 100%;
+    border-radius: 1rem;
+}
+
 .imageMount{
     padding: 1.75rem 1.75rem;
     border-radius: 1.5rem;

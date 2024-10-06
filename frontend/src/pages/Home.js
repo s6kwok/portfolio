@@ -17,6 +17,9 @@ import BlueprintThumbnail from '../assets/home/blueprint-thumbnail.png';
 import ArrowRightBlue from '../assets/home/arrow-right-blue.svg';
 import ArrowRightPink from '../assets/home/arrow-right-pink.svg';
 import ArrowRightGreen from '../assets/home/arrow-right-green.svg';
+import QuestradeThumbnailVideo from '../assets/home/questrade-video-cropped.mp4';
+import BlueprintThumbnailVideo from '../assets/home/blueprint-video-cropped.mp4';
+import JamcityThumbnailVideo from '../assets/home/jamcity-video-cropped.mp4';
 
 import { RiEmotionHappyLine } from "react-icons/ri";
 import { BsBarChartLineFill } from "react-icons/bs";
@@ -129,7 +132,10 @@ export default function Home() {
                             <div>
                                 {/* Image */}
                                 <div className='autoLayoutDownAlignCenter imageMount projectsListImage' style={{...projectPrimaryContainer['pink'],}}>
-                                    <img src={JamCityThumbnail} alt="JamCity Thumbnail" className='image'/>
+                                    {/* <img src={JamCityThumbnail} alt="JamCity Thumbnail" className='image'/> */}
+                                    <video autoPlay loop muted playsInline  className='video-projects-list'>
+                                        <source src={JamcityThumbnailVideo} type="video/mp4" />
+                                    </video>
                                 </div>
                             </div>
 
@@ -165,7 +171,10 @@ export default function Home() {
                             <div>
                                 {/* Image */}
                                 <div className='autoLayoutDownAlignCenter imageMount projectsListImage' style={{...projectPrimaryContainer['green'],}}>
-                                    <img src={QuestradeThumbnail} alt="Questrade Thumbnail" className='image'/>
+                                    {/* <img src={QuestradeThumbnail} alt="Questrade Thumbnail" className='image'/> */}
+                                    <video autoPlay loop muted playsInline  className='video-projects-list'>
+                                        <source src={QuestradeThumbnailVideo} type="video/mp4" />
+                                    </video>
                                 </div>
                             </div>
 
@@ -201,7 +210,10 @@ export default function Home() {
                             <div>
                                 {/* Image */}
                                 <div className='autoLayoutDownAlignCenter imageMount projectsListImage' style={{...projectPrimaryContainer['blue'],}}>
-                                    <img src={BlueprintThumbnail} alt="Blueprint Thumbnail" className='image'/>
+                                    {/* <img src={BlueprintThumbnail} alt="Blueprint Thumbnail" className='image'/> */}
+                                    <video autoPlay loop muted playsInline  className='video-projects-list'>
+                                        <source src={BlueprintThumbnailVideo} type="video/mp4" />
+                                    </video>
                                 </div>
                             </div>
 
