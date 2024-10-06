@@ -57,7 +57,7 @@ export default function Tag({ theme, size, icon: Icon, text, style }) {
         alignItems: 'center',
         gap: '0.875rem',
         width: 'max-content',
-        height: '82px',
+        // height: '82px',
 
         borderRadius: '3rem',
         border: `3px solid ${outlineColor}`,
