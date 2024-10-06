@@ -20,6 +20,11 @@ import ArrowRightGreen from '../assets/home/arrow-right-green.svg';
 
 import { RiEmotionHappyLine } from "react-icons/ri";
 import { BsBarChartLineFill } from "react-icons/bs";
+import { HiSparkles } from "react-icons/hi2";
+import { IoBalloonSharp, } from "react-icons/io5";
+import { FaBookOpen, FaHeart, FaLightbulb } from "react-icons/fa";
+import { FaLocationArrow } from "react-icons/fa6";
+import { MdQuestionMark } from "react-icons/md";
 
 export default function Home() {
     const navigate = useNavigate();
@@ -60,6 +65,13 @@ export default function Home() {
                                 <p>Prev @Questrade, @Jam City, @LCBO</p>
                             </div>
                         </div>
+                        <Tag theme="blue" size="medium" icon={FaLightbulb} text="strategy" />
+                        <Tag theme="green" size="medium" icon={MdQuestionMark} text="curiosity" />
+                        <Tag theme="orange" size="medium" icon={HiSparkles} text="innovation" />
+                        <Tag theme="pink" size="medium" icon={FaHeart} text="empathy" />
+                        <Tag theme="green" size="medium" icon={FaBookOpen} text="storytelling" />
+                        <Tag theme="pink" size="medium" icon={IoBalloonSharp} text="fun" />
+                        <Tag theme="primary-blue" size="medium" icon={FaLocationArrow} text="usability" />
 
                         {/* Hero footnote */}
                         <p>Check out my recent work below! ↓</p>
