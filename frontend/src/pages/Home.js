@@ -43,13 +43,13 @@ export default function Home() {
                 <div className='marginsPrimary autoLayoutDownAlignTop gapFullPage'>
 
                     {/* Hero container paragraph + footnote */}
-                    <div className='autoLayoutDownAlignCenter' style={{gap: '4rem', paddingBottom: '2.5rem',}}>
+                    <div className='autoLayoutDownAlignCenter hero' style={{gap: '4rem', paddingBottom: '2.5rem', position: 'relative',}}>
 
                         {/* Hero main paragraph to be center of page */}
-                        <div className='autoLayoutRightAlignLeftCenter' style={{minHeight: '74vh',}}>
+                        <div className='autoLayoutRightAlignLeftCenter' style={{minHeight: '72vh',}}>
 
                             {/* Hero container main content to change styling back to block */}
-                            <div className='autoLayoutDownAlignCenter gaph1b1'>
+                            <div className='autoLayoutDownAlignCenter gaph1b1' style={{paddingBottom: '4rem'}}>
                                 <div className='autoLayoutDownAlignCenter gaph1h1'>
                                     <h1>Hi, I’m Stacy!</h1>
 
@@ -68,14 +68,16 @@ export default function Home() {
                                 <p>Prev @Questrade, @Jam City, @LCBO</p>
                             </div>
                         </div>
-                        <Tag theme="blue" size="medium" icon={FaLightbulb} text="strategy" />
-                        <Tag theme="green" size="medium" icon={MdQuestionMark} text="curiosity" />
-                        <Tag theme="orange" size="medium" icon={HiSparkles} text="innovation" />
-                        <Tag theme="pink" size="medium" icon={FaHeart} text="empathy" />
-                        <Tag theme="green" size="medium" icon={FaBookOpen} text="storytelling" />
-                        <Tag theme="pink" size="medium" icon={IoBalloonSharp} text="fun" />
-                        <Tag theme="primary-blue" size="medium" icon={FaLocationArrow} text="usability" />
 
+                        <div className='tags-container'>
+                                <Tag theme="blue" size="medium" icon={FaLightbulb} text="strategy" style={{ bottom:"21px", right:"538px", transform: 'rotate(-16deg)', position: 'absolute',}}/>
+                                <Tag theme="green" size="medium" icon={MdQuestionMark} text="curiosity" style={{ bottom:"131px", right:"416px", transform: 'rotate(-6deg)', position: 'absolute',}}/>
+                                <Tag theme="orange" size="medium" icon={HiSparkles} text="innovation" style={{ bottom:"53px", right:"300px", transform: 'rotate(-35deg)', position: 'absolute',}}/>
+                                <Tag theme="pink" size="medium" icon={FaHeart} text="empathy" style={{ bottom:"0px", right:"165px", transform: 'rotate(0deg)', position: 'absolute',}}/>
+                                <Tag theme="green" size="medium" icon={FaBookOpen} text="storytelling" style={{ bottom:"50px", right:"-15px", transform: 'rotate(30deg)', position: 'absolute',}}/>
+                                <Tag theme="pink" size="medium" icon={IoBalloonSharp} text="fun" style={{ bottom:"203px", right:"97px", transform: 'rotate(-38deg)', position: 'absolute',}}/>
+                                <Tag theme="primary-blue" size="medium" icon={FaLocationArrow} text="usability" style={{ bottom:"197px", right:"-50px", transform: 'rotate(-70deg)', position: 'absolute',}}/>
+                        </div>
                         {/* Hero footnote */}
                         <p>Check out my recent work below! ↓</p>
                     </div>

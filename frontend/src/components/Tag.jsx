@@ -1,6 +1,7 @@
 import React from "react";
 
 import { IoIosStar } from "react-icons/io";
+import '../styles/Home.css';
 
 // Define tag color theme mapping
 const tagColorThemes = {
@@ -31,7 +32,7 @@ const tagColorThemes = {
     },
 };
 
-export default function Tag({ theme, size, icon: Icon, text }) {
+export default function Tag({ theme, size, icon: Icon, text, style }) {
   // Get colors based on the selected theme
   // Default to blue if theme not recognized
   const { outlineColor, iconColor, backgroundColor } = (tagColorThemes[theme] || tagColorThemes.primaryBlue);
@@ -56,7 +57,8 @@ export default function Tag({ theme, size, icon: Icon, text }) {
         alignItems: 'center',
         gap: '0.875rem',
         width: 'max-content',
-        
+        height: '82px',
+
         borderRadius: '3rem',
         border: `3px solid ${outlineColor}`,
         backgroundColor: backgroundColor,
@@ -115,9 +117,14 @@ export default function Tag({ theme, size, icon: Icon, text }) {
   // Use IoIosStar if Icon is not provided
   const RenderIcon = Icon || IoIosStar;
 
+  const combinedStyles = {
+    ...tagStyles[size],
+    ...style, // Add the incoming style prop
+  };
+
   return (
     // Return styled tag based on input params of size, color theme, icon, input text
-    <div style={{...tagStyles[finalSize],}}>
+    <div style={combinedStyles}>
       {RenderIcon && <Icon style={{ color: iconColor, fontSize: iconSize }} />}
       <TagText />
     </div>
