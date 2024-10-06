@@ -6,7 +6,7 @@
 }
 
 .nav-inactive {
-    font-size: 1rem;
+    font-size: 0.96rem;
     font-weight: 400;
     line-height: 1.5rem;
     text-decoration: none;
@@ -16,7 +16,7 @@
 
 .nav-active, .nav-inactive:hover {
     color: var(--PRIMARY-BLUE-500);
-    font-size: 1rem;
+    font-size: 0.96rem;
     font-weight: 500;
     line-height: 1.5rem;
     text-decoration: underline;
@@ -25,72 +25,65 @@
 } 
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.725rem;
     font-weight: 500;
-    line-height: 4.5rem;
+    line-height: 3.65rem;
     letter-spacing: -0.03rem;
 }
 
 h2 {
-    font-size: 2.75rem;
-    font-weight: 400;
+    font-size: 2.5rem;
+    font-weight: 500;
     line-height: 3.625rem;
     letter-spacing: -0.055rem;
 }
 
-.h2-medium {
-    font-size: 2.75rem;
-    font-weight: 500;
-    line-height: 3.375rem;
-    letter-spacing: -0.055rem;
-}
-
 h3 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 500;
-    line-height: 3.45rem;
-    letter-spacing: -0.05rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.04rem;
 }
 
 h4 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 2.875rem;
     letter-spacing: -0.045rem;
 }
 
 h5 {
-    font-size: 2rem;
+    font-size: 2.15rem;
     font-weight: 500;
-    line-height: 2.875rem;
-    letter-spacing: -0.03rem;
+    line-height: 3.125rem;
+    letter-spacing: -0.02rem;
 }
 
 h6 {
     font-size: 1.625rem;
     font-weight: 500;
     line-height: 2.5rem;
-    letter-spacing: -0.01625rem;
+    letter-spacing: -0.015rem;
 }
 
 /* b1 */
 p {
-    font-size: 1rem;
+    font-size: 1.025rem;
     font-weight: 400;
-    line-height: 1.625rem;
+    line-height: 1.8rem;
 }
 
 .b1-medium {
-    font-size: 1rem;
+    font-size: 1.025rem;
     font-weight: 500;
-    line-height: 1.625rem;
+    line-height: 1.8rem;
 }
 
 /* b1 link */
 a {
-    font-size: 1rem;
+    font-size: 1.025rem;
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     text-decoration-line: underline;
     color: inherit;
 }
@@ -105,37 +98,54 @@ a:hover {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 1.625rem;
+    line-height: 1.85rem;
 }
 
 .b2 {
-    font-size: 1.125rem;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.75rem;
 }
 
-.b2-medium {
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 1.625rem;
-}
-
 .b3 {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 400;
     line-height: 2rem;
 }
 
 .b3-medium {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 500;
     line-height: 2rem;
 }
 
-.small {
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.375rem;
+/* Tag font */
+.tag-mini {
+    font-size: 1.95rem;
+    font-weight: 500;
+    line-height: 3.125rem;
+    letter-spacing: -0.02rem;
+}
+
+.tag-small {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.875rem;
+    letter-spacing: -0.045rem;
+}
+
+.tag-medium {
+    font-size: 2.12rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    letter-spacing: -0.035rem;
+}
+
+.tag-large {
+    font-size: 2.375rem;
+    font-weight: 500;
+    line-height: 3.625rem;
+    letter-spacing: -0.05rem;
 }

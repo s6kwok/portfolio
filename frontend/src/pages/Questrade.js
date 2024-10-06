@@ -33,9 +33,9 @@ export default function Questrade() {
 
                         {/* Header and subtext */}
                         <div className='autoLayoutDownAlignTop gaph3b2'>
-                            <h3>
+                            <h2>
                                 Enhancing the <span style={{...projectPrimaryColor[theme],}} >discoverability</span> of new web features
-                            </h3>
+                            </h2>
                             <p className='b2'>Questrade, Jul-Aug 2022</p>
                         </div>
 

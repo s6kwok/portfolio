@@ -35,9 +35,9 @@ export default function Blueprint() {
 
                         {/* Header and subtext */}
                         <div className='autoLayoutDownAlignTop gaph3b2'>
-                            <h3>
+                            <h2>
                                 <span style={{...projectPrimaryColor[theme],}} >Reducing barriers</span> to program registration
-                            </h3>
+                            </h2>
                             <p className='b2'>UW Blueprint, May-Aug 2021</p>
                         </div>
 

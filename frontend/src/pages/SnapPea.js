@@ -51,9 +51,9 @@ export default function SnapPea() {
 
                         {/* Header and subtext */}
                         <div className='autoLayoutDownAlignTop gaph3b2'>
-                            <h3>
+                            <h2>
                                 Accelerating <span style={{...projectPrimaryColor[theme],}} >value discovery</span> for a mapping platform
-                            </h3>
+                            </h2>
                             <p className='b2'>SnapPea Design, Sept-Dec 2023</p>
                         </div>
 

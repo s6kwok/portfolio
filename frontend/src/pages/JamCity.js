@@ -45,9 +45,9 @@ export default function JamCity() {
 
                         {/* Header and subtext */}
                         <div className='autoLayoutDownAlignTop gaph3b2'>
-                            <h3>
+                            <h2>
                                 Creating an <span style={{...projectPrimaryColor[theme],}} >engaging</span> player rewards system
-                            </h3>
+                            </h2>
                             <p className='b2'>Jam City, Feb-Apr 2023</p>
                         </div>
 

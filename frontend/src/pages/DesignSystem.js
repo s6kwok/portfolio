@@ -39,7 +39,6 @@ export default function DesignSystem() {
                     <p className="nav-active">nav-active</p>
                     <h1>h1</h1>
                     <h2>h2</h2>
-                    <p className="h2-medium">h2-medium</p>
                     <h3>h3</h3>
                     <h4>h4</h4>
                     <h5>h5</h5>
@@ -48,10 +47,8 @@ export default function DesignSystem() {
                     <p className="b1-medium">b1-medium</p>
                     <a href='#'>b1-link</a>
                     <p className="b2">b2</p>
-                    <p className="b2-medium">b2-medium</p>
                     <p className="b3">b3</p>
                     <p className="b3-medium">b3-medium</p>
-                    <p className="small">small</p>
                 </div>
 
                 {/* Colors */}

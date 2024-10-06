@@ -39,7 +39,7 @@ export default function Tag({ theme, size, icon: Icon, text }) {
   const tagStyles = {
     large: {
         display: 'flex',
-        padding: '0.75rem 1.25rem 0.5rem 1.15rem',
+        padding: '0.45rem 1.45rem 0.15rem 1.3rem',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '1.025rem',
@@ -51,7 +51,7 @@ export default function Tag({ theme, size, icon: Icon, text }) {
     },
     medium: {
         display: 'flex',
-        padding: '0.5rem 1.25rem 0.4rem 1rem',
+        padding: '0.65rem 1.45rem 0.5rem 1.2rem',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '0.875rem',
@@ -63,7 +63,7 @@ export default function Tag({ theme, size, icon: Icon, text }) {
     },
     small: {
         display: 'flex',
-        padding: '0.75rem 1.45rem 0.45rem 1.35rem',
+        padding: '0.6rem 1.3rem 0.4rem 1.25rem',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '0.925rem',
@@ -75,7 +75,7 @@ export default function Tag({ theme, size, icon: Icon, text }) {
     },
     mini: {
         display: 'flex',
-        padding: '0.55rem 1.15rem 0.35rem 1rem',
+        padding: '0.5rem 1.15rem 0.3rem 1rem',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '0.675rem',
@@ -101,13 +101,13 @@ export default function Tag({ theme, size, icon: Icon, text }) {
   // Function to render text based on textStyle prop
   const TagText = () => {
     if (size === 'mini') {
-        return <h5>{text}</h5>;
+        return <span className="tag-mini">{text}</span>;
     } else if (size === 'small') {
-        return <h4>{text}</h4>;
+        return <span className="tag-small">{text}</span>;
     } else if (size === 'medium') {
-        return <h3>{text}</h3>;
+        return <span className="tag-medium">{text}</span>;
     } else {
-        return <span className="h2-medium">{text}</span>;
+        return <span className="tag-large">{text}</span>;
     }
   };
 
