@@ -1,4 +1,5 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import React, { useEffect, useRef } from 'react';
 
 import "./App.css";
 import "./styles/Text.css";
@@ -13,6 +14,8 @@ import Blank from './pages/Blank'
 import JamCity from './pages/JamCity'
 import Blueprint from './pages/Blueprint'
 import Questrade from './pages/Questrade'
+
+import { startCarousel } from './styles/Projects';
 
 export default function App() {
   return (

@@ -8,6 +8,10 @@ import '../styles/Projects.css';
 import { projectPrimaryContainer, projectPrimaryColor } from '../styles/Projects';
 
 import snappeaHeader from '../assets/snappea/snappea-header.png';
+import snappeaHeader1 from '../assets/snappea/snappea-header-1.png';
+import snappeaHeader2 from '../assets/snappea/snappea-header-2.png';
+import snappeaHeader3 from '../assets/snappea/snappea-header-3.png';
+import snappeaHeader4 from '../assets/snappea/snappea-header-4.png';
 import snappeaActionables from '../assets/snappea/snappea-actionables.png';
 import snappeaApproach from '../assets/snappea/snappea-approach.png';
 import snappeaChallenge from '../assets/snappea/snappea-challenge.png';
@@ -59,7 +63,19 @@ export default function SnapPea() {
 
                         {/* Image */}
                         <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
-                            <img src={snappeaHeader} alt="Thumbnail" className='image'/>
+                            {/* <img src={snappeaHeader} alt="Thumbnail" className='image'/> */}
+                            <div id="container">
+                                <div class="photobanner photobanner-snappea">
+                                    <img src={snappeaHeader1} alt="Thumbnail 1"/>
+                                    <img src={snappeaHeader2} alt="Thumbnail 2"/>
+                                    <img src={snappeaHeader3} alt="Thumbnail 3"/>
+                                    <img src={snappeaHeader4} alt="Thumbnail 4"/>
+                                    <img src={snappeaHeader1} alt="Thumbnail 1"/>
+                                    <img src={snappeaHeader2} alt="Thumbnail 2"/>
+                                    <img src={snappeaHeader3} alt="Thumbnail 3"/>
+                                    <img src={snappeaHeader4} alt="Thumbnail 4"/>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

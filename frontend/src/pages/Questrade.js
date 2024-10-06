@@ -14,6 +14,8 @@ import questradeFinal1 from '../assets/questrade/questrade-final-1.png';
 import questradeFinal2 from '../assets/questrade/questrade-final-2.png';
 import sparkles3GreenLeft from '../assets/sparkles-3-green-left.png';
 import sparkles3GreenRight from '../assets/sparkles-3-green-right.png';
+import QuestradeLogo from '../assets/questrade/questrade-logo.png';
+import QuestradeThumbnailVideo from '../assets/home/questrade-video-cropped.mp4';
 
 export default function Questrade() {
     const theme = 'green'; 
@@ -40,8 +42,16 @@ export default function Questrade() {
                         </div>
 
                         {/* Image */}
-                        <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
-                            <img src={questradeHeader} alt="Thumbnail" className='image'/>
+                        <div className='autoLayoutRightAlignCenter imageMount projectHeaderImage projectHeaderImage2Col' style={{...projectPrimaryContainer[theme],}}>
+                            <div className='projectHeaderImage2ColLeft'>
+                                <img src={QuestradeLogo} alt="Thumbnail" className='image'/>
+                                {/* <img src={questradeHeader} alt="Thumbnail" className='image'/> */}
+                            </div>
+                            <div className='projectHeaderImage2ColRight'>
+                                <video autoPlay loop muted playsInline className='video'>
+                                    <source src={QuestradeThumbnailVideo} type="video/mp4" />
+                                </video>
+                            </div>
                         </div>
                     </div>
 

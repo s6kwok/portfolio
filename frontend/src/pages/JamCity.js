@@ -26,6 +26,8 @@ import jamcitySuccess1 from '../assets/jamcity/jamcity-success-1.png';
 import jamcitySuccess2 from '../assets/jamcity/jamcity-success-2.png';
 import jamcityFinal from '../assets/jamcity/jamcity-final.mp4';
 import sparkles2Pink from '../assets/sparkles-2-pink.png';
+import JamcityLogo from '../assets/jamcity/jamcity-logo.png';
+import JamcityThumbnailVideo from '../assets/home/jamcity-video-cropped.mp4';
 
 export default function JamCity() {
     const theme = 'pink'; 
@@ -52,8 +54,17 @@ export default function JamCity() {
                         </div>
 
                         {/* Image */}
-                        <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
-                            <img src={jamcityHeader} alt="Thumbnail" className='image'/>
+                        <div className='autoLayoutRightAlignCenter imageMount projectHeaderImage projectHeaderImage2Col' style={{...projectPrimaryContainer[theme],}}>
+                            {/* <img src={jamcityHeader} alt="Thumbnail" className='image'/> */}
+                            <div className='projectHeaderImage2ColLeft'>
+                                <img src={JamcityLogo} alt="Thumbnail" className='image'/>
+                                {/* <img src={questradeHeader} alt="Thumbnail" className='image'/> */}
+                            </div>
+                            <div className='projectHeaderImage2ColRight'>
+                                <video autoPlay loop muted playsInline className='video'>
+                                    <source src={JamcityThumbnailVideo} type="video/mp4" />
+                                </video>
+                            </div>
                         </div>
                     </div>
 

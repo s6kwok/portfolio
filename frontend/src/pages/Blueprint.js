@@ -4,9 +4,13 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 import '../styles/Projects.css';
-import { projectPrimaryContainer, projectPrimaryColor } from '../styles/Projects';
+import { projectPrimaryContainer, projectPrimaryColor, } from '../styles/Projects';
 
 import blueprintHeader from '../assets/blueprint/blueprint-header.png';
+import blueprintHeader1 from '../assets/blueprint/blueprint-header-1.png';
+import blueprintHeader2 from '../assets/blueprint/blueprint-header-2.png';
+import blueprintHeader3 from '../assets/blueprint/blueprint-header-3.png';
+import blueprintHeader4 from '../assets/blueprint/blueprint-header-4.png';
 import blueprintFun from '../assets/blueprint/blueprint-fun.png';
 import blueprintProcess1 from '../assets/blueprint/blueprint-process-1.png';
 import blueprintProcess2 from '../assets/blueprint/blueprint-process-2.png';
@@ -18,7 +22,7 @@ import sparkles3BlueLeft from '../assets/sparkles-3-blue-left.png';
 import sparkles3BlueRight from '../assets/sparkles-3-blue-right.png';
 
 export default function Blueprint() {
-    const theme = 'blue'; 
+    const theme = 'blue';
 
     return(
         <>
@@ -43,7 +47,19 @@ export default function Blueprint() {
 
                         {/* Image */}
                         <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
-                            <img src={blueprintHeader} alt="Thumbnail" className='image'/>
+                            {/* <img src={blueprintHeader} alt="Thumbnail" className='image'/> */}
+                            <div id="container">
+                                <div class="photobanner photobanner-blueprint">
+                                    <img src={blueprintHeader1} alt="Thumbnail 1"/>
+                                    <img src={blueprintHeader2} alt="Thumbnail 2"/>
+                                    <img src={blueprintHeader3} alt="Thumbnail 3"/>
+                                    <img src={blueprintHeader4} alt="Thumbnail 4"/>
+                                    <img src={blueprintHeader1} alt="Thumbnail 1"/>
+                                    <img src={blueprintHeader2} alt="Thumbnail 2"/>
+                                    <img src={blueprintHeader3} alt="Thumbnail 3"/>
+                                    <img src={blueprintHeader4} alt="Thumbnail 4"/>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
