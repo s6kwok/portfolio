@@ -19,3 +19,49 @@
 .projectsListImage {
     padding: 3.25rem;
 }
+
+.hover-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup-image {
+    position: absolute;
+    display: none;
+    width: 250px;
+    height: auto;
+}
+
+.eating {
+    top: -150px;
+    left: 250px;
+}
+
+.creating {
+    top: -150px;
+    left: -365px;
+}
+
+.adventures {
+    top: -150px;
+    left: 525px;
+}
+
+.experimenting {
+    top: -150px;
+    left: 375px;
+}
+
+.laughing {
+    top: -150px;
+    left: -375px;
+}
+
+.hover-container:hover .popup-image {
+    display: block;
+}
+  
+.hover-container-tag:hover {
+    opacity: 90%;
+}

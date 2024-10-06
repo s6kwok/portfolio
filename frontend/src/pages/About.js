@@ -2,6 +2,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Tag from "../components/Tag";
 
+import '../styles/Home.css';
+
 import aboutHero from '../assets/about/hero.png';
 
 import { FaHeart, FaUtensils, FaFlask } from "react-icons/fa";
@@ -73,13 +75,27 @@ export default function About() {
                 <div className='autoLayoutDownAlignTop gaph3h3' id='play'>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
                         <h3>Beyond design, you’ll find me</h3>
-                        <Tag theme="pink" size="small" icon={FaUtensils} text="eating" />
+                        <div class="hover-container">
+                            <div class="hover-container-tag">
+                                <Tag theme="pink" size="small" icon={FaUtensils} text="eating" />
+                            </div>
+                            <div class="popup-image eating">
+                                <img src={aboutHero} alt="This is me!" className='image' style={{border: '3px solid var(--PINK-300)',}}/>
+                            </div>
+                        </div>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
                         <h3>good food, playing volleyball, unlearning,</h3>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
-                        <Tag theme="blue" size="small" icon={RiMusic2Fill} text="creating" />
+                        <div class="hover-container">
+                            <div class="hover-container-tag">
+                                <Tag theme="blue" size="small" icon={RiMusic2Fill} text="creating" />
+                            </div>
+                            <div class="popup-image creating">
+                                <img src={aboutHero} alt="This is me!" className='image' style={{border: '3px solid var(--BLUE-300)',}}/>
+                            </div>
+                        </div>
                         <h3>vibe-y Spotify playlists,</h3>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
@@ -87,7 +103,14 @@ export default function About() {
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
                         <h3>gaming, going on</h3>
-                        <Tag theme="orange" size="small" icon={FaCar} text="adventures" />
+                        <div class="hover-container">
+                            <div class="hover-container-tag">
+                                <Tag theme="orange" size="small" icon={FaCar} text="adventures" />
+                            </div>
+                            <div class="popup-image adventures">
+                                <img src={aboutHero} alt="This is me!" className='image' style={{border: '3px solid var(--ORANGE-300)',}}/>
+                            </div>
+                        </div>
                         <h3>with friends,</h3>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
@@ -95,7 +118,14 @@ export default function About() {
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
                         <h3>people, building puzzles,</h3>
-                        <Tag theme="primary-blue" size="small" icon={FaFlask} text="experimenting" />
+                        <div class="hover-container">
+                            <div class="hover-container-tag">
+                                <Tag theme="primary-blue" size="small" icon={FaFlask} text="experimenting" />
+                            </div>
+                            <div class="popup-image experimenting">
+                                <img src={aboutHero} alt="This is me!" className='image' style={{border: '3px solid var(--PRIMARY-BLUE-300)',}}/>
+                            </div>
+                        </div>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
                         <h3>with things I probably shouldn’t, building DIY</h3>
@@ -104,7 +134,14 @@ export default function About() {
                         <h3>models, playing piano, dancing in the kitchen,</h3>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
-                        <Tag theme="green" size="small" icon={RiEmotionHappyLine} text="laughing" />
+                        <div class="hover-container">
+                            <div class="hover-container-tag">
+                                <Tag theme="green" size="small" icon={RiEmotionHappyLine} text="laughing" />
+                            </div>
+                            <div class="popup-image laughing">
+                                <img src={aboutHero} alt="This is me!" className='image' style={{border: '3px solid var(--GREEN-300)',}}/>
+                            </div>
+                        </div>
                         <h3>and smiling (always!)</h3>
                     </div>
                 </div>
