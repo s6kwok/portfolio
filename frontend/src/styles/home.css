@@ -7,7 +7,7 @@
 }
 
 .projectsListItem {
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: transform 0.3s ease-in-out;
 }
 
@@ -23,7 +23,7 @@
 .hover-container {
     position: relative;
     display: inline-block;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .popup-image {
