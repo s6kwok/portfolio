@@ -32,7 +32,7 @@ export default function Footer() {
         {/* Footer center aligned footnote */}
         <div style={{textAlign: 'center',}}>
             <p>
-              Portfolio made with 10000 hours of <a href="https://open.spotify.com/playlist/4Fht6C4JCWNXLrvRjvgQNO?si=92541bf64c9245d2" target="_blank" rel="noopener noreferrer">Spotify music</a>, 10000 <a href="https://github.com/s6kwok" target="_blank" rel="noopener noreferrer">Github commits</a> (eep!), and lots of love.
+              Portfolio made with 10000 hours of <a href="https://open.spotify.com/playlist/4Fht6C4JCWNXLrvRjvgQNO?si=92541bf64c9245d2" target="_blank" rel="noopener noreferrer">Spotify music</a>, 350 <a href="https://github.com/s6kwok" target="_blank" rel="noopener noreferrer">Github commits</a> (eep!), and lots of love.
             </p>
         </div>
       </div>

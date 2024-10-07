@@ -2,6 +2,7 @@ import React from "react";
 
 import { IoIosStar } from "react-icons/io";
 import '../styles/Home.css';
+import CursorEyes from '../assets/cursor-eyes.svg';
 
 // Define tag color theme mapping
 const tagColorThemes = {
@@ -74,6 +75,7 @@ export default function Tag({ theme, size, icon: Icon, text, style }) {
         borderRadius: '3rem',
         border: `3px solid ${outlineColor}`,
         backgroundColor: backgroundColor,
+        cursor: `url(${CursorEyes}), auto`,
     },
     mini: {
         display: 'flex',
@@ -105,7 +107,7 @@ export default function Tag({ theme, size, icon: Icon, text, style }) {
     if (size === 'mini') {
         return <span className="tag-mini">{text}</span>;
     } else if (size === 'small') {
-        return <span className="tag-small">{text}</span>;
+        return <span className="tag-small cursor-eyes">{text}</span>;
     } else if (size === 'medium') {
         return <span className="tag-medium">{text}</span>;
     } else {

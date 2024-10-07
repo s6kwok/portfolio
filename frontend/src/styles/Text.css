@@ -12,6 +12,7 @@
     text-decoration: none;
     color: inherit;
     /* cursor: pointer; */
+    cursor: url('../assets/cursor-eyes.svg'), auto;
 }
 
 .nav-active, .nav-inactive:hover {
@@ -21,6 +22,7 @@
     line-height: 1.5rem;
     text-decoration: underline;
     /* cursor: pointer; */
+    cursor: url('../assets/cursor-eyes.svg'), auto;
     /* opacity: 100%; */
 } 
 
@@ -92,6 +94,7 @@ a:hover {
     color: var(--PRIMARY-BLUE-500);
     /* opacity: 80%; */
     /* cursor: pointer; */
+    cursor: url('../assets/cursor-eyes.svg'), auto;
 }
 
 .logo {
@@ -101,6 +104,7 @@ a:hover {
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.85rem;
+    cursor: url('../assets/cursor-eyes.svg'), auto;
 }
 
 .b2 {

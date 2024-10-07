@@ -41,7 +41,14 @@ export default function About() {
                             {/* Header and inline tag autolayout left */}
                             <div className='autoLayoutRightAlignLeftCenter gapSmallTagInlineText'>
                                 <h3>Hi internet! I'm </h3>
-                                <Tag theme="orange" size="small" icon={FaHeart} text="Stacy" />
+                                <div class="hover-container">
+                                    <div class="hover-container-tag">
+                                        <Tag theme="orange" size="small" icon={FaHeart} text="Stacy" />
+                                    </div>
+                                    <div class="popup-image name">
+                                        <img src={aboutHero} alt="This is me!" className='image' style={{border: '3px solid var(--PINK-300)',}}/>
+                                    </div>
+                                </div>
                             </div>
 
                             {/* Paragraph autolayout down */}

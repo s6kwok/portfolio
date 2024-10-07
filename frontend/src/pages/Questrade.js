@@ -48,7 +48,7 @@ export default function Questrade() {
                                 {/* <img src={questradeHeader} alt="Thumbnail" className='image'/> */}
                             </div>
                             <div className='projectHeaderImage2ColRight'>
-                                <video autoPlay loop muted playsInline className='video'>
+                                <video autoPlay loop muted playsInline className='video' style={{borderRadius: '2.75rem'}}>
                                     <source src={QuestradeThumbnailVideo} type="video/mp4" />
                                 </video>
                             </div>
