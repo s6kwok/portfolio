@@ -11,7 +11,7 @@ import blueprintHeader1 from '../assets/blueprint/blueprint-header-1.png';
 import blueprintHeader2 from '../assets/blueprint/blueprint-header-2.png';
 import blueprintHeader3 from '../assets/blueprint/blueprint-header-3.png';
 import blueprintHeader4 from '../assets/blueprint/blueprint-header-4.png';
-import blueprintFun from '../assets/blueprint/blueprint-fun.png';
+// import blueprintFun from '../assets/blueprint/blueprint-fun.png';
 import blueprintProcess1 from '../assets/blueprint/blueprint-process-1.png';
 import blueprintProcess2 from '../assets/blueprint/blueprint-process-2.png';
 import blueprintProcess3 from '../assets/blueprint/blueprint-process-3.png';
@@ -140,10 +140,10 @@ export default function Blueprint() {
                     </div>
 
                     {/* Fun */}
-                    <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageHeader projectCenter'>
+                    {/* <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageHeader projectCenter'>
                         <h5>Highlights: My fantastic project team</h5>
                         <img src={blueprintFun} alt="Project team fun!" className='image'/>
-                    </div>
+                    </div> */}
 
                 </div>
 

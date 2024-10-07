@@ -20,6 +20,7 @@ import ArrowRightGreen from '../assets/home/arrow-right-green.svg';
 import QuestradeThumbnailVideo from '../assets/home/questrade-video-cropped.mp4';
 import BlueprintThumbnailVideo from '../assets/home/blueprint-video-cropped.mp4';
 import JamcityThumbnailVideo from '../assets/home/jamcity-video-cropped.mp4';
+import SnappeaThumbnailVideo from '../assets/home/snappea-video-cropped.mp4';
 
 import { RiEmotionHappyLine } from "react-icons/ri";
 import { BsBarChartLineFill } from "react-icons/bs";
@@ -65,7 +66,7 @@ export default function Home() {
                                     {/* Remaining text */}
                                     <h1>to design impactful and elegant solutions.</h1>
                                 </div>
-                                <p>Prev @Questrade, @Jam City, @LCBO</p>
+                                {/* <p>Prev @Questrade, @Jam City, @LCBO</p> */}
                             </div>
                         </div>
 
@@ -98,7 +99,10 @@ export default function Home() {
                             <div className='cursor-eyes'>
                                 {/* Image */}
                                 <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursor-eyes' style={{...projectPrimaryContainer['blue'],}}>
-                                    <img src={SnapPeaThumbnail} alt="SnapPea Thumbnail" className='image cursor-eyes'/>
+                                    {/* <img src={SnapPeaThumbnail} alt="SnapPea Thumbnail" className='image cursor-eyes'/> */}
+                                    <video autoPlay loop muted playsInline  className='video-projects-list cursor-eyes'>
+                                        <source src={SnappeaThumbnailVideo} type="video/mp4" />
+                                    </video>
                                 </div>
                             </div>
 

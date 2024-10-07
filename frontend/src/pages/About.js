@@ -5,6 +5,12 @@ import Tag from "../components/Tag";
 import '../styles/Home.css';
 
 import aboutHero from '../assets/about/hero.png';
+import aboutHearts from '../assets/about/hearts.png';
+import aboutEating from '../assets/about/eating.png';
+import aboutCreating from '../assets/about/creating.png';
+import aboutAdventures from '../assets/about/adventures.png';
+import aboutExperimenting from '../assets/about/experimenting.png';
+import aboutLaughing from '../assets/about/laughing.png';
 
 import { FaHeart, FaUtensils, FaFlask } from "react-icons/fa";
 import { RiEmotionHappyLine, RiMusic2Fill } from "react-icons/ri";
@@ -45,8 +51,8 @@ export default function About() {
                                     <div class="hover-container-tag">
                                         <Tag theme="orange" size="small" icon={FaHeart} text="Stacy" />
                                     </div>
-                                    <div class="popup-image name">
-                                        <img src={aboutHero} alt="This is me!" className='image' style={{border: '3px solid var(--PINK-300)',}}/>
+                                    <div class="popup-image name" style={{maxWidth: '25%',}}>
+                                        <img src={aboutHearts} alt="Hearts" className='image'/>
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +93,7 @@ export default function About() {
                                 <Tag theme="pink" size="small" icon={FaUtensils} text="eating" />
                             </div>
                             <div class="popup-image eating">
-                                <img src={aboutHero} alt="This is me!" className='image' style={{border: '3px solid var(--PINK-300)',}}/>
+                                <img src={aboutEating} alt="Eating good food!" className='image' style={{border: '3px solid var(--PINK-300)',}}/>
                             </div>
                         </div>
                     </div>
@@ -100,7 +106,7 @@ export default function About() {
                                 <Tag theme="blue" size="small" icon={RiMusic2Fill} text="creating" />
                             </div>
                             <div class="popup-image creating">
-                                <img src={aboutHero} alt="This is me!" className='image' style={{border: '3px solid var(--BLUE-300)',}}/>
+                                <img src={aboutCreating} alt="Me creating!" className='image' style={{border: '3px solid var(--BLUE-300)',}}/>
                             </div>
                         </div>
                         <h3>vibe-y Spotify playlists,</h3>
@@ -115,7 +121,7 @@ export default function About() {
                                 <Tag theme="orange" size="small" icon={FaCar} text="adventures" />
                             </div>
                             <div class="popup-image adventures">
-                                <img src={aboutHero} alt="This is me!" className='image' style={{border: '3px solid var(--ORANGE-300)',}}/>
+                                <img src={aboutAdventures} alt="Group adventures!" className='image' style={{border: '3px solid var(--ORANGE-300)',}}/>
                             </div>
                         </div>
                         <h3>with friends,</h3>
@@ -130,7 +136,7 @@ export default function About() {
                                 <Tag theme="primary-blue" size="small" icon={FaFlask} text="experimenting" />
                             </div>
                             <div class="popup-image experimenting">
-                                <img src={aboutHero} alt="This is me!" className='image' style={{border: '3px solid var(--PRIMARY-BLUE-300)',}}/>
+                                <img src={aboutExperimenting} alt="Me experimenting!" className='image' style={{border: '3px solid var(--PRIMARY-BLUE-300)',}}/>
                             </div>
                         </div>
                     </div>
@@ -146,7 +152,7 @@ export default function About() {
                                 <Tag theme="green" size="small" icon={RiEmotionHappyLine} text="laughing" />
                             </div>
                             <div class="popup-image laughing">
-                                <img src={aboutHero} alt="This is me!" className='image' style={{border: '3px solid var(--GREEN-300)',}}/>
+                                <img src={aboutLaughing} alt="Me laughing!" className='image' style={{border: '3px solid var(--GREEN-300)',}}/>
                             </div>
                         </div>
                         <h3>and smiling (always!)</h3>

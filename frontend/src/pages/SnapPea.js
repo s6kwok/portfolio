@@ -21,7 +21,7 @@ import snappeaDualFlows3 from '../assets/snappea/snappea-dual-flows-3.png';
 import snappeaDualFlows4 from '../assets/snappea/snappea-dual-flows-4.png';
 import snappeaFlow1 from '../assets/snappea/snappea-flow-1.png';
 import snappeaFlow2 from '../assets/snappea/snappea-flow-2.png';
-import snappeaFun from '../assets/snappea/snappea-fun.png';
+// import snappeaFun from '../assets/snappea/snappea-fun.png';
 import snappeaImpact from '../assets/snappea/snappea-impact.png';
 import snappeaInterviews from '../assets/snappea/snappea-interviews.png';
 import snappeaProblem from '../assets/snappea/snappea-problem.png';
@@ -32,8 +32,9 @@ import snappeaStory4 from '../assets/snappea/snappea-story-4.png';
 import snappeaSuccess1 from '../assets/snappea/snappea-success-1.png';
 import snappeaSuccess2 from '../assets/snappea/snappea-success-2.png';
 import sparkles2Blue from '../assets/sparkles-2-blue.png';
-import blueprintFinal1 from '../assets/blueprint/blueprint-final-1.mp4';
-import blueprintFinal2 from '../assets/blueprint/blueprint-final-2.mp4';
+import snappeaFinal1 from '../assets/snappea/snappea-final-1.mp4';
+import snappeaFinal2 from '../assets/snappea/snappea-final-2.mp4';
+import snappeaFun from '../assets/snappea/snappea-fun.mp4';
 
 import { FaClock, FaLocationArrow } from "react-icons/fa6";
 
@@ -548,15 +549,15 @@ export default function SnapPea() {
                                 <source src={blueprintFinal1} type="video/mp4" />
                             </video> */}
                                 <p style={{marginTop: '0.75rem'}}><strong>Flow #1: Browsing data products first</strong></p>
-                                <video autoPlay loop muted playsInline  className='video'>
-                                    <source src={blueprintFinal1} type="video/mp4" />
+                                <video autoPlay loop muted playsInline  className='video' style={{borderRadius: '2.75rem'}}>
+                                    <source src={snappeaFinal1} type="video/mp4" />
                                 </video>
                             </div>
                         </div>
                         <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
                             <p style={{marginTop: '0.75rem'}}><strong>Flow #2: Adding a site first</strong></p>
-                            <video autoPlay loop muted playsInline  className='video'>
-                                <source src={blueprintFinal2} type="video/mp4" />
+                            <video autoPlay loop muted playsInline  className='video' style={{borderRadius: '2.75rem'}}>
+                                <source src={snappeaFinal2} type="video/mp4" />
                             </video>
                         </div>
                     </div>
@@ -579,7 +580,15 @@ export default function SnapPea() {
                     {/* Fun */}
                     <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageHeader projectCenter'>
                         <h5>Highlights: Internship fun</h5>
-                        <img src={snappeaFun} alt="Internship fun!" className='image'/>
+                        {/* <img src={snappeaFun} alt="Internship fun!" className='image'/> */}
+                        <div className='autoLayoutRightAlignCenter imageMount projectHeaderImage gapImageText' style={{...projectPrimaryContainer['primaryBlue'], paddingTop: '3rem', paddingBottom: '3rem'}}>
+                            <p style={{width: '25%'}}><strong>Finally finishing our office puzzle together!</strong></p>
+                            <div style={{maxHeight: '625px'}}>
+                                <video autoPlay loop muted playsInline style={{borderRadius: '1.25rem', maxHeight: '625px'}}>
+                                    <source src={snappeaFun} type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Learnings */}

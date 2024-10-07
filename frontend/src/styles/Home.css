@@ -39,8 +39,8 @@
 }
 
 .name {
-    top: -100px;
-    left: 200px;
+    top: 10px;
+    left: 195px;
 }
 
 .eating {
@@ -49,23 +49,23 @@
 }
 
 .creating {
-    top: -150px;
-    left: -365px;
+    top: -50px;
+    left: -375px;
 }
 
 .adventures {
     top: -150px;
-    left: 525px;
+    left: 540px;
 }
 
 .experimenting {
     top: -150px;
-    left: 375px;
+    left: 385px;
 }
 
 .laughing {
     top: -150px;
-    left: -375px;
+    left: -390px;
 }
 
 .hover-container:hover .popup-image {

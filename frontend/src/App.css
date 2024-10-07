@@ -52,6 +52,7 @@ html {
 }
 
 body {
+    /* background: #FBF8F4; */
     background: var(--WHITE);
     color: var(--BLACK);
 }
@@ -183,7 +184,7 @@ li {
 }
 
 .video-projects-list {
-    width: 650px;
+    width: 720px;
     max-height: 100%;
     border-radius: 1rem;
 }
