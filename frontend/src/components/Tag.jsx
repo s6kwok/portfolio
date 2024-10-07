@@ -41,10 +41,10 @@ export default function Tag({ theme, size, icon: Icon, text, style }) {
   const tagStyles = {
     large: {
         display: 'flex',
-        padding: '0.45rem 1.45rem 0.15rem 1.3rem',
+        padding: '0.4rem 1.4rem 0.1rem 1.22rem',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: '1.025rem',
+        gap: '1.04rem',
         width: 'max-content',
         
         borderRadius: '3rem',
@@ -53,10 +53,11 @@ export default function Tag({ theme, size, icon: Icon, text, style }) {
     },
     medium: {
         display: 'flex',
-        padding: '0.65rem 1.45rem 0.5rem 1.2rem',
+        // padding: '0.32rem 1.45rem 0.1rem 1.2rem',
+        padding: '0.45rem 1.5rem 0.25rem 1.35rem',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: '0.875rem',
+        gap: '0.75rem',
         width: 'max-content',
         // height: '82px',
 
@@ -66,7 +67,7 @@ export default function Tag({ theme, size, icon: Icon, text, style }) {
     },
     small: {
         display: 'flex',
-        padding: '0.6rem 1.3rem 0.4rem 1.25rem',
+        padding: '0.5rem 1.3rem 0.32rem 1.25rem',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '0.925rem',
@@ -79,7 +80,7 @@ export default function Tag({ theme, size, icon: Icon, text, style }) {
     },
     mini: {
         display: 'flex',
-        padding: '0.5rem 1.15rem 0.3rem 1rem',
+        padding: '0.55rem 1.15rem 0.35rem 1rem',
         justifyContent: 'center',
         alignItems: 'center',
         gap: '0.675rem',
@@ -96,10 +97,10 @@ export default function Tag({ theme, size, icon: Icon, text, style }) {
 
   // Set icon size based on tag size
   const iconSize = {
-    large: '36px',
-    medium: '34px',
-    small: '32px',
-    mini: '32px',
+    large: '32px',
+    medium: '32px',
+    small: '28px',
+    mini: '26px',
   }[finalSize];
 
   // Function to render text based on textStyle prop

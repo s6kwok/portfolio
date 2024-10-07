@@ -1,8 +1,11 @@
 import { useNavigate } from 'react-router-dom';
+import FadeIn from 'react-fade-in';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Tag from "../components/Tag";
+
+import React, { useEffect } from 'react';
 
 import '../styles/Home.css';
 import '../styles/Projects.css';
@@ -30,12 +33,27 @@ import { FaBookOpen, FaHeart, FaLightbulb } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa6";
 import { MdQuestionMark } from "react-icons/md";
 
+// Fade in
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
 export default function Home() {
     const navigate = useNavigate();
 
+    // Fade in
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,  // Animation duration in milliseconds
+          once: false,     // Whether animation should happen only once or every time you scroll
+          mirror: false,   // Whether elements animate out while scrolling past them
+        });
+    }, []);
+
     return(
         <>
+            {/* <div className='fade-in-up'> */}
             <Header defaultActiveTab={'Design'} />
+            {/* </div> */}
 
             {/* Whole page auto layout down */}
             <div className='autoLayoutDownAlignTop gapFullPage'>
@@ -44,10 +62,10 @@ export default function Home() {
                 <div className='marginsPrimary autoLayoutDownAlignTop gapFullPage'>
 
                     {/* Hero container paragraph + footnote */}
-                    <div className='autoLayoutDownAlignCenter hero' style={{gap: '4rem', paddingBottom: '2.5rem', position: 'relative',}}>
+                    <div className='autoLayoutDownAlignCenter hero' style={{gap: '4rem', paddingBottom: '2.5rem', position: 'relative',}}  data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
 
                         {/* Hero main paragraph to be center of page */}
-                        <div className='autoLayoutRightAlignLeftCenter' style={{minHeight: '70vh',}}>
+                        <div className='autoLayoutRightAlignLeftCenter' style={{minHeight: '70vh', paddingBottom: '3.5rem',}}>
 
                             {/* Hero container main content to change styling back to block */}
                             <div className='autoLayoutDownAlignCenter gaph1b1' style={{paddingBottom: '4rem'}}>
@@ -80,7 +98,7 @@ export default function Home() {
                                 <Tag theme="primary-blue" size="medium" icon={FaLocationArrow} text="usability" style={{ bottom:"197px", right:"-50px", transform: 'rotate(-70deg)', position: 'absolute',}}/>
                         </div>
                         {/* Hero footnote */}
-                        <p>Check out my recent work below! ↓</p>
+                        <p> Check out my recent work below! ↓</p>
                     </div>
 
                     {/* Projects list */}
@@ -93,6 +111,7 @@ export default function Home() {
                                 navigate(routes.snapPea);
                                 window.scrollTo({ top:0, left:0, behavior: "instant"})
                             }}
+                            data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
                         >
 
                             {/* Left section with photo */}
@@ -119,7 +138,7 @@ export default function Home() {
                                     SnapPea Design (Product design, Agency)
                                 </p>
                                 <p className='cursor-eyes'>
-                                    Making it quicker for users to fully understand and experience the mapping platform’s benefits.
+                                    Making it quicker for users to understand and experience the mapping platform’s benefits
                                 </p>
                                 <img src={ArrowRightBlue} alt="Arrow right blue" width="48" height="48" className='cursor-eyes' />
                             </div>
@@ -132,6 +151,7 @@ export default function Home() {
                                 navigate(routes.jamCity);
                                 window.scrollTo({ top:0, left:0, behavior: "instant"})
                             }}
+                            data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
                         >
 
                             {/* Left section with photo */}
@@ -171,6 +191,7 @@ export default function Home() {
                                 navigate(routes.questrade);
                                 window.scrollTo({ top:0, left:0, behavior: "instant"})
                             }}
+                            data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
                         >
 
                             {/* Left section with photo */}
@@ -210,6 +231,7 @@ export default function Home() {
                                 navigate(routes.blueprint);
                                 window.scrollTo({ top:0, left:0, behavior: "instant"})
                             }}
+                            data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
                         >
 
                             {/* Left section with photo */}
@@ -244,7 +266,9 @@ export default function Home() {
                     </div>
                 </div>
 
-                <Footer />
+                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
+                    <Footer />
+                </div>
             </div>
         </>
     )

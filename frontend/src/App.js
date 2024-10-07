@@ -15,8 +15,6 @@ import JamCity from './pages/JamCity'
 import Blueprint from './pages/Blueprint'
 import Questrade from './pages/Questrade'
 
-import { startCarousel } from './styles/Projects';
-
 export default function App() {
   return (
     <div>

@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className='marginsPrimary'>
 
       {/* Footer all text autolayout */}
-      <div className='autoLayoutDownAlignCenter' style={{gap: '3.25rem', paddingBottom: '2rem',}}>
+      <div className='autoLayoutDownAlignCenter' style={{gap: '3rem', paddingBottom: '2rem',}}>
         <hr />
 
         {/* Footer main text */}
@@ -17,9 +17,9 @@ export default function Footer() {
             
             {/* Footer header */}
             <div className='autoLayoutRightAlignLeftCenter gapSmallTagInlineText'>
-                <h5>Let's</h5>
+                <h4>Let's</h4>
                 <Tag theme="primaryBlue" size="mini" icon={IoIosStar} text="collab" />
-                <h5>on something amazing (and have fun along the way)!</h5>
+                <h4>on something amazing (and have fun along the way)!</h4>
             </div>
 
             {/* List of links */}
@@ -32,7 +32,7 @@ export default function Footer() {
         {/* Footer center aligned footnote */}
         <div style={{textAlign: 'center',}}>
             <p>
-              Portfolio made with 10,975 minutes of <a href="https://open.spotify.com/playlist/4Fht6C4JCWNXLrvRjvgQNO?si=92541bf64c9245d2" target="_blank" rel="noopener noreferrer">Spotify music</a>, 350 <a href="https://github.com/s6kwok" target="_blank" rel="noopener noreferrer">Github commits</a> (eep!), and lots of love.
+              Portfolio made with <a href="https://open.spotify.com/playlist/4Fht6C4JCWNXLrvRjvgQNO?si=92541bf64c9245d2" target="_blank" rel="noopener noreferrer">10,975 minutes of Spotify music</a>, <a href="https://github.com/s6kwok" target="_blank" rel="noopener noreferrer">350 Github commits</a> (eep!), and lots of love.
             </p>
         </div>
       </div>

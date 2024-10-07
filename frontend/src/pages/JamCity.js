@@ -37,7 +37,7 @@ export default function JamCity() {
             <Header defaultActiveTab={'Null'} />
 
             {/* Whole page auto layout down */}
-            <div className='autoLayoutDownAlignTop gapFullPage'>
+            <div className='autoLayoutDownAlignTop gapFullPage fade-content-projects'>
                 
                 {/* Can't apply class 'autoLayoutDownAlignTop marginsPrimary' to top div because marginsPrimary would also apply to footer */}
                 <div className='marginsPrimary autoLayoutDownAlignTop gapFullPage'>
@@ -125,7 +125,7 @@ export default function JamCity() {
                             </div>
                         </div>
                         <img src={jamcityProblem} alt="Problem" className='image'/>
-                        <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>
@@ -217,7 +217,7 @@ export default function JamCity() {
                         </div>
                         <img src={jamcitySuccess1} alt="Success" className='image'/>
                         <img src={jamcitySuccess2} alt="Success" className='image'/>
-                        <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>

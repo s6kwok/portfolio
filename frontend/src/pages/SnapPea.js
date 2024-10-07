@@ -46,7 +46,7 @@ export default function SnapPea() {
             <Header defaultActiveTab={'Null'} />
 
             {/* Whole page auto layout down */}
-            <div className='autoLayoutDownAlignTop gapFullPage'>
+            <div className='autoLayoutDownAlignTop gapFullPage fade-content-projects'>
                 
                 {/* Can't apply class 'autoLayoutDownAlignTop marginsPrimary' to top div because marginsPrimary would also apply to footer */}
                 <div className='marginsPrimary autoLayoutDownAlignTop gapFullPage'>
@@ -178,7 +178,7 @@ export default function SnapPea() {
                             </div>
                         </div>
                         <img src={snappeaProblem} alt="Problem" className='image'/>
-                        <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>
@@ -210,7 +210,7 @@ export default function SnapPea() {
                             </div>
                         </div>
                         <img src={snappeaSuccess1} alt="Defining success" className='image'/>
-                        <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>
@@ -332,7 +332,7 @@ export default function SnapPea() {
                             </div>
                         </div>
                         <img src={snappeaFlow1} alt="User flow 1" className='image'/>
-                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>
@@ -344,7 +344,7 @@ export default function SnapPea() {
                             </div>
                         </div>
                         <img src={snappeaFlow2} alt="User flow 2" className='image'/>
-                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>
@@ -419,7 +419,7 @@ export default function SnapPea() {
                             </div>
                         </div>
                         <img src={snappeaStory1} alt="Finding the story 1" className='image'/>
-                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>
@@ -430,7 +430,7 @@ export default function SnapPea() {
                             </div>
                         </div>
                         <img src={snappeaStory2} alt="Finding the story 2" className='image'/>
-                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>
@@ -441,7 +441,7 @@ export default function SnapPea() {
                             </div>
                         </div>
                         <img src={snappeaStory3} alt="Finding the story 3" className='image'/>
-                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>
@@ -453,7 +453,7 @@ export default function SnapPea() {
                             </div>
                         </div>
                         <img src={snappeaStory4} alt="Finding the story 4" className='image'/>
-                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>
@@ -487,7 +487,7 @@ export default function SnapPea() {
                             </div>
                         </div>
                         <img src={snappeaDualFlows1} alt="Supporting Dual Flows 1" className='image'/>
-                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>
@@ -499,7 +499,7 @@ export default function SnapPea() {
                             </div>
                         </div>
                         <img src={snappeaDualFlows2} alt="Supporting dual flows 2" className='image'/>
-                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>
@@ -511,7 +511,7 @@ export default function SnapPea() {
                             </div>
                         </div>
                         <img src={snappeaDualFlows3} alt="Supporting dual flows 3" className='image'/>
-                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>
@@ -524,7 +524,7 @@ export default function SnapPea() {
                             </div>
                         </div>
                         <img src={snappeaDualFlows4} alt="Supporting dual flows 4" className='image'/>
-                        <div className='autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='autoLayoutRightAlignLeftTop gapImageText projectTextImageMarginsText'>
                             <div className='projectTextHeader20'>
                                 <h5></h5>
                             </div>

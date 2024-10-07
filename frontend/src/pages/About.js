@@ -4,6 +4,8 @@ import Tag from "../components/Tag";
 
 import '../styles/Home.css';
 
+import React, { useEffect } from 'react';
+
 import aboutHero from '../assets/about/hero.png';
 import aboutHearts from '../assets/about/hearts.png';
 import aboutEating from '../assets/about/eating.png';
@@ -19,7 +21,20 @@ import { HiSparkles } from "react-icons/hi2";
 import { VscSparkleFilled } from "react-icons/vsc";
 import { IoSparklesSharp } from "react-icons/io5";
 
+// Fade in
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+
 export default function About() {
+    // Fade in
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,  // Animation duration in milliseconds
+          once: false,     // Whether animation should happen only once or every time you scroll
+          mirror: false,   // Whether elements animate out while scrolling past them
+        });
+    }, []);
+
     return(
         <>
             <Header defaultActiveTab={'About'} />
@@ -28,7 +43,7 @@ export default function About() {
             <div className='autoLayoutDownAlignTop gapFullPage'>
 
                 {/* Main section container auto layout center */}
-                <div className='autoLayoutRightAlignCenter' style={{maxWidth: '70%', marginLeft: 'auto', marginRight: 'auto', marginTop: '4.5rem',}}>
+                <div className='autoLayoutRightAlignCenter' style={{maxWidth: '70%', marginLeft: 'auto', marginRight: 'auto', marginTop: '4.5rem',}} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-once="true">
 
                     {/* Main section content autolayout left */}
                     <div className='autoLayoutRightAlignCenter gapImageText'>
@@ -85,7 +100,7 @@ export default function About() {
                 </div>
                 
                 {/* Large flowing text autolayout down */}
-                <div className='autoLayoutDownAlignTop gaph3h3' id='play'>
+                <div className='autoLayoutDownAlignTop gaph3h3' id='play' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-once="true">
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
                         <h3>Beyond design, you’ll find me</h3>
                         <div class="hover-container">

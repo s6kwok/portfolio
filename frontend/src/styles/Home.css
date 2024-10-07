@@ -2,8 +2,9 @@
 
 /* Projects list */
 .projectsList {
-    gap: 9rem;
+    gap: 14rem;
     padding-bottom: 2rem;
+    padding-top: 4rem;
 }
 
 .projectsListItem {
@@ -40,7 +41,7 @@
 
 .name {
     top: 10px;
-    left: 195px;
+    left: 180px;
 }
 
 .eating {
@@ -89,3 +90,20 @@
     background: linear-gradient(335deg, var(--PRIMARY-BLUE-500-OPAQUE) 20%, rgba(0, 71, 255, 0) 49.4%);
 }
 
+.logo-hover-container {
+    position: relative;
+}
+
+.logo-hover-content {
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Fully transparent */
+    transform: scale(0.5); /* Shrink to half its size initially */
+    transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+    color: var(--PRIMARY-BLUE-500);
+}
+
+.logo-hover-container:hover .logo-hover-content {
+    visibility: visible; /* Show element on hover */
+    opacity: 1; /* Fully opaque */
+    transform: scale(1.36); /* Grow to its original size */
+}

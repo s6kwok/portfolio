@@ -25,7 +25,7 @@ export default function Questrade() {
             <Header defaultActiveTab={'Null'} />
 
             {/* Whole page auto layout down */}
-            <div className='autoLayoutDownAlignTop gapFullPage'>
+            <div className='autoLayoutDownAlignTop gapFullPage fade-content-projects'>
                 
                 {/* Can't apply class 'autoLayoutDownAlignTop marginsPrimary' to top div because marginsPrimary would also apply to footer */}
                 <div className='marginsPrimary autoLayoutDownAlignTop gapFullPage'>

@@ -6,7 +6,8 @@
     --GREY-100: #E7E7E9;
     --WHITE: #FDFEFF;
 
-    --PRIMARY-BLUE-500: #0047FF;
+    /* --PRIMARY-BLUE-500: #2459C4; */
+    --PRIMARY-BLUE-500: #2459C4;
     --PRIMARY-BLUE-500-OPAQUE: #0048ff0d;
     --PRIMARY-BLUE-300: #D1DEFF;
     --PRIMARY-BLUE-200: #EBEEFF;
@@ -52,7 +53,7 @@ html {
 }
 
 body {
-    /* background: #FBF8F4; */
+    /* background: #FCF9F9; */
     background: var(--WHITE);
     color: var(--BLACK);
 }
@@ -194,4 +195,18 @@ li {
     border-radius: 1.5rem;
     /* background-color: var(--PRIMARY-BLUE-200);
     border: 3px solid var(--PRIMARY-BLUE-300); */
+}
+
+/* Fade in animation */
+.fade-content-projects {
+    animation: fade-in 1.35s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
 }

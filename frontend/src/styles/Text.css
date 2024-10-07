@@ -6,7 +6,7 @@
 }
 
 .nav-inactive {
-    font-size: 0.96rem;
+    font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.5rem;
     text-decoration: none;
@@ -15,21 +15,29 @@
     cursor: url('../assets/cursor-eyes.svg'), auto;
 }
 
-.nav-active, .nav-inactive:hover {
+.nav-active:hover, .nav-inactive:hover {
     color: var(--PRIMARY-BLUE-500);
-    font-size: 0.96rem;
+}
+
+.nav-active, .nav-inactive:hover {
+    /* color: var(--PRIMARY-BLUE-500); */
+    font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.5rem;
-    text-decoration: underline;
+    /* text-decoration: var(--PRIMARY-BLUE-500) line-through; */
+    text-decoration: var(--PRIMARY-BLUE-500) wavy underline;
+    text-underline-offset: 4.5px;
+    text-decoration-thickness: 2px;
+    /* text-decoration: underline; */
     /* cursor: pointer; */
     cursor: url('../assets/cursor-eyes.svg'), auto;
     /* opacity: 100%; */
 } 
 
 h1 {
-    font-size: 2.725rem;
+    font-size: 2.6rem;
     font-weight: 500;
-    line-height: 3.65rem;
+    line-height: 3.55rem;
     letter-spacing: -0.03rem;
 }
 
@@ -41,23 +49,23 @@ h2 {
 }
 
 h3 {
-    font-size: 2.25rem;
+    font-size: 2.125rem;
     font-weight: 500;
-    line-height: 3.2rem;
+    line-height: 3rem;
     letter-spacing: -0.04rem;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 1.85rem;
     font-weight: 500;
     line-height: 2.875rem;
     letter-spacing: -0.045rem;
 }
 
 h5 {
-    font-size: 2.15rem;
+    font-size: 2.05rem;
     font-weight: 500;
-    line-height: 3.125rem;
+    line-height: 2.95rem;
     letter-spacing: -0.02rem;
 }
 
@@ -67,6 +75,7 @@ h6 {
     line-height: 2.5rem;
     letter-spacing: -0.015rem;
 }
+
 
 /* b1 */
 p {
@@ -101,10 +110,11 @@ a:hover {
     text-decoration: none;
     color: inherit;
     /* cursor: pointer; */
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 500;
     line-height: 1.85rem;
     cursor: url('../assets/cursor-eyes.svg'), auto;
+    letter-spacing: -0.015rem;
 }
 
 .b2 {
@@ -127,28 +137,28 @@ a:hover {
 
 /* Tag font */
 .tag-mini {
-    font-size: 1.95rem;
+    font-size: 1.7rem;
     font-weight: 500;
-    line-height: 3.125rem;
-    letter-spacing: -0.02rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.015rem;
 }
 
 .tag-small {
-    font-size: 2rem;
+    font-size: 1.85rem;
     font-weight: 500;
     line-height: 2.875rem;
     letter-spacing: -0.045rem;
 }
 
 .tag-medium {
-    font-size: 2.12rem;
+    font-size: 1.75rem;
     font-weight: 500;
     line-height: 3.2rem;
     letter-spacing: -0.035rem;
 }
 
 .tag-large {
-    font-size: 2.375rem;
+    font-size: 2.3rem;
     font-weight: 500;
     line-height: 3.625rem;
     letter-spacing: -0.05rem;
