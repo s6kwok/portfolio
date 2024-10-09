@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-import FadeIn from 'react-fade-in';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
