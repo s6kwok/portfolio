@@ -33,11 +33,10 @@ const tagColorThemes = {
     },
 };
 
-export default function Tag({ theme, size, icon: Icon, text, style }) {
+export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
   // Get colors based on the selected theme
   // Default to blue if theme not recognized
   const { outlineColor, iconColor, backgroundColor } = (tagColorThemes[theme] || tagColorThemes.primaryBlue);
-
   const tagStyles = {
     large: {
         display: 'flex',
@@ -127,7 +126,7 @@ export default function Tag({ theme, size, icon: Icon, text, style }) {
 
   return (
     // Return styled tag based on input params of size, color theme, icon, input text
-    <div style={combinedStyles}>
+    <div style={combinedStyles} onClick={onClick}>
       {RenderIcon && <Icon style={{ color: iconColor, fontSize: iconSize }} />}
       <TagText />
     </div>
