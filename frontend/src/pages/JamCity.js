@@ -61,7 +61,7 @@ export default function JamCity() {
                                 {/* <img src={questradeHeader} alt="Thumbnail" className='image'/> */}
                             </div>
                             <div className='projectHeaderImage2ColRight'>
-                                <video autoPlay loop muted playsInline className='video' style={{borderRadius: '2.75rem'}}>
+                                <video autoPlay loop muted playsInline className='video' style={{borderRadius: '1rem'}}>
                                     <source src={JamcityThumbnailVideo} type="video/mp4" />
                                 </video>
                             </div>
@@ -159,7 +159,7 @@ export default function JamCity() {
                                 <p>My stakeholders (such as game designers and product managers) were amazing. Collaborating with them, I uncovered the <strong>knowledge of the game economy and the game logic</strong> I would need for the design!</p>
                                 <p>Key design requirements included:</p>
                             </div>
-                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={1} colorTheme={theme} />
                                 </div>
@@ -172,7 +172,7 @@ export default function JamCity() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={2} colorTheme={theme} />
                                 </div>
@@ -185,7 +185,7 @@ export default function JamCity() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={3} colorTheme={theme} />
                                 </div>
@@ -234,7 +234,7 @@ export default function JamCity() {
                     {/* Research */}
                     <div className='autoLayoutDownAlignTop projectTextOnlyMargins gaph2b1'>
                         <p className='b1-medium'>Research</p>
-                        <div className='autoLayoutRightAlignLeftCenter gapImageText'>
+                        <div className='autoLayoutRightAlignLeftCenter gapImageText responsiveAutoLayoutDownLeft'>
                             <div>
                                 <h5>What are common reward system design patterns within <span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >this</span> game, and across <span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >other</span> games?</h5>
                             </div>
@@ -272,7 +272,7 @@ export default function JamCity() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <p>Industry design patterns were also important to look into, because I didn’t want to re-invent the wheel with this feature! I looked into:</p>
-                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                     <div className='projectListNumberCircle'>
                                         <CircleNumber number={1} colorTheme={theme} />
                                     </div>
@@ -285,7 +285,7 @@ export default function JamCity() {
                                         </p>
                                     </div>
                                 </div>
-                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                     <div className='projectListNumberCircle'>
                                         <CircleNumber number={2} colorTheme={theme} />
                                     </div>
@@ -438,8 +438,8 @@ export default function JamCity() {
                     {/* Final design */}
                     <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageHeader projectCenter'>
                         <h5>Final design</h5>
-                        <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme], minHeight: '64vh'}}>
-                            <video autoPlay loop muted playsInline  className='video' style={{padding: '0rem 1rem', borderRadius: '4%'}}>
+                        <div className='autoLayoutDownAlignCenter imageMount' style={{...projectPrimaryContainer[theme]}}>
+                            <video autoPlay loop muted playsInline  className='video'>
                                 <source src={jamcityFinal} type="video/mp4" />
                             </video>
                         </div>
@@ -477,7 +477,7 @@ export default function JamCity() {
                             <h5>Learnings</h5>
                         </div>
                         <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
-                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={1} colorTheme={theme} />
                                 </div>
@@ -490,7 +490,7 @@ export default function JamCity() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={2} colorTheme={theme} />
                                 </div>
@@ -503,7 +503,7 @@ export default function JamCity() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={3} colorTheme={theme} />
                                 </div>

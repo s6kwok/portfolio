@@ -43,21 +43,21 @@ export default function About() {
             <div className='autoLayoutDownAlignTop gapFullPage'>
 
                 {/* Main section container auto layout center */}
-                <div className='autoLayoutRightAlignCenter' style={{maxWidth: '70%', marginLeft: 'auto', marginRight: 'auto', marginTop: '4.5rem',}} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-once="true">
+                <div className='autoLayoutRightAlignCenter aboutTop' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-once="true">
 
                     {/* Main section content autolayout left */}
-                    <div className='autoLayoutRightAlignCenter gapImageText'>
+                    <div className='autoLayoutRightAlignCenter gapImageText aboutTopContainer'>
 
                         {/* Left section with photo */}
                         {/* Center purple div within a transparent div */}
                         <div>
-                            <div className='imageMount' style={{backgroundColor: 'var(--PRIMARY-BLUE-200)', border: '3px solid var(--PRIMARY-BLUE-300)',}}>
+                            <div className='imageMount aboutHeroImage' style={{backgroundColor: 'var(--PRIMARY-BLUE-200)', border: '3px solid var(--PRIMARY-BLUE-300)',}}>
                                 <img src={aboutHero} alt="This is me!" className='image'/>
                             </div>
                         </div>
 
                         {/* Right section autolayout content down */}
-                        <div className='autoLayoutDownAlignCenter gaph3b1' style={{maxWidth: '52%', marginLeft: 'auto', marginRight: 'auto',}}>
+                        <div className='autoLayoutDownAlignCenter gaph3b1 about-top-right'>
 
                             {/* Header and inline tag autolayout left */}
                             <div className='autoLayoutRightAlignLeftCenter gapSmallTagInlineText'>
@@ -92,16 +92,16 @@ export default function About() {
                 </div>
 
                 {/* Sparkles divider autolayout right */}
-                <div className='autoLayoutRightAlignCenter gapb1b1MultiParagraph'>
+                <div className='autoLayoutRightAlignCenter gapb1b1MultiParagraph responsiveAutoLayoutRightCenter'>
                     {/* <HiSparkles style={{ width: '1rem', height: '1rem' }} /> */}
                     <HiSparkles style={{ fontSize: '20px' }} />
-                    <VscSparkleFilled style={{ fontSize: '20px' }} />
                     <IoSparklesSharp style={{ fontSize: '20px' }} />
+                    <HiSparkles style={{ fontSize: '20px' }} />
                 </div>
                 
                 {/* Large flowing text autolayout down */}
                 <div className='autoLayoutDownAlignTop gaph3h3' id='play' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-once="true">
-                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
+                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <h3>Beyond design, you’ll find me</h3>
                         <div class="hover-container">
                             <div class="hover-container-tag">
@@ -112,10 +112,10 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
+                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <h3>good food, playing volleyball, unlearning,</h3>
                     </div>
-                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
+                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <div class="hover-container">
                             <div class="hover-container-tag">
                                 <Tag theme="blue" size="small" icon={RiMusic2Fill} text="creating" />
@@ -126,10 +126,10 @@ export default function About() {
                         </div>
                         <h3>vibe-y Spotify playlists,</h3>
                     </div>
-                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
+                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <h3>doom-scrolling, cooking Samyang fire noodles,</h3>
                     </div>
-                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
+                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <h3>gaming, going on</h3>
                         <div class="hover-container">
                             <div class="hover-container-tag">
@@ -141,10 +141,10 @@ export default function About() {
                         </div>
                         <h3>with friends,</h3>
                     </div>
-                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
+                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <h3>napping, sending my entire Tik Tok feed to</h3>
                     </div>
-                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
+                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <h3>people, building puzzles,</h3>
                         <div class="hover-container">
                             <div class="hover-container-tag">
@@ -155,13 +155,13 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
+                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <h3>with things I probably shouldn’t, building DIY</h3>
                     </div>
-                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
+                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <h3>models, playing piano, dancing in the kitchen,</h3>
                     </div>
-                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText'>
+                    <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <div class="hover-container">
                             <div class="hover-container-tag">
                                 <Tag theme="green" size="small" icon={RiEmotionHappyLine} text="laughing" />
@@ -175,7 +175,7 @@ export default function About() {
                 </div>
 
                 {/* Footnote */}
-                <div className='autoLayoutRightAlignCenter' style={{gap: '0.5rem',}} >
+                <div className='autoLayoutRightAlignCenter responsiveAutoLayoutRightCenter' style={{gap: '0.5rem',}} >
                     <p>P.S. Thanks for stopping by</p>
                     <FaHeart />
                 </div>

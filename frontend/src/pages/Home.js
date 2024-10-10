@@ -115,9 +115,9 @@ export default function Home() {
                         >
 
                             {/* Left section with photo */}
-                            <div className='cursor-eyes'>
+                            <div className='cursor-eyes projectsListItemLeft'>
                                 {/* Image */}
-                                <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursor-eyes' style={{...projectPrimaryContainer['blue'],}}>
+                                <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursor-eyes video-projects-list-mount' style={{...projectPrimaryContainer['blue'],}}>
                                     {/* <img src={SnapPeaThumbnail} alt="SnapPea Thumbnail" className='image cursor-eyes'/> */}
                                     <video autoPlay loop muted playsInline  className='video-projects-list cursor-eyes'>
                                         <source src={SnappeaThumbnailVideo} type="video/mp4" />
@@ -126,7 +126,7 @@ export default function Home() {
                             </div>
 
                             {/* Right section */}
-                            <div className='autoLayoutDownAlignCenter gaph3b1 cursor-eyes' style={{width: '70%', marginLeft: 'auto', marginRight: 'auto',}}>
+                            <div className='autoLayoutDownAlignCenter gaph3b1 cursor-eyes projectsListItemRight'>
 
                                 {/* Header and inline tag */}
                                 <div className='cursor-eyes'>
@@ -155,9 +155,9 @@ export default function Home() {
                         >
 
                             {/* Left section with photo */}
-                            <div className='cursor-eyes'>
+                            <div className='cursor-eyes projectsListItemLeft'>
                                 {/* Image */}
-                                <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursor-eyes' style={{...projectPrimaryContainer['pink'],}}>
+                                <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursor-eyes video-projects-list-mount' style={{...projectPrimaryContainer['pink'],}}>
                                     {/* <img src={JamCityThumbnail} alt="JamCity Thumbnail" className='image'/> */}
                                     <video autoPlay loop muted playsInline  className='video-projects-list cursor-eyes'>
                                         <source src={JamcityThumbnailVideo} type="video/mp4" />
@@ -166,7 +166,7 @@ export default function Home() {
                             </div>
 
                             {/* Right section */}
-                            <div className='autoLayoutDownAlignCenter gaph3b1 cursor-eyes' style={{width: '70%', marginLeft: 'auto', marginRight: 'auto',}}>
+                            <div className='autoLayoutDownAlignCenter gaph3b1 cursor-eyes projectsListItemRight' >
 
                                 {/* Header and inline tag */}
                                 <div className='cursor-eyes'>
@@ -195,9 +195,9 @@ export default function Home() {
                         >
 
                             {/* Left section with photo */}
-                            <div className='cursor-eyes'>
+                            <div className='cursor-eyes projectsListItemLeft'>
                                 {/* Image */}
-                                <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursor-eyes' style={{...projectPrimaryContainer['green'],}}>
+                                <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursor-eyes video-projects-list-mount' style={{...projectPrimaryContainer['green'],}}>
                                     {/* <img src={QuestradeThumbnail} alt="Questrade Thumbnail" className='image'/> */}
                                     <video autoPlay loop muted playsInline  className='video-projects-list cursor-eyes'>
                                         <source src={QuestradeThumbnailVideo} type="video/mp4" />
@@ -206,7 +206,7 @@ export default function Home() {
                             </div>
 
                             {/* Right section */}
-                            <div className='autoLayoutDownAlignCenter gaph3b1 cursor-eyes' style={{width: '70%', marginLeft: 'auto', marginRight: 'auto',}}>
+                            <div className='autoLayoutDownAlignCenter gaph3b1 cursor-eyes projectsListItemRight' >
 
                                 {/* Header and inline tag */}
                                 <div className='cursor-eyes'>
@@ -235,9 +235,9 @@ export default function Home() {
                         >
 
                             {/* Left section with photo */}
-                            <div className='cursor-eyes'>
+                            <div className='cursor-eyes projectsListItemLeft'>
                                 {/* Image */}
-                                <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursor-eyes' style={{...projectPrimaryContainer['blue'],}}>
+                                <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursor-eyes video-projects-list-mount' style={{...projectPrimaryContainer['blue'],}}>
                                     {/* <img src={BlueprintThumbnail} alt="Blueprint Thumbnail" className='image'/> */}
                                     <video autoPlay loop muted playsInline  className='video-projects-list cursor-eyes'>
                                         <source src={BlueprintThumbnailVideo} type="video/mp4" />
@@ -246,7 +246,7 @@ export default function Home() {
                             </div>
 
                             {/* Right section */}
-                            <div className='autoLayoutDownAlignCenter gaph3b1 cursor-eyes' style={{width: '70%', marginLeft: 'auto', marginRight: 'auto',}}>
+                            <div className='autoLayoutDownAlignCenter gaph3b1 cursor-eyes projectsListItemRight'>
 
                                 {/* Header and inline tag */}
                                 <div className='cursor-eyes'>

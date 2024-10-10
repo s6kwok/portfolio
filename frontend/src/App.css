@@ -70,6 +70,25 @@ li {
     padding-right: 1.25rem;
 }
 
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .marginsPrimary {
+      margin-left: 4rem; /* Adjust the margin for smaller screens */
+      padding-left: 1rem; /* Adjust the padding */
+      margin-right: 4rem;
+      padding-right: 1rem;
+    }
+}
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .marginsPrimary {
+        margin-left: 2rem; /* Smaller margins for mobile */
+        padding-left: 0.5rem; /* Adjust padding for mobile */
+        margin-right: 2rem;
+        padding-right: 0.5rem;
+    }
+}
+
 /* Right autolayout align center */
 .autoLayoutRightAlignCenter {
     display: flex;
@@ -102,6 +121,103 @@ li {
     /* gap: 1rem; */
 }
 
+/* Medium screens (tablets) */
+@media (max-width: 1236px) {
+    .footer-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.35rem !important;
+    }
+
+    .footer-links {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-footnote {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* responsiveAutoLayoutDownCenter */
+    .autoLayoutRightAlignCenter, 
+    .autoLayoutRightAlignLeftCenter, 
+    .autoLayoutRightSplit {
+        flex-direction: wrap;
+        align-items: center;
+        /* align-items: flex-start; */
+    }
+
+    .autoLayoutRightAlignLeftTop {
+        flex-direction: wrap;
+        align-items: flex-start;
+    }
+
+    .responsiveAutoLayoutRightCenter {
+        align-items: center;
+        flex-direction: row;
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    .responsiveAutoLayoutRightTop {
+        align-items: flex-start !important;
+        flex-direction: row;
+    }
+
+    .responsiveAutoLayoutDownLeft {
+        align-items: flex-start !important;
+    }
+
+    .logo {
+        margin-left: 14px;
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .autoLayoutRightAlignCenter, 
+    .autoLayoutRightAlignLeftCenter, 
+    .autoLayoutRightSplit {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .autoLayoutRightAlignLeftTop {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .responsiveAutoLayoutRightCenter {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .responsiveAutoLayoutRightTop {
+        align-items: flex-start !important;
+        flex-direction: row;
+    }
+
+    .responsiveAutoLayoutDownLeft {
+        align-items: flex-start !important;
+    }
+
+    .logo {
+        margin-left: 14px;
+    }
+
+    .footer-header {
+        gap: 0.75rem !important;
+    }
+}
+
 /* Down autolayout align top */
 .autoLayoutDownAlignTop {
     display: flex;
@@ -120,6 +236,19 @@ li {
 
 .gapFullPage {
     gap: 8rem;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .gapFullPage {
+        gap: 8rem;
+    }
+}
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .gapFullPage {
+        gap: 6rem;
+    }
 }
 
 .gaph3b2, .gaph2b1 {
@@ -166,6 +295,19 @@ li {
     gap: 4.5rem;
 }
 
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .gapImageText {
+        gap: 4.5rem;
+    }
+}
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .gapImageText {
+        gap: 2rem;
+    }
+}
+
 .gapImageImage {
     gap: 4rem;
 }
@@ -179,15 +321,26 @@ li {
 .video {
     width: 96%;
     max-height: 100%;
-    border-radius: 2.25rem;
+    border-radius: 1.25rem;
     align-self: center;
-    padding: 1.5rem 1rem;
+    padding: 0rem 0rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
 }
-
-.video-projects-list {
-    width: 720px;
-    max-height: 100%;
-    border-radius: 1rem;
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .video {
+        width: 96%;
+        padding: 0rem 0rem;
+    }
+}
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .video {
+        width: 100%;
+        padding: 0rem 0rem !important;
+        border-radius: 0.5rem !important;
+    }
 }
 
 .imageMount{

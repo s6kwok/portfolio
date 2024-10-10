@@ -78,7 +78,7 @@ h6 {
 
 
 /* b1 */
-p {
+p, li {
     font-size: 1.025rem;
     font-weight: 400;
     line-height: 1.8rem;

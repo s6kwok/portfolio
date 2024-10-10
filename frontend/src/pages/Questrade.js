@@ -48,7 +48,7 @@ export default function Questrade() {
                                 {/* <img src={questradeHeader} alt="Thumbnail" className='image'/> */}
                             </div>
                             <div className='projectHeaderImage2ColRight'>
-                                <video autoPlay loop muted playsInline className='video' style={{borderRadius: '2.75rem'}}>
+                                <video autoPlay loop muted playsInline className='video' style={{borderRadius: '1rem'}}>
                                     <source src={QuestradeThumbnailVideo} type="video/mp4" />
                                 </video>
                             </div>
@@ -89,12 +89,12 @@ export default function Questrade() {
                         <div className='projectTextHeader20'>
                             <h5>Impact</h5>
                         </div>
-                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                        <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80 responsiveAutoLayoutDownLeft'>
                             <div className='autoLayoutDownAlignTop gaph6b1'>
                                 <h6>This project is currently <strong>launched</strong> and live!</h6>
                                 <p>But what impact did the feature have?</p>
                             </div>
-                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={1} colorTheme={theme} />
                                 </div>
@@ -107,7 +107,7 @@ export default function Questrade() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={2} colorTheme={theme} />
                                 </div>
@@ -120,7 +120,7 @@ export default function Questrade() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='autoLayoutRightAlignLeftCenter gapProjectListNumberItem'>
+                            <div className='autoLayoutRightAlignLeftCenter gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={3} colorTheme={theme} />
                                 </div>

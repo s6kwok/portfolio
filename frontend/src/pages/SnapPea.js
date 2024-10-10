@@ -81,7 +81,7 @@ export default function SnapPea() {
                     </div>
 
                     {/* Context */}
-                    <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
+                    <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText context'>
 
                         {/* Left context */}
                         <div className='autoLayoutDownAlignTop projectContextLeft gaph2b1' >
@@ -113,12 +113,12 @@ export default function SnapPea() {
                             <div className='projectTextHeader20'>
                                 <h5>Impact</h5>
                             </div>
-                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
+                            <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80 responsiveAutoLayoutDownLeft'>
                                 <div className='autoLayoutDownAlignTop gaph6b1'>
                                     <h6>The designs are currently <strong>launched</strong> and live!</h6>
                                     <p>But what impact did the feature have?</p>
                                 </div>
-                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                     <div className='projectListNumberCircle'>
                                         <CircleNumber number={1} colorTheme={theme} />
                                     </div>
@@ -131,7 +131,7 @@ export default function SnapPea() {
                                         </p>
                                     </div>
                                 </div>
-                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                     <div className='projectListNumberCircle'>
                                         <CircleNumber number={2} colorTheme={theme} />
                                     </div>
@@ -144,7 +144,7 @@ export default function SnapPea() {
                                         </p>
                                     </div>
                                 </div>
-                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                     <div className='projectListNumberCircle'>
                                         <CircleNumber number={3} colorTheme={theme} />
                                     </div>
@@ -246,7 +246,7 @@ export default function SnapPea() {
                     {/* Research */}
                     <div className='autoLayoutDownAlignTop projectTextOnlyMargins gaph2b1'>
                         <p className='b1-medium'>Research</p>
-                        <div className='autoLayoutRightAlignLeftCenter gapImageText'>
+                        <div className='autoLayoutRightAlignLeftCenter gapImageText responsiveAutoLayoutDownLeft'>
                             <div>
                                 <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Why</span> were 66.9% of users abandoning the platform so quickly?</h5>
                             </div>
@@ -269,7 +269,7 @@ export default function SnapPea() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <p>The customer experience team was also super helpful to speak to! They provided user knowledge, insights into user support, support requests, and a <strong>sample of 46 user-reported issues</strong>. This led to the following insights:</p>
-                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                     <div className='projectListNumberCircle'>
                                         <CircleNumber number={1} colorTheme={theme} />
                                     </div>
@@ -282,7 +282,7 @@ export default function SnapPea() {
                                         </p>
                                     </div>
                                 </div>
-                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                     <div className='projectListNumberCircle'>
                                         <CircleNumber number={2} colorTheme={theme}/>
                                     </div>
@@ -295,7 +295,7 @@ export default function SnapPea() {
                                         </p>
                                     </div>
                                 </div>
-                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                                <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                     <div className='projectListNumberCircle'>
                                         <CircleNumber number={3} colorTheme={theme} />
                                     </div>
@@ -544,19 +544,19 @@ export default function SnapPea() {
                     <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageImage projectCenter'>
                         <div className='autoLayoutDownAlignTop gapImageHeader'>
                             <h5>Final design</h5>
-                            <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
+                            <div className='autoLayoutDownAlignCenter imageMount' style={{...projectPrimaryContainer[theme],}}>
                             {/* <video width="100%" height="auto" autoPlay controls loop muted playsInline>
                                 <source src={blueprintFinal1} type="video/mp4" />
                             </video> */}
-                                <p style={{marginTop: '0.75rem'}}><strong>Flow #1: Browsing data products first</strong></p>
-                                <video autoPlay loop muted playsInline  className='video' style={{borderRadius: '2.75rem'}}>
+                                <p style={{marginBottom: '1.5rem', marginTop: '0.25rem'}}><strong>Flow #1: Browsing data products first</strong></p>
+                                <video autoPlay loop muted playsInline  className='video'>
                                     <source src={snappeaFinal1} type="video/mp4" />
                                 </video>
                             </div>
                         </div>
-                        <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
-                            <p style={{marginTop: '0.75rem'}}><strong>Flow #2: Adding a site first</strong></p>
-                            <video autoPlay loop muted playsInline  className='video' style={{borderRadius: '2.75rem'}}>
+                        <div className='autoLayoutDownAlignCenter imageMount' style={{...projectPrimaryContainer[theme],}}>
+                            <p style={{marginBottom: '1.5rem', marginTop: '0.25rem'}}><strong>Flow #2: Adding a site first</strong></p>
+                            <video autoPlay loop muted playsInline  className='video'>
                                 <source src={snappeaFinal2} type="video/mp4" />
                             </video>
                         </div>
@@ -582,7 +582,7 @@ export default function SnapPea() {
                         <h5>Highlights: Internship fun</h5>
                         {/* <img src={snappeaFun} alt="Internship fun!" className='image'/> */}
                         <div className='autoLayoutRightAlignCenter imageMount projectHeaderImage gapImageText' style={{...projectPrimaryContainer['primaryBlue'], paddingTop: '3rem', paddingBottom: '3rem'}}>
-                            <p style={{width: '25%'}}><strong>Finally finishing our office puzzle together!</strong></p>
+                            <p className='fun-2-col-text'><strong>Finally finishing our office puzzle together!</strong></p>
                             <div style={{maxHeight: '625px'}}>
                                 <video autoPlay loop muted playsInline style={{borderRadius: '1.25rem', maxHeight: '625px'}}>
                                     <source src={snappeaFun} type="video/mp4" />
@@ -597,7 +597,7 @@ export default function SnapPea() {
                             <h5>Learnings</h5>
                         </div>
                         <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
-                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={1} colorTheme={theme} />
                                 </div>
@@ -610,7 +610,7 @@ export default function SnapPea() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={2} colorTheme={theme}/>
                                 </div>
@@ -623,7 +623,7 @@ export default function SnapPea() {
                                     </p>
                                 </div>
                             </div>
-                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem'>
+                            <div className='autoLayoutRightAlignLeftTop gapProjectListNumberItem responsiveAutoLayoutRightTop'>
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={3} colorTheme={theme} />
                                 </div>

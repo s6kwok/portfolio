@@ -12,6 +12,27 @@
     min-height: 70vh;
     width: 100%;
 }
+/* Large screens (laptops) */
+@media (max-width: 1440px) {
+    .projectHeaderImage {
+        min-height: 40vh !important;
+        width: 100%;
+    }
+}
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .projectHeaderImage {
+        min-height: 40vh !important;
+        width: 100%;
+    }
+}
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .projectHeaderImage {
+        min-height: 35vh !important;
+        width: 100%;
+    }
+}
 
 .projectHeaderImage2Col {
     gap: 4rem;
@@ -25,11 +46,62 @@
 .projectHeaderImage2ColRight {
     max-width: 70%;
 }
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .projectHeaderImage2Col {
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    .projectHeaderImage2ColLeft {
+        max-width: 45%;
+    }
+    
+    .projectHeaderImage2ColRight {
+        max-width: 80%;
+    }
+}
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .projectHeaderImage2Col {
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    .projectHeaderImage2ColLeft {
+        max-width: 45%;
+    }
+    
+    .projectHeaderImage2ColRight {
+        max-width: 100%;
+    }
+}
 
 /* Text margins */
 .projectTextOnlyMargins {
     margin-left: 14rem;
     margin-right: 14rem;
+}
+/* Large screens (laptops) */
+@media (max-width: 1440px) {
+    .projectTextOnlyMargins {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+}
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .projectTextOnlyMargins {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .projectTextOnlyMargins {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
 }
 
 .projectTextImageMargins {
@@ -42,6 +114,43 @@
     margin-right: 2rem;
 }
 
+/* Large screens (laptops) */
+@media (max-width: 1440px) {
+    .projectTextImageMargins {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    .projectTextImageMarginsText {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .projectTextImageMargins {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .projectTextImageMarginsText {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .projectTextImageMargins {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .projectTextImageMarginsText {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
 .projectContextLeft {
     width: 78%;
     padding-right: 1.5rem;
@@ -50,6 +159,35 @@
 .projectContextRight {
     max-width: 26%;
     gap: 2.5rem;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .projectContextLeft {
+        width: 78%;
+        padding-right: 1.5rem;
+    }
+    
+    .projectContextRight {
+        max-width: 26%;
+        gap: 2.5rem;
+    }
+}
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .projectContextLeft {
+        width: 100%;
+        padding-right: 0rem;
+    }
+
+    .projectContextRight {
+        flex-direction: row;
+        max-width: 100%;
+    }
+    
+    .context {
+        align-items: flex-start;
+    }
 }
 
 .projectTextHeader20 {
@@ -61,9 +199,31 @@
     width: 78%;
 }
 
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .projectTextHeader20 {
+        width: 22%;
+    }
+
+    .projectTextText80 {
+        width: 78%;
+    }
+}
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .projectTextHeader20 {
+        width: 100%;
+    }
+
+    .projectTextText80 {
+        width: 100%;
+    }
+}
+
 .gapProjectGrouping {
     gap: 4rem;
 }
+
 
 .gapProjectGroupingImpact {
     gap: 5.75rem;
@@ -143,4 +303,19 @@
         transform: translate(-50%, 0);
     }
 }
-  
+
+.fun-2-col-text {
+    width: 25%;
+}
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .fun-2-col-text {
+        width: 25%;
+    }
+}
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .fun-2-col-text {
+        width: 100%;
+    }
+}
