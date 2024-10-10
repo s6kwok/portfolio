@@ -1,11 +1,10 @@
 import { useNavigate } from 'react-router-dom';
-import FadeIn from 'react-fade-in';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Tag from "../components/Tag";
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import '../styles/Home.css';
 import '../styles/Projects.css';
@@ -38,6 +37,21 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 
 export default function Home() {
+    const [h1Tags, setH1Tags] = useState([
+        { theme: 'primaryBlue', size: 'large', icon: RiEmotionHappyLine, text: 'people', style: {} },
+        { theme: 'orange', size: 'large', icon: BsBarChartLineFill, text: 'data', style: {} }
+      ]);
+    
+      const [containerTags, setContainerTags] = useState([
+        { theme: 'blue', size: 'medium', icon: FaLightbulb, text: 'strategy', style: { bottom:"21px", right:"538px", transform: 'rotate(-16deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'green', size: 'medium', icon: MdQuestionMark, text: 'curiosity', style: { bottom:"131px", right:"416px", transform: 'rotate(-6deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'orange', size: 'medium', icon: HiSparkles, text: 'innovation', style: { bottom:"53px", right:"300px", transform: 'rotate(-35deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'pink', size: 'medium', icon: FaHeart, text: 'empathy', style: { bottom:"0px", right:"165px", transform: 'rotate(0deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'green', size: 'medium', icon: FaBookOpen, text: 'storytelling', style: { bottom:"50px", right:"-15px", transform: 'rotate(30deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'pink', size: 'medium', icon: IoBalloonSharp, text: 'fun', style: { bottom:"203px", right:"97px", transform: 'rotate(-38deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'primary-blue', size: 'medium', icon: FaLocationArrow, text: 'usability', style: { bottom:"197px", right:"-50px", transform: 'rotate(-70deg)', position: 'absolute', zIndex: 10000 }}
+      ]);
+
     const navigate = useNavigate();
 
     // Fade in
@@ -48,6 +62,50 @@ export default function Home() {
           mirror: false,   // Whether elements animate out while scrolling past them
         });
     }, []);
+
+    const handleTagClick = (index) => {
+        const randomH1Index = Math.floor(Math.random() * h1Tags.length);
+
+        // Get the clicked container tag
+        const clickedTag = containerTags[index];
+      
+        // Get the randomly chosen h1 tag
+        const randomH1Tag = h1Tags[randomH1Index];
+      
+        // Swap text and styling
+        const updatedH1Tags = [...h1Tags];
+        const updatedContainerTags = [...containerTags];
+      
+        // Swap the text and style
+        updatedH1Tags[randomH1Index] = { ...clickedTag , text: clickedTag.text, style: {} };
+        updatedContainerTags[index] = { ...randomH1Tag, text: randomH1Tag.text, style: clickedTag.style }; // Reset style for tag container
+      
+        // Update the state with the swapped values
+        setH1Tags(updatedH1Tags);
+        setContainerTags(updatedContainerTags);
+    };
+
+    const handleTitleTagClick = (index) => {
+        const randomContainerIndex = Math.floor(Math.random() * containerTags.length);
+
+        // Get the clicked h1 tag
+        const clickedTag = h1Tags[index];
+      
+        // Get the randomly chosen container tag
+        const randomContainerTag = containerTags[randomContainerIndex];
+      
+        // Swap text and styling
+        const updatedH1Tags = [...h1Tags];
+        const updatedContainerTags = [...containerTags];
+      
+        // Swap the text and style
+        updatedContainerTags[randomContainerIndex] = { ...clickedTag , text: clickedTag.text, style: randomContainerTag.style  };
+        updatedH1Tags[index] = { ...randomContainerTag, text: randomContainerTag.text, style: {} }; // Reset style for tag container
+      
+        // Update the state with the swapped values
+        setH1Tags(updatedH1Tags);
+        setContainerTags(updatedContainerTags);
+    };
 
     return(
         <>
@@ -65,7 +123,7 @@ export default function Home() {
                     <div className='autoLayoutDownAlignCenter hero' style={{gap: '4rem', paddingBottom: '2.5rem', position: 'relative',}}  data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
 
                         {/* Hero main paragraph to be center of page */}
-                        <div className='autoLayoutRightAlignLeftCenter' style={{minHeight: '70vh', paddingBottom: '3.5rem',}}>
+                        <div className='autoLayoutRightAlignLeftCenter' style={{position: 'relative', minHeight: '70vh', paddingBottom: '3.5rem', zIndex: "0"}}>
 
                             {/* Hero container main content to change styling back to block */}
                             <div className='autoLayoutDownAlignCenter gaph1b1' style={{paddingBottom: '4rem'}}>
@@ -75,9 +133,19 @@ export default function Home() {
                                     {/* Line with tags */}
                                     <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText'>
                                         <h1>I bring</h1>
-                                        <Tag theme="primaryBlue" size="large" icon={RiEmotionHappyLine} text="people" />
-                                        <h1>and</h1>
-                                        <Tag theme="orange" size="large" icon={BsBarChartLineFill} text="data" />
+                                        {h1Tags.map((tag, index) => (
+                                            <>
+                                                <Tag
+                                                    theme={tag.theme}
+                                                    size={tag.size}
+                                                    icon={tag.icon}
+                                                    text={tag.text}
+                                                    onClick={() => handleTitleTagClick(index)}
+                                                />
+                                                {/* Add the "and" h1 tag after the first tag */}
+                                                {index === 0 && <h1>and</h1>}
+                                            </>
+                                        ))}
                                         <h1>together</h1>
                                     </div>
 
@@ -89,13 +157,17 @@ export default function Home() {
                         </div>
 
                         <div className='tags-container'>
-                                <Tag theme="blue" size="medium" icon={FaLightbulb} text="strategy" style={{ bottom:"21px", right:"538px", transform: 'rotate(-16deg)', position: 'absolute',}}/>
-                                <Tag theme="green" size="medium" icon={MdQuestionMark} text="curiosity" style={{ bottom:"131px", right:"416px", transform: 'rotate(-6deg)', position: 'absolute',}}/>
-                                <Tag theme="orange" size="medium" icon={HiSparkles} text="innovation" style={{ bottom:"53px", right:"300px", transform: 'rotate(-35deg)', position: 'absolute',}}/>
-                                <Tag theme="pink" size="medium" icon={FaHeart} text="empathy" style={{ bottom:"0px", right:"165px", transform: 'rotate(0deg)', position: 'absolute',}}/>
-                                <Tag theme="green" size="medium" icon={FaBookOpen} text="storytelling" style={{ bottom:"50px", right:"-15px", transform: 'rotate(30deg)', position: 'absolute',}}/>
-                                <Tag theme="pink" size="medium" icon={IoBalloonSharp} text="fun" style={{ bottom:"203px", right:"97px", transform: 'rotate(-38deg)', position: 'absolute',}}/>
-                                <Tag theme="primary-blue" size="medium" icon={FaLocationArrow} text="usability" style={{ bottom:"197px", right:"-50px", transform: 'rotate(-70deg)', position: 'absolute',}}/>
+                        {containerTags.map((tag, index) => (
+                            <Tag
+                                key={index}
+                                theme={tag.theme}
+                                size={tag.size}
+                                icon={tag.icon}
+                                text={tag.text}
+                                style={tag.style}
+                                onClick={() => handleTagClick(index)}
+                            />
+                        ))}
                         </div>
                         {/* Hero footnote */}
                         <p> Check out my recent work below! ↓</p>
