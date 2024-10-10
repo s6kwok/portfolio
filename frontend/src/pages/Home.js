@@ -6,16 +6,18 @@ import Tag from "../components/Tag";
 
 import React, { useEffect, useState } from 'react';
 
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
 import '../styles/Home.css';
 import '../styles/Projects.css';
 import { projectPrimaryContainer, projectPrimaryColor } from '../styles/Projects';
 
 import { routes } from "../routes/Routes";
 
-import SnapPeaThumbnail from '../assets/home/snappea-thumbnail.png';
-import JamCityThumbnail from '../assets/home/jamcity-thumbnail.png';
-import QuestradeThumbnail from '../assets/home/questrade-thumbnail.png';
-import BlueprintThumbnail from '../assets/home/blueprint-thumbnail.png';
+// import SnapPeaThumbnail from '../assets/home/snappea-thumbnail.png';
+// import JamCityThumbnail from '../assets/home/jamcity-thumbnail.png';
+// import QuestradeThumbnail from '../assets/home/questrade-thumbnail.png';
+// import BlueprintThumbnail from '../assets/home/blueprint-thumbnail.png';
 import ArrowRightBlue from '../assets/home/arrow-right-blue.svg';
 import ArrowRightPink from '../assets/home/arrow-right-pink.svg';
 import ArrowRightGreen from '../assets/home/arrow-right-green.svg';
@@ -40,9 +42,9 @@ export default function Home() {
     const [h1Tags, setH1Tags] = useState([
         { theme: 'primaryBlue', size: 'large', icon: RiEmotionHappyLine, text: 'people', style: {} },
         { theme: 'orange', size: 'large', icon: BsBarChartLineFill, text: 'data', style: {} }
-      ]);
-    
-      const [containerTags, setContainerTags] = useState([
+    ]);
+
+    const [containerTags, setContainerTags] = useState([
         { theme: 'blue', size: 'large', icon: FaLightbulb, text: 'strategy', style: { bottom:"21px", right:"538px", transform: 'rotate(-16deg)', position: 'absolute', zIndex: 10000 }},
         { theme: 'green', size: 'large', icon: MdQuestionMark, text: 'curiosity', style: { bottom:"131px", right:"416px", transform: 'rotate(-6deg)', position: 'absolute', zIndex: 10000 }},
         { theme: 'orange', size: 'large', icon: HiSparkles, text: 'innovation', style: { bottom:"53px", right:"300px", transform: 'rotate(-35deg)', position: 'absolute', zIndex: 10000 }},
@@ -50,7 +52,15 @@ export default function Home() {
         { theme: 'green', size: 'large', icon: FaBookOpen, text: 'storytelling', style: { bottom:"50px", right:"-15px", transform: 'rotate(30deg)', position: 'absolute', zIndex: 10000 }},
         { theme: 'pink', size: 'large', icon: IoBalloonSharp, text: 'fun', style: { bottom:"203px", right:"97px", transform: 'rotate(-38deg)', position: 'absolute', zIndex: 10000 }},
         { theme: 'primary-blue', size: 'large', icon: FaLocationArrow, text: 'usability', style: { bottom:"197px", right:"-50px", transform: 'rotate(-70deg)', position: 'absolute', zIndex: 10000 }}
-      ]);
+    ]);
+
+    // State to track if the tags should be visible (trigger animation)
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        // Trigger the animation on page load
+        setIsVisible(true);
+    }, []);
 
     const navigate = useNavigate();
 
@@ -120,7 +130,7 @@ export default function Home() {
                 <div className='marginsPrimary autoLayoutDownAlignTop gapFullPage'>
 
                     {/* Hero container paragraph + footnote */}
-                    <div className='autoLayoutDownAlignCenter hero' style={{gap: '4rem', paddingBottom: '2.5rem', position: 'relative',}}  data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
+                    <div className='autoLayoutDownAlignCenter hero' style={{gap: '4rem', paddingBottom: '0rem', position: 'relative',}}>
 
                         {/* Hero main paragraph to be center of page */}
                         <div className='autoLayoutRightAlignLeftCenter' style={{position: 'relative', minHeight: '70vh', paddingBottom: '3.5rem', zIndex: "0"}}>
@@ -133,9 +143,10 @@ export default function Home() {
                                     {/* Line with tags */}
                                     <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText'>
                                         <h1>I bring</h1>
-                                        <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText hover-container-tag'>
+                                        <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText'>
                                             {h1Tags.map((tag, index) => (
                                                 <>
+                                                <div className='hover-container-tag'>
                                                     <Tag
                                                         theme={tag.theme}
                                                         size={tag.size}
@@ -143,8 +154,9 @@ export default function Home() {
                                                         text={tag.text}
                                                         onClick={() => handleTitleTagClick(index)}
                                                     />
-                                                    {/* Add the "and" h1 tag after the first tag */}
-                                                    {index === 0 && <h1>and</h1>}
+                                                </div>
+                                                {/* Add the "and" h1 tag after the first tag */}
+                                                {index === 0 && <h1>and</h1>}
                                                 </>
                                             ))}
                                         </div>
@@ -161,20 +173,30 @@ export default function Home() {
                         <div className='tags-container'>
                         {containerTags.map((tag, index) => (
                             <div className='hover-container-tag'>
-                                <Tag
+                                <div
                                     key={index}
-                                    theme={tag.theme}
-                                    size={tag.size}
-                                    icon={tag.icon}
-                                    text={tag.text}
-                                    style={tag.style}
-                                    onClick={() => handleTagClick(index)}
-                                />
+                                    className={`tag`}
+                                    style={{
+                                    ...tag.style,
+                                    animation: 'fall 1.5s forwards',
+                                    animationDelay: `${index * 0.2}s`, // Stagger the animation by index
+                                    }}
+                                >
+                                    <Tag
+                                        key={index}
+                                        theme={tag.theme}
+                                        size={tag.size}
+                                        icon={tag.icon}
+                                        text={tag.text}
+                                        style={tag.style}
+                                        onClick={() => handleTagClick(index)}
+                                    />
+                                </div>
                             </div>
                         ))}
                         </div>
                         {/* Hero footnote */}
-                        <p> Check out my recent work below! ↓</p>
+                        <p style={{paddingBottom: '3rem'}}> Check out my recent work below! ↓</p>
                     </div>
 
                     {/* Projects list */}

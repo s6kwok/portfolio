@@ -127,8 +127,8 @@
     height: auto;
 }
 
-.stars {
-    top: -44px;
+.collab {
+    top: -46px;
     left: 36px;
 }
 
@@ -167,7 +167,7 @@
 }
   
 .hover-container-tag:hover {
-    opacity: 90%;
+    opacity: 80%;
 }
 
 .tags-container {
@@ -180,7 +180,7 @@
     z-index: 1; 
     height:400px;
     width: 950px;
-    background: linear-gradient(335deg, var(--PRIMARY-BLUE-500-OPAQUE) 20%, rgba(0, 71, 255, 0) 49.4%);
+    background: linear-gradient(335deg, rgb(156, 156, 156, 0.08) 20%, rgba(156, 156, 156, 0) 49.4%);
 }
 
 .logo-hover-container {
@@ -298,3 +298,24 @@
         margin-right: auto;
     }
 }
+
+@keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0;
+    }
+    /* 50% {
+      transform: translateY(40px) rotate(0deg);
+      opacity: 0.7;
+    } */
+    100% {
+      /* transform: translateY(0) rotate(0deg); */
+      opacity: 1;
+    }
+}
+
+.tag {
+    opacity: 0; /* Make tags invisible initially */
+}
+
+  

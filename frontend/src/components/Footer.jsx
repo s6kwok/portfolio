@@ -27,7 +27,7 @@ export default function Footer() {
                       <div class="hover-container-tag">
                         <Tag theme="primaryBlue" size="mini" icon={IoIosStar} text="collab" />
                       </div>
-                      <div class="popup-image stars" style={{maxWidth: '60%'}}>
+                      <div class="popup-image collab" style={{maxWidth: '60%'}}>
                           <img src={footerStars} alt="Stars" className='image' style={{borderRadius: '0rem'}}/>
                       </div>
                   </div>
@@ -40,7 +40,7 @@ export default function Footer() {
 
             {/* List of links */}
             <div className='autoLayoutRightAlignLeftCenter responsiveAutoLayoutRightCenter footer-links' style={{gap: '2.275rem',}}>
-            <a href="\">Home</a>
+            <a href="\">Portfolio</a>
               <a href="mailto:@s6kwok@uwaterloo.ca" target="_blank" rel="noopener noreferrer">Email</a>
               <a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
