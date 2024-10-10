@@ -18,7 +18,6 @@ import { FaHeart, FaUtensils, FaFlask } from "react-icons/fa";
 import { RiEmotionHappyLine, RiMusic2Fill } from "react-icons/ri";
 import { FaCar } from "react-icons/fa6";
 import { HiSparkles } from "react-icons/hi2";
-import { VscSparkleFilled } from "react-icons/vsc";
 import { IoSparklesSharp } from "react-icons/io5";
 
 // Fade in

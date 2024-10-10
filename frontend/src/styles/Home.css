@@ -47,8 +47,8 @@
     }
 }
 
-.cursor-eyes, .cursor-eyes:hover {
-    cursor: url('../assets/cursor-eyes.svg'), auto;
+.cursor-eyes, .cursor-eyes:hover, .cursor-eyes > svg, .cursor-eyes > svg > path {
+    cursor: url('../assets/cursor-eyes.svg'), auto !important;
 }
 
 .projectsListImage {
@@ -125,6 +125,11 @@
     display: none;
     width: 250px;
     height: auto;
+}
+
+.stars {
+    top: -44px;
+    left: 36px;
 }
 
 .name {

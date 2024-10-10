@@ -49,6 +49,7 @@ export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
         borderRadius: '3rem',
         border: `3px solid ${outlineColor}`,
         backgroundColor: backgroundColor,
+        cursor: `url(${CursorEyes}), auto`,
     },
     medium: {
         display: 'flex',
@@ -63,6 +64,7 @@ export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
         borderRadius: '3rem',
         border: `3px solid ${outlineColor}`,
         backgroundColor: backgroundColor,
+        cursor: `url(${CursorEyes}), auto`,
     },
     small: {
         display: 'flex',
@@ -88,6 +90,7 @@ export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
         borderRadius: '3rem',
         border: `3px solid ${outlineColor}`,
         backgroundColor: backgroundColor,
+        cursor: `url(${CursorEyes}), auto`,
     },
   }
 
@@ -105,13 +108,13 @@ export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
   // Function to render text based on textStyle prop
   const TagText = () => {
     if (size === 'mini') {
-        return <span className="tag-mini">{text}</span>;
+        return <span className="tag-mini cursor-eyes">{text}</span>;
     } else if (size === 'small') {
         return <span className="tag-small cursor-eyes">{text}</span>;
     } else if (size === 'medium') {
-        return <span className="tag-medium">{text}</span>;
+        return <span className="tag-medium cursor-eyes">{text}</span>;
     } else {
-        return <span className="tag-large">{text}</span>;
+        return <span className="tag-large cursor-eyes">{text}</span>;
     }
   };
 
@@ -126,8 +129,8 @@ export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
 
   return (
     // Return styled tag based on input params of size, color theme, icon, input text
-    <div style={combinedStyles} onClick={onClick}>
-      {RenderIcon && <Icon style={{ color: iconColor, fontSize: iconSize }} />}
+    <div className="cursor-eyes" style={combinedStyles} onClick={onClick}>
+      {RenderIcon && <Icon style={{ color: iconColor, fontSize: iconSize, cursor: `url(${CursorEyes}), auto !important`, }} />}
       <TagText />
     </div>
   );

@@ -4,6 +4,8 @@ import Tag from './Tag';
 
 import { IoIosStar } from "react-icons/io";
 
+import footerStars from '../assets/footer-stars.png';
+
 export default function Footer() {
   return (
     <footer className='marginsPrimary'>
@@ -20,7 +22,15 @@ export default function Footer() {
               <div className='autoLayoutRightAlignLeftCenter gapSmallTagInlineText'>
                 <div className='autoLayoutRightAlignLeftCenter responsiveAutoLayoutRightCenter gapSmallTagInlineText'>
                   <h4>Let's</h4>
-                  <Tag theme="primaryBlue" size="mini" icon={IoIosStar} text="collab" />
+                  {/* <Tag theme="primaryBlue" size="mini" icon={IoIosStar} text="collab" /> */}
+                  <div class="hover-container">
+                      <div class="hover-container-tag">
+                        <Tag theme="primaryBlue" size="mini" icon={IoIosStar} text="collab" />
+                      </div>
+                      <div class="popup-image stars" style={{maxWidth: '60%'}}>
+                          <img src={footerStars} alt="Stars" className='image' style={{borderRadius: '0rem'}}/>
+                      </div>
+                  </div>
                   <h4>on</h4>
                 </div>
                 <h4 style={{ whiteSpace: 'nowrap'}} >something amazing (and</h4>
