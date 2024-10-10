@@ -45,13 +45,13 @@ export default function Home() {
     ]);
 
     const [containerTags, setContainerTags] = useState([
-        { theme: 'blue', size: 'large', icon: FaLightbulb, text: 'strategy', style: { bottom:"200px", right:"8px", transform: 'rotate(-16deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'green', size: 'large', icon: MdQuestionMark, text: 'curiosity', style: { bottom:"131px", right:"416px", transform: 'rotate(-6deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'orange', size: 'large', icon: HiSparkles, text: 'innovation', style: { bottom:"200px", right:"300px", transform: 'rotate(-35deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'pink', size: 'large', icon: FaHeart, text: 'empathy', style: { bottom:"0px", right:"165px", transform: 'rotate(0deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'green', size: 'large', icon: FaBookOpen, text: 'storytelling', style: { bottom:"50px", right:"500px", transform: 'rotate(30deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'pink', size: 'large', icon: IoBalloonSharp, text: 'fun', style: { bottom:"203px", right:"97px", transform: 'rotate(-38deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'primary-blue', size: 'large', icon: FaLocationArrow, text: 'usability', style: { bottom:"197px", right:"100px", transform: 'rotate(-70deg)', position: 'absolute', zIndex: 10000 }}
+        { theme: 'blue', size: 'large', icon: FaLightbulb, text: 'strategy', style: { bottom:"50px", right:"270px", transform: 'rotate(-10deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'green', size: 'large', icon: MdQuestionMark, text: 'curiosity', style: { bottom:"54px", right:"220px", transform: 'rotate(4deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'orange', size: 'large', icon: HiSparkles, text: 'innovation', style: { bottom:"50px", right:"160px", transform: 'rotate(-12deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'pink', size: 'large', icon: FaHeart, text: 'empathy', style: { bottom:"0px", right:"80px", transform: 'rotate(0deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'green', size: 'large', icon: FaBookOpen, text: 'storytelling', style: { bottom:"10px", right:"10px", transform: 'rotate(16deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'primary-blue', size: 'large', icon: FaLocationArrow, text: 'usability', style: { bottom:"102px", right:"80px", transform: 'rotate(-8deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'pink', size: 'large', icon: IoBalloonSharp, text: 'fun', style: { bottom:"64px", right:"8px", transform: 'rotate(6deg)', position: 'absolute', zIndex: 10000 }}
     ]);
 
     // State to track if the tags should be visible (trigger animation)
@@ -138,6 +138,7 @@ export default function Home() {
                             {/* Hero container main content to change styling back to block */}
                             <div className='autoLayoutDownAlignCenter gaph1b1' style={{paddingBottom: '4rem'}}>
                                 <div className='autoLayoutDownAlignCenter gaph1h1'>
+                                {/* <div className='autoLayoutDownAlignCenter gaph1h1' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"> */}
                                     <h1>Hi, I’m Stacy!</h1>
 
                                     {/* Line with tags */}
@@ -147,13 +148,23 @@ export default function Home() {
                                             {h1Tags.map((tag, index) => (
                                                 <>
                                                 <div className='hover-container-tag'>
-                                                    <Tag
-                                                        theme={tag.theme}
-                                                        size={tag.size}
-                                                        icon={tag.icon}
-                                                        text={tag.text}
-                                                        onClick={() => handleTitleTagClick(index)}
-                                                    />
+                                                    <div
+                                                        key={index}
+                                                        className={`tag`}
+                                                        style={{
+                                                        ...tag.style,
+                                                        animation: 'fall 1.5s forwards',
+                                                        animationDelay: `${index * 0.5}s`, // Stagger the animation by index
+                                                        }}
+                                                    >
+                                                        <Tag
+                                                            theme={tag.theme}
+                                                            size={tag.size}
+                                                            icon={tag.icon}
+                                                            text={tag.text}
+                                                            onClick={() => handleTitleTagClick(index)}
+                                                        />
+                                                    </div>
                                                 </div>
                                                 {/* Add the "and" h1 tag after the first tag */}
                                                 {index === 0 && <h1>and</h1>}
@@ -178,7 +189,7 @@ export default function Home() {
                                     className={`tag`}
                                     style={{
                                     ...tag.style,
-                                    animation: 'fall 1.5s forwards',
+                                    animation: 'fall 1.15s forwards',
                                     animationDelay: `${index * 0.2}s`, // Stagger the animation by index
                                     }}
                                 >
