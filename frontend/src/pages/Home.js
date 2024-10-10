@@ -45,13 +45,13 @@ export default function Home() {
     ]);
 
     const [containerTags, setContainerTags] = useState([
-        { theme: 'blue', size: 'large', icon: FaLightbulb, text: 'strategy', style: { bottom:"21px", right:"538px", transform: 'rotate(-16deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'blue', size: 'large', icon: FaLightbulb, text: 'strategy', style: { bottom:"200px", right:"8px", transform: 'rotate(-16deg)', position: 'absolute', zIndex: 10000 }},
         { theme: 'green', size: 'large', icon: MdQuestionMark, text: 'curiosity', style: { bottom:"131px", right:"416px", transform: 'rotate(-6deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'orange', size: 'large', icon: HiSparkles, text: 'innovation', style: { bottom:"53px", right:"300px", transform: 'rotate(-35deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'orange', size: 'large', icon: HiSparkles, text: 'innovation', style: { bottom:"200px", right:"300px", transform: 'rotate(-35deg)', position: 'absolute', zIndex: 10000 }},
         { theme: 'pink', size: 'large', icon: FaHeart, text: 'empathy', style: { bottom:"0px", right:"165px", transform: 'rotate(0deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'green', size: 'large', icon: FaBookOpen, text: 'storytelling', style: { bottom:"50px", right:"-15px", transform: 'rotate(30deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'green', size: 'large', icon: FaBookOpen, text: 'storytelling', style: { bottom:"50px", right:"500px", transform: 'rotate(30deg)', position: 'absolute', zIndex: 10000 }},
         { theme: 'pink', size: 'large', icon: IoBalloonSharp, text: 'fun', style: { bottom:"203px", right:"97px", transform: 'rotate(-38deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'primary-blue', size: 'large', icon: FaLocationArrow, text: 'usability', style: { bottom:"197px", right:"-50px", transform: 'rotate(-70deg)', position: 'absolute', zIndex: 10000 }}
+        { theme: 'primary-blue', size: 'large', icon: FaLocationArrow, text: 'usability', style: { bottom:"197px", right:"100px", transform: 'rotate(-70deg)', position: 'absolute', zIndex: 10000 }}
     ]);
 
     // State to track if the tags should be visible (trigger animation)

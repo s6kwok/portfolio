@@ -37,8 +37,8 @@
 }
 
 .projectsListItem:hover {
-    transform: translateY(-14px);
-    opacity: 90%;
+    transform: translateY(-24px) !important;
+    opacity: 84% !important;
 }
 /* Medium screens (tablets) */
 @media (max-width: 1024px) {
