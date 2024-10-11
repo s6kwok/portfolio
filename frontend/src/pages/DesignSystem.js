@@ -35,8 +35,8 @@ export default function DesignSystem() {
                 {/* Text styles */}
                 <div>
                     <a href={routes.designSystem} className="logo">logo</a>
-                    <p className="nav-inactive">nav-inactive</p>
-                    <p className="nav-active">nav-active</p>
+                    <p className="navInactive">navInactive</p>
+                    <p className="navActive">navActive</p>
                     <h1>h1</h1>
                     <h2>h2</h2>
                     <h3>h3</h3>
@@ -44,11 +44,11 @@ export default function DesignSystem() {
                     <h5>h5</h5>
                     <h6>h6</h6>
                     <p>b1</p>
-                    <p className="b1-medium">b1-medium</p>
+                    <p className="b1Medium">b1Medium</p>
                     <a href='#'>b1-link</a>
                     <p className="b2">b2</p>
                     <p className="b3">b3</p>
-                    <p className="b3-medium">b3-medium</p>
+                    <p className="b3Medium">b3Medium</p>
                 </div>
 
                 {/* Colors */}

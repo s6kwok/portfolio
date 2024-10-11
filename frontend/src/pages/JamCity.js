@@ -37,7 +37,7 @@ export default function JamCity() {
             <Header defaultActiveTab={'Null'} />
 
             {/* Whole page auto layout down */}
-            <div className='autoLayoutDownAlignTop gapFullPage fade-content-projects'>
+            <div className='autoLayoutDownAlignTop gapFullPage fadeContentProjects'>
                 
                 {/* Can't apply class 'autoLayoutDownAlignTop marginsPrimary' to top div because marginsPrimary would also apply to footer */}
                 <div className='marginsPrimary autoLayoutDownAlignTop gapFullPage'>
@@ -81,12 +81,12 @@ export default function JamCity() {
                         {/* Right context */}
                         <div className='autoLayoutDownAlignCenter projectContextRight'>
                             <div className='autoLayoutDownAlignTop gapb3b1'>
-                                <p className='b3-medium'>Collaborators</p>
+                                <p className='b3Medium'>Collaborators</p>
                                 <p>1 UX/UI designer (<strong>me</strong>!)</p>
                                 <p>Game designers, product managers, art, narrative, engineering, production</p>
                             </div>
                             <div className='autoLayoutDownAlignTop gapb3b1'>
-                                <p className='b3-medium'>Team</p>
+                                <p className='b3Medium'>Team</p>
                                 <p>Harry Potter Hogwarts Mystery</p>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ export default function JamCity() {
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gaph6b1'>
                                     <h6>This feature is <strong>launched</strong> and live for <strong>50M+</strong>players!</h6>
-                                    <p className='b3-medium'>The fanbase has given this feature <span style={{...projectPrimaryColor[theme], fontWeight: '600'}}>so much love! <FaHeart style={{ fontSize: '16px' }} /></span></p>
+                                    <p className='b3Medium'>The fanbase has given this feature <span style={{...projectPrimaryColor[theme], fontWeight: '600'}}>so much love! <FaHeart style={{ fontSize: '16px' }} /></span></p>
                                     <p>From videos, game guides, blog posts, reddit discussions... <strong>the success metric of engagement was achieved effectively</strong>!</p>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@ export default function JamCity() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>More! Game! Content!</p>
+                                    <p className='b3Medium'>More! Game! Content!</p>
                                     <p>As more players finished the game, engagement began to drop, which was especially evident in online HPHM discussion communities. To reignite excitement and incentivize ongoing play, it was time to introduce a new narrative storyline!</p>
                                 </div>
                             </div>
@@ -131,11 +131,11 @@ export default function JamCity() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberItem projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Players want to choose their own career</p>
+                                    <p className='b3Medium'>Players want to choose their own career</p>
                                     <p>A large survey revealed that players want to pursue career paths, developing their career as students typically do.</p>
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >89% of players</span> want career flexibility</p>
+                                    <p className='b3Medium'><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >89% of players</span> want career flexibility</p>
                                     <p>From the same survey, players expressed importance of being able to choose their own career specialization, without being locked out of exploring all available career options.</p>
                                     <p>This data led to the <strong>need of a careers reward system</strong>!</p>
                                 </div>
@@ -155,7 +155,7 @@ export default function JamCity() {
                         </div>
                         <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                             <div className='autoLayoutDownAlignTop gapb1b1MultiParagraph'>
-                                <p className='b3-medium'>Collaborating with stakeholders</p>
+                                <p className='b3Medium'>Collaborating with stakeholders</p>
                                 <p>My stakeholders (such as game designers and product managers) were amazing. Collaborating with them, I uncovered the <strong>knowledge of the game economy and the game logic</strong> I would need for the design!</p>
                                 <p>Key design requirements included:</p>
                             </div>
@@ -164,7 +164,7 @@ export default function JamCity() {
                                     <CircleNumber number={1} colorTheme={theme} />
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>
+                                    <p className='b3Medium'>
                                         3 simultaneous career tracks
                                     </p>
                                     <p>
@@ -177,7 +177,7 @@ export default function JamCity() {
                                     <CircleNumber number={2} colorTheme={theme} />
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>
+                                    <p className='b3Medium'>
                                         Visual distinction from “student” features
                                     </p>
                                     <p>
@@ -190,7 +190,7 @@ export default function JamCity() {
                                     <CircleNumber number={3} colorTheme={theme} />
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>
+                                    <p className='b3Medium'>
                                         Follow the given reward systems logic
                                     </p>
                                     <p>
@@ -209,7 +209,7 @@ export default function JamCity() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>User and product needs</p>
+                                    <p className='b3Medium'>User and product needs</p>
                                     <p>To ensure a clear design direction and evaluate effectiveness, I then put my product thinking hat on and conducted research and interviews to understand player needs for the rewards system.</p>
                                     <p>These user and product needs are what helped define the design principles and success metrics for this project!</p>
                                 </div>
@@ -233,7 +233,7 @@ export default function JamCity() {
 
                     {/* Research */}
                     <div className='autoLayoutDownAlignTop projectTextOnlyMargins gaph2b1'>
-                        <p className='b1-medium'>Research</p>
+                        <p className='b1Medium'>Research</p>
                         <div className='autoLayoutRightAlignLeftCenter gapImageText responsiveAutoLayoutDownLeft'>
                             <div>
                                 <h5>What are common reward system design patterns within <span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >this</span> game, and across <span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >other</span> games?</h5>
@@ -252,11 +252,11 @@ export default function JamCity() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Investigating clubs: the sister feature to careers</p>
+                                    <p className='b3Medium'>Investigating clubs: the sister feature to careers</p>
                                     <p>Since the careers reward system has a similar progression to clubs, I reviewed the clubs structure and functionality so I could think about designing with consistent and familiar in-game reward mechanics.</p>
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Audit and user feedback</p>
+                                    <p className='b3Medium'>Audit and user feedback</p>
                                     <p>I then conducted a heuristic evaluation, and evaluated the clubs reward system against the 3 design principles I defined above. This led to the findings below!</p>
                                 </div>
                             </div>
@@ -277,7 +277,7 @@ export default function JamCity() {
                                         <CircleNumber number={1} colorTheme={theme} />
                                     </div>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
-                                        <p className='b3-medium'>
+                                        <p className='b3Medium'>
                                             Narrative theme incorporation
                                         </p>
                                         <p>
@@ -290,7 +290,7 @@ export default function JamCity() {
                                         <CircleNumber number={2} colorTheme={theme} />
                                     </div>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
-                                        <p className='b3-medium'>
+                                        <p className='b3Medium'>
                                             Creating an enticing rewards layout
                                         </p>
                                         <p>
@@ -308,7 +308,7 @@ export default function JamCity() {
                     {/* Solution space */}
                     <div className='projectTextImageMargins autoLayoutDownAlignTop gapImageImage'>
                         <div className='projectTextImageMarginsText autoLayoutDownAlignTop gaph2b1'>
-                            <p className='b1-medium'>Solution space</p>
+                            <p className='b1Medium'>Solution space</p>
                             <div className='autoLayoutRightAlignLeftTop gapImageText'>
                                 <div className='projectTextHeader20'>
                                     <h5>User flow</h5>
@@ -341,7 +341,7 @@ export default function JamCity() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Exploring and assessing concepts</p>
+                                    <p className='b3Medium'>Exploring and assessing concepts</p>
                                     <p>Using the in-game and market research as a starting point, I explored various UI concepts and assessed each <strong>based on design goals</strong>—ease of use, excitement, engagement—<strong>and cost</strong>, to determine the best path forward. A few explorations are below!</p>
                                 </div>
                             </div>
@@ -353,7 +353,7 @@ export default function JamCity() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Concept #1 selected!</p>
+                                    <p className='b3Medium'>Concept #1 selected!</p>
                                     <p>It was decided to move forward with the first concept since it had the lowest cost while meeting most of the design goals! However, there was still room for improvement, especially in enhancing engagement.</p>
                                 </div>
                             </div>
@@ -368,7 +368,7 @@ export default function JamCity() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Considering the larger system</p>
+                                    <p className='b3Medium'>Considering the larger system</p>
                                     <p>It was crucial at this stage to consider how this feature would fit into the larger system. Below are a few of the concepts explored!</p>
                                 </div>
                             </div>
@@ -380,7 +380,7 @@ export default function JamCity() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Option #1 selected!</p>
+                                    <p className='b3Medium'>Option #1 selected!</p>
                                     <p>After discussions with stakeholders, the first option was chosen because of how well it aligns with player expectations for collecting rewards, while keeping the HUD untouched!</p>
                                 </div>
                             </div>
@@ -395,7 +395,7 @@ export default function JamCity() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Paper background required</p>
+                                    <p className='b3Medium'>Paper background required</p>
                                     <p>The hi-fis played a key role in the feature’s success. With layout and implementation constraints in place, the visual design became the primary tool for driving excitement and engagement!</p>
                                     <p>At this point, I got a new <strong>visual design constraint: I was required to use a paper-like background</strong>. The light, paper background would be the visual theme for all post-graduation features!</p>
                                 </div>
@@ -412,7 +412,7 @@ export default function JamCity() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Strengthening the emotional connection</p>
+                                    <p className='b3Medium'>Strengthening the emotional connection</p>
                                     <p>Although the early hi-fi was visually exciting with magical micro-animations and strong thematic alignment, engagement (specifically the emotional connection) needed improvement. To boost engagement, I strengthened the unique design personality of each career!</p>
                                 </div>
                             </div>
@@ -424,7 +424,7 @@ export default function JamCity() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Option #2 was chosen!</p>
+                                    <p className='b3Medium'>Option #2 was chosen!</p>
                                     <p>After negotiation, it was decided to go with the banner despite the higher cost, because of its high impact-to-effort ratio. It effectively showcases each career's unique personality in a fun way.</p>
                                     <p>The image below shows the final concept, created in collaboration with the art team on the banner!</p>
                                 </div>
@@ -452,7 +452,7 @@ export default function JamCity() {
                         </div>
                         <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                             <div className='autoLayoutDownAlignTop gapb3b1'>
-                                <p className='b3-medium'>Usability testing</p>
+                                <p className='b3Medium'>Usability testing</p>
                                 <p>Even with my internship nearing its end, I managed to conduct a few <strong>moderated usability tests</strong>! I observed how players interacted with the feature and asked questions aligned with the success metrics:</p>
                                 <ul className='styledList'>
                                     <li>How easy was it to find the level for a specific reward (easy to use)?</li>
@@ -482,7 +482,7 @@ export default function JamCity() {
                                     <CircleNumber number={1} colorTheme={theme} />
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>
+                                    <p className='b3Medium'>
                                         Dabbling in UI art
                                     </p>
                                     <p>
@@ -495,7 +495,7 @@ export default function JamCity() {
                                     <CircleNumber number={2} colorTheme={theme} />
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>
+                                    <p className='b3Medium'>
                                         Gotta think like my stakeholders
                                     </p>
                                     <p>
@@ -508,7 +508,7 @@ export default function JamCity() {
                                     <CircleNumber number={3} colorTheme={theme} />
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>
+                                    <p className='b3Medium'>
                                         Designing for many states
                                     </p>
                                     <p>

@@ -17,10 +17,10 @@ export default function Header({defaultActiveTab}) {
 
         {/* Logo */}
         {/* <a href={routes.designSystem} className="logo">Stacy Kwok</a> */}
-        <div className="logo-hover-container">
+        <div className="logoHoverContainer">
           <a href={routes.index} className="logo">Stacy Kwok</a>
-          {/* < HiSparkles class="logo-hover-content" style={{marginLeft: '0.45rem'}} /> */}
-          <img src={Sparkle} alt="Sparkle" width="14" height="14" class="logo-hover-content" style={{marginLeft: '0.55rem'}} />
+          {/* < HiSparkles class="logoHoverContent" style={{marginLeft: '0.45rem'}} /> */}
+          <img src={Sparkle} alt="Sparkle" width="14" height="14" class="logoHoverContent" style={{marginLeft: '0.55rem'}} />
         </div>
 
         {/* Tabs */}

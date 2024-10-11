@@ -46,7 +46,7 @@ export default function SnapPea() {
             <Header defaultActiveTab={'Null'} />
 
             {/* Whole page auto layout down */}
-            <div className='autoLayoutDownAlignTop gapFullPage fade-content-projects'>
+            <div className='autoLayoutDownAlignTop gapFullPage fadeContentProjects'>
                 
                 {/* Can't apply class 'autoLayoutDownAlignTop marginsPrimary' to top div because marginsPrimary would also apply to footer */}
                 <div className='marginsPrimary autoLayoutDownAlignTop gapFullPage'>
@@ -66,7 +66,7 @@ export default function SnapPea() {
                         <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
                             {/* <img src={snappeaHeader} alt="Thumbnail" className='image'/> */}
                             <div id="container">
-                                <div class="photobanner photobanner-snappea">
+                                <div class="photobanner photobannerSnappea">
                                     <img src={snappeaHeader1} alt="Thumbnail 1"/>
                                     <img src={snappeaHeader2} alt="Thumbnail 2"/>
                                     <img src={snappeaHeader3} alt="Thumbnail 3"/>
@@ -93,7 +93,7 @@ export default function SnapPea() {
                         {/* Right context */}
                         <div className='autoLayoutDownAlignCenter projectContextRight' >
                             <div className='autoLayoutDownAlignTop gapb3b1'>
-                                <p className='b3-medium'>Collaborators</p>
+                                <p className='b3Medium'>Collaborators</p>
                                 <div className='autoLayoutDownAlignCenter gapb1b1SameParagraph'>
                                     <p>2 UX/UI designers</p>
                                     <p>Client</p>
@@ -101,7 +101,7 @@ export default function SnapPea() {
                                 </div>
                             </div>
                             <div className='autoLayoutDownAlignTop gapb3b1'>
-                                <p className='b3-medium'>Team</p>
+                                <p className='b3Medium'>Team</p>
                                 <p>SnapPea Design team</p>
                             </div>
                         </div>
@@ -123,7 +123,7 @@ export default function SnapPea() {
                                         <CircleNumber number={1} colorTheme={theme} />
                                     </div>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
-                                        <p className='b3-medium'>
+                                        <p className='b3Medium'>
                                             Positive client feedback
                                         </p>
                                         <p>
@@ -136,7 +136,7 @@ export default function SnapPea() {
                                         <CircleNumber number={2} colorTheme={theme} />
                                     </div>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
-                                        <p className='b3-medium'>
+                                        <p className='b3Medium'>
                                             Improved usability and accessibility
                                         </p>
                                         <p>
@@ -149,7 +149,7 @@ export default function SnapPea() {
                                         <CircleNumber number={3} colorTheme={theme} />
                                     </div>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
-                                        <p className='b3-medium'>
+                                        <p className='b3Medium'>
                                             Future-proof design patterns established
                                         </p>
                                         <p>
@@ -172,7 +172,7 @@ export default function SnapPea() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >66.9% of users</span> abandon the platform immediately</p>
+                                    <p className='b3Medium'><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >66.9% of users</span> abandon the platform immediately</p>
                                     <p>The client observed an <strong>increasing number of user-reported issues</strong> (with themes of frustration and confusion), alongside a <strong>high number of support requests</strong> and <strong>elevated abandonment rates</strong>. This was not good!</p>
                                 </div>
                             </div>
@@ -184,7 +184,7 @@ export default function SnapPea() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>User frustrations were at an all time high</p>
+                                    <p className='b3Medium'>User frustrations were at an all time high</p>
                                     <p>The client came to us for help, as they knew their platform <strong>needed strategic design improvements</strong>. It was our job to dive deeper into these issues while improving usability and accessibility, through integrating design principles!</p>
                                 </div>
                             </div>
@@ -204,7 +204,7 @@ export default function SnapPea() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Understanding client and user needs</p>
+                                    <p className='b3Medium'>Understanding client and user needs</p>
                                     <p>In order to define success, I first aimed to understand user needs and what would satisfy them, while also aligning with the client's goals. Team discussions on vision and priorities shaped key design decisions. The image below highlights common themes: speed, value, and ease of use!</p>
                                 </div>
                             </div>
@@ -216,7 +216,7 @@ export default function SnapPea() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Developing design goals</p>
+                                    <p className='b3Medium'>Developing design goals</p>
                                     <p>In addition to client goals and user needs, it was crucial to assess the current platform’s alignment with usability heuristics (especially since they’ve <strong>never had a designer before</strong>!). I conducted an <strong>audit and heuristic evaluation</strong>, which revealed key improvement areas and helped define success metrics.</p>
                                 </div>
                             </div>
@@ -232,7 +232,7 @@ export default function SnapPea() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Navigating uncertainty</p>
+                                    <p className='b3Medium'>Navigating uncertainty</p>
                                     <p>At this point, <strong>there was still a lot of unknowns</strong>. To combat this, I devised a strategy for how I would take on this challenge (process is important, after all!).</p>
                                 </div>
                             </div>
@@ -245,7 +245,7 @@ export default function SnapPea() {
 
                     {/* Research */}
                     <div className='autoLayoutDownAlignTop projectTextOnlyMargins gaph2b1'>
-                        <p className='b1-medium'>Research</p>
+                        <p className='b1Medium'>Research</p>
                         <div className='autoLayoutRightAlignLeftCenter gapImageText responsiveAutoLayoutDownLeft'>
                             <div>
                                 <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Why</span> were 66.9% of users abandoning the platform so quickly?</h5>
@@ -274,7 +274,7 @@ export default function SnapPea() {
                                         <CircleNumber number={1} colorTheme={theme} />
                                     </div>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
-                                        <p className='b3-medium'>
+                                        <p className='b3Medium'>
                                             Platform comprehension issues
                                         </p>
                                         <p>
@@ -287,7 +287,7 @@ export default function SnapPea() {
                                         <CircleNumber number={2} colorTheme={theme}/>
                                     </div>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
-                                        <p className='b3-medium'>
+                                        <p className='b3Medium'>
                                             Navigation challenges
                                         </p>
                                         <p>
@@ -300,7 +300,7 @@ export default function SnapPea() {
                                         <CircleNumber number={3} colorTheme={theme} />
                                     </div>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
-                                        <p className='b3-medium'>
+                                        <p className='b3Medium'>
                                             Difficulty with data products
                                         </p>
                                         <p>
@@ -325,7 +325,7 @@ export default function SnapPea() {
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
-                                        <p className='b3-medium'>Where does value currently show up in the user flow?</p>
+                                        <p className='b3Medium'>Where does value currently show up in the user flow?</p>
                                         <p>Currently, the value is revealed late in the user flow, requiring users to complete most of the process before they fully understand and experience the platform’s benefits.</p>
                                     </div>
                                 </div>
@@ -382,7 +382,7 @@ export default function SnapPea() {
 
                     {/* Solution space */}
                     <div className='autoLayoutDownAlignTop projectTextOnlyMargins gaph2b1'>
-                        <p className='b1-medium'>Solution space</p>
+                        <p className='b1Medium'>Solution space</p>
                         
                         <div className='autoLayoutRightAlignLeftTop gapImageText'>
                             <div className='projectTextHeader20'>
@@ -390,7 +390,7 @@ export default function SnapPea() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Defining strategy</p>
+                                    <p className='b3Medium'>Defining strategy</p>
                                     <p>Specific design actionables were needed to support our strategy. I <strong>synthesized the 3 research findings</strong> (poor usability, lack of perceived value, and complicated onboarding) with the <strong>design goals</strong> (clarity, cognitive load, affordance, and efficiency) to define phases of design work.</p>
                                     
                                 </div>
@@ -459,7 +459,7 @@ export default function SnapPea() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Option #2 was chosen!</p>
+                                    <p className='b3Medium'>Option #2 was chosen!</p>
                                     <p>The second option was selected! This option provides users with immediate tool access when needed, without disrupting other map elements or being buried in the main navigation panel.</p>
                                 </div>
                             </div>
@@ -517,7 +517,7 @@ export default function SnapPea() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>Option #2 was chosen to iterate on!</p>
+                                    <p className='b3Medium'>Option #2 was chosen to iterate on!</p>
                                     <p>The second option was chosen, because of its clear storytelling! It placed <strong>all location elements on the map</strong>, and used the left panel as a <strong>"data menu”</strong>, which <strong>aligned super well with the client's vision</strong>.</p>
                                     <p>However, there was still an aspect that could be improved: the zoom status indicator!</p>
                                 </div>
@@ -530,7 +530,7 @@ export default function SnapPea() {
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>The second iteration shown was a success!</p>
+                                    <p className='b3Medium'>The second iteration shown was a success!</p>
                                     <p>It maintains visible system status, while highlighting site creation with a prominent blue button and a site box.</p>
                                     <p><strong>It was then time to polish and turn all the lo-fis into hi-fis!</strong></p>
                                 </div>
@@ -569,7 +569,7 @@ export default function SnapPea() {
                         </div>
                         <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                             <div className='autoLayoutDownAlignTop gapb3b1'>
-                                <p className='b3-medium'>Usability testing</p>
+                                <p className='b3Medium'>Usability testing</p>
                                 <p>To assess the final design's <strong>impact on the success metrics</strong> (time to first task completion, ease of use, NPS, and user-reported issues), several moderated usability tests were conducted.</p>
                                 <p>Results showed a 28% faster task completion for first-time users, higher ease-of-use and NPS scores! Furthermore, a drop in user-reported issues was reported after implementation.</p>
                                 <p><strong>All success metrics were achieved!</strong></p>
@@ -582,7 +582,7 @@ export default function SnapPea() {
                         <h5>Highlights: Internship fun</h5>
                         {/* <img src={snappeaFun} alt="Internship fun!" className='image'/> */}
                         <div className='autoLayoutRightAlignCenter imageMount projectHeaderImage gapImageText' style={{...projectPrimaryContainer['primaryBlue'], paddingTop: '3rem', paddingBottom: '3rem'}}>
-                            <p className='fun-2-col-text'><strong>Finally finishing our office puzzle together!</strong></p>
+                            <p className='fun2ColText'><strong>Finally finishing our office puzzle together!</strong></p>
                             <div style={{maxHeight: '625px'}}>
                                 <video autoPlay loop muted playsInline style={{borderRadius: '1.25rem', maxHeight: '625px'}}>
                                     <source src={snappeaFun} type="video/mp4" />
@@ -602,7 +602,7 @@ export default function SnapPea() {
                                     <CircleNumber number={1} colorTheme={theme} />
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>
+                                    <p className='b3Medium'>
                                         Designing to support dual user goals
                                     </p>
                                     <p>
@@ -615,7 +615,7 @@ export default function SnapPea() {
                                     <CircleNumber number={2} colorTheme={theme}/>
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>
+                                    <p className='b3Medium'>
                                         Research and understanding look different for everyone and every project
                                     </p>
                                     <p>
@@ -628,7 +628,7 @@ export default function SnapPea() {
                                     <CircleNumber number={3} colorTheme={theme} />
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>
+                                    <p className='b3Medium'>
                                         Designing for a niche, complex industry
                                     </p>
                                     <p>

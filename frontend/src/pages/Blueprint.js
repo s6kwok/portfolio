@@ -29,7 +29,7 @@ export default function Blueprint() {
             <Header defaultActiveTab={'Null'} />
 
             {/* Whole page auto layout down */}
-            <div className='autoLayoutDownAlignTop gapFullPage fade-content-projects'>
+            <div className='autoLayoutDownAlignTop gapFullPage fadeContentProjects'>
                 
                 {/* Can't apply class 'autoLayoutDownAlignTop marginsPrimary' to top div because marginsPrimary would also apply to footer */}
                 <div className='marginsPrimary autoLayoutDownAlignTop gapFullPage'>
@@ -49,7 +49,7 @@ export default function Blueprint() {
                         <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
                             {/* <img src={blueprintHeader} alt="Thumbnail" className='image'/> */}
                             <div id="container">
-                                <div class="photobanner photobanner-blueprint">
+                                <div class="photobanner photobannerBlueprint">
                                     <img src={blueprintHeader1} alt="Thumbnail 1"/>
                                     <img src={blueprintHeader2} alt="Thumbnail 2"/>
                                     <img src={blueprintHeader3} alt="Thumbnail 3"/>
@@ -76,7 +76,7 @@ export default function Blueprint() {
                         {/* Right context */}
                         <div className='autoLayoutDownAlignCenter projectContextRight' >
                             <div className='autoLayoutDownAlignTop gapb3b1'>
-                                <p className='b3-medium'>Collaborators</p>
+                                <p className='b3Medium'>Collaborators</p>
                                 <div className='autoLayoutDownAlignCenter gapb1b1SameParagraph'>
                                     <p>2 product designers</p>
                                     <p>1 product manager</p>
@@ -86,7 +86,7 @@ export default function Blueprint() {
                                 </div>
                             </div>
                             <div className='autoLayoutDownAlignTop gapb3b1'>
-                                <p className='b3-medium'>Team</p>
+                                <p className='b3Medium'>Team</p>
                                 <p>Social Diversity for Children Foundation project team</p>
                             </div>
                         </div>

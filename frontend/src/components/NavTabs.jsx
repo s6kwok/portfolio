@@ -30,7 +30,7 @@ const NavTabs = ({ activeTab, onTabChange }) => {
 
       {/* Design Tab */}
       <p
-        className={activeTab === 'Design' ? 'nav-active' : 'nav-inactive'}
+        className={activeTab === 'Design' ? 'navActive' : 'navInactive'}
         onClick={() => handleTabClick('Design')}
       >
         Design
@@ -38,7 +38,7 @@ const NavTabs = ({ activeTab, onTabChange }) => {
 
       {/* About Tab */}
       <p
-        className={activeTab === 'About' ? 'nav-active' : 'nav-inactive'}
+        className={activeTab === 'About' ? 'navActive' : 'navInactive'}
         onClick={() => handleTabClick('About')}
       >
         About
@@ -46,7 +46,7 @@ const NavTabs = ({ activeTab, onTabChange }) => {
 
       {/* Resume Link */}
       {/* href={routes.designSystem} */}
-      <a href="/stacy-kwok-resume.pdf" target="_blank" rel="noopener noreferrer" className="nav-inactive">Resume</a>
+      <a href="/stacy-kwok-resume.pdf" target="_blank" rel="noopener noreferrer" className="navInactive">Resume</a>
     </div>
   );
 };

@@ -281,11 +281,11 @@
     /* animation: bannermove 120s linear infinite; */
 }
 
-.photobanner-snappea {
+.photobannerSnappea {
     animation: bannermove 100s linear infinite;
 }
 
-.photobanner-blueprint {
+.photobannerBlueprint {
     animation: bannermove 60s linear infinite;
 }
 
@@ -304,18 +304,18 @@
     }
 }
 
-.fun-2-col-text {
+.fun2ColText {
     width: 25%;
 }
 /* Medium screens (tablets) */
 @media (max-width: 1024px) {
-    .fun-2-col-text {
+    .fun2ColText {
         width: 25%;
     }
 }
 /* Small screens (mobile) */
 @media (max-width: 768px) {
-    .fun-2-col-text {
+    .fun2ColText {
         width: 100%;
     }
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 import { IoIosStar } from "react-icons/io";
 import '../styles/Home.css';
-import CursorEyes from '../assets/cursor-eyes.svg';
+import CursorEyes from '../assets/cursorEyes.svg';
 
 // Define tag color theme mapping
 const tagColorThemes = {
@@ -108,13 +108,13 @@ export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
   // Function to render text based on textStyle prop
   const TagText = () => {
     if (size === 'mini') {
-        return <span className="tag-mini cursor-eyes">{text}</span>;
+        return <span className="tagMini cursorEyes">{text}</span>;
     } else if (size === 'small') {
-        return <span className="tag-small cursor-eyes">{text}</span>;
+        return <span className="tagSmall cursorEyes">{text}</span>;
     } else if (size === 'medium') {
-        return <span className="tag-medium cursor-eyes">{text}</span>;
+        return <span className="tagMedium cursorEyes">{text}</span>;
     } else {
-        return <span className="tag-large cursor-eyes">{text}</span>;
+        return <span className="tagLarge cursorEyes">{text}</span>;
     }
   };
 
@@ -129,7 +129,7 @@ export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
 
   return (
     // Return styled tag based on input params of size, color theme, icon, input text
-    <div className="cursor-eyes" style={combinedStyles} onClick={onClick}>
+    <div className="cursorEyes" style={combinedStyles} onClick={onClick}>
       {RenderIcon && <Icon style={{ color: iconColor, fontSize: iconSize, cursor: `url(${CursorEyes}), auto !important`, }} />}
       <TagText />
     </div>

@@ -18,16 +18,16 @@ export default function Footer() {
         <div className='autoLayoutDownAlignTop' style={{gap: '2.15rem', paddingBottom: '1.25rem',}}>
             
             {/* Footer header */}
-            <div className='autoLayoutRightAlignLeftCenter gapSmallTagInlineText footer-header'>
+            <div className='autoLayoutRightAlignLeftCenter gapSmallTagInlineText footerHeader'>
               <div className='autoLayoutRightAlignLeftCenter gapSmallTagInlineText'>
                 <div className='autoLayoutRightAlignLeftCenter responsiveAutoLayoutRightCenter gapSmallTagInlineText'>
                   <h4>Let's</h4>
                   {/* <Tag theme="primaryBlue" size="mini" icon={IoIosStar} text="collab" /> */}
-                  <div class="hover-container">
-                      <div class="hover-container-tag">
+                  <div class="hoverContainer">
+                      <div class="hoverContainerTag">
                         <Tag theme="primaryBlue" size="mini" icon={IoIosStar} text="collab" />
                       </div>
-                      <div class="popup-image collab" style={{maxWidth: '60%'}}>
+                      <div class="popupImage collab" style={{maxWidth: '60%'}}>
                           <img src={footerStars} alt="Stars" className='image' style={{borderRadius: '0rem'}}/>
                       </div>
                   </div>
@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
 
             {/* List of links */}
-            <div className='autoLayoutRightAlignLeftCenter responsiveAutoLayoutRightCenter footer-links' style={{gap: '2.275rem',}}>
+            <div className='autoLayoutRightAlignLeftCenter responsiveAutoLayoutRightCenter footerLinks' style={{gap: '2.275rem',}}>
             <a href="\">Portfolio</a>
               <a href="mailto:@s6kwok@uwaterloo.ca" target="_blank" rel="noopener noreferrer">Email</a>
               <a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -48,7 +48,7 @@ export default function Footer() {
 
         {/* Footer center aligned footnote */}
         <div style={{textAlign: 'center',}}>
-            <p className='footer-footnote'>
+            <p className='footerFootnote'>
               Portfolio made with <a href="https://open.spotify.com/playlist/4Fht6C4JCWNXLrvRjvgQNO?si=92541bf64c9245d2" target="_blank" rel="noopener noreferrer">10,975 minutes of Spotify music</a>, <a href="https://github.com/s6kwok" target="_blank" rel="noopener noreferrer">350 Github commits</a> (eep!), and lots of love.
             </p>
         </div>
