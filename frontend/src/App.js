@@ -1,4 +1,5 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import {Route, HashRouter as Router, Routes} from 'react-router-dom';
+// import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import React, { useEffect, useRef } from 'react';
 
 import "./App.css";
@@ -18,21 +19,23 @@ import Questrade from './pages/Questrade'
 export default function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          {/* Add new pages to routes list to link pages */}
-          <Route index element={<Home />} />
-          <Route path={routes.home} element={<Home />} />
-          <Route path={routes.about} element={<About />} />
-          <Route path={routes.designSystem} element={<DesignSystem />} />
-          <Route path={routes.noPage} element={<NoPage />} />
-          <Route path={routes.snapPea} element={<SnapPea />} />
-          <Route path={routes.blank} element={<Blank />} />
-          <Route path={routes.jamCity} element={<JamCity />} />
-          <Route path={routes.blueprint} element={<Blueprint />} />
-          <Route path={routes.questrade} element={<Questrade />} />
-        </Routes>
-      </BrowserRouter>
+      {/* <BrowserRouter> */}
+      <Router baseline='/'>
+          <Routes>
+            {/* Add new pages to routes list to link pages */}
+            <Route index element={<Home />} />
+            <Route path={routes.home} element={<Home />} />
+            <Route path={routes.about} element={<About />} />
+            <Route path={routes.designSystem} element={<DesignSystem />} />
+            <Route path={routes.noPage} element={<NoPage />} />
+            <Route path={routes.snapPea} element={<SnapPea />} />
+            <Route path={routes.blank} element={<Blank />} />
+            <Route path={routes.jamCity} element={<JamCity />} />
+            <Route path={routes.blueprint} element={<Blueprint />} />
+            <Route path={routes.questrade} element={<Questrade />} />
+          </Routes>
+      </ Router>
+      {/* </BrowserRouter> */}
     </div>
   );
 }
