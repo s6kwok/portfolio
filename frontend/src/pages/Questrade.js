@@ -25,7 +25,7 @@ export default function Questrade() {
             <Header defaultActiveTab={'Null'} />
 
             {/* Whole page auto layout down */}
-            <div className='autoLayoutDownAlignTop gapFullPage fade-content-projects'>
+            <div className='autoLayoutDownAlignTop gapFullPage fadeContentProjects'>
                 
                 {/* Can't apply class 'autoLayoutDownAlignTop marginsPrimary' to top div because marginsPrimary would also apply to footer */}
                 <div className='marginsPrimary autoLayoutDownAlignTop gapFullPage'>
@@ -68,7 +68,7 @@ export default function Questrade() {
                         {/* Right context */}
                         <div className='autoLayoutDownAlignCenter projectContextRight' >
                             <div className='autoLayoutDownAlignTop gapb3b1'>
-                                <p className='b3-medium'>Collaborators</p>
+                                <p className='b3Medium'>Collaborators</p>
                                 <div className='autoLayoutDownAlignCenter gapb1b1SameParagraph'>
                                     <p>1 UX designer (<strong>me</strong>!)</p>
                                     <p>Content designer</p>
@@ -78,7 +78,7 @@ export default function Questrade() {
                                 </div>
                             </div>
                             <div className='autoLayoutDownAlignTop gapb3b1'>
-                                <p className='b3-medium'>Team</p>
+                                <p className='b3Medium'>Team</p>
                                 <p>Questrade investing team</p>
                             </div>
                         </div>
@@ -99,7 +99,7 @@ export default function Questrade() {
                                     <CircleNumber number={1} colorTheme={theme} />
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>
+                                    <p className='b3Medium'>
                                         Positive user feedback
                                     </p>
                                     <p>
@@ -112,7 +112,7 @@ export default function Questrade() {
                                     <CircleNumber number={2} colorTheme={theme} />
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>
-                                    <p className='b3-medium'>
+                                    <p className='b3Medium'>
                                         Improved learnability & discoverability of new features
                                     </p>
                                     <p>
@@ -124,7 +124,7 @@ export default function Questrade() {
                                 <div className='projectListNumberCircle'>
                                     <CircleNumber number={3} colorTheme={theme} />
                                 </div>
-                                <p className='b3-medium'>
+                                <p className='b3Medium'>
                                     Adopted as a template!
                                 </p>
                             </div>
