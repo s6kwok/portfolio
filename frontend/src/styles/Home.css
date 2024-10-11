@@ -48,7 +48,7 @@
 }
 
 .cursorEyes, .cursorEyes:hover, .cursorEyes > svg, .cursorEyes > svg > path {
-    cursor: url('../assets/cursorEyes.svg'), auto !important;
+    cursor: url('../assets/cursor-eyes.svg'), auto !important;
 }
 
 .projectsListImage {
@@ -117,7 +117,7 @@
     position: relative;
     display: inline-block;
     /* cursor: pointer; */
-    cursor: url('../assets/cursorEyes.svg'), auto;
+    cursor: url('../assets/cursor-eyes.svg'), auto;
 }
 
 .popupImage {

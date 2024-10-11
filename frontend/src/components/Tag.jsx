@@ -2,7 +2,7 @@ import React from "react";
 
 import { IoIosStar } from "react-icons/io";
 import '../styles/Home.css';
-import CursorEyes from '../assets/cursorEyes.svg';
+import CursorEyes from '../assets/cursor-eyes.svg';
 
 // Define tag color theme mapping
 const tagColorThemes = {
