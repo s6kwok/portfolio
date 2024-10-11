@@ -130,20 +130,20 @@ export default function Home() {
                 <div className='marginsPrimary autoLayoutDownAlignTop gapFullPage'>
 
                     {/* Hero container paragraph + footnote */}
-                    <div className='autoLayoutDownAlignCenter hero' style={{gap: '4rem', paddingBottom: '0rem', position: 'relative',}}>
+                    <div className='autoLayoutDownAlignCenter hero'>
 
                         {/* Hero main paragraph to be center of page */}
-                        <div className='autoLayoutRightAlignLeftCenter' style={{position: 'relative', minHeight: '70vh', paddingBottom: '3.5rem', zIndex: "0"}}>
+                        <div className='autoLayoutRightAlignLeftCenter heroMainParagraph'>
 
                             {/* Hero container main content to change styling back to block */}
-                            <div className='autoLayoutDownAlignCenter gaph1b1' style={{paddingBottom: '4rem'}}>
+                            <div className='autoLayoutDownAlignCenter gaph1b1 heroMainParagraphContent'>
                                 <div className='autoLayoutDownAlignCenter gaph1h1'>
                                 {/* <div className='autoLayoutDownAlignCenter gaph1h1' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"> */}
                                     <h1>Hi, I’m Stacy!</h1>
 
                                     {/* Line with tags */}
-                                    <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText'>
-                                        <h1>I bring</h1>
+                                    <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText heroMainParagraphContentHeader'>
+                                        <h1 style={{ whiteSpace: 'nowrap'}} >I bring</h1>
                                         <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText'>
                                             {h1Tags.map((tag, index) => (
                                                 <>
@@ -175,7 +175,7 @@ export default function Home() {
                                     </div>
 
                                     {/* Remaining text */}
-                                    <h1>to design impactful and elegant solutions.</h1>
+                                    <h1 className='home-h1-after-tags'>to design impactful and elegant solutions.</h1>
                                 </div>
                                 {/* <p>Prev @Questrade, @Jam City, @LCBO</p> */}
                             </div>
@@ -207,7 +207,7 @@ export default function Home() {
                         ))}
                         </div>
                         {/* Hero footnote */}
-                        <p style={{paddingBottom: '3rem'}}> Check out my recent work below! ↓</p>
+                        <p className='heroFootnote'> Check out my recent work below! ↓</p>
                     </div>
 
                     {/* Projects list */}

@@ -101,7 +101,7 @@ export default function About() {
                 {/* Large flowing text autolayout down */}
                 <div className='autoLayoutDownAlignTop gaph3h3' id='play' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-once="true">
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                        <h3>Beyond design, you’ll find me</h3>
+                        <h3 className='aboutParagraphLineHeight'>Beyond design, you’ll find me</h3>
                         <div class="hover-container">
                             <div class="hover-container-tag">
                                 <Tag theme="pink" size="small" icon={FaUtensils} text="eating" />
@@ -112,7 +112,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                        <h3>good food, playing volleyball, unlearning,</h3>
+                        <h3 className='aboutParagraphLineHeight'>good food, playing volleyball, unlearning,</h3>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <div class="hover-container">
@@ -126,7 +126,7 @@ export default function About() {
                         <h3>vibe-y Spotify playlists,</h3>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                        <h3>doom-scrolling, cooking Samyang fire noodles,</h3>
+                        <h3 className='aboutParagraphLineHeight'>doom-scrolling, cooking Samyang fire noodles,</h3>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <h3>gaming, going on</h3>
@@ -141,7 +141,7 @@ export default function About() {
                         <h3>with friends,</h3>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                        <h3>napping, sending my entire Tik Tok feed to</h3>
+                        <h3 className='aboutParagraphLineHeight'>napping, sending my entire Tik Tok feed to</h3>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <h3>people, building puzzles,</h3>
@@ -155,10 +155,10 @@ export default function About() {
                         </div>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                        <h3>with things I probably shouldn’t, building DIY</h3>
+                        <h3 className='aboutParagraphLineHeight'>with things I probably shouldn’t, building DIY</h3>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                        <h3>models, playing piano, dancing in the kitchen,</h3>
+                        <h3 className='aboutParagraphLineHeight'>models, playing piano, dancing in the kitchen,</h3>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <div class="hover-container">
