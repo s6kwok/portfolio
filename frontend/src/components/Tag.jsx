@@ -2,7 +2,7 @@ import React from "react";
 
 import { IoIosStar } from "react-icons/io";
 import '../styles/Home.css';
-import CursorEyes from '../assets/cursor-eyes.svg';
+import cursorHand from '../assets/cursor-eyes.svg';
 
 // Define tag color theme mapping
 const tagColorThemes = {
@@ -49,7 +49,7 @@ export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
         borderRadius: '3rem',
         border: `3px solid ${outlineColor}`,
         backgroundColor: backgroundColor,
-        cursor: `url(${CursorEyes}), auto`,
+        cursor: `url(${cursorHand}), auto`,
     },
     medium: {
         display: 'flex',
@@ -64,7 +64,7 @@ export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
         borderRadius: '3rem',
         border: `3px solid ${outlineColor}`,
         backgroundColor: backgroundColor,
-        cursor: `url(${CursorEyes}), auto`,
+        cursor: `url(${cursorHand}), auto`,
     },
     small: {
         display: 'flex',
@@ -77,7 +77,7 @@ export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
         borderRadius: '3rem',
         border: `3px solid ${outlineColor}`,
         backgroundColor: backgroundColor,
-        cursor: `url(${CursorEyes}), auto`,
+        cursor: `url(${cursorHand}), auto`,
     },
     mini: {
         display: 'flex',
@@ -90,7 +90,7 @@ export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
         borderRadius: '3rem',
         border: `3px solid ${outlineColor}`,
         backgroundColor: backgroundColor,
-        cursor: `url(${CursorEyes}), auto`,
+        cursor: `url(${cursorHand}), auto`,
     },
   }
 
@@ -108,13 +108,13 @@ export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
   // Function to render text based on textStyle prop
   const TagText = () => {
     if (size === 'mini') {
-        return <span className="tagMini cursorEyes">{text}</span>;
+        return <span className="tagMini cursorHand">{text}</span>;
     } else if (size === 'small') {
-        return <span className="tagSmall cursorEyes">{text}</span>;
+        return <span className="tagSmall cursorHand">{text}</span>;
     } else if (size === 'medium') {
-        return <span className="tagMedium cursorEyes">{text}</span>;
+        return <span className="tagMedium cursorHand">{text}</span>;
     } else {
-        return <span className="tagLarge cursorEyes">{text}</span>;
+        return <span className="tagLarge cursorHand">{text}</span>;
     }
   };
 
@@ -129,8 +129,8 @@ export default function Tag({ theme, size, icon: Icon, text, style, onClick }) {
 
   return (
     // Return styled tag based on input params of size, color theme, icon, input text
-    <div className="cursorEyes" style={combinedStyles} onClick={onClick}>
-      {RenderIcon && <Icon style={{ color: iconColor, fontSize: iconSize, cursor: `url(${CursorEyes}), auto !important`, }} />}
+    <div className="cursorHand" style={combinedStyles} onClick={onClick}>
+      {RenderIcon && <Icon style={{ color: iconColor, fontSize: iconSize, cursor: `url(${cursorHand}), auto !important`, }} />}
       <TagText />
     </div>
   );

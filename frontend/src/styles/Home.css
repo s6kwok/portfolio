@@ -47,7 +47,11 @@
     }
 }
 
-.cursorEyes, .cursorEyes:hover, .cursorEyes > svg, .cursorEyes > svg > path {
+.cursorHand, .cursorHand:hover, .cursorHand > svg, .cursorHand > svg > path {
+    cursor: url('../assets/cursor-hand.svg'), auto !important;
+}
+
+.cursorEyes {
     cursor: url('../assets/cursor-eyes.svg'), auto !important;
 }
 
@@ -117,7 +121,7 @@
     position: relative;
     display: inline-block;
     /* cursor: pointer; */
-    cursor: url('../assets/cursor-eyes.svg'), auto;
+    cursor: url('../assets/cursor-hand.svg'), auto;
 }
 
 .popupImage {

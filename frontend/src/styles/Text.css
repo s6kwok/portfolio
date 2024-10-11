@@ -12,7 +12,7 @@
     text-decoration: none;
     color: inherit;
     /* cursor: pointer; */
-    cursor: url('../assets/cursor-eyes.svg'), auto;
+    cursor: url('../assets/cursor-hand.svg'), auto;
 }
 
 .navActive:hover, .navInactive:hover {
@@ -30,7 +30,7 @@
     text-decoration-thickness: 2px;
     /* text-decoration: underline; */
     /* cursor: pointer; */
-    cursor: url('../assets/cursor-eyes.svg'), auto;
+    cursor: url('../assets/cursor-hand.svg'), auto;
     /* opacity: 100%; */
 } 
 
@@ -103,7 +103,7 @@ a:hover {
     color: var(--PRIMARY-BLUE-500);
     /* opacity: 80%; */
     /* cursor: pointer; */
-    cursor: url('../assets/cursor-eyes.svg'), auto;
+    cursor: url('../assets/cursor-hand.svg'), auto;
 }
 
 .logo {
@@ -113,7 +113,7 @@ a:hover {
     font-size: 1.15rem;
     font-weight: 500;
     line-height: 1.85rem;
-    cursor: url('../assets/cursor-eyes.svg'), auto;
+    cursor: url('../assets/cursor-hand.svg'), auto;
     letter-spacing: -0.015rem;
 }
 

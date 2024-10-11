@@ -224,10 +224,10 @@ export default function Home() {
                         >
 
                             {/* Left section with photo */}
-                            <div className='cursorEyes projectsListItemLeft'>
+                            <div className='cursorHand projectsListItemLeft'>
                                 {/* Image */}
                                 <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursorEyes videoProjectsListMount' style={{...projectPrimaryContainer['blue'],}}>
-                                    {/* <img src={SnapPeaThumbnail} alt="SnapPea Thumbnail" className='image cursorEyes'/> */}
+                                    {/* <img src={SnapPeaThumbnail} alt="SnapPea Thumbnail" className='image cursorHand'/> */}
                                     <video autoPlay loop muted playsInline  className='videoProjectsList cursorEyes'>
                                         <source src={SnappeaThumbnailVideo} type="video/mp4" />
                                     </video>
