@@ -1,13 +1,13 @@
 // Access routes as variables path={routes.blank}
 export const routes = {
-    index: "/",
-    home: "/home",
-	designSystem: "/design-system",
-	about: "/about",
+    index: "/portfolio/",
+    home: "/portfolio/",
+	designSystem: "/portfolio/design-system",
+	about: "/portfolio/about",
     noPage: "/*",
-    snapPea: "/snappea",
-    blank: "/blank",
-    jamCity: "/jamcity",
-    blueprint: "/blueprint",
-    questrade: "/questrade",
+    snapPea: "/portfolio/snappea",
+    blank: "/portfolio/blank",
+    jamCity: "/portfolio/jamcity",
+    blueprint: "/portfolio/blueprint",
+    questrade: "/portfolio/questrade",
 };
