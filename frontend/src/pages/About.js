@@ -61,11 +61,11 @@ export default function About() {
                             {/* Header and inline tag autolayout left */}
                             <div className='autoLayoutRightAlignLeftCenter gapSmallTagInlineText'>
                                 <h3>Hi internet! I'm </h3>
-                                <div class="hoverContainer">
-                                    <div class="hoverContainerTag">
+                                <div className="hoverContainer">
+                                    <div className="hoverContainerTag">
                                         <Tag theme="orange" size="small" icon={FaHeart} text="Stacy" />
                                     </div>
-                                    <div class="popupImage name" style={{maxWidth: '25%',}}>
+                                    <div className="popupImage name" style={{maxWidth: '25%',}}>
                                         <img src={aboutHearts} alt="Hearts" className='image'/>
                                     </div>
                                 </div>
@@ -80,10 +80,10 @@ export default function About() {
                                     I first stumbled into product design unexpectedly while giving back to the community, joining a team of students to build tech for non-profits. And I’ve been designing ever since!
                                 </p>
                                 <p>
-                                    I thrive amongst <strong>ambition, humility, and community</strong>! I’m passionate about <strong>creating simplicity amongst complexity and chaos</strong>, and empowering informed user decisions. 
+                                    I thrive amongst <strong>ambition, humility, and community</strong>! And I’m passionate about <strong>creating simplicity amongst complexity and chaos</strong>, and empowering informed user decisions. 
                                 </p>
                                 <p>
-                                    The simplicity I love, translates outside of design too! From indulging in child-like play (<a href='#play'>scroll down</a> to see what my play looks like!), to giving smiles to strangers--it’s the little things that bring me joy.
+                                    The simplicity I love, translates outside of design too! From indulging in child-like play, to giving smiles to strangers--it’s the little things that bring me joy.
                                 </p>
                             </div>
                         </div>
@@ -102,11 +102,11 @@ export default function About() {
                 <div className='autoLayoutDownAlignTop gaph3h3' id='play' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-once="true">
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <h3 className='aboutParagraphLineHeight'>Beyond design, you’ll find me</h3>
-                        <div class="hoverContainer">
-                            <div class="hoverContainerTag">
+                        <div className="hoverContainer">
+                            <div className="hoverContainerTag">
                                 <Tag theme="pink" size="small" icon={FaUtensils} text="eating" />
                             </div>
-                            <div class="popupImage eating">
+                            <div className="popupImage eating">
                                 <img src={aboutEating} alt="Eating good food!" className='image' style={{border: '3px solid var(--PINK-300)',}}/>
                             </div>
                         </div>
@@ -115,11 +115,11 @@ export default function About() {
                         <h3 className='aboutParagraphLineHeight'>good food, playing volleyball, unlearning,</h3>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                        <div class="hoverContainer">
-                            <div class="hoverContainerTag">
+                        <div className="hoverContainer">
+                            <div className="hoverContainerTag">
                                 <Tag theme="blue" size="small" icon={RiMusic2Fill} text="creating" />
                             </div>
-                            <div class="popupImage creating">
+                            <div className="popupImage creating">
                                 <img src={aboutCreating} alt="Me creating!" className='image' style={{border: '3px solid var(--BLUE-300)',}}/>
                             </div>
                         </div>
@@ -130,11 +130,11 @@ export default function About() {
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <h3>gaming, going on</h3>
-                        <div class="hoverContainer">
-                            <div class="hoverContainerTag">
+                        <div className="hoverContainer">
+                            <div className="hoverContainerTag">
                                 <Tag theme="orange" size="small" icon={FaCar} text="adventures" />
                             </div>
-                            <div class="popupImage adventures">
+                            <div className="popupImage adventures">
                                 <img src={aboutAdventures} alt="Group adventures!" className='image' style={{border: '3px solid var(--ORANGE-300)',}}/>
                             </div>
                         </div>
@@ -145,11 +145,11 @@ export default function About() {
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                         <h3>people, building puzzles,</h3>
-                        <div class="hoverContainer">
-                            <div class="hoverContainerTag">
+                        <div className="hoverContainer">
+                            <div className="hoverContainerTag">
                                 <Tag theme="primary-blue" size="small" icon={FaFlask} text="experimenting" />
                             </div>
-                            <div class="popupImage experimenting">
+                            <div className="popupImage experimenting">
                                 <img src={aboutExperimenting} alt="Me experimenting!" className='image' style={{border: '3px solid var(--PRIMARY-BLUE-300)',}}/>
                             </div>
                         </div>
@@ -161,11 +161,11 @@ export default function About() {
                         <h3 className='aboutParagraphLineHeight'>models, playing piano, dancing in the kitchen,</h3>
                     </div>
                     <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                        <div class="hoverContainer">
-                            <div class="hoverContainerTag">
+                        <div className="hoverContainer">
+                            <div className="hoverContainerTag">
                                 <Tag theme="green" size="small" icon={RiEmotionHappyLine} text="laughing" />
                             </div>
-                            <div class="popupImage laughing">
+                            <div className="popupImage laughing">
                                 <img src={aboutLaughing} alt="Me laughing!" className='image' style={{border: '3px solid var(--GREEN-300)',}}/>
                             </div>
                         </div>

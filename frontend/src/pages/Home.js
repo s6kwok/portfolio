@@ -127,7 +127,7 @@ export default function Home() {
             <div className='autoLayoutDownAlignTop gapFullPage'>
             
                 {/* Can't apply class 'autoLayoutDownAlignTop marginsPrimary' to top div because marginsPrimary would also apply to footer */}
-                <div className='marginsPrimary autoLayoutDownAlignTop gapFullPage'>
+                <div className='marginsPrimary autoLayoutDownAlignTop gapHomepage'>
 
                     {/* Hero container paragraph + footnote */}
                     <div className='autoLayoutDownAlignCenter hero'>
@@ -182,32 +182,36 @@ export default function Home() {
                         </div>
 
                         <div className='tagsContainer'>
-                        {containerTags.map((tag, index) => (
-                            <div className='hoverContainerTag'>
-                                <div
-                                    key={index}
-                                    className={`tag`}
-                                    style={{
-                                    ...tag.style,
-                                    animation: 'fall 1.15s forwards',
-                                    animationDelay: `${index * 0.2}s`, // Stagger the animation by index
-                                    }}
-                                >
-                                    <Tag
+                            {containerTags.map((tag, index) => (
+                                <div className='hoverContainerTag'>
+                                    <div
                                         key={index}
-                                        theme={tag.theme}
-                                        size={tag.size}
-                                        icon={tag.icon}
-                                        text={tag.text}
-                                        style={tag.style}
-                                        onClick={() => handleTagClick(index)}
-                                    />
+                                        className={`tag`}
+                                        style={{
+                                        ...tag.style,
+                                        animation: 'fall 1.15s forwards',
+                                        animationDelay: `${index * 0.2}s`, // Stagger the animation by index
+                                        }}
+                                    >
+                                        <Tag
+                                            key={index}
+                                            theme={tag.theme}
+                                            size={tag.size}
+                                            icon={tag.icon}
+                                            text={tag.text}
+                                            style={tag.style}
+                                            onClick={() => handleTagClick(index)}
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                            <p className='b2 tagsContainerLabelRight' style={{position: 'absolute', bottom:"24px", left:"30px", animation: 'fall 1.05s forwards', animationDelay: `1.05s`, opacity: '0'}}>Click me! →</p>
+                            <p className='b2 tagsContainerLabelDown' style={{animation: 'fall 1.05s forwards', animationDelay: `0s`, opacity: '0'}}>Click me! ↓</p>
                         </div>
-                        {/* Hero footnote */}
-                        <p className='heroFootnote'> Check out my recent work below! ↓</p>
+                    </div>
+
+                    <div className='recentWork' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true">
+                        <h4>Recent work I'm proud of!</h4>
                     </div>
 
                     {/* Projects list */}
@@ -243,10 +247,10 @@ export default function Home() {
                                 </div>
                                 
                                 {/* Rest of paragraph */}
-                                <p className='b2 cursorEyes'>
+                                <p className='b2 cursorEyes' style={{fontWeight: '500'}}>
                                     SnapPea Design (Product design, Agency)
                                 </p>
-                                <p className='cursorEyes'>
+                                <p className='cursorEyes' style={{color: 'var(--GREY-500)'}}>
                                     Making it quicker for users to understand and experience the mapping platform’s benefits
                                 </p>
                                 <img src={ArrowRightBlue} alt="Arrow right blue" width="48" height="48" className='cursorEyes' />
@@ -283,10 +287,10 @@ export default function Home() {
                                 </div>
                                 
                                 {/* Rest of paragraph */}
-                                <p className='b2 cursorEyes'>
+                                <p className='b2 cursorEyes' style={{fontWeight: '500'}}>
                                     Jam City (Product design, Gaming)
                                 </p>
-                                <p className='cursorEyes'>
+                                <p className='cursorEyes' style={{color: 'var(--GREY-500)'}}>
                                     Designing a career specialization battlepass for engagement
                                 </p>
                                 <img src={ArrowRightPink} alt="Arrow right pink" width="48" height="48" className='cursorEyes' />
@@ -323,10 +327,10 @@ export default function Home() {
                                 </div>
                                 
                                 {/* Rest of paragraph */}
-                                <p className='b2 cursorEyes'>
+                                <p className='b2 cursorEyes' style={{fontWeight: '500'}}>
                                     Questrade (Product design, Fintech)
                                 </p>
-                                <p className='cursorEyes'>
+                                <p className='cursorEyes' style={{color: 'var(--GREY-500)'}}>
                                     Designing a new web feature announcement system for effective change management
                                 </p>
                                 <img src={ArrowRightGreen} alt="Arrow right green" width="48" height="48" className='cursorEyes' />
@@ -363,10 +367,10 @@ export default function Home() {
                                 </div>
                                 
                                 {/* Rest of paragraph */}
-                                <p className='b2 cursorEyes'>
+                                <p className='b2 cursorEyes' style={{fontWeight: '500'}}>
                                     UW Blueprint (Product design, NPO)
                                 </p>
-                                <p className='cursorEyes'>
+                                <p className='cursorEyes' style={{color: 'var(--GREY-500)'}}>
                                     Designing to increase user satisfaction
                                 </p>
                                 <img src={ArrowRightBlue} alt="Arrow right blue" width="48" height="48" className='cursorEyes' />

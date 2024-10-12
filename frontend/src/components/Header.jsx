@@ -13,14 +13,14 @@ export default function Header({defaultActiveTab}) {
   const [activeTab, setActiveTab] = useState(defaultActiveTab);
 
   return (
-    <header className='marginsPrimary autoLayoutRightSplit' style={{paddingTop: '2rem', gap: '1.25rem'}}>
+    <header className='marginsPrimary autoLayoutRightSplit' style={{paddingTop: '2.25rem', gap: '1.25rem'}}>
 
         {/* Logo */}
         {/* <a href={routes.designSystem} className="logo">Stacy Kwok</a> */}
         <div className="logoHoverContainer">
           <a href={routes.index} className="logo">Stacy Kwok</a>
-          {/* < HiSparkles class="logoHoverContent" style={{marginLeft: '0.45rem'}} /> */}
-          <img src={Sparkle} alt="Sparkle" width="14" height="14" class="logoHoverContent" style={{marginLeft: '0.55rem'}} />
+          {/* < HiSparkles className="logoHoverContent" style={{marginLeft: '0.45rem'}} /> */}
+          <img src={Sparkle} alt="Sparkle" width="14" height="14" className="logoHoverContent" style={{marginLeft: '0.55rem'}} />
         </div>
 
         {/* Tabs */}

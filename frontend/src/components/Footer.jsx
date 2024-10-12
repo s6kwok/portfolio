@@ -23,11 +23,11 @@ export default function Footer() {
                 <div className='autoLayoutRightAlignLeftCenter responsiveAutoLayoutRightCenter gapSmallTagInlineText'>
                   <h4>Let's</h4>
                   {/* <Tag theme="primaryBlue" size="mini" icon={IoIosStar} text="collab" /> */}
-                  <div class="hoverContainer">
-                      <div class="hoverContainerTag">
+                  <div className="hoverContainer">
+                      <div className="hoverContainerTag">
                         <Tag theme="primaryBlue" size="mini" icon={IoIosStar} text="collab" />
                       </div>
-                      <div class="popupImage collab" style={{maxWidth: '60%'}}>
+                      <div className="popupImage collab" style={{maxWidth: '60%'}}>
                           <img src={footerStars} alt="Stars" className='image' style={{borderRadius: '0rem'}}/>
                       </div>
                   </div>
@@ -48,8 +48,8 @@ export default function Footer() {
 
         {/* Footer center aligned footnote */}
         <div style={{textAlign: 'center',}}>
-            <p className='footerFootnote'>
-              Portfolio made with <a href="https://open.spotify.com/playlist/4Fht6C4JCWNXLrvRjvgQNO?si=92541bf64c9245d2" target="_blank" rel="noopener noreferrer">10,975 minutes of Spotify music</a>, <a href="https://github.com/s6kwok" target="_blank" rel="noopener noreferrer">350 Github commits</a> (eep!), and lots of love.
+            <p className='footerFootnote' style={{color: 'var(--GREY-500)'}}>
+              Portfolio made with <a href="https://open.spotify.com/playlist/4Fht6C4JCWNXLrvRjvgQNO?si=92541bf64c9245d2" target="_blank" rel="noopener noreferrer">10,975 minutes of Spotify music</a>, <a href="https://github.com/s6kwok" target="_blank" rel="noopener noreferrer">376 Github commits</a> (eep!), and lots of love.
             </p>
         </div>
       </div>

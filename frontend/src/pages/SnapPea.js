@@ -66,7 +66,7 @@ export default function SnapPea() {
                         <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
                             {/* <img src={snappeaHeader} alt="Thumbnail" className='image'/> */}
                             <div id="container">
-                                <div class="photobanner photobannerSnappea">
+                                <div className="photobanner photobannerSnappea">
                                     <img src={snappeaHeader1} alt="Thumbnail 1"/>
                                     <img src={snappeaHeader2} alt="Thumbnail 2"/>
                                     <img src={snappeaHeader3} alt="Thumbnail 3"/>

@@ -49,7 +49,7 @@ export default function Blueprint() {
                         <div className='autoLayoutDownAlignCenter imageMount projectHeaderImage' style={{...projectPrimaryContainer[theme],}}>
                             {/* <img src={blueprintHeader} alt="Thumbnail" className='image'/> */}
                             <div id="container">
-                                <div class="photobanner photobannerBlueprint">
+                                <div className="photobanner photobannerBlueprint">
                                     <img src={blueprintHeader1} alt="Thumbnail 1"/>
                                     <img src={blueprintHeader2} alt="Thumbnail 2"/>
                                     <img src={blueprintHeader3} alt="Thumbnail 3"/>
