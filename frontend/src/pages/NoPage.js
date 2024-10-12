@@ -23,7 +23,7 @@ export default function NoPage() {
 
                     {/* Autolayout text down */}
                     <div className='autoLayoutDownAlignTop gapb1b1MultiParagraph'>
-                        <p>But thank you for visiting!</p>
+                        <p>Oops! You've hit a dead end ahhh :( </p>
                         <p>Back to <a href={routes.index}>home</a></p>
                     </div>
                 </div>
