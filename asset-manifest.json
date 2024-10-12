@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.84faf617.css",
-    "main.js": "/static/js/main.24213f6d.js",
+    "main.css": "/static/css/main.7234a71b.css",
+    "main.js": "/static/js/main.f103ff6a.js",
     "static/media/snappea-video-cropped.mp4": "/static/media/snappea-video-cropped.cf332d15eaab809a1a6d.mp4",
     "static/media/jamcity-final.mp4": "/static/media/jamcity-final.da5ece1d07b2baad51af.mp4",
     "static/media/blueprint-final-1.mp4": "/static/media/blueprint-final-1.d71beb907aebf1d14d35.mp4",
@@ -62,10 +62,10 @@
     "static/media/snappea-success-1.png": "/static/media/snappea-success-1.00e11b471b04b3ff5ec5.png",
     "static/media/snappea-flow-1.png": "/static/media/snappea-flow-1.3f84495aaf8ca7efff2e.png",
     "static/media/jamcity-success-2.png": "/static/media/jamcity-success-2.316b16217515513a95d8.png",
-    "static/media/jamcity-challenge.png": "/static/media/jamcity-challenge.066ef204b02b6472ff6a.png",
     "static/media/jamcity-success-1.png": "/static/media/jamcity-success-1.ebdf6a64a861736db37d.png",
     "static/media/snappea-success-2.png": "/static/media/snappea-success-2.e82b6842241f5f83109f.png",
-    "static/media/snappea-challenge.png": "/static/media/snappea-challenge.af6412bc10a72a7fb300.png",
+    "static/media/jamcity-challenge.png": "/static/media/jamcity-challenge.fd2e22780b0a2cee525c.png",
+    "static/media/snappea-challenge.png": "/static/media/snappea-challenge.65d4e3d96f90a34b9ea4.png",
     "static/media/snappea-approach.png": "/static/media/snappea-approach.d9274f1f6dbf2aa9c77f.png",
     "static/media/snappea-flow-2.png": "/static/media/snappea-flow-2.47adb1848aa6bd33e944.png",
     "static/media/snappea-actionables.png": "/static/media/snappea-actionables.3c5e51245d5bed0e0591.png",
@@ -80,11 +80,11 @@
     "static/media/arrow-right-green.svg": "/static/media/arrow-right-green.3d121f298555fc46c2ccdb903fbe4d54.svg",
     "static/media/arrow-right-pink.svg": "/static/media/arrow-right-pink.7df88e56c77a85842530caa515d3c535.svg",
     "static/media/favicon.svg": "/static/media/favicon.55aaa5297b1475e52047f54f3448c017.svg",
-    "main.84faf617.css.map": "/static/css/main.84faf617.css.map",
-    "main.24213f6d.js.map": "/static/js/main.24213f6d.js.map"
+    "main.7234a71b.css.map": "/static/css/main.7234a71b.css.map",
+    "main.f103ff6a.js.map": "/static/js/main.f103ff6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.84faf617.css",
-    "static/js/main.24213f6d.js"
+    "static/css/main.7234a71b.css",
+    "static/js/main.f103ff6a.js"
   ]
 }
