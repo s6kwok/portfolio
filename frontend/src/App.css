@@ -91,6 +91,12 @@ li {
     }
 }
 
+.fullPage {
+    max-width: 1496px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Right autolayout align center */
 .autoLayoutRightAlignCenter {
     display: flex;

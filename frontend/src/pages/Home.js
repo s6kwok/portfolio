@@ -119,268 +119,270 @@ export default function Home() {
 
     return(
         <>
-            {/* <div className='fade-in-up'> */}
-            <Header defaultActiveTab={'Design'} />
-            {/* </div> */}
+            <div className='fullPage'>
+                {/* <div className='fade-in-up'> */}
+                <Header defaultActiveTab={'Design'} />
+                {/* </div> */}
 
-            {/* Whole page auto layout down */}
-            <div className='autoLayoutDownAlignTop gapFullPage'>
-            
-                {/* Can't apply class 'autoLayoutDownAlignTop marginsPrimary' to top div because marginsPrimary would also apply to footer */}
-                <div className='marginsPrimary autoLayoutDownAlignTop gapHomepage'>
+                {/* Whole page auto layout down */}
+                <div className='autoLayoutDownAlignTop gapFullPage'>
+                
+                    {/* Can't apply class 'autoLayoutDownAlignTop marginsPrimary' to top div because marginsPrimary would also apply to footer */}
+                    <div className='marginsPrimary autoLayoutDownAlignTop gapHomepage'>
 
-                    {/* Hero container paragraph + footnote */}
-                    <div className='autoLayoutDownAlignCenter hero'>
+                        {/* Hero container paragraph + footnote */}
+                        <div className='autoLayoutDownAlignCenter hero'>
 
-                        {/* Hero main paragraph to be center of page */}
-                        <div className='autoLayoutRightAlignLeftCenter heroMainParagraph'>
+                            {/* Hero main paragraph to be center of page */}
+                            <div className='autoLayoutRightAlignLeftCenter heroMainParagraph'>
 
-                            {/* Hero container main content to change styling back to block */}
-                            <div className='autoLayoutDownAlignCenter gaph1b1 heroMainParagraphContent'>
-                                <div className='autoLayoutDownAlignCenter gaph1h1'>
-                                {/* <div className='autoLayoutDownAlignCenter gaph1h1' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"> */}
-                                    <h1>Hi, I’m Stacy!</h1>
+                                {/* Hero container main content to change styling back to block */}
+                                <div className='autoLayoutDownAlignCenter gaph1b1 heroMainParagraphContent'>
+                                    <div className='autoLayoutDownAlignCenter gaph1h1'>
+                                    {/* <div className='autoLayoutDownAlignCenter gaph1h1' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"> */}
+                                        <h1>Hi, I’m Stacy!</h1>
 
-                                    {/* Line with tags */}
-                                    <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText heroMainParagraphContentHeader'>
-                                        <h1 style={{ whiteSpace: 'nowrap'}} >I bring</h1>
-                                        <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText'>
-                                            {h1Tags.map((tag, index) => (
-                                                <>
-                                                <div className='hoverContainerTag'>
-                                                    <div
-                                                        key={index}
-                                                        className={`tag`}
-                                                        style={{
-                                                        ...tag.style,
-                                                        animation: 'fall 1.5s forwards',
-                                                        animationDelay: `${index * 0.5}s`, // Stagger the animation by index
-                                                        }}
-                                                    >
-                                                        <Tag
-                                                            theme={tag.theme}
-                                                            size={tag.size}
-                                                            icon={tag.icon}
-                                                            text={tag.text}
-                                                            onClick={() => handleTitleTagClick(index)}
-                                                        />
+                                        {/* Line with tags */}
+                                        <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText heroMainParagraphContentHeader'>
+                                            <h1 style={{ whiteSpace: 'nowrap'}} >I bring</h1>
+                                            <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText'>
+                                                {h1Tags.map((tag, index) => (
+                                                    <>
+                                                    <div className='hoverContainerTag'>
+                                                        <div
+                                                            key={index}
+                                                            className={`tag`}
+                                                            style={{
+                                                            ...tag.style,
+                                                            animation: 'fall 1.5s forwards',
+                                                            animationDelay: `${index * 0.5}s`, // Stagger the animation by index
+                                                            }}
+                                                        >
+                                                            <Tag
+                                                                theme={tag.theme}
+                                                                size={tag.size}
+                                                                icon={tag.icon}
+                                                                text={tag.text}
+                                                                onClick={() => handleTitleTagClick(index)}
+                                                            />
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                {/* Add the "and" h1 tag after the first tag */}
-                                                {index === 0 && <h1>and</h1>}
-                                                </>
-                                            ))}
+                                                    {/* Add the "and" h1 tag after the first tag */}
+                                                    {index === 0 && <h1>and</h1>}
+                                                    </>
+                                                ))}
+                                            </div>
+                                            <h1>together</h1>
                                         </div>
-                                        <h1>together</h1>
+
+                                        {/* Remaining text */}
+                                        <h1 className='homeh1AfterTags'>to design impactful and elegant solutions.</h1>
                                     </div>
-
-                                    {/* Remaining text */}
-                                    <h1 className='homeh1AfterTags'>to design impactful and elegant solutions.</h1>
+                                    {/* <p>Prev @Questrade, @Jam City, @LCBO</p> */}
                                 </div>
-                                {/* <p>Prev @Questrade, @Jam City, @LCBO</p> */}
                             </div>
-                        </div>
 
-                        <div className='tagsContainer'>
-                            {containerTags.map((tag, index) => (
-                                <div className='hoverContainerTag'>
-                                    <div
-                                        key={index}
-                                        className={`tag`}
-                                        style={{
-                                        ...tag.style,
-                                        animation: 'fall 1.15s forwards',
-                                        animationDelay: `${index * 0.2}s`, // Stagger the animation by index
-                                        }}
-                                    >
-                                        <Tag
+                            <div className='tagsContainer'>
+                                {containerTags.map((tag, index) => (
+                                    <div className='hoverContainerTag'>
+                                        <div
                                             key={index}
-                                            theme={tag.theme}
-                                            size={tag.size}
-                                            icon={tag.icon}
-                                            text={tag.text}
-                                            style={tag.style}
-                                            onClick={() => handleTagClick(index)}
-                                        />
+                                            className={`tag`}
+                                            style={{
+                                            ...tag.style,
+                                            animation: 'fall 1.15s forwards',
+                                            animationDelay: `${index * 0.2}s`, // Stagger the animation by index
+                                            }}
+                                        >
+                                            <Tag
+                                                key={index}
+                                                theme={tag.theme}
+                                                size={tag.size}
+                                                icon={tag.icon}
+                                                text={tag.text}
+                                                style={tag.style}
+                                                onClick={() => handleTagClick(index)}
+                                            />
+                                        </div>
+                                    </div>
+                                ))}
+                                <p className='b2 tagsContainerLabelRight' style={{ bottom:"20px", right:"810px", position: 'absolute', zIndex: 10000, animation: 'fall 1.05s forwards', animationDelay: `1.15s`, opacity: '0'}}>Click to swap tag! →</p>
+                                <p className='b2 tagsContainerLabelDown' style={{animation: 'fall 1.05s forwards', animationDelay: `0s`, opacity: '0'}}>Click to swap tag! ↓</p>
+                            </div>
+                        </div>
+
+                        <div className='recentWork' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true">
+                            <h4>Recent work I'm proud of!</h4>
+                        </div>
+
+                        {/* Projects list */}
+                        <div className='autoLayoutDownAlignTop gapFullPage projectsList'>
+
+                            {/* SNAPPEA content autolayout */}
+                            <div className='autoLayoutRightAlignCenter gapImageText projectsListItem cursorEyes'
+                                onClick={() => {
+                                    document.documentElement.style.scrollBehavior = 'auto';
+                                    navigate(routes.snapPea);
+                                    window.scrollTo({ top:0, left:0, behavior: "instant"})
+                                }}
+                                data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
+                            >
+
+                                {/* Left section with photo */}
+                                <div className='cursorHand projectsListItemLeft'>
+                                    {/* Image */}
+                                    <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursorEyes videoProjectsListMount' style={{...projectPrimaryContainer['blue'],}}>
+                                        {/* <img src={SnapPeaThumbnail} alt="SnapPea Thumbnail" className='image cursorHand'/> */}
+                                        <video autoPlay loop muted playsInline  className='videoProjectsList cursorEyes'>
+                                            <source src={SnappeaThumbnailVideo} type="video/mp4" />
+                                        </video>
                                     </div>
                                 </div>
-                            ))}
-                            <p className='b2 tagsContainerLabelRight' style={{position: 'absolute', bottom:"24px", left:"30px", animation: 'fall 1.05s forwards', animationDelay: `1.05s`, opacity: '0'}}>Click me! →</p>
-                            <p className='b2 tagsContainerLabelDown' style={{animation: 'fall 1.05s forwards', animationDelay: `0s`, opacity: '0'}}>Click me! ↓</p>
+
+                                {/* Right section */}
+                                <div className='autoLayoutDownAlignCenter gaph3b1 cursorEyes projectsListItemRight'>
+
+                                    {/* Header and inline tag */}
+                                    <div className='cursorEyes'>
+                                        <h3 className='cursorEyes'>Accelerating <span style={{...projectPrimaryColor['blue'],}} className='cursorEyes' >value discovery</span> for a mapping platform</h3>
+                                    </div>
+                                    
+                                    {/* Rest of paragraph */}
+                                    <p className='b2 cursorEyes' style={{fontWeight: '500'}}>
+                                        SnapPea Design (Product design, Agency)
+                                    </p>
+                                    <p className='cursorEyes' style={{color: 'var(--GREY-500)'}}>
+                                        Making it quicker for users to understand and experience the mapping platform’s benefits
+                                    </p>
+                                    <img src={ArrowRightBlue} alt="Arrow right blue" width="48" height="48" className='cursorEyes' />
+                                </div>
+                            </div>
+
+                            {/* JAMCITY content autolayout */}
+                            <div className='autoLayoutRightAlignCenter gapImageText projectsListItem cursorEyes'
+                                onClick={() => {
+                                    document.documentElement.style.scrollBehavior = 'auto';
+                                    navigate(routes.jamCity);
+                                    window.scrollTo({ top:0, left:0, behavior: "instant"})
+                                }}
+                                data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
+                            >
+
+                                {/* Left section with photo */}
+                                <div className='cursorEyes projectsListItemLeft'>
+                                    {/* Image */}
+                                    <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursorEyes videoProjectsListMount' style={{...projectPrimaryContainer['pink'],}}>
+                                        {/* <img src={JamCityThumbnail} alt="JamCity Thumbnail" className='image'/> */}
+                                        <video autoPlay loop muted playsInline  className='videoProjectsList cursorEyes'>
+                                            <source src={JamcityThumbnailVideo} type="video/mp4" />
+                                        </video>
+                                    </div>
+                                </div>
+
+                                {/* Right section */}
+                                <div className='autoLayoutDownAlignCenter gaph3b1 cursorEyes projectsListItemRight' >
+
+                                    {/* Header and inline tag */}
+                                    <div className='cursorEyes'>
+                                        <h3 className='cursorEyes'>Creating an <span style={{...projectPrimaryColor['pink'],}} className='cursorEyes' >engaging</span> player rewards system</h3>
+                                    </div>
+                                    
+                                    {/* Rest of paragraph */}
+                                    <p className='b2 cursorEyes' style={{fontWeight: '500'}}>
+                                        Jam City (Product design, Gaming)
+                                    </p>
+                                    <p className='cursorEyes' style={{color: 'var(--GREY-500)'}}>
+                                        Designing a career specialization battlepass for engagement
+                                    </p>
+                                    <img src={ArrowRightPink} alt="Arrow right pink" width="48" height="48" className='cursorEyes' />
+                                </div>
+                            </div>
+
+                            {/* QUESTRADE content autolayout */}
+                            <div className='autoLayoutRightAlignCenter gapImageText projectsListItem cursorEyes'
+                                onClick={() => {
+                                    document.documentElement.style.scrollBehavior = 'auto';
+                                    navigate(routes.questrade);
+                                    window.scrollTo({ top:0, left:0, behavior: "instant"})
+                                }}
+                                data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
+                            >
+
+                                {/* Left section with photo */}
+                                <div className='cursorEyes projectsListItemLeft'>
+                                    {/* Image */}
+                                    <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursorEyes videoProjectsListMount' style={{...projectPrimaryContainer['green'],}}>
+                                        {/* <img src={QuestradeThumbnail} alt="Questrade Thumbnail" className='image'/> */}
+                                        <video autoPlay loop muted playsInline  className='videoProjectsList cursorEyes'>
+                                            <source src={QuestradeThumbnailVideo} type="video/mp4" />
+                                        </video>
+                                    </div>
+                                </div>
+
+                                {/* Right section */}
+                                <div className='autoLayoutDownAlignCenter gaph3b1 cursorEyes projectsListItemRight' >
+
+                                    {/* Header and inline tag */}
+                                    <div className='cursorEyes'>
+                                        <h3 className='cursorEyes'>Enhancing the <span style={{...projectPrimaryColor['green'],}} className='cursorEyes' >discoverability</span> of new web features</h3>
+                                    </div>
+                                    
+                                    {/* Rest of paragraph */}
+                                    <p className='b2 cursorEyes' style={{fontWeight: '500'}}>
+                                        Questrade (Product design, Fintech)
+                                    </p>
+                                    <p className='cursorEyes' style={{color: 'var(--GREY-500)'}}>
+                                        Designing a new web feature announcement system for effective change management
+                                    </p>
+                                    <img src={ArrowRightGreen} alt="Arrow right green" width="48" height="48" className='cursorEyes' />
+                                </div>
+                            </div>
+
+                            {/* BLUEPRINT content autolayout */}
+                            <div className='autoLayoutRightAlignCenter gapImageText projectsListItem cursorEyes'
+                                onClick={() => {
+                                    document.documentElement.style.scrollBehavior = 'auto';
+                                    navigate(routes.blueprint);
+                                    window.scrollTo({ top:0, left:0, behavior: "instant"})
+                                }}
+                                data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
+                            >
+
+                                {/* Left section with photo */}
+                                <div className='cursorEyes projectsListItemLeft'>
+                                    {/* Image */}
+                                    <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursorEyes videoProjectsListMount' style={{...projectPrimaryContainer['blue'],}}>
+                                        {/* <img src={BlueprintThumbnail} alt="Blueprint Thumbnail" className='image'/> */}
+                                        <video autoPlay loop muted playsInline  className='videoProjectsList cursorEyes'>
+                                            <source src={BlueprintThumbnailVideo} type="video/mp4" />
+                                        </video>
+                                    </div>
+                                </div>
+
+                                {/* Right section */}
+                                <div className='autoLayoutDownAlignCenter gaph3b1 cursorEyes projectsListItemRight'>
+
+                                    {/* Header and inline tag */}
+                                    <div className='cursorEyes'>
+                                        <h3 className='cursorEyes'><span style={{...projectPrimaryColor['blue'],}} className='cursorEyes' >Reducing barriers</span> to program registration</h3>
+                                    </div>
+                                    
+                                    {/* Rest of paragraph */}
+                                    <p className='b2 cursorEyes' style={{fontWeight: '500'}}>
+                                        UW Blueprint (Product design, NPO)
+                                    </p>
+                                    <p className='cursorEyes' style={{color: 'var(--GREY-500)'}}>
+                                        Designing to increase user satisfaction
+                                    </p>
+                                    <img src={ArrowRightBlue} alt="Arrow right blue" width="48" height="48" className='cursorEyes' />
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div className='recentWork' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true">
-                        <h4>Recent work I'm proud of!</h4>
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
+                        <Footer />
                     </div>
-
-                    {/* Projects list */}
-                    <div className='autoLayoutDownAlignTop gapFullPage projectsList'>
-
-                        {/* SNAPPEA content autolayout */}
-                        <div className='autoLayoutRightAlignCenter gapImageText projectsListItem cursorEyes'
-                            onClick={() => {
-                                document.documentElement.style.scrollBehavior = 'auto';
-                                navigate(routes.snapPea);
-                                window.scrollTo({ top:0, left:0, behavior: "instant"})
-                            }}
-                            data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
-                        >
-
-                            {/* Left section with photo */}
-                            <div className='cursorHand projectsListItemLeft'>
-                                {/* Image */}
-                                <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursorEyes videoProjectsListMount' style={{...projectPrimaryContainer['blue'],}}>
-                                    {/* <img src={SnapPeaThumbnail} alt="SnapPea Thumbnail" className='image cursorHand'/> */}
-                                    <video autoPlay loop muted playsInline  className='videoProjectsList cursorEyes'>
-                                        <source src={SnappeaThumbnailVideo} type="video/mp4" />
-                                    </video>
-                                </div>
-                            </div>
-
-                            {/* Right section */}
-                            <div className='autoLayoutDownAlignCenter gaph3b1 cursorEyes projectsListItemRight'>
-
-                                {/* Header and inline tag */}
-                                <div className='cursorEyes'>
-                                    <h3 className='cursorEyes'>Accelerating <span style={{...projectPrimaryColor['blue'],}} className='cursorEyes' >value discovery</span> for a mapping platform</h3>
-                                </div>
-                                
-                                {/* Rest of paragraph */}
-                                <p className='b2 cursorEyes' style={{fontWeight: '500'}}>
-                                    SnapPea Design (Product design, Agency)
-                                </p>
-                                <p className='cursorEyes' style={{color: 'var(--GREY-500)'}}>
-                                    Making it quicker for users to understand and experience the mapping platform’s benefits
-                                </p>
-                                <img src={ArrowRightBlue} alt="Arrow right blue" width="48" height="48" className='cursorEyes' />
-                            </div>
-                        </div>
-
-                        {/* JAMCITY content autolayout */}
-                        <div className='autoLayoutRightAlignCenter gapImageText projectsListItem cursorEyes'
-                            onClick={() => {
-                                document.documentElement.style.scrollBehavior = 'auto';
-                                navigate(routes.jamCity);
-                                window.scrollTo({ top:0, left:0, behavior: "instant"})
-                            }}
-                            data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
-                        >
-
-                            {/* Left section with photo */}
-                            <div className='cursorEyes projectsListItemLeft'>
-                                {/* Image */}
-                                <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursorEyes videoProjectsListMount' style={{...projectPrimaryContainer['pink'],}}>
-                                    {/* <img src={JamCityThumbnail} alt="JamCity Thumbnail" className='image'/> */}
-                                    <video autoPlay loop muted playsInline  className='videoProjectsList cursorEyes'>
-                                        <source src={JamcityThumbnailVideo} type="video/mp4" />
-                                    </video>
-                                </div>
-                            </div>
-
-                            {/* Right section */}
-                            <div className='autoLayoutDownAlignCenter gaph3b1 cursorEyes projectsListItemRight' >
-
-                                {/* Header and inline tag */}
-                                <div className='cursorEyes'>
-                                    <h3 className='cursorEyes'>Creating an <span style={{...projectPrimaryColor['pink'],}} className='cursorEyes' >engaging</span> player rewards system</h3>
-                                </div>
-                                
-                                {/* Rest of paragraph */}
-                                <p className='b2 cursorEyes' style={{fontWeight: '500'}}>
-                                    Jam City (Product design, Gaming)
-                                </p>
-                                <p className='cursorEyes' style={{color: 'var(--GREY-500)'}}>
-                                    Designing a career specialization battlepass for engagement
-                                </p>
-                                <img src={ArrowRightPink} alt="Arrow right pink" width="48" height="48" className='cursorEyes' />
-                            </div>
-                        </div>
-
-                        {/* QUESTRADE content autolayout */}
-                        <div className='autoLayoutRightAlignCenter gapImageText projectsListItem cursorEyes'
-                            onClick={() => {
-                                document.documentElement.style.scrollBehavior = 'auto';
-                                navigate(routes.questrade);
-                                window.scrollTo({ top:0, left:0, behavior: "instant"})
-                            }}
-                            data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
-                        >
-
-                            {/* Left section with photo */}
-                            <div className='cursorEyes projectsListItemLeft'>
-                                {/* Image */}
-                                <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursorEyes videoProjectsListMount' style={{...projectPrimaryContainer['green'],}}>
-                                    {/* <img src={QuestradeThumbnail} alt="Questrade Thumbnail" className='image'/> */}
-                                    <video autoPlay loop muted playsInline  className='videoProjectsList cursorEyes'>
-                                        <source src={QuestradeThumbnailVideo} type="video/mp4" />
-                                    </video>
-                                </div>
-                            </div>
-
-                            {/* Right section */}
-                            <div className='autoLayoutDownAlignCenter gaph3b1 cursorEyes projectsListItemRight' >
-
-                                {/* Header and inline tag */}
-                                <div className='cursorEyes'>
-                                    <h3 className='cursorEyes'>Enhancing the <span style={{...projectPrimaryColor['green'],}} className='cursorEyes' >discoverability</span> of new web features</h3>
-                                </div>
-                                
-                                {/* Rest of paragraph */}
-                                <p className='b2 cursorEyes' style={{fontWeight: '500'}}>
-                                    Questrade (Product design, Fintech)
-                                </p>
-                                <p className='cursorEyes' style={{color: 'var(--GREY-500)'}}>
-                                    Designing a new web feature announcement system for effective change management
-                                </p>
-                                <img src={ArrowRightGreen} alt="Arrow right green" width="48" height="48" className='cursorEyes' />
-                            </div>
-                        </div>
-
-                        {/* BLUEPRINT content autolayout */}
-                        <div className='autoLayoutRightAlignCenter gapImageText projectsListItem cursorEyes'
-                            onClick={() => {
-                                document.documentElement.style.scrollBehavior = 'auto';
-                                navigate(routes.blueprint);
-                                window.scrollTo({ top:0, left:0, behavior: "instant"})
-                            }}
-                            data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
-                        >
-
-                            {/* Left section with photo */}
-                            <div className='cursorEyes projectsListItemLeft'>
-                                {/* Image */}
-                                <div className='autoLayoutDownAlignCenter imageMount projectsListImage cursorEyes videoProjectsListMount' style={{...projectPrimaryContainer['blue'],}}>
-                                    {/* <img src={BlueprintThumbnail} alt="Blueprint Thumbnail" className='image'/> */}
-                                    <video autoPlay loop muted playsInline  className='videoProjectsList cursorEyes'>
-                                        <source src={BlueprintThumbnailVideo} type="video/mp4" />
-                                    </video>
-                                </div>
-                            </div>
-
-                            {/* Right section */}
-                            <div className='autoLayoutDownAlignCenter gaph3b1 cursorEyes projectsListItemRight'>
-
-                                {/* Header and inline tag */}
-                                <div className='cursorEyes'>
-                                    <h3 className='cursorEyes'><span style={{...projectPrimaryColor['blue'],}} className='cursorEyes' >Reducing barriers</span> to program registration</h3>
-                                </div>
-                                
-                                {/* Rest of paragraph */}
-                                <p className='b2 cursorEyes' style={{fontWeight: '500'}}>
-                                    UW Blueprint (Product design, NPO)
-                                </p>
-                                <p className='cursorEyes' style={{color: 'var(--GREY-500)'}}>
-                                    Designing to increase user satisfaction
-                                </p>
-                                <img src={ArrowRightBlue} alt="Arrow right blue" width="48" height="48" className='cursorEyes' />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
-                    <Footer />
                 </div>
             </div>
         </>

@@ -172,16 +172,17 @@
 }
 
 .tagsContainer {
-    position: absolute; /* Use absolute positioning */
-    bottom: 2.25rem; /* Align to the bottom of the parent container */
-    right: -1.5rem; /* Align to the right of the parent container */
+    /* position: absolute; */
+    bottom: 2.25rem;
+    right: -1.5rem;
     display: flex;
     flex-direction: column; /* Stack tags vertically */
     gap: 5px; /* Adjust spacing between tags */
     z-index: 1; 
-    height:400px;
-    width: 950px;
-    background: linear-gradient(335deg, rgb(156, 156, 156, 0.08) 20%, rgba(156, 156, 156, 0) 49.4%);
+    height: 216px;
+    /* height:400px; */
+    /* width: 950px; */
+    /* background: linear-gradient(335deg, rgb(156, 156, 156, 0.08) 20%, rgba(156, 156, 156, 0) 49.4%); */
 }
 
 .tagsContainerLabelDown {
@@ -189,7 +190,7 @@
 }
 
 /* Medium screens (tablets) */
-@media (max-width: 1096px) {
+@media (max-width: 1150px) {
     .tagsContainer {
         background: none;
         width: 100%;
@@ -204,21 +205,64 @@
     .tagsContainerLabelDown {
         display: inline !important;
         position: absolute;
-        top: 130px;
-        left: 360px;
+        top: 380px;
+        left: 354px;
     }
 }
 /* Small screens (mobile) */
-@media (max-width: 912px) {
+@media (max-width: 1110px) {
+    .tagsContainerLabelDown {
+        top: 500px;
+        left: 360px;
+    }
+}
+@media (max-width: 1096px) {
     .tagsContainer {
         right: -6rem;
     }
 
     .tagsContainerLabelDown {
-        top: 120px;
-        left: 200px;
+        top: 560px;
+        left: 320px;
     }
 }
+@media (max-width: 1024px) {
+    .tagsContainerLabelDown {
+        top: 520px;
+        left: 320px;
+    }
+}
+@media (max-width: 1015px) {
+    .tagsContainerLabelDown {
+        top: 560px;
+        left: 320px;
+    }
+}
+@media (max-width: 768px) {
+    .tagsContainerLabelDown {
+        top: 740px;
+        left: 260px;
+    }
+}
+@media (max-width: 590px) {
+    .tagsContainerLabelDown {
+        top: 740px;
+        left: 140px;
+    }
+}
+@media (max-width: 531px) {
+    .tagsContainerLabelDown {
+        top: 800px;
+        left: 140px;
+    }
+}
+@media (max-width: 444px) {
+    .tagsContainerLabelDown {
+        top: 880px;
+        left: 80px;
+    }
+}
+
 
 .logoHoverContainer {
     position: relative;
@@ -359,7 +403,8 @@
     gap: 4rem;
     padding-bottom: 0rem;
     position: relative;
-    min-height: 88vh;
+    /* min-height: 88vh; */
+    max-height: fit-content;
     justify-content: flex-start;
 }
 
@@ -389,7 +434,7 @@
     }
 
     .heroMainParagraphContent {
-        margin-bottom: 16rem;
+        margin-bottom: 0rem;
     }
 
     .heroMainParagraph {
@@ -411,7 +456,7 @@
     
     .heroMainParagraphContent {
         padding-bottom: 0rem;
-        margin-bottom: 22rem;
+        margin-bottom: 6rem;
     }
 
     .heroMainParagraph {
