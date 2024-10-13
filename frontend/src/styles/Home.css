@@ -206,60 +206,32 @@
         display: inline !important;
         position: absolute;
         top: 380px;
-        left: 354px;
+        right: 360px;
     }
 }
 /* Small screens (mobile) */
 @media (max-width: 1110px) {
     .tagsContainerLabelDown {
-        top: 500px;
-        left: 360px;
-    }
-}
-@media (max-width: 1096px) {
-    .tagsContainer {
-        right: -6rem;
-    }
-
-    .tagsContainerLabelDown {
-        top: 560px;
-        left: 320px;
-    }
-}
-@media (max-width: 1024px) {
-    .tagsContainerLabelDown {
-        top: 520px;
-        left: 320px;
-    }
-}
-@media (max-width: 1015px) {
-    .tagsContainerLabelDown {
-        top: 560px;
-        left: 320px;
+        top: 580px;
+        right: 340px;
     }
 }
 @media (max-width: 768px) {
     .tagsContainerLabelDown {
         top: 740px;
-        left: 260px;
-    }
-}
-@media (max-width: 590px) {
-    .tagsContainerLabelDown {
-        top: 740px;
-        left: 140px;
+        right: 260px;
     }
 }
 @media (max-width: 531px) {
     .tagsContainerLabelDown {
         top: 800px;
-        left: 140px;
+        right: 110px;
     }
 }
 @media (max-width: 444px) {
     .tagsContainerLabelDown {
         top: 880px;
-        left: 80px;
+        right: 60px;
     }
 }
 
