@@ -36,6 +36,11 @@ import snappeaFinal1 from '../assets/snappea/snappea-final-1.mp4';
 import snappeaFinal2 from '../assets/snappea/snappea-final-2.mp4';
 import snappeaFun from '../assets/snappea/snappea-fun.mp4';
 
+// Analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('334214728');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 import { FaClock, FaLocationArrow } from "react-icons/fa6";
 
 export default function SnapPea() {

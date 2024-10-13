@@ -17,6 +17,11 @@ import sparkles3GreenRight from '../assets/sparkles-3-green-right.png';
 import QuestradeLogo from '../assets/questrade/questrade-logo.png';
 import QuestradeThumbnailVideo from '../assets/home/questrade-video-cropped.mp4';
 
+// Analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('334214728');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 export default function Questrade() {
     const theme = 'green'; 
 

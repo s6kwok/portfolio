@@ -14,6 +14,11 @@ import { projectPrimaryContainer, projectPrimaryColor } from '../styles/Projects
 
 import { routes } from "../routes/Routes";
 
+// Analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('334214728');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 // import SnapPeaThumbnail from '../assets/home/snappea-thumbnail.png';
 // import JamCityThumbnail from '../assets/home/jamcity-thumbnail.png';
 // import QuestradeThumbnail from '../assets/home/questrade-thumbnail.png';

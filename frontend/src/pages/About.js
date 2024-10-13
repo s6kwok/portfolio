@@ -20,6 +20,11 @@ import { FaCar } from "react-icons/fa6";
 import { HiSparkles } from "react-icons/hi2";
 import { IoSparklesSharp } from "react-icons/io5";
 
+// Analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('334214728');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 // Fade in
 import 'aos/dist/aos.css';
 import AOS from 'aos';
