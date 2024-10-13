@@ -1,10 +1,5 @@
 import React from 'react';
 
-// Analytics
-import ReactGA from 'react-ga';
-ReactGA.initialize('334214728');
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
