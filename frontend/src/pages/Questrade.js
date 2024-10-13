@@ -1,5 +1,10 @@
 import React from 'react';
 
+// Analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('334214728');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CircleNumber from '../components/CircleNumber';
@@ -16,11 +21,6 @@ import sparkles3GreenLeft from '../assets/sparkles-3-green-left.png';
 import sparkles3GreenRight from '../assets/sparkles-3-green-right.png';
 import QuestradeLogo from '../assets/questrade/questrade-logo.png';
 import QuestradeThumbnailVideo from '../assets/home/questrade-video-cropped.mp4';
-
-// Analytics
-import ReactGA from 'react-ga';
-ReactGA.initialize('334214728');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default function Questrade() {
     const theme = 'green'; 

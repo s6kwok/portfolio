@@ -2,6 +2,11 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Tag from "../components/Tag";
 
+// Analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('334214728');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 import '../styles/Home.css';
 
 import React, { useEffect } from 'react';
@@ -19,11 +24,6 @@ import { RiEmotionHappyLine, RiMusic2Fill } from "react-icons/ri";
 import { FaCar } from "react-icons/fa6";
 import { HiSparkles } from "react-icons/hi2";
 import { IoSparklesSharp } from "react-icons/io5";
-
-// Analytics
-import ReactGA from 'react-ga';
-ReactGA.initialize('334214728');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 // Fade in
 import 'aos/dist/aos.css';
