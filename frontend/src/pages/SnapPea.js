@@ -38,7 +38,12 @@ import snappeaFun from '../assets/snappea/snappea-fun.mp4';
 
 import { FaClock, FaLocationArrow } from "react-icons/fa6";
 
+// Analytics
+import ReactGA from 'react-ga';
+
 export default function SnapPea() {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    
     const theme = 'blue'; 
 
     return(

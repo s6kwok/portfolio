@@ -2,9 +2,6 @@ import {Route, HashRouter as Router, Routes} from 'react-router-dom';
 // import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import React, { useEffect, useRef } from 'react';
 
-// Analytics
-import ReactGA from 'react-ga';
-
 import "./App.css";
 import "./styles/Text.css";
 
@@ -19,10 +16,13 @@ import JamCity from './pages/JamCity'
 import Blueprint from './pages/Blueprint'
 import Questrade from './pages/Questrade'
 
+// Analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('334214728');
+
 export default function App() {
-  ReactGA.initialize('334214728');
   ReactGA.pageview(window.location.pathname + window.location.search);
-  
+
   return (
     <div>
       {/* <BrowserRouter> */}
