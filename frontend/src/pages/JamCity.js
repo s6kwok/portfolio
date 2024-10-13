@@ -29,12 +29,7 @@ import sparkles2Pink from '../assets/sparkles-2-pink.png';
 import JamcityLogo from '../assets/jamcity/jamcity-logo.png';
 import JamcityThumbnailVideo from '../assets/home/jamcity-video-cropped.mp4';
 
-// Analytics
-import ReactGA from 'react-ga';
-
-export default function JamCity() {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-    
+export default function JamCity() {    
     const theme = 'pink'; 
 
     return(

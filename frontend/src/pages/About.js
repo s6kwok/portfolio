@@ -24,12 +24,7 @@ import { IoSparklesSharp } from "react-icons/io5";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
-// Analytics
-import ReactGA from 'react-ga';
-
-export default function About() {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-    
+export default function About() {    
     // Fade in
     useEffect(() => {
         AOS.init({

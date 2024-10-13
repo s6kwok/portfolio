@@ -21,12 +21,7 @@ import blueprintFinal2 from '../assets/blueprint/blueprint-final-2.mp4';
 import sparkles3BlueLeft from '../assets/sparkles-3-blue-left.png';
 import sparkles3BlueRight from '../assets/sparkles-3-blue-right.png';
 
-// Analytics
-import ReactGA from 'react-ga';
-
-export default function Blueprint() {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-    
+export default function Blueprint() {    
     const theme = 'blue';
 
     return(

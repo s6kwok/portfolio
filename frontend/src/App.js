@@ -16,13 +16,7 @@ import JamCity from './pages/JamCity'
 import Blueprint from './pages/Blueprint'
 import Questrade from './pages/Questrade'
 
-// Analytics
-import ReactGA from 'react-ga';
-ReactGA.initialize('334214728');
-
 export default function App() {
-  ReactGA.pageview(window.location.pathname + window.location.search);
-
   return (
     <div>
       {/* <BrowserRouter> */}

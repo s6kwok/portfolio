@@ -38,12 +38,7 @@ import { MdQuestionMark } from "react-icons/md";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
-// Analytics
-import ReactGA from 'react-ga';
-
-export default function Home() {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-    
+export default function Home() {    
     const [h1Tags, setH1Tags] = useState([
         { theme: 'primaryBlue', size: 'large', icon: RiEmotionHappyLine, text: 'people', style: {} },
         { theme: 'orange', size: 'large', icon: BsBarChartLineFill, text: 'data', style: {} }
