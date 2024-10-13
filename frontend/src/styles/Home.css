@@ -442,17 +442,5 @@
 
 .recentWork {
     text-align: center;
-    margin-top: 3rem;
-}
-/* Large screens */
-@media (max-width: 1096px) {
-    .recentWork {
-        margin-top: 5rem;
-    }
-}
-/* Small screens (mobile) */
-@media (max-width: 768px) {
-    .recentWork {
-        margin-top: 6rem;
-    }
+    margin-top: 6rem;
 }
