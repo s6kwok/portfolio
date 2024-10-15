@@ -10,7 +10,8 @@
     font-weight: 400;
     line-height: 1.5rem;
     text-decoration: none;
-    color: inherit;
+    color: var(--BLACK);
+    /* color: inherit; */
     /* cursor: pointer; */
     cursor: url('../assets/cursor-hand.svg'), auto;
 }
@@ -21,6 +22,7 @@
 
 .navActive, .navInactive:hover {
     /* color: var(--PRIMARY-BLUE-500); */
+    color: var(--BLACK);
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.5rem;
@@ -82,12 +84,14 @@ p, li {
     font-size: 1.025rem;
     font-weight: 400;
     line-height: 1.8rem;
+    color: var(--GREY-500);
 }
 
 .b1Medium {
     font-size: 1.025rem;
     font-weight: 500;
     line-height: 1.8rem;
+    color: var(--BLACK);
 }
 
 /* b1 link */
@@ -121,18 +125,21 @@ a:hover {
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.75rem;
+    color: var(--BLACK);
 }
 
 .b3 {
     font-size: 1.35rem;
     font-weight: 400;
     line-height: 2rem;
+    color: var(--BLACK);
 }
 
 .b3Medium {
     font-size: 1.35rem;
     font-weight: 500;
     line-height: 2rem;
+    color: var(--BLACK);
 }
 
 /* Tag font */

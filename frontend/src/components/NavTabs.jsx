@@ -46,7 +46,7 @@ const NavTabs = ({ activeTab, onTabChange }) => {
 
       {/* Resume Link */}
       {/* href={routes.designSystem} */}
-      <a href="/stacy-kwok-resume.pdf" target="_blank" rel="noopener noreferrer" className="navInactive">Resume</a>
+      <a href="/stacykwok-resume.pdf" target="_blank" rel="noopener noreferrer" className="navInactive">Resume</a>
     </div>
   );
 };

@@ -549,14 +549,14 @@ export default function SnapPea() {
                                 {/* <video width="100%" height="auto" autoPlay controls loop muted playsInline>
                                     <source src={blueprintFinal1} type="video/mp4" />
                                 </video> */}
-                                    <p style={{marginBottom: '1.5rem', marginTop: '0.25rem'}}><strong>Flow #1: Browsing data products first</strong></p>
+                                    <p style={{marginBottom: '1.5rem', marginTop: '0.25rem', color: 'var(--BLACK)'}}><strong>Flow #1: Browsing data products first</strong></p>
                                     <video autoPlay loop muted playsInline  className='video'>
                                         <source src={snappeaFinal1} type="video/mp4" />
                                     </video>
                                 </div>
                             </div>
                             <div className='autoLayoutDownAlignCenter imageMount' style={{...projectPrimaryContainer[theme],}}>
-                                <p style={{marginBottom: '1.5rem', marginTop: '0.25rem'}}><strong>Flow #2: Adding a site first</strong></p>
+                                <p style={{marginBottom: '1.5rem', marginTop: '0.25rem', color: 'var(--BLACK)'}}><strong>Flow #2: Adding a site first</strong></p>
                                 <video autoPlay loop muted playsInline  className='video'>
                                     <source src={snappeaFinal2} type="video/mp4" />
                                 </video>
@@ -583,7 +583,7 @@ export default function SnapPea() {
                             <h5>Highlights: Internship fun</h5>
                             {/* <img src={snappeaFun} alt="Internship fun!" className='image'/> */}
                             <div className='autoLayoutRightAlignCenter imageMount projectHeaderImage gapImageText' style={{...projectPrimaryContainer['primaryBlue'], paddingTop: '3rem', paddingBottom: '3rem'}}>
-                                <p className='fun2ColText'><strong>Finally finishing our office puzzle together!</strong></p>
+                                <p className='fun2ColText' style={{color: 'var(--BLACK)'}}><strong>Finally finishing our office puzzle together!</strong></p>
                                 <div style={{maxHeight: '625px'}}>
                                     <video autoPlay loop muted playsInline style={{borderRadius: '1.25rem', maxHeight: '625px'}}>
                                         <source src={snappeaFun} type="video/mp4" />

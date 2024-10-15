@@ -41,7 +41,7 @@ export default function Footer() {
             {/* List of links */}
             <div className='autoLayoutRightAlignLeftCenter responsiveAutoLayoutRightCenter footerLinks' style={{gap: '2.275rem',}}>
             <a href="\">Portfolio</a>
-              <a href="mailto:@s6kwok@uwaterloo.ca" target="_blank" rel="noopener noreferrer">Email</a>
+              <a href="mailto:@stacykwok01@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
               <a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
         </div>
@@ -49,7 +49,7 @@ export default function Footer() {
         {/* Footer center aligned footnote */}
         <div style={{textAlign: 'center',}}>
             <p className='footerFootnote' style={{color: 'var(--GREY-500)'}}>
-              Portfolio made with 10,975 minutes of Spotify music, 73 Github commits (eep!), and lots of love
+              Portfolio made with 10,975 minutes of Spotify music, 75 Github commits (eep!), and lots of love
             </p>
         </div>
       </div>
