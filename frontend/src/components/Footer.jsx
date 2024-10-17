@@ -6,6 +6,9 @@ import { IoIosStar } from "react-icons/io";
 
 import footerStars from '../assets/footer-stars.png';
 
+import { useNavigate } from 'react-router-dom';
+import { routes } from "../routes/Routes";
+
 export default function Footer() {
   // Initial state for toggling image display
   const [isVisible, setIsVisible] = useState(false);
@@ -14,6 +17,8 @@ export default function Footer() {
   const toggleImage = () => {
     setIsVisible(prevState => !prevState);
   };
+
+  const navigate = useNavigate();
 
   return (
     <footer className='marginsPrimary'>
@@ -48,7 +53,8 @@ export default function Footer() {
 
             {/* List of links */}
             <div className='autoLayoutRightAlignLeftCenter responsiveAutoLayoutRightCenter footerLinks' style={{gap: '2.275rem',}}>
-            <a href="\">Portfolio</a>
+              <a href="\">Portfolio</a>
+              <a onClick={() => { navigate(routes.about); window.scrollTo({ top: 0, left:0, behavior: "instant"})}}>About</a>
               <a href="mailto:@stacykwok01@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
               <a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
@@ -57,7 +63,7 @@ export default function Footer() {
         {/* Footer center aligned footnote */}
         <div style={{textAlign: 'center',}}>
             <p className='footerFootnote' style={{color: 'var(--GREY-500)'}}>
-              Portfolio made with 10,975 minutes of Spotify music, 75 Github commits (eep!), and lots of love
+              Portfolio made with 10,975 minutes of Spotify music, 76 Github commits (eep!), and lots of love
             </p>
         </div>
       </div>
