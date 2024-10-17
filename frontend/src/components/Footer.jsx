@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Tag from './Tag';
 
@@ -7,6 +7,14 @@ import { IoIosStar } from "react-icons/io";
 import footerStars from '../assets/footer-stars.png';
 
 export default function Footer() {
+  // Initial state for toggling image display
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Function to toggle visibility state
+  const toggleImage = () => {
+    setIsVisible(prevState => !prevState);
+  };
+
   return (
     <footer className='marginsPrimary'>
 
@@ -24,10 +32,10 @@ export default function Footer() {
                   <h4>Let's</h4>
                   {/* <Tag theme="primaryBlue" size="mini" icon={IoIosStar} text="collab" /> */}
                   <div className="hoverContainer">
-                      <div className="hoverContainerTag">
+                      <div className="hoverContainerTag" onClick={toggleImage}>
                         <Tag theme="primaryBlue" size="mini" icon={IoIosStar} text="collab" />
                       </div>
-                      <div className="popupImage collab" style={{maxWidth: '60%'}}>
+                      <div className="popupImage collab" style={{ display: isVisible ? 'block' : 'none', maxWidth: '60%', }}>
                           <img src={footerStars} alt="Stars" className='image' style={{borderRadius: '0rem'}}/>
                       </div>
                   </div>

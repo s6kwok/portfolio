@@ -139,13 +139,13 @@
 }
 
 .eating {
-    top: -150px;
+    top: -200px;
     left: 250px;
 }
 
 .creating {
     top: -50px;
-    left: -375px;
+    left: -404px;
 }
 
 .adventures {
@@ -154,8 +154,8 @@
 }
 
 .experimenting {
-    top: -150px;
-    left: 385px;
+    top: 64px;
+    left: 365px;
 }
 
 .laughing {

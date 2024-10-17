@@ -4,7 +4,7 @@ import Tag from "../components/Tag";
 
 import '../styles/Home.css';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import aboutHero from '../assets/about/hero.png';
 import aboutHearts from '../assets/about/hearts.png';
@@ -33,6 +33,34 @@ export default function About() {
           mirror: false,   // Whether elements animate out while scrolling past them
         });
     }, []);
+
+    // Individual states for each popup
+    const [isVisible1, setIsVisible1] = useState(false);
+    const [isVisible2, setIsVisible2] = useState(false);
+    const [isVisible3, setIsVisible3] = useState(false);
+    const [isVisible4, setIsVisible4] = useState(false);
+    const [isVisible5, setIsVisible5] = useState(false);
+    const [isVisible6, setIsVisible6] = useState(false);
+
+    // Function to toggle visibility state
+    const toggleImage1 = () => {
+        setIsVisible1(prevState => !prevState);
+    };
+    const toggleImage2 = () => {
+        setIsVisible2(prevState => !prevState);
+    };
+    const toggleImage3 = () => {
+        setIsVisible3(prevState => !prevState);
+    };
+    const toggleImage4 = () => {
+        setIsVisible4(prevState => !prevState);
+    };
+    const toggleImage5 = () => {
+        setIsVisible5(prevState => !prevState);
+    };
+    const toggleImage6 = () => {
+        setIsVisible6(prevState => !prevState);
+    };
 
     return(
         <>
@@ -63,10 +91,10 @@ export default function About() {
                                 <div className='autoLayoutRightAlignLeftCenter gapSmallTagInlineText'>
                                     <h3>Hi internet! I'm </h3>
                                     <div className="hoverContainer">
-                                        <div className="hoverContainerTag">
+                                        <div className="hoverContainerTag" onClick={toggleImage1}>
                                             <Tag theme="orange" size="small" icon={FaHeart} text="Stacy" />
                                         </div>
-                                        <div className="popupImage name" style={{maxWidth: '25%',}}>
+                                        <div className="popupImage name" style={{ display: isVisible1 ? 'block' : 'none', maxWidth: '25%', }}>
                                             <img src={aboutHearts} alt="Hearts" className='image'/>
                                         </div>
                                     </div>
@@ -104,10 +132,10 @@ export default function About() {
                         <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                             <h3 className='aboutParagraphLineHeight'>Beyond design, you’ll find me</h3>
                             <div className="hoverContainer">
-                                <div className="hoverContainerTag">
+                                <div className="hoverContainerTag" onClick={toggleImage2}>
                                     <Tag theme="pink" size="small" icon={FaUtensils} text="eating" />
                                 </div>
-                                <div className="popupImage eating">
+                                <div className="popupImage eating" style={{ display: isVisible2 ? 'block' : 'none',}}>
                                     <img src={aboutEating} alt="Eating good food!" className='image' style={{border: '3px solid var(--PINK-300)',}}/>
                                 </div>
                             </div>
@@ -117,11 +145,11 @@ export default function About() {
                         </div>
                         <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                             <div className="hoverContainer">
-                                <div className="hoverContainerTag">
+                                <div className="hoverContainerTag" onClick={toggleImage3}>
                                     <Tag theme="blue" size="small" icon={RiMusic2Fill} text="creating" />
                                 </div>
-                                <div className="popupImage creating">
-                                    <img src={aboutCreating} alt="Me creating!" className='image' style={{border: '3px solid var(--BLUE-300)',}}/>
+                                <div className="popupImage creating" style={{ display: isVisible3 ? 'block' : 'none',}}>
+                                    <img src={aboutCreating} alt="Me creating!" className='image' style={{border: '3px solid var(--BLUE-300)', width: '300px'}}/>
                                 </div>
                             </div>
                             <h3>vibe-y Spotify playlists,</h3>
@@ -132,10 +160,10 @@ export default function About() {
                         <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                             <h3>gaming, going on</h3>
                             <div className="hoverContainer">
-                                <div className="hoverContainerTag">
+                                <div className="hoverContainerTag" onClick={toggleImage4}>
                                     <Tag theme="orange" size="small" icon={FaCar} text="adventures" />
                                 </div>
-                                <div className="popupImage adventures">
+                                <div className="popupImage adventures" style={{ display: isVisible4 ? 'block' : 'none',}}>
                                     <img src={aboutAdventures} alt="Group adventures!" className='image' style={{border: '3px solid var(--ORANGE-300)',}}/>
                                 </div>
                             </div>
@@ -147,10 +175,10 @@ export default function About() {
                         <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                             <h3>people, building puzzles,</h3>
                             <div className="hoverContainer">
-                                <div className="hoverContainerTag">
+                                <div className="hoverContainerTag" onClick={toggleImage5}>
                                     <Tag theme="primary-blue" size="small" icon={FaFlask} text="experimenting" />
                                 </div>
-                                <div className="popupImage experimenting">
+                                <div className="popupImage experimenting" style={{ display: isVisible5 ? 'block' : 'none',}}>
                                     <img src={aboutExperimenting} alt="Me experimenting!" className='image' style={{border: '3px solid var(--PRIMARY-BLUE-300)',}}/>
                                 </div>
                             </div>
@@ -163,10 +191,10 @@ export default function About() {
                         </div>
                         <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                             <div className="hoverContainer">
-                                <div className="hoverContainerTag">
+                                <div className="hoverContainerTag" onClick={toggleImage6}>
                                     <Tag theme="green" size="small" icon={RiEmotionHappyLine} text="laughing" />
                                 </div>
-                                <div className="popupImage laughing">
+                                <div className="popupImage laughing" style={{ display: isVisible6 ? 'block' : 'none',}}>
                                     <img src={aboutLaughing} alt="Me laughing!" className='image' style={{border: '3px solid var(--GREEN-300)',}}/>
                                 </div>
                             </div>
