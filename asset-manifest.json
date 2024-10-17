@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.34a11748.css",
-    "main.js": "/static/js/main.4fe3b020.js",
+    "main.css": "/static/css/main.04d30dba.css",
+    "main.js": "/static/js/main.bd599bca.js",
     "static/media/snappea-video-cropped.mp4": "/static/media/snappea-video-cropped.cf332d15eaab809a1a6d.mp4",
     "static/media/jamcity-final.mp4": "/static/media/jamcity-final.da5ece1d07b2baad51af.mp4",
     "static/media/blueprint-final-1.mp4": "/static/media/blueprint-final-1.d71beb907aebf1d14d35.mp4",
@@ -13,6 +13,7 @@
     "static/media/questrade-fun.png": "/static/media/questrade-fun.5fa3033085c29bcd6a94.png",
     "static/media/snappea-final-2.mp4": "/static/media/snappea-final-2.15054f44a7301728bb7e.mp4",
     "static/media/blueprint-video-cropped.mp4": "/static/media/blueprint-video-cropped.5821e98add84b68271fd.mp4",
+    "static/media/creating.png": "/static/media/creating.7f3ab6580f8bfef15f13.png",
     "static/media/jamcity-fun.png": "/static/media/jamcity-fun.bfff88b66b5a5699091a.png",
     "static/media/snappea-impact.png": "/static/media/snappea-impact.4b1cb20230a4462c6373.png",
     "static/media/questrade-video-cropped.mp4": "/static/media/questrade-video-cropped.174cb29304971da3e4be.mp4",
@@ -28,9 +29,8 @@
     "static/media/jamcity-hifi-final.png": "/static/media/jamcity-hifi-final.61423eed2db55e0e7be3.png",
     "static/media/blueprint-header-2.png": "/static/media/blueprint-header-2.114c98c7489cbfb39fd2.png",
     "static/media/snappea-header-3.png": "/static/media/snappea-header-3.573192a9e7a9c47c348b.png",
-    "static/media/creating.png": "/static/media/creating.4068eb93e7dec9c46a72.png",
     "static/media/snappea-story-4.png": "/static/media/snappea-story-4.0e2c088861c8d1e3c5ca.png",
-    "static/media/snappea-interviews.png": "/static/media/snappea-interviews.5d5d5c28da56878c444b.png",
+    "static/media/snappea-interviews.png": "/static/media/snappea-interviews.4cdeb7404af34a414b07.png",
     "static/media/jamcity-hifi-constraint.png": "/static/media/jamcity-hifi-constraint.ee693efd89eccab7498b.png",
     "static/media/adventures.png": "/static/media/adventures.f527291889805d092c07.png",
     "static/media/jamcity-research-1.png": "/static/media/jamcity-research-1.52544c75e99c663e4cfa.png",
@@ -80,11 +80,11 @@
     "static/media/arrow-right-green.svg": "/static/media/arrow-right-green.3d121f298555fc46c2ccdb903fbe4d54.svg",
     "static/media/arrow-right-pink.svg": "/static/media/arrow-right-pink.7df88e56c77a85842530caa515d3c535.svg",
     "static/media/favicon.svg": "/static/media/favicon.55aaa5297b1475e52047f54f3448c017.svg",
-    "main.34a11748.css.map": "/static/css/main.34a11748.css.map",
-    "main.4fe3b020.js.map": "/static/js/main.4fe3b020.js.map"
+    "main.04d30dba.css.map": "/static/css/main.04d30dba.css.map",
+    "main.bd599bca.js.map": "/static/js/main.bd599bca.js.map"
   },
   "entrypoints": [
-    "static/css/main.34a11748.css",
-    "static/js/main.4fe3b020.js"
+    "static/css/main.04d30dba.css",
+    "static/js/main.bd599bca.js"
   ]
 }
