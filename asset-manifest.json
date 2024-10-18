@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.04d30dba.css",
-    "main.js": "/static/js/main.bd599bca.js",
+    "main.css": "/static/css/main.e0ed1fc2.css",
+    "main.js": "/static/js/main.4451ee62.js",
     "static/media/snappea-video-cropped.mp4": "/static/media/snappea-video-cropped.cf332d15eaab809a1a6d.mp4",
     "static/media/jamcity-final.mp4": "/static/media/jamcity-final.da5ece1d07b2baad51af.mp4",
     "static/media/blueprint-final-1.mp4": "/static/media/blueprint-final-1.d71beb907aebf1d14d35.mp4",
@@ -80,11 +80,11 @@
     "static/media/arrow-right-green.svg": "/static/media/arrow-right-green.3d121f298555fc46c2ccdb903fbe4d54.svg",
     "static/media/arrow-right-pink.svg": "/static/media/arrow-right-pink.7df88e56c77a85842530caa515d3c535.svg",
     "static/media/favicon.svg": "/static/media/favicon.55aaa5297b1475e52047f54f3448c017.svg",
-    "main.04d30dba.css.map": "/static/css/main.04d30dba.css.map",
-    "main.bd599bca.js.map": "/static/js/main.bd599bca.js.map"
+    "main.e0ed1fc2.css.map": "/static/css/main.e0ed1fc2.css.map",
+    "main.4451ee62.js.map": "/static/js/main.4451ee62.js.map"
   },
   "entrypoints": [
-    "static/css/main.04d30dba.css",
-    "static/js/main.bd599bca.js"
+    "static/css/main.e0ed1fc2.css",
+    "static/js/main.4451ee62.js"
   ]
 }
