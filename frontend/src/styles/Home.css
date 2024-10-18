@@ -185,10 +185,6 @@
     /* background: linear-gradient(335deg, rgb(156, 156, 156, 0.08) 20%, rgba(156, 156, 156, 0) 49.4%); */
 }
 
-.tagsContainerLabelDown {
-    display: none;
-}
-
 /* Medium screens (tablets) */
 @media (max-width: 1150px) {
     .tagsContainer {
@@ -197,44 +193,7 @@
         bottom: 0rem;
         right: 0rem;
     }
-
-    .tagsContainerLabelRight {
-        display: none;
-    }
-    
-    .tagsContainerLabelDown {
-        display: inline !important;
-        position: absolute;
-        top: 380px;
-        right: 360px;
-    }
 }
-/* Small screens (mobile) */
-@media (max-width: 1110px) {
-    .tagsContainerLabelDown {
-        top: 580px;
-        right: 340px;
-    }
-}
-@media (max-width: 768px) {
-    .tagsContainerLabelDown {
-        top: 740px;
-        right: 260px;
-    }
-}
-@media (max-width: 531px) {
-    .tagsContainerLabelDown {
-        top: 800px;
-        right: 110px;
-    }
-}
-@media (max-width: 444px) {
-    .tagsContainerLabelDown {
-        top: 880px;
-        right: 60px;
-    }
-}
-
 
 .logoHoverContainer {
     position: relative;
@@ -443,4 +402,52 @@
 .recentWork {
     text-align: center;
     margin-top: 6rem;
+    margin-bottom: 0.75rem;
+}
+
+.down-arrow {
+    position: absolute;
+    top: calc(82vh - 34px);
+    /* left: calc(0% - 14px); */
+    left: 10px;
+    width: 0;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 2px;
+    animation: jumpInfinite 2.5s infinite;
+    animation-delay: 5.5s;
+    color: var(--BLACK);
+}
+
+.down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 16px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+    color: var(--BLACK);
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1110px) {
+    .down-arrow {
+        display: none;
+    }
+}
+
+@keyframes jumpInfinite {
+    0% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 20px;
+    }
+    100% {
+        margin-top: 0;
+    }
 }

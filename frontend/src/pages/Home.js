@@ -100,22 +100,33 @@ export default function Home() {
 
         // Get the clicked h1 tag
         const clickedTag = h1Tags[index];
-      
+    
         // Get the randomly chosen container tag
         const randomContainerTag = containerTags[randomContainerIndex];
-      
+    
         // Swap text and styling
         const updatedH1Tags = [...h1Tags];
         const updatedContainerTags = [...containerTags];
-      
+    
         // Swap the text and style
         updatedContainerTags[randomContainerIndex] = { ...clickedTag , text: clickedTag.text, style: randomContainerTag.style  };
         updatedH1Tags[index] = { ...randomContainerTag, text: randomContainerTag.text, style: {} }; // Reset style for tag container
-      
+    
         // Update the state with the swapped values
         setH1Tags(updatedH1Tags);
         setContainerTags(updatedContainerTags);
     };
+
+    // Automatic switching every 1.75 seconds
+    useEffect(() => {
+        const interval = setInterval(() => {
+        const randomTagIndex = Math.floor(Math.random() * h1Tags.length);
+        handleTitleTagClick(randomTagIndex); // Call the same function to switch tags randomly
+        }, 1750); // 1.75 seconds
+
+        // Cleanup the interval on component unmount
+        return () => clearInterval(interval);
+    }, [h1Tags, containerTags]); // Add dependencies to rerun the effect when tags change
 
     return(
         <>
@@ -206,8 +217,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 ))}
-                                <p className='b2 tagsContainerLabelRight' style={{ bottom:"20px", right:"810px", position: 'absolute', zIndex: 10000, animation: 'fall 1.05s forwards', animationDelay: `1.15s`, opacity: '0'}}>Click to swap tag! →</p>
-                                <p className='b2 tagsContainerLabelDown' style={{animation: 'fall 1.05s forwards', animationDelay: `0s`, opacity: '0'}}>Click to swap tag! ↓</p>
+                                <div class="down-arrow" data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-duration="400" data-aos-once="true"></div>
                             </div>
                         </div>
 
