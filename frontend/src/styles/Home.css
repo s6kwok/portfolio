@@ -407,7 +407,8 @@
 
 .down-arrow {
     position: absolute;
-    top: calc(82vh - 34px);
+    top: 610px;
+    /* top: calc(82vh - 34px); */
     /* left: calc(0% - 14px); */
     left: 10px;
     width: 0;

@@ -53,7 +53,7 @@ export default function Footer() {
 
             {/* List of links */}
             <div className='autoLayoutRightAlignLeftCenter responsiveAutoLayoutRightCenter footerLinks' style={{gap: '2.275rem',}}>
-              <a href="\">Portfolio</a>
+              <a href="\">Design</a>
               <a onClick={() => { navigate(routes.about); window.scrollTo({ top: 0, left:0, behavior: "instant"})}}>About</a>
               <a href="mailto:@stacykwok01@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
               <a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -63,7 +63,7 @@ export default function Footer() {
         {/* Footer center aligned footnote */}
         <div style={{textAlign: 'center',}}>
             <p className='footerFootnote' style={{color: 'var(--GREY-500)'}}>
-              Portfolio made with 10,975 minutes of Spotify music, 79 Github commits (eep!), and lots of love
+              Portfolio made with 10,975 minutes of Spotify music, 80 Github commits (eep!), and lots of love
             </p>
         </div>
       </div>

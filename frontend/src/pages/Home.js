@@ -117,16 +117,25 @@ export default function Home() {
         setContainerTags(updatedContainerTags);
     };
 
-    // Automatic switching every 1.75 seconds
     useEffect(() => {
-        const interval = setInterval(() => {
-        const randomTagIndex = Math.floor(Math.random() * h1Tags.length);
-        handleTitleTagClick(randomTagIndex); // Call the same function to switch tags randomly
-        }, 1750); // 1.75 seconds
-
-        // Cleanup the interval on component unmount
-        return () => clearInterval(interval);
-    }, [h1Tags, containerTags]); // Add dependencies to rerun the effect when tags change
+        // Immediately switch a tag as soon as the component mounts with a short delay
+        const initialTimeoutId = setTimeout(() => {
+            const initialTagIndex = Math.floor(Math.random() * h1Tags.length);
+            handleTitleTagClick(initialTagIndex); // Perform the first switch quickly
+        }, 950); // Short delay for the first switch
+    
+        // Set up the interval for subsequent switches after the initial switch
+        const intervalId = setInterval(() => {
+            const randomTagIndex = Math.floor(Math.random() * h1Tags.length);
+            handleTitleTagClick(randomTagIndex); // Call the same function to switch tags randomly
+        }, 3750); // Regular interval for subsequent switches
+    
+        // Cleanup on unmount
+        return () => {
+            clearTimeout(initialTimeoutId); // Clear the initial timeout
+            clearInterval(intervalId); // Clear the interval
+        };
+    }, []); // Empty dependency array ensures it runs only once on mount
 
     return(
         <>
@@ -183,11 +192,11 @@ export default function Home() {
                                                     </>
                                                 ))}
                                             </div>
-                                            <h1>together</h1>
+                                            <h1>together to craft</h1>
                                         </div>
 
                                         {/* Remaining text */}
-                                        <h1 className='homeh1AfterTags'>to design impactful and elegant solutions.</h1>
+                                        <h1 className='homeh1AfterTags'>joyful moments and meaningful connections.</h1>
                                     </div>
                                     {/* <p>Prev @Questrade, @Jam City, @LCBO</p> */}
                                 </div>
