@@ -1,4 +1,6 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -29,7 +31,17 @@ import sparkles2Pink from '../assets/sparkles-2-pink.png';
 import JamcityLogo from '../assets/jamcity/jamcity-logo.png';
 import JamcityThumbnailVideo from '../assets/home/jamcity-video-cropped.mp4';
 
-export default function JamCity() {    
+export default function JamCity() {   
+    const location = useLocation();
+
+    useEffect(() => {
+        if (window.gtag) {
+            window.gtag('config', 'G-Y0DS208X8J', {
+                page_path: location.pathname,
+            });
+        }
+    }, [location]);
+ 
     const theme = 'pink'; 
 
     return(

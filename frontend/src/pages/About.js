@@ -5,6 +5,7 @@ import Tag from "../components/Tag";
 import '../styles/Home.css';
 
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import aboutHero from '../assets/about/hero.png';
 import aboutHearts from '../assets/about/hearts.png';
@@ -24,7 +25,17 @@ import { IoSparklesSharp } from "react-icons/io5";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
-export default function About() {    
+export default function About() { 
+    const location = useLocation();
+
+    useEffect(() => {
+        if (window.gtag) {
+            window.gtag('config', 'G-Y0DS208X8J', {
+                page_path: location.pathname,
+            });
+        }
+    }, [location]);
+
     // Fade in
     useEffect(() => {
         AOS.init({
