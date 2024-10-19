@@ -64,7 +64,7 @@ export default function Footer() {
             {/* List of links */}
             <div className='autoLayoutRightAlignLeftCenter responsiveAutoLayoutRightLeft footerLinks' style={{gap: '3rem',}}>
               <a href="\" style={{whiteSpace: 'nowrap'}}><FaArrowRightLong style={{paddingTop: '0.25rem', marginRight: '0.25rem'}} />Work</a>
-              <a style={{whiteSpace: 'nowrap'}} onClick={() => { navigate(routes.about); window.scrollTo({ top: 0, left:0, behavior: "instant"})}}><FaArrowRightLong style={{paddingTop: '0.25rem', marginRight: '0.25rem'}} />About</a>
+              {/* <a style={{whiteSpace: 'nowrap'}} onClick={() => { navigate(routes.about); window.scrollTo({ top: 0, left:0, behavior: "instant"})}}><FaArrowRightLong style={{paddingTop: '0.25rem', marginRight: '0.25rem'}} />About</a> */}
               <a style={{whiteSpace: 'nowrap'}} href="mailto:@stacykwok01@gmail.com" target="_blank" rel="noopener noreferrer"><FaArrowRightLong style={{paddingTop: '0.25rem', marginRight: '0.25rem'}} />Email</a>
               <a style={{whiteSpace: 'nowrap'}} href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" rel="noopener noreferrer"><FaArrowRightLong style={{paddingTop: '0.25rem', marginRight: '0.25rem'}} />LinkedIn</a>
             </div>
