@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -24,16 +23,6 @@ import sparkles3BlueLeft from '../assets/sparkles-3-blue-left.png';
 import sparkles3BlueRight from '../assets/sparkles-3-blue-right.png';
 
 export default function Blueprint() {    
-    const location = useLocation();
-
-    useEffect(() => {
-        if (window.gtag) {
-            window.gtag('config', 'G-Y0DS208X8J', {
-                page_path: location.pathname,
-            });
-        }
-    }, [location]);
-
     const theme = 'blue';
 
     return(

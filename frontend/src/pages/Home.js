@@ -137,7 +137,7 @@ export default function Home() {
         const intervalId = setInterval(() => {
             const randomTagIndex = Math.floor(Math.random() * h1Tags.length);
             handleTitleTagClick(randomTagIndex); // Call the same function to switch tags randomly
-        }, 8000); // Regular interval for subsequent switches
+        }, 4000); // Regular interval for subsequent switches
     
         // Cleanup on unmount
         return () => {

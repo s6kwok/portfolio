@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -40,17 +39,7 @@ import snappeaFun from '../assets/snappea/snappea-fun.mp4';
 
 import { FaClock, FaLocationArrow } from "react-icons/fa6";
 
-export default function SnapPea() {  
-    const location = useLocation();
-
-    useEffect(() => {
-        if (window.gtag) {
-            window.gtag('config', 'G-Y0DS208X8J', {
-                page_path: location.pathname,
-            });
-        }
-    }, [location]);
-  
+export default function SnapPea() {    
     const theme = 'blue'; 
 
     return(

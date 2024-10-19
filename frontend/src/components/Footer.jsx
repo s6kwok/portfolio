@@ -55,20 +55,18 @@ export default function Footer() {
               </div>
               <h4 style={{ whiteSpace: 'nowrap'}} >have fun along the way)!</h4> */}
               {/* <h4>Let's <span style={{color: 'var(--PRIMARY-BLUE-500)'}}>collab</span> on something amazing (and have fun along the way)!</h4> */}
-              <h4>Let's collab on something amazing (and have fun along the way)!</h4>
-              <div>
-                <RiEmotionHappyLine style={{fontSize: '1.75rem', marginRight: '0.5rem'}} className="footerEmojis" />
+              <h4>Let's collab on something amazing (and have fun along the way)! <RiEmotionHappyLine style={{fontSize: '1.75rem', marginRight: '0.5rem'}} className="footerEmojis" />
                 {/* <img src={Sparkle5} alt="Sparkle" width="24" height="24" className="footerEmojis" style={{marginBottom: '0.15rem'}}/> */}
-                <img src={Sparkle} alt="Sparkle" width="24" height="24" className="footerEmojis" style={{marginBottom: '0.15rem'}}/>
-              </div>
+                <img src={Sparkle} alt="Sparkle" width="24" height="24" className="footerEmojis" style={{marginBottom: '0.15rem'}}/></h4>
+              
             </div>
 
             {/* List of links */}
-            <div className='autoLayoutRightAlignLeftCenter responsiveAutoLayoutRightCenter footerLinks' style={{gap: '3rem',}}>
-              <a href="\"><FaArrowRightLong style={{paddingTop: '0.25rem', marginRight: '0.25rem'}} />Work</a>
-              <a onClick={() => { navigate(routes.about); window.scrollTo({ top: 0, left:0, behavior: "instant"})}}><FaArrowRightLong style={{paddingTop: '0.25rem', marginRight: '0.25rem'}} />About</a>
-              <a href="mailto:@stacykwok01@gmail.com" target="_blank" rel="noopener noreferrer"><FaArrowRightLong style={{paddingTop: '0.25rem', marginRight: '0.25rem'}} />Email</a>
-              <a href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" rel="noopener noreferrer"><FaArrowRightLong style={{paddingTop: '0.25rem', marginRight: '0.25rem'}} />LinkedIn</a>
+            <div className='autoLayoutRightAlignLeftCenter responsiveAutoLayoutRightLeft footerLinks' style={{gap: '3rem',}}>
+              <a href="\" style={{whiteSpace: 'nowrap'}}><FaArrowRightLong style={{paddingTop: '0.25rem', marginRight: '0.25rem'}} />Work</a>
+              <a style={{whiteSpace: 'nowrap'}} onClick={() => { navigate(routes.about); window.scrollTo({ top: 0, left:0, behavior: "instant"})}}><FaArrowRightLong style={{paddingTop: '0.25rem', marginRight: '0.25rem'}} />About</a>
+              <a style={{whiteSpace: 'nowrap'}} href="mailto:@stacykwok01@gmail.com" target="_blank" rel="noopener noreferrer"><FaArrowRightLong style={{paddingTop: '0.25rem', marginRight: '0.25rem'}} />Email</a>
+              <a style={{whiteSpace: 'nowrap'}} href="https://www.linkedin.com/in/stacykwok-01/" target="_blank" rel="noopener noreferrer"><FaArrowRightLong style={{paddingTop: '0.25rem', marginRight: '0.25rem'}} />LinkedIn</a>
             </div>
         </div>
 

@@ -138,10 +138,10 @@ li {
         gap: 0.35rem !important;
     }
 
-    .footerLinks {
+    /* .footerLinks {
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
 
     .footerFootnote {
         width: 80%;
@@ -167,6 +167,12 @@ li {
     .autoLayoutRightAlignLeftTop {
         flex-direction: wrap;
         align-items: flex-start;
+    }
+
+    .responsiveAutoLayoutRightLeft {
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
     .responsiveAutoLayoutRightCenter {
@@ -213,6 +219,12 @@ li {
         flex-direction: row;
     }
 
+    .responsiveAutoLayoutRightLeft {
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
     .responsiveAutoLayoutRightTop {
         align-items: flex-start !important;
         flex-direction: row;
@@ -228,6 +240,10 @@ li {
 
     .footerHeader {
         gap: 0.25rem !important;
+    }
+
+    .footerLinks {
+        gap: 2rem !important;
     }
 }
 

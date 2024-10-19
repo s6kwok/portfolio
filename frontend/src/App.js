@@ -1,6 +1,8 @@
 import {Route, HashRouter as Router, Routes} from 'react-router-dom';
 // import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import React, { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import "./App.css";
 import "./styles/Text.css";
@@ -16,11 +18,28 @@ import JamCity from './pages/JamCity'
 import Blueprint from './pages/Blueprint'
 import Questrade from './pages/Questrade'
 
+// Helper component to track page views
+function PageTracker() {
+  const location = useLocation(); // Get current location (route)
+
+  useEffect(() => {
+    if (window.gtag) {
+      // Send the current path to Google Analytics
+      window.gtag('config', 'YOUR_TRACKING_ID', {
+        page_path: location.pathname + location.search,
+      });
+    }
+  }, [location]); // Run effect every time location (route) changes
+
+  return null; // This component doesn't render anything
+}
+
 export default function App() {
   return (
     <div>
-      {/* <BrowserRouter> */}
-      <Router baseline='/'>
+      <BrowserRouter>
+      {/* <Router baseline='/'> */}
+        <PageTracker />
           <Routes>
             {/* Add new pages to routes list to link pages */}
             <Route index element={<Home />} />
@@ -34,8 +53,8 @@ export default function App() {
             <Route path={routes.blueprint} element={<Blueprint />} />
             <Route path={routes.questrade} element={<Questrade />} />
           </Routes>
-      </ Router>
-      {/* </BrowserRouter> */}
+      {/* </ Router> */}
+      </BrowserRouter>
     </div>
   );
 }

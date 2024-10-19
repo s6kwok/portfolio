@@ -220,7 +220,8 @@
     transform: scale(1.2);
     transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
     color: var(--PRIMARY-BLUE-500);
-    padding-bottom: 0.2rem;
+    margin-bottom: 0rem;
+    padding-top: 0.2rem;
 }
 .footerEmojis:hover {
     transform: scale(1.4) rotate(90deg);

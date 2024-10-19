@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -20,16 +19,6 @@ import QuestradeLogo from '../assets/questrade/questrade-logo.png';
 import QuestradeThumbnailVideo from '../assets/home/questrade-video-cropped.mp4';
 
 export default function Questrade() {
-    const location = useLocation();
-
-    useEffect(() => {
-        if (window.gtag) {
-            window.gtag('config', 'G-Y0DS208X8J', {
-                page_path: location.pathname,
-            });
-        }
-    }, [location]);
-
     const theme = 'green'; 
 
     return(
