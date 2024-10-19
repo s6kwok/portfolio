@@ -92,7 +92,7 @@ export default function About() {
                                     <h3>Hi internet! I'm </h3>
                                     <div className="hoverContainer">
                                         <div className="hoverContainerTag" onClick={toggleImage1}>
-                                            <Tag theme="orange" size="small" icon={FaHeart} text="Stacy" />
+                                            <Tag theme="primary-blue" size="small" icon={FaHeart} text="Stacy" />
                                         </div>
                                         <div className="popupImage name" style={{ display: isVisible1 ? 'block' : 'none', maxWidth: '25%', }}>
                                             <img src={aboutHearts} alt="Hearts" className='image'/>

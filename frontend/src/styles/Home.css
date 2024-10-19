@@ -229,13 +229,13 @@
     transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
 }
 .recentWorkEmojis1:hover {
-    transform: scale(1.2) rotate(-10deg);
+    transform: scale(1.35) rotate(-10deg);
 }
 .recentWorkEmojis2 {
     transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
 }
 .recentWorkEmojis2:hover {
-    transform: scale(1.2) rotate(10deg);
+    transform: scale(1.35) rotate(10deg);
 }
 
 .aboutTopRight {
@@ -442,7 +442,7 @@
     border-radius: 2px;
     animation: jumpInfinite 2.5s infinite;
     animation-delay: 5.5s;
-    color: var(--BLACK);
+    color: var(--GREY-400);
 }
 
 .down-arrow:after {
@@ -456,7 +456,11 @@
     border-right: 4px solid;
     border-radius: 4px;
     transform: rotateZ(45deg);
-    color: var(--BLACK);
+    color: var(--GREY-400);
+}
+
+.down-arrow:hover {
+    cursor: url('../assets/cursor-hand.svg'), auto !important;
 }
 
 /* Medium screens (tablets) */

@@ -40,6 +40,8 @@ import Sparkle3 from '../assets/home/sparkle3.svg';
 import Sparkle4 from '../assets/home/sparkle4.svg';
 import SparkleCluster1 from '../assets/home/sparkle-cluster-1.svg';
 import SparkleCluster2 from '../assets/home/sparkle-cluster-2.svg';
+import Sparkle5 from '../assets/home/sparkle5.svg';
+import Sparkle6 from '../assets/home/sparkle6.svg';
 
 // Fade in
 import 'aos/dist/aos.css';
@@ -129,13 +131,13 @@ export default function Home() {
         const initialTimeoutId = setTimeout(() => {
             const initialTagIndex = Math.floor(Math.random() * h1Tags.length);
             handleTitleTagClick(initialTagIndex); // Perform the first switch quickly
-        }, 950); // Short delay for the first switch
+        }, 1500); // Short delay for the first switch
     
         // Set up the interval for subsequent switches after the initial switch
         const intervalId = setInterval(() => {
             const randomTagIndex = Math.floor(Math.random() * h1Tags.length);
             handleTitleTagClick(randomTagIndex); // Call the same function to switch tags randomly
-        }, 3750); // Regular interval for subsequent switches
+        }, 8000); // Regular interval for subsequent switches
     
         // Cleanup on unmount
         return () => {
@@ -167,7 +169,9 @@ export default function Home() {
                                 <div className='autoLayoutDownAlignCenter gaph1b1 heroMainParagraphContent'>
                                     <div className='autoLayoutDownAlignCenter gaph1h1'>
                                     {/* <div className='autoLayoutDownAlignCenter gaph1h1' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"> */}
-                                        <h1>Hi, I’m Stacy!</h1>
+                                        {/* <h1>Hi, I’m Stacy <img src={Sparkle5} alt="Sparkle" width="28" height="28" style={{marginLeft: '0.2rem'}} /> <img src={Sparkle6} alt="Sparkle" width="24" height="24" /></h1> */}
+                                        {/* <h1>Hi, I’m Stacy!</h1> */}
+                                        <h1>Hi, I’m Stacy <RiEmotionHappyLine style={{fontSize: '2rem', marginRight: '0.15rem', marginLeft: '0.25rem', paddingBottom: '0rem'}} className="footerEmojis" /> <img src={Sparkle6} alt="Sparkle" width="26" height="26" className="footerEmojis" style={{marginLeft: '0rem', paddingBottom: '0.25rem'}} /></h1>
 
                                         {/* Line with tags */}
                                         <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText heroMainParagraphContentHeader'>
@@ -199,11 +203,11 @@ export default function Home() {
                                                     </>
                                                 ))}
                                             </div>
-                                            <h1>together to craft</h1>
+                                            <h1>together</h1>
                                         </div>
 
                                         {/* Remaining text */}
-                                        <h1 className='homeh1AfterTags'>joyful moments and meaningful connections.</h1>
+                                        <h1 className='homeh1AfterTags'>to craft joyful moments and connections.</h1>
                                     </div>
                                     {/* <p>Prev @Questrade, @Jam City, @LCBO</p> */}
                                 </div>
@@ -233,11 +237,21 @@ export default function Home() {
                                         </div>
                                     </div>
                                 ))}
-                                <div class="down-arrow" data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-duration="400" data-aos-once="true"></div>
+                                <div class="down-arrow" data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-duration="400" data-aos-once="true" onClick={() => {
+                                const element = document.getElementById("recentWorkHeader");
+                                const offset = -100; // Adjust this value to fine-tune the scroll position
+                                const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                                const offsetPosition = elementPosition + offset;
+
+                                window.scrollTo({
+                                    top: offsetPosition,
+                                    behavior: "smooth"
+                                });
+                                }}></div>
                             </div>
                         </div>
 
-                        <div className='recentWork autoLayoutRightAlignCenter' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true" style={{gap: '1rem'}}>
+                        <div className='recentWork autoLayoutRightAlignCenter' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true" style={{gap: '1rem'}} id='recentWorkHeader'>
                             {/* <h4><HiSparkles /><IoSparklesSharp />Recent work I'm proud of!</h4> */}
                             <img src={SparkleCluster1} alt="Sparkles" width="40" height="40" className="recentWorkEmojis1" style={{marginBottom: '0.75rem'}} />
                             <h4>Recent work I'm proud of!</h4>

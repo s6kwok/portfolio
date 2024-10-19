@@ -9,6 +9,9 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 import footerStars from '../assets/footer-stars.png';
 
+import Sparkle5 from '../assets/home/sparkle5.svg';
+import Sparkle6 from '../assets/home/sparkle6.svg';
+
 import { useNavigate } from 'react-router-dom';
 import { routes } from "../routes/Routes";
 
@@ -27,11 +30,11 @@ export default function Footer() {
     <footer className='marginsPrimary'>
 
       {/* Footer all text autolayout */}
-      <div className='autoLayoutDownAlignCenter' style={{gap: '3rem', paddingBottom: '2rem',}}>
+      <div className='autoLayoutDownAlignCenter' style={{gap: '3.5rem', paddingBottom: '2rem',}}>
         <hr />
 
         {/* Footer main text */}
-        <div className='autoLayoutDownAlignTop' style={{gap: '2.15rem', paddingBottom: '1.25rem',}}>
+        <div className='autoLayoutDownAlignTop' style={{gap: '1.8rem', paddingBottom: '1.5rem',}}>
             
             {/* Footer header */}
             <div className='autoLayoutRightAlignLeftCenter gapSmallTagInlineText footerHeader'>
@@ -51,9 +54,11 @@ export default function Footer() {
                 <h4 style={{ whiteSpace: 'nowrap'}} >something amazing (and</h4>
               </div>
               <h4 style={{ whiteSpace: 'nowrap'}} >have fun along the way)!</h4> */}
-              <h4>Let's <span style={{color: 'var(--PRIMARY-BLUE-500)'}}>collab</span> on something amazing (and have fun along the way)!</h4>
+              {/* <h4>Let's <span style={{color: 'var(--PRIMARY-BLUE-500)'}}>collab</span> on something amazing (and have fun along the way)!</h4> */}
+              <h4>Let's collab on something amazing (and have fun along the way)!</h4>
               <div>
-                <RiEmotionHappyLine style={{fontSize: '1.75rem', marginRight: '0.45rem'}} className="footerEmojis" />
+                <RiEmotionHappyLine style={{fontSize: '1.75rem', marginRight: '0.5rem'}} className="footerEmojis" />
+                {/* <img src={Sparkle5} alt="Sparkle" width="24" height="24" className="footerEmojis" style={{marginBottom: '0.15rem'}}/> */}
                 <img src={Sparkle} alt="Sparkle" width="24" height="24" className="footerEmojis" style={{marginBottom: '0.15rem'}}/>
               </div>
             </div>
@@ -70,7 +75,7 @@ export default function Footer() {
         {/* Footer center aligned footnote */}
         <div style={{textAlign: 'center',}}>
             <p className='footerFootnote' style={{color: 'var(--GREY-500)'}}>
-              Portfolio made with 10,975 minutes of Spotify music, 81 Github commits (eep!), and lots of love
+              Portfolio made with 10,975 minutes of Spotify music, 82 Github commits (eep!), and lots of love
             </p>
         </div>
       </div>
