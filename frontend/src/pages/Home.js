@@ -170,8 +170,8 @@ export default function Home() {
                                     <div className='autoLayoutDownAlignCenter gaph1h1'>
                                     {/* <div className='autoLayoutDownAlignCenter gaph1h1' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"> */}
                                         {/* <h1>Hi, I’m Stacy <img src={Sparkle5} alt="Sparkle" width="28" height="28" style={{marginLeft: '0.2rem'}} /> <img src={Sparkle6} alt="Sparkle" width="24" height="24" /></h1> */}
-                                        {/* <h1>Hi, I’m Stacy!</h1> */}
-                                        <h1>Hi, I’m Stacy <RiEmotionHappyLine style={{fontSize: '2rem', marginRight: '0.15rem', marginLeft: '0.25rem', paddingBottom: '0rem'}} className="footerEmojis" /> <img src={Sparkle6} alt="Sparkle" width="26" height="26" className="footerEmojis" style={{marginLeft: '0rem', paddingBottom: '0.25rem'}} /></h1>
+                                        <h1>Hi, I’m Stacy!</h1>
+                                        {/* <h1>Hi, I’m Stacy <RiEmotionHappyLine style={{fontSize: '2rem', marginRight: '0.15rem', marginLeft: '0.25rem', paddingBottom: '0rem'}} className="footerEmojis" /> <img src={Sparkle6} alt="Sparkle" width="26" height="26" className="footerEmojis" style={{marginLeft: '0rem', paddingBottom: '0.25rem'}} /></h1> */}
 
                                         {/* Line with tags */}
                                         <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText heroMainParagraphContentHeader'>

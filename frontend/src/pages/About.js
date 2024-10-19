@@ -10,9 +10,9 @@ import aboutHero from '../assets/about/hero.png';
 import aboutHearts from '../assets/about/hearts.png';
 import aboutEating from '../assets/about/eating.png';
 import aboutCreating from '../assets/about/creating.png';
-import aboutAdventures from '../assets/about/adventures.png';
-import aboutExperimenting from '../assets/about/experimenting.png';
-import aboutLaughing from '../assets/about/laughing.png';
+import aboutAdventures from '../assets/about/adventures.jpg';
+import aboutExperimenting from '../assets/about/experimenting.jpg';
+import aboutLaughing from '../assets/about/laughing.jpg';
 
 import { FaHeart, FaUtensils, FaFlask } from "react-icons/fa";
 import { RiEmotionHappyLine, RiMusic2Fill } from "react-icons/ri";
