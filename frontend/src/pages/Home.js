@@ -29,10 +29,17 @@ import SnappeaThumbnailVideo from '../assets/home/snappea-video-cropped.mp4';
 import { RiEmotionHappyLine } from "react-icons/ri";
 import { BsBarChartLineFill } from "react-icons/bs";
 import { HiSparkles } from "react-icons/hi2";
-import { IoBalloonSharp, } from "react-icons/io5";
+import { IoBalloonSharp, IoSparklesSharp } from "react-icons/io5";
 import { FaBookOpen, FaHeart, FaLightbulb } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa6";
 import { MdQuestionMark } from "react-icons/md";
+
+import Sparkle1 from '../assets/home/sparkle1.svg';
+import Sparkle2 from '../assets/home/sparkle2.svg';
+import Sparkle3 from '../assets/home/sparkle3.svg';
+import Sparkle4 from '../assets/home/sparkle4.svg';
+import SparkleCluster1 from '../assets/home/sparkle-cluster-1.svg';
+import SparkleCluster2 from '../assets/home/sparkle-cluster-2.svg';
 
 // Fade in
 import 'aos/dist/aos.css';
@@ -230,8 +237,11 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className='recentWork' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true">
+                        <div className='recentWork autoLayoutRightAlignCenter' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true" style={{gap: '1rem'}}>
+                            {/* <h4><HiSparkles /><IoSparklesSharp />Recent work I'm proud of!</h4> */}
+                            <img src={SparkleCluster1} alt="Sparkles" width="40" height="40" className="recentWorkEmojis1" style={{marginBottom: '0.75rem'}} />
                             <h4>Recent work I'm proud of!</h4>
+                            <img src={SparkleCluster2} alt="Sparkles" width="42" height="42" className="recentWorkEmojis2" style={{marginBottom: '0.5rem'}} />
                         </div>
 
                         {/* Projects list */}
@@ -244,7 +254,7 @@ export default function Home() {
                                     navigate(routes.snapPea);
                                     window.scrollTo({ top:0, left:0, behavior: "instant"})
                                 }}
-                                data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
+                                data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-delay="200" data-aos-once="true"
                             >
 
                                 {/* Left section with photo */}
@@ -263,7 +273,7 @@ export default function Home() {
 
                                     {/* Header and inline tag */}
                                     <div className='cursorEyes'>
-                                        <h3 className='cursorEyes'>Accelerating <span style={{...projectPrimaryColor['blue'],}} className='cursorEyes' >value discovery</span> for a mapping platform</h3>
+                                        <h3 className='cursorEyes'>Accelerating <span style={{...projectPrimaryColor['blue'],}} className='cursorEyes' >value discovery</span> for a mapping <span style={{whiteSpace: 'nowrap'}}>platform <img src={Sparkle1} alt="Sparkle" width="24" height="24" /></span></h3>
                                     </div>
                                     
                                     {/* Rest of paragraph */}
@@ -303,7 +313,7 @@ export default function Home() {
 
                                     {/* Header and inline tag */}
                                     <div className='cursorEyes'>
-                                        <h3 className='cursorEyes'>Creating an <span style={{...projectPrimaryColor['pink'],}} className='cursorEyes' >engaging</span> player rewards system</h3>
+                                        <h3 className='cursorEyes'>Creating an <span style={{...projectPrimaryColor['pink'],}} className='cursorEyes' >engaging</span> player rewards <span style={{whiteSpace: 'nowrap'}}>system <img src={Sparkle2} alt="Sparkle" width="24" height="24" /></span></h3>
                                     </div>
                                     
                                     {/* Rest of paragraph */}
@@ -343,7 +353,7 @@ export default function Home() {
 
                                     {/* Header and inline tag */}
                                     <div className='cursorEyes'>
-                                        <h3 className='cursorEyes'>Enhancing the <span style={{...projectPrimaryColor['green'],}} className='cursorEyes' >discoverability</span> of new web features</h3>
+                                        <h3 className='cursorEyes'>Enhancing the <span style={{...projectPrimaryColor['green'],}} className='cursorEyes' >discoverability</span> of new web <span style={{whiteSpace: 'nowrap'}}>features <img src={Sparkle3} alt="Sparkle" width="24" height="24" /></span></h3>
                                     </div>
                                     
                                     {/* Rest of paragraph */}
@@ -383,7 +393,7 @@ export default function Home() {
 
                                     {/* Header and inline tag */}
                                     <div className='cursorEyes'>
-                                        <h3 className='cursorEyes'><span style={{...projectPrimaryColor['blue'],}} className='cursorEyes' >Reducing barriers</span> to program registration</h3>
+                                        <h3 className='cursorEyes'><span style={{...projectPrimaryColor['blue'],}} className='cursorEyes' >Reducing barriers</span> to program <span style={{whiteSpace: 'nowrap'}}>registration <img src={Sparkle4} alt="Sparkle" width="24" height="24" /></span></h3>
                                     </div>
                                     
                                     {/* Rest of paragraph */}

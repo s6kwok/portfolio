@@ -33,7 +33,7 @@ const NavTabs = ({ activeTab, onTabChange }) => {
         className={activeTab === 'Design' ? 'navActive' : 'navInactive'}
         onClick={() => handleTabClick('Design')}
       >
-        Design
+        Work
       </p>
 
       {/* About Tab */}

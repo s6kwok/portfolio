@@ -120,12 +120,12 @@ export default function About() {
                     </div>
 
                     {/* Sparkles divider autolayout right */}
-                    <div className='autoLayoutRightAlignCenter gapb1b1MultiParagraph responsiveAutoLayoutRightCenter'>
+                    {/* <div className='autoLayoutRightAlignCenter gapb1b1MultiParagraph responsiveAutoLayoutRightCenter'> */}
                         {/* <HiSparkles style={{ width: '1rem', height: '1rem' }} /> */}
-                        <HiSparkles style={{ fontSize: '20px' }} />
+                        {/* <HiSparkles style={{ fontSize: '20px' }} />
                         <IoSparklesSharp style={{ fontSize: '20px' }} />
                         <HiSparkles style={{ fontSize: '20px' }} />
-                    </div>
+                    </div> */}
                     
                     {/* Large flowing text autolayout down */}
                     <div className='autoLayoutDownAlignTop gaph3h3' id='play' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-once="true">

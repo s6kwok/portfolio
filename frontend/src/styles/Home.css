@@ -34,8 +34,8 @@
 }
 
 .projectsListItem:hover {
-    transform: translateY(-24px) !important;
-    opacity: 84% !important;
+    transform: translateY(-12px) !important;
+    opacity: 86% !important;
 }
 /* Medium screens (tablets) */
 @media (max-width: 1024px) {
@@ -200,17 +200,42 @@
 }
 
 .logoHoverContent {
-    visibility: hidden; /* Initially hidden */
-    opacity: 0; /* Fully transparent */
-    transform: scale(0.5); /* Shrink to half its size initially */
+    /* visibility: hidden;
+    opacity: 0;
+    transform: scale(0.5); */
+    transform: scale(1.2);
     transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
     color: var(--PRIMARY-BLUE-500);
 }
 
 .logoHoverContainer:hover .logoHoverContent {
-    visibility: visible; /* Show element on hover */
-    opacity: 1; /* Fully opaque */
-    transform: scale(1.36); /* Grow to its original size */
+    /* visibility: visible;
+    opacity: 1;
+    transform: scale(1.36); */
+    transform: scale(1.4) rotate(90deg); /* Rotates the element by 45 degrees */
+
+}
+
+.footerEmojis {
+    transform: scale(1.2);
+    transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+    color: var(--PRIMARY-BLUE-500);
+    padding-bottom: 0.2rem;
+}
+.footerEmojis:hover {
+    transform: scale(1.4) rotate(90deg);
+}
+.recentWorkEmojis1 {
+    transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+}
+.recentWorkEmojis1:hover {
+    transform: scale(1.2) rotate(-10deg);
+}
+.recentWorkEmojis2 {
+    transition: visibility 0s, opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+}
+.recentWorkEmojis2:hover {
+    transform: scale(1.2) rotate(10deg);
 }
 
 .aboutTopRight {

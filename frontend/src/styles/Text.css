@@ -20,17 +20,23 @@
     color: var(--PRIMARY-BLUE-500);
 }
 
-.navActive, .navInactive:hover {
-    /* color: var(--PRIMARY-BLUE-500); */
+.navActive {
     color: var(--BLACK);
+}
+
+.navInactive:hover {
+    color: var(--PRIMARY-BLUE-500);
+}
+
+.navActive, .navInactive:hover {
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.5rem;
     /* text-decoration: var(--PRIMARY-BLUE-500) line-through; */
     text-decoration: var(--PRIMARY-BLUE-500) wavy underline;
+    /* text-decoration: var(--PRIMARY-BLUE-500) underline; */
     text-underline-offset: 4.5px;
     text-decoration-thickness: 2px;
-    /* text-decoration: underline; */
     /* cursor: pointer; */
     cursor: url('../assets/cursor-hand.svg'), auto;
     /* opacity: 100%; */
@@ -97,9 +103,9 @@ p, li {
 /* b1 link */
 a {
     font-size: 1.025rem;
-    font-weight: 400;
+    font-weight: 450;
     line-height: 1.8rem;
-    text-decoration-line: underline;
+    text-decoration-line: none;
     color: inherit;
     letter-spacing: -0.01rem;
 }
@@ -108,6 +114,10 @@ a:hover {
     color: var(--PRIMARY-BLUE-500);
     /* opacity: 80%; */
     /* cursor: pointer; */
+    /* text-decoration-line: underline; */
+    text-decoration: var(--PRIMARY-BLUE-500) wavy underline;
+    text-underline-offset: 4.5px;
+    text-decoration-thickness: 2px;
     cursor: url('../assets/cursor-hand.svg'), auto;
 }
 

@@ -57,6 +57,7 @@ html {
 body {
     /* background: #FCF9F9; */
     background: var(--WHITE);
+    /* background: #F9FAFF; */
     color: var(--BLACK);
 }
 
@@ -149,6 +150,10 @@ li {
     }
 }
 
+.logo:hover {
+    text-decoration: none;
+}
+
 @media (max-width: 1024px) {
     /* responsiveAutoLayoutDownCenter */
     .autoLayoutRightAlignCenter, 
@@ -222,7 +227,7 @@ li {
     }
 
     .footerHeader {
-        gap: 0.75rem !important;
+        gap: 0.25rem !important;
     }
 }
 
