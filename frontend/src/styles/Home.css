@@ -30,12 +30,12 @@
 
 .projectsListItem {
     /* cursor: pointer; */
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.05s ease-in-out;
 }
 
 .projectsListItem:hover {
     /* transform: translateY(-12px) !important; */
-    transform: scale(1.02) !important;
+    transform: scale(1.025) !important;
     opacity: 86% !important;
 }
 /* Medium screens (tablets) */
