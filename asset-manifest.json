@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.72a1d0d9.css",
-    "main.js": "/static/js/main.32b425f0.js",
+    "main.js": "/static/js/main.88510787.js",
     "static/media/snappea-video-cropped.mp4": "/static/media/snappea-video-cropped.cf332d15eaab809a1a6d.mp4",
     "static/media/jamcity-final.mp4": "/static/media/jamcity-final.da5ece1d07b2baad51af.mp4",
     "static/media/blueprint-final-1.mp4": "/static/media/blueprint-final-1.d71beb907aebf1d14d35.mp4",
@@ -56,12 +56,12 @@
     "static/media/snappea-dual-flows-1.png": "/static/media/snappea-dual-flows-1.0069fd8aa679f6d49a3d.png",
     "static/media/blueprint-header-1.png": "/static/media/blueprint-header-1.90c4d45acdc901e078b4.png",
     "static/media/questrade-header.png": "/static/media/questrade-header.b2c98c75e794807aff54.png",
+    "static/media/jamcity-success-2.png": "/static/media/jamcity-success-2.7e552b3ec840a35fd703.png",
     "static/media/blueprint-header-3.png": "/static/media/blueprint-header-3.52d538ba020c16a2a7b5.png",
     "static/media/jamcity-problem.png": "/static/media/jamcity-problem.26595ce71066edd6dd38.png",
     "static/media/blueprint-header-4.png": "/static/media/blueprint-header-4.a145e0ea1ee5309e267c.png",
     "static/media/snappea-success-1.png": "/static/media/snappea-success-1.71c3e87fef343d9c2dba.png",
     "static/media/snappea-flow-1.png": "/static/media/snappea-flow-1.6f8c6e7a99dbdd1da22a.png",
-    "static/media/jamcity-success-2.png": "/static/media/jamcity-success-2.6bf6295c914a7abcc066.png",
     "static/media/snappea-success-2.png": "/static/media/snappea-success-2.951a7f2f2de8b5b97b10.png",
     "static/media/jamcity-success-1.png": "/static/media/jamcity-success-1.695cf6279cf3f45acecd.png",
     "static/media/jamcity-challenge.png": "/static/media/jamcity-challenge.f1d8e4a0b52db01b812e.png",
@@ -89,10 +89,10 @@
     "static/media/sparkle2.svg": "/static/media/sparkle2.788137468e889a90b18ec56f9f7626b5.svg",
     "static/media/sparkle4.svg": "/static/media/sparkle4.2fc245e4febe4337cef792ae0dcb95c5.svg",
     "main.72a1d0d9.css.map": "/static/css/main.72a1d0d9.css.map",
-    "main.32b425f0.js.map": "/static/js/main.32b425f0.js.map"
+    "main.88510787.js.map": "/static/js/main.88510787.js.map"
   },
   "entrypoints": [
     "static/css/main.72a1d0d9.css",
-    "static/js/main.32b425f0.js"
+    "static/js/main.88510787.js"
   ]
 }
