@@ -126,85 +126,94 @@ export default function About() {
                         <IoSparklesSharp style={{ fontSize: '20px' }} />
                         <HiSparkles style={{ fontSize: '20px' }} />
                     </div> */}
+
+                    
                     
                     {/* Large flowing text autolayout down */}
-                    <div className='autoLayoutDownAlignTop gaph3h3' id='play' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-once="true">
-                        <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                            <h3 className='aboutParagraphLineHeight'>Beyond design, you’ll find me</h3>
-                            <div className="hoverContainer">
-                                <div className="hoverContainerTag" onClick={toggleImage2}>
-                                    <Tag theme="pink" size="small" icon={FaUtensils} text="eating" />
-                                </div>
-                                <div className="popupImage eating" style={{ display: isVisible2 ? 'block' : 'none',}}>
-                                    <img src={aboutEating} alt="Eating good food!" className='image' style={{border: '3px solid var(--PINK-300)',}}/>
+                    <div className='autoLayoutDownAlignTop gaph3h3' id='play'>
+                        {/* Hint */}
+                        <div className='autoLayoutRightAlignCenter responsiveAutoLayoutRightCenter' style={{marginBottom: '3.65rem', marginTop: '1rem'}} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-once="true" >
+                            <p>Psst! Click on the tags below to reveal surprises!</p>
+                        </div>
+
+                        <div className='autoLayoutDownAlignTop gaph3h3' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-once="true">
+                            <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
+                                <h3 className='aboutParagraphLineHeight'>Beyond design, you’ll find me</h3>
+                                <div className="hoverContainer">
+                                    <div className="hoverContainerTag" onClick={toggleImage2}>
+                                        <Tag theme="pink" size="small" icon={FaUtensils} text="eating" />
+                                    </div>
+                                    <div className="popupImage eating" style={{ display: isVisible2 ? 'block' : 'none',}}>
+                                        <img src={aboutEating} alt="Eating good food!" className='image' style={{border: '3px solid var(--PINK-300)',}}/>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                            <h3 className='aboutParagraphLineHeight'>good food, playing volleyball, unlearning,</h3>
-                        </div>
-                        <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                            <div className="hoverContainer">
-                                <div className="hoverContainerTag" onClick={toggleImage3}>
-                                    <Tag theme="blue" size="small" icon={RiMusic2Fill} text="creating" />
+                            <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
+                                <h3 className='aboutParagraphLineHeight'>good food, playing volleyball, unlearning,</h3>
+                            </div>
+                            <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
+                                <div className="hoverContainer">
+                                    <div className="hoverContainerTag" onClick={toggleImage3}>
+                                        <Tag theme="blue" size="small" icon={RiMusic2Fill} text="creating" />
+                                    </div>
+                                    <div className="popupImage creating" style={{ display: isVisible3 ? 'block' : 'none',}}>
+                                        <img src={aboutCreating} alt="Me creating!" className='image' style={{border: '3px solid var(--BLUE-300)', width: '300px'}}/>
+                                    </div>
                                 </div>
-                                <div className="popupImage creating" style={{ display: isVisible3 ? 'block' : 'none',}}>
-                                    <img src={aboutCreating} alt="Me creating!" className='image' style={{border: '3px solid var(--BLUE-300)', width: '300px'}}/>
+                                <h3>vibe-y Spotify playlists,</h3>
+                            </div>
+                            <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
+                                <h3 className='aboutParagraphLineHeight'>doom-scrolling, cooking Samyang fire noodles,</h3>
+                            </div>
+                            <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
+                                <h3>gaming, going on</h3>
+                                <div className="hoverContainer">
+                                    <div className="hoverContainerTag" onClick={toggleImage4}>
+                                        <Tag theme="orange" size="small" icon={FaCar} text="adventures" />
+                                    </div>
+                                    <div className="popupImage adventures" style={{ display: isVisible4 ? 'block' : 'none',}}>
+                                        <img src={aboutAdventures} alt="Group adventures!" className='image' style={{border: '3px solid var(--ORANGE-300)',}}/>
+                                    </div>
+                                </div>
+                                <h3>with friends,</h3>
+                            </div>
+                            <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
+                                <h3 className='aboutParagraphLineHeight'>napping, sending my entire Tik Tok feed to</h3>
+                            </div>
+                            <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
+                                <h3>people, building puzzles,</h3>
+                                <div className="hoverContainer">
+                                    <div className="hoverContainerTag" onClick={toggleImage5}>
+                                        <Tag theme="primary-blue" size="small" icon={FaFlask} text="experimenting" />
+                                    </div>
+                                    <div className="popupImage experimenting" style={{ display: isVisible5 ? 'block' : 'none',}}>
+                                        <img src={aboutExperimenting} alt="Me experimenting!" className='image' style={{border: '3px solid var(--PRIMARY-BLUE-300)',}}/>
+                                    </div>
                                 </div>
                             </div>
-                            <h3>vibe-y Spotify playlists,</h3>
-                        </div>
-                        <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                            <h3 className='aboutParagraphLineHeight'>doom-scrolling, cooking Samyang fire noodles,</h3>
-                        </div>
-                        <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                            <h3>gaming, going on</h3>
-                            <div className="hoverContainer">
-                                <div className="hoverContainerTag" onClick={toggleImage4}>
-                                    <Tag theme="orange" size="small" icon={FaCar} text="adventures" />
-                                </div>
-                                <div className="popupImage adventures" style={{ display: isVisible4 ? 'block' : 'none',}}>
-                                    <img src={aboutAdventures} alt="Group adventures!" className='image' style={{border: '3px solid var(--ORANGE-300)',}}/>
-                                </div>
+                            <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
+                                <h3 className='aboutParagraphLineHeight'>with things I probably shouldn’t, building DIY</h3>
                             </div>
-                            <h3>with friends,</h3>
-                        </div>
-                        <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                            <h3 className='aboutParagraphLineHeight'>napping, sending my entire Tik Tok feed to</h3>
-                        </div>
-                        <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                            <h3>people, building puzzles,</h3>
-                            <div className="hoverContainer">
-                                <div className="hoverContainerTag" onClick={toggleImage5}>
-                                    <Tag theme="primary-blue" size="small" icon={FaFlask} text="experimenting" />
-                                </div>
-                                <div className="popupImage experimenting" style={{ display: isVisible5 ? 'block' : 'none',}}>
-                                    <img src={aboutExperimenting} alt="Me experimenting!" className='image' style={{border: '3px solid var(--PRIMARY-BLUE-300)',}}/>
-                                </div>
+                            <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
+                                <h3 className='aboutParagraphLineHeight'>models, playing piano, dancing in the kitchen,</h3>
                             </div>
-                        </div>
-                        <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                            <h3 className='aboutParagraphLineHeight'>with things I probably shouldn’t, building DIY</h3>
-                        </div>
-                        <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                            <h3 className='aboutParagraphLineHeight'>models, playing piano, dancing in the kitchen,</h3>
-                        </div>
-                        <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
-                            <div className="hoverContainer">
-                                <div className="hoverContainerTag" onClick={toggleImage6}>
-                                    <Tag theme="green" size="small" icon={RiEmotionHappyLine} text="laughing" />
+                            <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
+                                <div className="hoverContainer">
+                                    <div className="hoverContainerTag" onClick={toggleImage6}>
+                                        <Tag theme="green" size="small" icon={RiEmotionHappyLine} text="laughing" />
+                                    </div>
+                                    <div className="popupImage laughing" style={{ display: isVisible6 ? 'block' : 'none',}}>
+                                        <img src={aboutLaughing} alt="Me laughing!" className='image' style={{border: '3px solid var(--GREEN-300)',}}/>
+                                    </div>
                                 </div>
-                                <div className="popupImage laughing" style={{ display: isVisible6 ? 'block' : 'none',}}>
-                                    <img src={aboutLaughing} alt="Me laughing!" className='image' style={{border: '3px solid var(--GREEN-300)',}}/>
-                                </div>
+                                <h3>and smiling (always!)</h3>
                             </div>
-                            <h3>and smiling (always!)</h3>
                         </div>
                     </div>
 
                     {/* Footnote */}
                     <div className='autoLayoutRightAlignCenter responsiveAutoLayoutRightCenter' style={{gap: '0.5rem',}} >
-                        <p>P.S. Thanks for stopping by</p>
+                        <p>And thanks for stopping by</p>
                         <FaHeart />
                     </div>
 

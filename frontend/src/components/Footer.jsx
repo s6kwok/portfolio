@@ -73,7 +73,7 @@ export default function Footer() {
         {/* Footer center aligned footnote */}
         <div style={{textAlign: 'center',}}>
             <p className='footerFootnote' style={{color: 'var(--GREY-500)'}}>
-              Portfolio made with 10,975 minutes of Spotify music, 82 Github commits (eep!), and lots of love
+              Portfolio made with 10,975 minutes of Spotify music, 85 Github commits (eep!), and lots of love
             </p>
         </div>
       </div>
