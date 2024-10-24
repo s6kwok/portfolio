@@ -132,11 +132,11 @@ export default function About() {
                     {/* Large flowing text autolayout down */}
                     <div className='autoLayoutDownAlignTop gaph3h3' id='play'>
                         {/* Hint */}
-                        <div className='autoLayoutRightAlignCenter responsiveAutoLayoutRightCenter' style={{marginBottom: '3.65rem', marginTop: '1rem'}} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-once="true" >
+                        <div className='autoLayoutRightAlignCenter responsiveAutoLayoutRightCenter' style={{marginBottom: '3.65rem', marginTop: '1rem'}} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" data-aos-once="true" >
                             <p>Psst! Click on the tags below to reveal surprises!</p>
                         </div>
 
-                        <div className='autoLayoutDownAlignTop gaph3h3' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="800" data-aos-once="true">
+                        <div className='autoLayoutDownAlignTop gaph3h3' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
                             <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                                 <h3 className='aboutParagraphLineHeight'>Beyond design, you’ll find me</h3>
                                 <div className="hoverContainer">
@@ -212,12 +212,14 @@ export default function About() {
                     </div>
 
                     {/* Footnote */}
-                    <div className='autoLayoutRightAlignCenter responsiveAutoLayoutRightCenter' style={{gap: '0.5rem',}} >
+                    <div className='autoLayoutRightAlignCenter responsiveAutoLayoutRightCenter' style={{gap: '0.5rem',}} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" data-aos-once="true" >
                         <p>And thanks for stopping by</p>
                         <FaHeart />
                     </div>
 
-                    <Footer />
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-once="true">
+                        <Footer />
+                    </div>
                 </div>
             </div>
         </>

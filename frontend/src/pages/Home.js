@@ -25,6 +25,7 @@ import QuestradeThumbnailVideo from '../assets/home/questrade-video-cropped.mp4'
 import BlueprintThumbnailVideo from '../assets/home/blueprint-video-cropped.mp4';
 import JamcityThumbnailVideo from '../assets/home/jamcity-video-cropped.mp4';
 import SnappeaThumbnailVideo from '../assets/home/snappea-video-cropped.mp4';
+import ArrowHero from '../assets/home/arrow-hero.svg';
 
 import { RiEmotionHappyLine } from "react-icons/ri";
 import { BsBarChartLineFill } from "react-icons/bs";
@@ -54,13 +55,13 @@ export default function Home() {
     ]);
 
     const [containerTags, setContainerTags] = useState([
-        { theme: 'blue', size: 'large', icon: FaLightbulb, text: 'strategy', style: { bottom:"50px", right:"270px", transform: 'rotate(-10deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'green', size: 'large', icon: MdQuestionMark, text: 'curiosity', style: { bottom:"54px", right:"220px", transform: 'rotate(4deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'orange', size: 'large', icon: HiSparkles, text: 'innovation', style: { bottom:"50px", right:"160px", transform: 'rotate(-12deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'pink', size: 'large', icon: FaHeart, text: 'empathy', style: { bottom:"0px", right:"80px", transform: 'rotate(0deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'green', size: 'large', icon: FaBookOpen, text: 'storytelling', style: { bottom:"10px", right:"10px", transform: 'rotate(16deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'primary-blue', size: 'large', icon: FaLocationArrow, text: 'usability', style: { bottom:"102px", right:"80px", transform: 'rotate(-8deg)', position: 'absolute', zIndex: 10000 }},
-        { theme: 'pink', size: 'large', icon: IoBalloonSharp, text: 'fun', style: { bottom:"64px", right:"8px", transform: 'rotate(6deg)', position: 'absolute', zIndex: 10000 }}
+        { theme: 'blue', size: 'large', icon: FaLightbulb, text: 'strategy', style: { bottom:"3px", left:"26px", transform: 'rotate(-16deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'pink', size: 'large', icon: IoBalloonSharp, text: 'fun', style: { bottom:"85px", left:"106px", transform: 'rotate(20deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'orange', size: 'large', icon: HiSparkles, text: 'innovation', style: { bottom:"0px", left:"96px", transform: 'rotate(0deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'green', size: 'large', icon: MdQuestionMark, text: 'curiosity', style: { bottom:"70px", left:"180px", transform: 'rotate(18deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'primary-blue', size: 'large', icon: FaLocationArrow, text: 'usability', style: { bottom:"66px", left:"246px", transform: 'rotate(6deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'pink', size: 'large', icon: FaHeart, text: 'empathy', style: { bottom:"0px", left:"305px", transform: 'rotate(0deg)', position: 'absolute', zIndex: 10000 }},
+        { theme: 'green', size: 'large', icon: FaBookOpen, text: 'storytelling', style: { bottom:"117px", left:"354px", transform: 'rotate(20deg)', position: 'absolute', zIndex: 10000 }},
     ]);
 
     // State to track if the tags should be visible (trigger animation)
@@ -126,25 +127,25 @@ export default function Home() {
         setContainerTags(updatedContainerTags);
     };
 
-    useEffect(() => {
-        // Immediately switch a tag as soon as the component mounts with a short delay
-        const initialTimeoutId = setTimeout(() => {
-            const initialTagIndex = Math.floor(Math.random() * h1Tags.length);
-            handleTitleTagClick(initialTagIndex); // Perform the first switch quickly
-        }, 1500); // Short delay for the first switch
+    // useEffect(() => {
+    //     // Immediately switch a tag as soon as the component mounts with a short delay
+    //     const initialTimeoutId = setTimeout(() => {
+    //         const initialTagIndex = Math.floor(Math.random() * h1Tags.length);
+    //         handleTitleTagClick(initialTagIndex); // Perform the first switch quickly
+    //     }, 1500); // Short delay for the first switch
     
-        // Set up the interval for subsequent switches after the initial switch
-        const intervalId = setInterval(() => {
-            const randomTagIndex = Math.floor(Math.random() * h1Tags.length);
-            handleTitleTagClick(randomTagIndex); // Call the same function to switch tags randomly
-        }, 4000); // Regular interval for subsequent switches
+    //     // Set up the interval for subsequent switches after the initial switch
+    //     const intervalId = setInterval(() => {
+    //         const randomTagIndex = Math.floor(Math.random() * h1Tags.length);
+    //         handleTitleTagClick(randomTagIndex); // Call the same function to switch tags randomly
+    //     }, 4000); // Regular interval for subsequent switches
     
-        // Cleanup on unmount
-        return () => {
-            clearTimeout(initialTimeoutId); // Clear the initial timeout
-            clearInterval(intervalId); // Clear the interval
-        };
-    }, []); // Empty dependency array ensures it runs only once on mount
+    //     // Cleanup on unmount
+    //     return () => {
+    //         clearTimeout(initialTimeoutId); // Clear the initial timeout
+    //         clearInterval(intervalId); // Clear the interval
+    //     };
+    // }, []); // Empty dependency array ensures it runs only once on mount
 
     return(
         <>
@@ -170,12 +171,12 @@ export default function Home() {
                                     <div className='autoLayoutDownAlignCenter gaph1h1'>
                                     {/* <div className='autoLayoutDownAlignCenter gaph1h1' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true"> */}
                                         {/* <h1>Hi, I’m Stacy <img src={Sparkle5} alt="Sparkle" width="28" height="28" style={{marginLeft: '0.2rem'}} /> <img src={Sparkle6} alt="Sparkle" width="24" height="24" /></h1> */}
-                                        <h1>Hi, I’m Stacy!</h1>
+                                        <h1 className='homeh1AfterTags'><span style={{color: 'var(--PRIMARY-BLUE-500)', fontWeight: '550'}}>Stacy Kwok</span> is a product <span style={{whiteSpace: 'nowrap'}}>designer who</span></h1>
                                         {/* <h1>Hi, I’m Stacy <RiEmotionHappyLine style={{fontSize: '2rem', marginRight: '0.15rem', marginLeft: '0.25rem', paddingBottom: '0rem'}} className="footerEmojis" /> <img src={Sparkle6} alt="Sparkle" width="26" height="26" className="footerEmojis" style={{marginLeft: '0rem', paddingBottom: '0.25rem'}} /></h1> */}
 
                                         {/* Line with tags */}
-                                        <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText heroMainParagraphContentHeader'>
-                                            <h1 style={{ whiteSpace: 'nowrap'}} >I bring</h1>
+                                        <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText heroMainParagraphContentHeader heroTagLine'>
+                                            <h1 style={{ whiteSpace: 'nowrap'}} >brings</h1>
                                             <div className='autoLayoutRightAlignLeftCenter gapLargeTagInlineText'>
                                                 {h1Tags.map((tag, index) => (
                                                     <>
@@ -237,7 +238,10 @@ export default function Home() {
                                         </div>
                                     </div>
                                 ))}
-                                <div class="down-arrow" data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-duration="400" data-aos-once="true" onClick={() => {
+                                <div className='arrowHero' data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-duration="1000" data-aos-delay="2000" data-aos-once="true">
+                                    <img src={ArrowHero} alt="Hero hint" width="140" height="140" />
+                                </div>
+                                {/* <div class="down-arrow" data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-duration="400" data-aos-once="true" onClick={() => {
                                 const element = document.getElementById("recentWorkHeader");
                                 const offset = -100; // Adjust this value to fine-tune the scroll position
                                 const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
@@ -247,11 +251,11 @@ export default function Home() {
                                     top: offsetPosition,
                                     behavior: "smooth"
                                 });
-                                }}></div>
+                                }}></div> */}
                             </div>
                         </div>
 
-                        <div className='recentWork autoLayoutRightAlignCenter' data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true" style={{gap: '1rem'}} id='recentWorkHeader'>
+                        <div className='recentWork autoLayoutRightAlignCenter responsiveAutoLayoutRightCenter' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-once="true" style={{gap: '1.25rem'}} id='recentWorkHeader'>
                             {/* <h4><HiSparkles /><IoSparklesSharp />Recent work I'm proud of!</h4> */}
                             <img src={SparkleCluster1} alt="Sparkles" width="40" height="40" className="recentWorkEmojis1" style={{marginBottom: '0.75rem'}} />
                             <h4>Recent work I'm proud of!</h4>
@@ -268,7 +272,7 @@ export default function Home() {
                                     navigate(routes.snapPea);
                                     window.scrollTo({ top:0, left:0, behavior: "instant"})
                                 }}
-                                data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-delay="200" data-aos-once="true"
+                                data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-delay="200" data-aos-once="true"
                             >
 
                                 {/* Left section with photo */}
@@ -308,7 +312,7 @@ export default function Home() {
                                     navigate(routes.jamCity);
                                     window.scrollTo({ top:0, left:0, behavior: "instant"})
                                 }}
-                                data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
+                                data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-once="true"
                             >
 
                                 {/* Left section with photo */}
@@ -348,7 +352,7 @@ export default function Home() {
                                     navigate(routes.questrade);
                                     window.scrollTo({ top:0, left:0, behavior: "instant"})
                                 }}
-                                data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
+                                data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-once="true"
                             >
 
                                 {/* Left section with photo */}
@@ -388,7 +392,7 @@ export default function Home() {
                                     navigate(routes.blueprint);
                                     window.scrollTo({ top:0, left:0, behavior: "instant"})
                                 }}
-                                data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="600" data-aos-once="true"
+                                data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-once="true"
                             >
 
                                 {/* Left section with photo */}
@@ -423,7 +427,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-once="true">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-once="true">
                         <Footer />
                     </div>
                 </div>
