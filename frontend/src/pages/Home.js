@@ -238,7 +238,7 @@ export default function Home() {
                                         </div>
                                     </div>
                                 ))}
-                                <div className='arrowHero' data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-duration="1000" data-aos-delay="2000" data-aos-once="true">
+                                <div className='arrowHero' data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-duration="1000" data-aos-delay="1200" data-aos-once="true">
                                     <img src={ArrowHero} alt="Hero hint" width="140" height="140" />
                                 </div>
                                 {/* <div class="down-arrow" data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-duration="400" data-aos-once="true" onClick={() => {
