@@ -43,6 +43,7 @@ import SparkleCluster1 from '../assets/home/sparkle-cluster-1.svg';
 import SparkleCluster2 from '../assets/home/sparkle-cluster-2.svg';
 import Sparkle5 from '../assets/home/sparkle5.svg';
 import Sparkle6 from '../assets/home/sparkle6.svg';
+import Sparkle from '../assets/favicon.svg';
 
 // Fade in
 import 'aos/dist/aos.css';
@@ -210,7 +211,7 @@ export default function Home() {
                                         {/* Remaining text */}
                                         <h1 className='homeh1AfterTags'>to craft joyful moments and connections.</h1>
                                     </div>
-                                    {/* <p>Prev @Questrade, @Jam City, @LCBO</p> */}
+                                    <p className='b2' style={{color: 'var(--GREY-500)', paddingTop: '1rem'}}>Prev @Questrade, @LCBO, @JamCity <img src={Sparkle} alt="Sparkle" width="18" height="18" className="footerEmojis" style={{marginBottom: '0.01rem', marginLeft: '0.25rem', marginRight: '0.25rem'}}/> UWaterloo Engineering Grad</p>
                                 </div>
                             </div>
 
@@ -238,9 +239,9 @@ export default function Home() {
                                         </div>
                                     </div>
                                 ))}
-                                <div className='arrowHero' data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-duration="1000" data-aos-delay="1200" data-aos-once="true">
+                                {/* <div className='arrowHero' data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-duration="1000" data-aos-delay="1200" data-aos-once="true">
                                     <img src={ArrowHero} alt="Hero hint" width="140" height="140" />
-                                </div>
+                                </div> */}
                                 {/* <div class="down-arrow" data-aos="fade-up" data-aos-anchor-placement="bottom" data-aos-duration="400" data-aos-once="true" onClick={() => {
                                 const element = document.getElementById("recentWorkHeader");
                                 const offset = -100; // Adjust this value to fine-tune the scroll position
@@ -291,7 +292,7 @@ export default function Home() {
 
                                     {/* Header and inline tag */}
                                     <div className='cursorEyes'>
-                                        <h3 className='cursorEyes'>Accelerating <span style={{...projectPrimaryColor['blue'],}} className='cursorEyes' >value discovery</span> for a mapping <span style={{whiteSpace: 'nowrap'}}>platform <img src={Sparkle1} alt="Sparkle" width="24" height="24" /></span></h3>
+                                        <h3 className='cursorEyes'>Enhancing <span style={{...projectPrimaryColor['blue'],}} className='cursorEyes' >conversion</span> of a geospatial mapping <span style={{whiteSpace: 'nowrap'}}>platform <img src={Sparkle1} alt="Sparkle" width="24" height="24" /></span></h3>
                                     </div>
                                     
                                     {/* Rest of paragraph */}
@@ -371,7 +372,7 @@ export default function Home() {
 
                                     {/* Header and inline tag */}
                                     <div className='cursorEyes'>
-                                        <h3 className='cursorEyes'>Enhancing the <span style={{...projectPrimaryColor['green'],}} className='cursorEyes' >discoverability</span> of new web <span style={{whiteSpace: 'nowrap'}}>features <img src={Sparkle3} alt="Sparkle" width="24" height="24" /></span></h3>
+                                        <h3 className='cursorEyes'>Improving the <span style={{...projectPrimaryColor['green'],}} className='cursorEyes' >discoverability</span> of new web <span style={{whiteSpace: 'nowrap'}}>features <img src={Sparkle3} alt="Sparkle" width="24" height="24" /></span></h3>
                                     </div>
                                     
                                     {/* Rest of paragraph */}
@@ -411,7 +412,7 @@ export default function Home() {
 
                                     {/* Header and inline tag */}
                                     <div className='cursorEyes'>
-                                        <h3 className='cursorEyes'><span style={{...projectPrimaryColor['blue'],}} className='cursorEyes' >Reducing barriers</span> to program <span style={{whiteSpace: 'nowrap'}}>registration <img src={Sparkle4} alt="Sparkle" width="24" height="24" /></span></h3>
+                                        <h3 className='cursorEyes'><span style={{...projectPrimaryColor['blue'],}} className='cursorEyes' >Streamlining</span> program <span style={{whiteSpace: 'nowrap'}}>registration <img src={Sparkle4} alt="Sparkle" width="24" height="24" /></span></h3>
                                     </div>
                                     
                                     {/* Rest of paragraph */}

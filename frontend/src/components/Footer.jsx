@@ -56,8 +56,8 @@ export default function Footer() {
               <h4 style={{ whiteSpace: 'nowrap'}} >have fun along the way)!</h4> */}
               {/* <h4>Let's <span style={{color: 'var(--PRIMARY-BLUE-500)'}}>collab</span> on something amazing (and have fun along the way)!</h4> */}
               <h4>Let's collab on something amazing (and have fun along the way)! <RiEmotionHappyLine style={{fontSize: '1.75rem', marginRight: '0.5rem'}} className="footerEmojis" />
-                {/* <img src={Sparkle5} alt="Sparkle" width="24" height="24" className="footerEmojis" style={{marginBottom: '0.15rem'}}/> */}
-                <img src={Sparkle} alt="Sparkle" width="24" height="24" className="footerEmojis" style={{marginBottom: '0.15rem'}}/></h4>
+              {/* <img src={Sparkle5} alt="Sparkle" width="24" height="24" className="footerEmojis" style={{marginBottom: '0.15rem'}}/> */}
+              <img src={Sparkle} alt="Sparkle" width="24" height="24" className="footerEmojis" style={{marginBottom: '0.15rem'}}/></h4>
               
             </div>
 
@@ -73,7 +73,7 @@ export default function Footer() {
         {/* Footer center aligned footnote */}
         <div style={{textAlign: 'center',}}>
             <p className='footerFootnote' style={{color: 'var(--GREY-500)'}}>
-              Portfolio made with 10,975 minutes of Spotify music, 87 Github commits (eep!), and lots of love
+              Portfolio made with 10,975 minutes of Spotify music, 88 Github commits (eep!), and lots of love
             </p>
         </div>
       </div>

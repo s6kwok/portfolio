@@ -71,10 +71,10 @@ export default function JamCity() {
                         </div>
 
                         {/* Context */}
-                        <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
+                        <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText' style={{marginLeft: '11.75rem', marginRight: '11.75rem'}}>
 
                             {/* Left context */}
-                            <div className='autoLayoutDownAlignTop projectContextLeft gaph2b1' >
+                            <div className='autoLayoutDownAlignTop projectContextLeft gaph2b1' style={{width: '100%'}} >
                                 <h5>It’s time for Hogwarts graduates to enter the adult wizarding world.</h5>
                                 <p>Longtime players of the game Harry Potter Hogwarts Mystery (HPHM) were starting to finish playing the latest game chapter: graduation.</p>
                                 <p><strong>Many players expressed interest in exploring and growing different careers in the next phase of the game.</strong> With that, came the need for an end-to-end careers rewards system design!</p>
@@ -152,8 +152,8 @@ export default function JamCity() {
 
                         {/* Requirements */}
                         <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
-                            <div className='projectTextHeader20'>
-                                <h5>Gathering requireme nts</h5>
+                            <div className='projectTextHeader20' style={{width: '25%'}}>
+                                <h5>Gathering requirements</h5>
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb1b1MultiParagraph'>
@@ -339,7 +339,7 @@ export default function JamCity() {
                         <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                             <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
                                 <div className='projectTextHeader20'>
-                                    <h5>Lofis: Main feature UI</h5>
+                                    <h5>Main feature UI</h5>
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
@@ -366,7 +366,7 @@ export default function JamCity() {
                         <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                             <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
                                 <div className='projectTextHeader20'>
-                                    <h5>Lofis: Feature surfacing</h5>
+                                    <h5>Feature surfacing</h5>
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
@@ -393,7 +393,7 @@ export default function JamCity() {
                         <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                             <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
                                 <div className='projectTextHeader20'>
-                                    <h5>Hi-fis: But with a new constraint!</h5>
+                                    <h5>A new constraint</h5>
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
@@ -410,7 +410,7 @@ export default function JamCity() {
                         <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                             <div className='projectTextImageMarginsText autoLayoutRightAlignLeftTop gapImageText'>
                                 <div className='projectTextHeader20'>
-                                    <h5>Hi-fis: Enhancing engagement</h5>
+                                    <h5>Enhancing engagement</h5>
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
@@ -450,7 +450,7 @@ export default function JamCity() {
                         {/* Revisiting success */}
                         <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText'>
                             <div className='projectTextHeader20'>
-                                <h5>Revisiting success metrics</h5>
+                                <h5>Revisiting success</h5>
                             </div>
                             <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                 <div className='autoLayoutDownAlignTop gapb3b1'>

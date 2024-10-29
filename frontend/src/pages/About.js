@@ -35,12 +35,12 @@ export default function About() {
     }, []);
 
     // Individual states for each popup
-    const [isVisible1, setIsVisible1] = useState(false);
-    const [isVisible2, setIsVisible2] = useState(false);
-    const [isVisible3, setIsVisible3] = useState(false);
-    const [isVisible4, setIsVisible4] = useState(false);
-    const [isVisible5, setIsVisible5] = useState(false);
-    const [isVisible6, setIsVisible6] = useState(false);
+    const [isVisible1, setIsVisible1] = useState(true);
+    const [isVisible2, setIsVisible2] = useState(true);
+    const [isVisible3, setIsVisible3] = useState(true);
+    const [isVisible4, setIsVisible4] = useState(true);
+    const [isVisible5, setIsVisible5] = useState(true);
+    const [isVisible6, setIsVisible6] = useState(true);
 
     // Function to toggle visibility state
     const toggleImage1 = () => {
@@ -132,11 +132,12 @@ export default function About() {
                     {/* Large flowing text autolayout down */}
                     <div className='autoLayoutDownAlignTop gaph3h3' id='play'>
                         {/* Hint */}
-                        <div className='autoLayoutRightAlignCenter responsiveAutoLayoutRightCenter' style={{marginBottom: '3.65rem', marginTop: '1rem'}} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" data-aos-once="true" >
-                            <p>Psst! Click on the tags below to reveal surprises!</p>
+                        <div className='autoLayoutRightAlignCenter responsiveAutoLayoutRightCenter' style={{marginBottom: '3.5rem', marginTop: '0rem'}} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-once="true" >
+                            {/* <p>Psst! Click on the tags below to reveal surprises!</p> */}
+                            <p>Get to know me!</p>
                         </div>
 
-                        <div className='autoLayoutDownAlignTop gaph3h3' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">
+                        <div className='autoLayoutDownAlignTop gaph3h3' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="600" data-aos-delay="200" data-aos-once="true">
                             <div className='autoLayoutRightAlignCenter gapSmallTagInlineText aboutParagraph'>
                                 <h3 className='aboutParagraphLineHeight'>Beyond design, you’ll find me</h3>
                                 <div className="hoverContainer">
@@ -212,9 +213,9 @@ export default function About() {
                     </div>
 
                     {/* Footnote */}
-                    <div className='autoLayoutRightAlignCenter responsiveAutoLayoutRightCenter' style={{gap: '0.5rem',}} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" data-aos-once="true" >
+                    <div className='autoLayoutRightAlignCenter responsiveAutoLayoutRightCenter' style={{gap: '0.5rem',}} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" data-aos-delay="400" data-aos-once="true" >
                         <p>And thanks for stopping by</p>
-                        <FaHeart />
+                        <FaHeart className="footerEmojis" style={{marginBottom: '0.5rem', color: 'var(--PRIMARY-BLUE-500)'}} />
                     </div>
 
                     <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-once="true">

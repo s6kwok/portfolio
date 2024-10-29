@@ -59,7 +59,7 @@ export default function SnapPea() {
                             {/* Header and subtext */}
                             <div className='autoLayoutDownAlignTop gaph3b2'>
                                 <h2>
-                                    Accelerating <span style={{...projectPrimaryColor[theme],}} >value discovery</span> for a mapping platform
+                                    Enhancing <span style={{...projectPrimaryColor[theme],}} >conversion</span> of a geospatial mapping platform
                                 </h2>
                                 <p className='b2'>SnapPea Design, Sept-Dec 2023</p>
                             </div>
@@ -86,7 +86,7 @@ export default function SnapPea() {
                         <div className='projectTextOnlyMargins autoLayoutRightAlignLeftTop gapImageText context'>
 
                             {/* Left context */}
-                            <div className='autoLayoutDownAlignTop projectContextLeft gaph2b1' >
+                            <div className='autoLayoutDownAlignTop projectContextLeft gaph2b1'>
                                 <h5>I love showing clients the transformative power of design.</h5>
                                 <p>One of my favourite parts of working with clients is the collaboration and sharing of design knowledge, each step of the way.</p>
                                 <p>At SnapPea Design, I led a client project where we strategically improved a <strong>geospatial mapping platform (mapping software that uses elevation data to produce geographic models)</strong> to establish strong and scalable design foundations for the future.</p>
@@ -259,10 +259,10 @@ export default function SnapPea() {
                             <p>My research began with a deep dive into understanding users, the problem space, and current behaviours. However, one question that I wanted to dive deep into was the high abandonment rate. Why was this happening, and how can we address it?</p>
                         </div>
 
-                        {/* Reason 1 */}
+                        {/* Problem 1 */}
                         <div className='autoLayoutDownAlignTop projectTextOnlyMargins gapProjectGrouping'>
                             <div className='autoLayoutDownAlignTop gaph3h3'>
-                                <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Reason #1:</span> Poor usability</h5>
+                                <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Problem #1:</span> Poor usability</h5>
                                 <p>Users have trouble navigating and understanding how to use the platform.</p>
                             </div>
                             <div className='autoLayoutRightAlignLeftTop gapImageText'>
@@ -314,11 +314,11 @@ export default function SnapPea() {
                             </div>
                         </div>
 
-                        {/* Reason 2 */}
+                        {/* Problem 2 */}
                         <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                             <div className='projectTextImageMarginsText autoLayoutDownAlignTop gapProjectGrouping'>
                                 <div className='autoLayoutDownAlignTop gaph3h3'>
-                                    <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Reason #2:</span> Delayed platform value discovery</h5>
+                                    <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Problem #2:</span> Delayed platform value discovery</h5>
                                     <p>Users have to go through most of the flow before experiencing the value, causing many to give up early.</p>
                                 </div>
                                 <div className='autoLayoutRightAlignLeftTop gapImageText'>
@@ -358,11 +358,11 @@ export default function SnapPea() {
                             </div>
                         </div>
 
-                        {/* Reason 3 */}
+                        {/* Problem 3 */}
                         <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                             <div className='projectTextImageMarginsText autoLayoutDownAlignTop gapProjectGrouping'>
                                 <div className='autoLayoutDownAlignTop gaph3h3'>
-                                    <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Reason #3:</span> Unclear onboarding</h5>
+                                    <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Problem #3:</span> Unclear onboarding</h5>
                                     <p>The initial experience is confusing and overwhelming for newer users.</p>
                                 </div>
                                 <div className='autoLayoutRightAlignLeftTop gapImageText'>
@@ -388,25 +388,25 @@ export default function SnapPea() {
                             
                             <div className='autoLayoutRightAlignLeftTop gapImageText'>
                                 <div className='projectTextHeader20'>
-                                    <h5>Formulating actionables</h5>
+                                    <h5>Formulating design decisions</h5>
                                 </div>
                                 <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                     <div className='autoLayoutDownAlignTop gapb3b1'>
                                         <p className='b3Medium'>Defining strategy</p>
-                                        <p>Specific design actionables were needed to support our strategy. I <strong>synthesized the 3 research findings</strong> (poor usability, lack of perceived value, and complicated onboarding) with the <strong>design goals</strong> (clarity, cognitive load, affordance, and efficiency) to define phases of design work.</p>
+                                        <p>Specific design decisions were needed to support our strategy. I <strong>synthesized the 3 research findings</strong> (poor usability, lack of perceived value, and complicated onboarding) with the <strong>design goals</strong> (clarity, cognitive load, affordance, and efficiency) to define phases of design work.</p>
                                         
                                     </div>
-                                    <img src={snappeaActionables} alt="Actionables" className='image'/>
+                                    <img src={snappeaActionables} alt="Design decision" className='image'/>
                                     <p>After discussing the strategy and specific recommendations with the client, the client was excited and design work was ready to begin!</p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Actionable 1 */}
+                        {/* Decision 1 */}
                         <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                             <div className='projectTextImageMarginsText autoLayoutDownAlignTop gapProjectGrouping'>
                                 <div className='autoLayoutDownAlignTop gaph3h3'>
-                                    <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Actionable #1:</span> Decrease focus of secondary actions</h5>
+                                    <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Design decision #1:</span> Decrease focus of secondary actions</h5>
                                     <p>Removing distractions will refocus user attention on the key actions, which will make onboarding clearer and enhance usability.</p>
                                 </div>
                                 <div className='autoLayoutRightAlignLeftTop gapImageText'>
@@ -468,11 +468,11 @@ export default function SnapPea() {
                             </div>
                         </div>
 
-                        {/* Actionable 2 */}
+                        {/* Decision 2 */}
                         <div className='autoLayoutDownAlignTop projectTextImageMargins gapProjectGrouping'>
                             <div className='projectTextImageMarginsText autoLayoutDownAlignTop gapProjectGrouping'>
                                 <div className='autoLayoutDownAlignTop gaph3h3'>
-                                    <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Actionable #2:</span> Emphasize the first step while simultaneously showing value</h5>
+                                    <h5><span style={{...projectPrimaryColor[theme], fontWeight: '600'}} >Design decision #2:</span> Emphasize the first step while simultaneously showing value</h5>
                                     <p>Ensuring users can easily search for a location and create a site, while also providing upfront access to browse data products if desired.</p>
                                 </div>
                                 <div className='autoLayoutRightAlignLeftTop gapImageText'>
@@ -481,7 +481,7 @@ export default function SnapPea() {
                                     </div>
                                     <div className='autoLayoutDownAlignTop gapProjectListNumberGrouping projectTextText80'>
                                         <div className='autoLayoutDownAlignTop gapb3b1'>
-                                            <p>I then focused on the second set of actionables: establishing a clear first step.</p>
+                                            <p>I then focused on the second set of decisions: establishing a clear first step.</p>
                                             <p>This part was essential because it would determine how the dual user flows will work together, laying the foundation for the entire journey.</p>
                                             <p>The design goal is to allow users to <strong>seamlessly enter either flow upon opening the platform</strong>, encouraging exploration of data products while also guiding location searches. Ideally, users would have access to both options at any time, regardless of their immediate preference!</p>
                                         </div>
