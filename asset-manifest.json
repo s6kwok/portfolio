@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ed4d498.css",
-    "main.js": "/static/js/main.20a4f887.js",
+    "main.css": "/static/css/main.0f22da1b.css",
+    "main.js": "/static/js/main.c6ef28ed.js",
     "static/media/snappea-video-cropped.mp4": "/static/media/snappea-video-cropped.cf332d15eaab809a1a6d.mp4",
     "static/media/jamcity-final.mp4": "/static/media/jamcity-final.da5ece1d07b2baad51af.mp4",
     "static/media/blueprint-final-1.mp4": "/static/media/blueprint-final-1.d71beb907aebf1d14d35.mp4",
@@ -57,6 +57,7 @@
     "static/media/blueprint-header-1.png": "/static/media/blueprint-header-1.90c4d45acdc901e078b4.png",
     "static/media/questrade-header.png": "/static/media/questrade-header.b2c98c75e794807aff54.png",
     "static/media/jamcity-success-2.png": "/static/media/jamcity-success-2.7e552b3ec840a35fd703.png",
+    "static/media/snappea-actionables.png": "/static/media/snappea-actionables.0445647406add19352ca.png",
     "static/media/blueprint-header-3.png": "/static/media/blueprint-header-3.52d538ba020c16a2a7b5.png",
     "static/media/jamcity-problem.png": "/static/media/jamcity-problem.26595ce71066edd6dd38.png",
     "static/media/blueprint-header-4.png": "/static/media/blueprint-header-4.a145e0ea1ee5309e267c.png",
@@ -69,7 +70,6 @@
     "static/media/snappea-flow-2.png": "/static/media/snappea-flow-2.69ef3696ddfbb1a681a1.png",
     "static/media/snappea-challenge.png": "/static/media/snappea-challenge.f01bae9e6b27b7c0ef58.png",
     "static/media/jamcity-flow.png": "/static/media/jamcity-flow.406835cd1eb8a67b47dc.png",
-    "static/media/snappea-actionables.png": "/static/media/snappea-actionables.c094db4dfd155773609c.png",
     "static/media/questrade-logo.png": "/static/media/questrade-logo.acd03db7f112a016f309.png",
     "static/media/arrow-hero.svg": "/static/media/arrow-hero.d1db5e5c8a6beeee58f6f1a28c0e4457.svg",
     "static/media/snappea-story-2.png": "/static/media/snappea-story-2.0db08760a0ecb61bfd04.png",
@@ -89,11 +89,11 @@
     "static/media/sparkle1.svg": "/static/media/sparkle1.cf630dfab57f8a04c02e1875f8c18311.svg",
     "static/media/sparkle2.svg": "/static/media/sparkle2.788137468e889a90b18ec56f9f7626b5.svg",
     "static/media/sparkle4.svg": "/static/media/sparkle4.2fc245e4febe4337cef792ae0dcb95c5.svg",
-    "main.6ed4d498.css.map": "/static/css/main.6ed4d498.css.map",
-    "main.20a4f887.js.map": "/static/js/main.20a4f887.js.map"
+    "main.0f22da1b.css.map": "/static/css/main.0f22da1b.css.map",
+    "main.c6ef28ed.js.map": "/static/js/main.c6ef28ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ed4d498.css",
-    "static/js/main.20a4f887.js"
+    "static/css/main.0f22da1b.css",
+    "static/js/main.c6ef28ed.js"
   ]
 }
