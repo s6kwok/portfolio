@@ -89,7 +89,7 @@ export default function About() {
 
                                 {/* Header and inline tag autolayout left */}
                                 <div className='autoLayoutRightAlignLeftCenter gapSmallTagInlineText'>
-                                    <h3>Hi internet! I'm </h3>
+                                    <h3>Hi there! I'm </h3>
                                     <div className="hoverContainer">
                                         <div className="hoverContainerTag" onClick={toggleImage1}>
                                             <Tag theme="primary-blue" size="small" icon={FaHeart} text="Stacy" />
@@ -215,7 +215,7 @@ export default function About() {
                     {/* Footnote */}
                     <div className='autoLayoutRightAlignCenter responsiveAutoLayoutRightCenter' style={{gap: '0.5rem',}} data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="800" data-aos-delay="400" data-aos-once="true" >
                         <p>And thanks for stopping by</p>
-                        <FaHeart className="footerEmojis" style={{marginBottom: '0.5rem', color: 'var(--PRIMARY-BLUE-500)'}} />
+                        <FaHeart className="footerEmojis" style={{marginBottom: '0.5rem', color: 'var(--BLACK)'}} />
                     </div>
 
                     <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-once="true">

@@ -20,7 +20,7 @@ export default function Header({defaultActiveTab}) {
         <div className="logoHoverContainer">
           <a href={routes.index} className="logo">Stacy Kwok</a>
           {/* < HiSparkles className="logoHoverContent" style={{marginLeft: '0.45rem'}} /> */}
-          <img src={Sparkle} alt="Sparkle" width="14" height="14" className="logoHoverContent" style={{marginLeft: '0.55rem'}} />
+          {/* <img src={Sparkle} alt="Sparkle" width="14" height="14" className="logoHoverContent" style={{marginLeft: '0.55rem'}} /> */}
         </div>
 
         {/* Tabs */}

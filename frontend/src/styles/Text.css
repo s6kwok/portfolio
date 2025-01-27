@@ -10,14 +10,14 @@
     font-weight: 400;
     line-height: 1.5rem;
     text-decoration: none;
-    color: var(--BLACK);
+    color: var(--GREY-500);
     /* color: inherit; */
     /* cursor: pointer; */
     cursor: url('../assets/cursor-hand.svg'), auto;
 }
 
 .navActive:hover, .navInactive:hover {
-    color: var(--PRIMARY-BLUE-500);
+    color: var(--BLACK);
 }
 
 .navActive {
@@ -25,7 +25,7 @@
 }
 
 .navInactive:hover {
-    color: var(--PRIMARY-BLUE-500);
+    color: var(--BLACK);
 }
 
 .navActive, .navInactive:hover {
@@ -33,7 +33,8 @@
     font-weight: 500;
     line-height: 1.5rem;
     /* text-decoration: var(--PRIMARY-BLUE-500) line-through; */
-    text-decoration: var(--PRIMARY-BLUE-500) wavy underline;
+    color: var(--BLACK);
+    /* text-decoration: var(--PRIMARY-BLUE-500) wavy underline; */
     /* text-decoration: var(--PRIMARY-BLUE-500) underline; */
     text-underline-offset: 4.5px;
     text-decoration-thickness: 2px;
@@ -45,8 +46,9 @@
 h1 {
     font-size: 2.6rem;
     font-weight: 500;
-    line-height: 3.55rem;
-    letter-spacing: -0.03rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.04rem;
+    color: var(--BLACK);
 }
 
 h2 {
@@ -103,19 +105,22 @@ p, li {
 /* b1 link */
 a {
     font-size: 1.025rem;
-    font-weight: 450;
+    font-weight: 400;
     line-height: 1.8rem;
     text-decoration-line: none;
-    color: inherit;
+    /* color: inherit; */
+    color: var(--GREY-500);
     letter-spacing: -0.01rem;
 }
 
 a:hover {
-    color: var(--PRIMARY-BLUE-500);
+    color: var(--BLACK);
+    font-weight: 500;
     /* opacity: 80%; */
     /* cursor: pointer; */
     /* text-decoration-line: underline; */
-    text-decoration: var(--PRIMARY-BLUE-500) wavy underline;
+    text-decoration: var(--BLACK);
+    /* text-decoration: var(--PRIMARY-BLUE-500) wavy underline; */
     text-underline-offset: 4.5px;
     text-decoration-thickness: 2px;
     cursor: url('../assets/cursor-hand.svg'), auto;

@@ -21,7 +21,7 @@ const NavTabs = ({ activeTab, onTabChange }) => {
   // Styling
   const navTabsStyling = {
     padding: '0rem',
-    gap: '3.375rem',
+    gap: '2.85rem',
     width: 'max-content',
   };
 
